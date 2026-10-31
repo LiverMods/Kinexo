@@ -2735,6 +2735,7 @@
 
 
     .line 39
+    invoke-static {p0}, Lcom/mgs/carparking/modern/core/Routes;->home(Landroid/app/Activity;)V
     return-void
 .end method
 

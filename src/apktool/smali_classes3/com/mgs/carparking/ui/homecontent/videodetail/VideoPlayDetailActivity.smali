@@ -1311,7 +1311,7 @@
     .line 8
     .line 9
     .line 10
-    invoke-virtual {p1, v1, v0}, Lcom/mgs/carparking/model/VIDEOPLAYDETAILVIEWMODEL;->M0(ZI)V
+
 
     .line 11
     return-void
@@ -4593,358 +4593,9 @@
     .line 252
     .line 253
     .line 254
-    invoke-virtual {p1, v0, v1}, Lcom/mgs/carparking/model/VIDEOPLAYDETAILVIEWMODEL;->K0(II)V
 
-    .line 255
-    .line 256
-    iget-object p1, p0, Lcom/mgs/carparking/app/BaseActivity;->a:Landroidx/databinding/ViewDataBinding;
-
-    .line 257
-    .line 258
-    check-cast p1, Lcom/mgs/carparking/databinding/ActivityVideoPlayDetailBinding;
-
-    .line 259
-    .line 260
-    iget-object p1, p1, Lcom/mgs/carparking/databinding/ActivityVideoPlayDetailBinding;->a:Lchuangyuan/ycj/videolibrary/widget/VideoPlayerView;
-
-    .line 261
-    .line 262
-    .line 263
-    invoke-virtual {p1}, Lchuangyuan/ycj/videolibrary/widget/VideoPlayerView;->getAdRewardVisibilty()Z
-
-    .line 264
-    move-result p1
-
-    .line 265
-    .line 266
-    if-nez p1, :cond_4
-
-    .line 267
-    .line 268
-    iget-object p1, p0, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->r0:Lca/d0;
-
-    .line 269
-    .line 270
-    if-eqz p1, :cond_3
-
-    .line 271
-    .line 272
-    .line 273
-    invoke-virtual {p1}, Lca/d0;->b()V
-
-    .line 274
-    .line 275
-    iput-object v2, p0, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->r0:Lca/d0;
-
-    .line 276
-    .line 277
-    .line 278
-    :cond_3
-    invoke-virtual {p0}, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->lookAdArrivalTime()V
-
-    .line 279
-    .line 280
-    :cond_4
-    iget-object p1, p0, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->g:Lcom/mgs/carparking/netbean/RecommandVideosEntity;
-
-    .line 281
-    const/4 v0, 0x1
-
-    .line 282
-    .line 283
-    if-eqz p1, :cond_5
-
-    .line 284
-    .line 285
-    .line 286
-    invoke-virtual {p1}, Lcom/mgs/carparking/netbean/RecommandVideosEntity;->is_share()I
-
-    .line 287
-    move-result p1
-
-    .line 288
-    .line 289
-    if-ne p1, v0, :cond_5
-
-    .line 290
-    .line 291
-    .line 292
-    invoke-static {}, Lca/l0;->I()I
-
-    .line 293
-    move-result p1
-
-    .line 294
-    .line 295
-    if-ne p1, v0, :cond_5
-
-    .line 296
-    .line 297
     iget-object p1, p0, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->f:Lt/a;
-
-    .line 298
-    .line 299
-    .line 300
     invoke-virtual {p1}, Lt/a;->h0()Lt/a;
-
-    .line 301
-    .line 302
-    goto/16 :goto_2
-
-    .line 303
-    .line 304
-    .line 305
-    :cond_5
-    invoke-static {}, Lca/e;->a()V
-
-    .line 306
-    .line 307
-    .line 308
-    invoke-static {}, Lca/l0;->x()Z
-
-    .line 309
-    move-result p1
-
-    .line 310
-    .line 311
-    if-nez p1, :cond_c
-
-    .line 312
-    .line 313
-    .line 314
-    invoke-static {}, Lca/l0;->F()I
-
-    .line 315
-    move-result p1
-
-    .line 316
-    .line 317
-    .line 318
-    invoke-static {}, Lca/l0;->A()I
-
-    .line 319
-    move-result v1
-
-    .line 320
-    .line 321
-    if-lt p1, v1, :cond_6
-
-    .line 322
-    goto :goto_1
-
-    .line 323
-    .line 324
-    .line 325
-    :cond_6
-    invoke-static {}, Lcom/mgs/carparking/db/VideoAdLookDao;->getInstance()Lcom/mgs/carparking/db/VideoAdLookDao;
-
-    .line 326
-    move-result-object p1
-
-    .line 327
-    .line 328
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    .line 329
-    .line 330
-    .line 331
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 332
-    .line 333
-    iget v2, p0, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->y:I
-
-    .line 334
-    .line 335
-    .line 336
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    .line 337
-    .line 338
-    const-string v2, ""
-
-    .line 339
-    .line 340
-    .line 341
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 342
-    .line 343
-    iget v2, p0, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->z:I
-
-    .line 344
-    .line 345
-    .line 346
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    .line 347
-    .line 348
-    .line 349
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 350
-    move-result-object v1
-
-    .line 351
-    .line 352
-    .line 353
-    invoke-virtual {p1, v1}, Lcom/mgs/carparking/db/VideoAdLookDao;->isExist(Ljava/lang/String;)Z
-
-    .line 354
-    move-result p1
-
-    .line 355
-    .line 356
-    if-eqz p1, :cond_9
-
-    .line 357
-    .line 358
-    .line 359
-    invoke-static {}, Lca/l0;->M()I
-
-    .line 360
-    move-result p1
-
-    .line 361
-    .line 362
-    if-nez p1, :cond_7
-
-    .line 363
-    .line 364
-    .line 365
-    invoke-virtual {p0}, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->clearAd()V
-
-    .line 366
-    .line 367
-    iget-object p1, p0, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->f:Lt/a;
-
-    .line 368
-    .line 369
-    .line 370
-    invoke-virtual {p1}, Lt/a;->h0()Lt/a;
-
-    .line 371
-    goto :goto_2
-
-    .line 372
-    .line 373
-    .line 374
-    :cond_7
-    invoke-static {}, Lca/l0;->h()I
-
-    .line 375
-    move-result p1
-
-    .line 376
-    .line 377
-    if-ne p1, v0, :cond_8
-
-    .line 378
-    .line 379
-    .line 380
-    invoke-virtual {p0}, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->selectLoadAd()V
-
-    .line 381
-    goto :goto_2
-
-    .line 382
-    .line 383
-    .line 384
-    :cond_8
-    invoke-virtual {p0}, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->selectLoadAdNew()V
-
-    .line 385
-    goto :goto_2
-
-    .line 386
-    .line 387
-    :cond_9
-    iget-object p1, p0, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->h:Ljava/util/List;
-
-    .line 388
-    .line 389
-    iget v1, p0, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->A:I
-
-    .line 390
-    .line 391
-    .line 392
-    invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    .line 393
-    move-result-object p1
-
-    .line 394
-    .line 395
-    check-cast p1, Lcom/mgs/carparking/netbean/VideoBean;
-
-    .line 396
-    .line 397
-    .line 398
-    invoke-virtual {p1}, Lcom/mgs/carparking/netbean/VideoBean;->is_ad()I
-
-    .line 399
-    move-result p1
-
-    .line 400
-    .line 401
-    if-ne p1, v0, :cond_a
-
-    .line 402
-    .line 403
-    .line 404
-    invoke-virtual {p0}, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->noChangeAd()V
-
-    .line 405
-    goto :goto_2
-
-    .line 406
-    .line 407
-    .line 408
-    :cond_a
-    invoke-static {}, Lca/l0;->h()I
-
-    .line 409
-    move-result p1
-
-    .line 410
-    .line 411
-    if-ne p1, v0, :cond_b
-
-    .line 412
-    .line 413
-    .line 414
-    invoke-virtual {p0}, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->selectLoadAd()V
-
-    .line 415
-    goto :goto_2
-
-    .line 416
-    .line 417
-    .line 418
-    :cond_b
-    invoke-virtual {p0}, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->selectLoadAdNew()V
-
-    .line 419
-    goto :goto_2
-
-    .line 420
-    .line 421
-    .line 422
-    :cond_c
-    :goto_1
-    invoke-virtual {p0}, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->clearAd()V
-
-    .line 423
-    .line 424
-    iget-object p1, p0, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->f:Lt/a;
-
-    .line 425
-    .line 426
-    .line 427
-    invoke-virtual {p1}, Lt/a;->h0()Lt/a;
-
-    .line 428
-    :goto_2
     return-void
 .end method
 
@@ -6849,174 +6500,13 @@
 .end method
 
 .method public final g2(I)V
-    .locals 4
-
-    .line 1
-    .line 2
-    .line 3
-    invoke-static {}, Lca/l0;->x()Z
-
-    .line 4
-    move-result v0
-
-    .line 5
-    const/4 v1, 0x1
-
-    .line 6
-    .line 7
-    if-nez v0, :cond_2
-
-    .line 8
-    .line 9
-    sget-object v0, Lcom/mgs/carparking/app/AppApplication;->adInfoEntry:Lcom/mgs/carparking/netbean/AdInfoEntry;
-
-    .line 10
-    .line 11
-    .line 12
-    invoke-virtual {v0}, Lcom/mgs/carparking/netbean/AdInfoEntry;->getAd_position_21()Ljava/util/List;
-
-    .line 13
-    move-result-object v0
-
-    .line 14
-    .line 15
-    if-eqz v0, :cond_2
-
-    .line 16
-    .line 17
-    sget-object v0, Lcom/mgs/carparking/app/AppApplication;->adInfoEntry:Lcom/mgs/carparking/netbean/AdInfoEntry;
-
-    .line 18
-    .line 19
-    .line 20
-    invoke-virtual {v0}, Lcom/mgs/carparking/netbean/AdInfoEntry;->getAd_position_21()Ljava/util/List;
-
-    .line 21
-    move-result-object v0
-
-    .line 22
-    .line 23
-    .line 24
-    invoke-interface {v0}, Ljava/util/List;->size()I
-
-    .line 25
-    move-result v0
-
-    .line 26
-    .line 27
-    if-lez v0, :cond_2
-
-    .line 28
-    .line 29
-    sget-object p1, Lcom/mgs/carparking/app/AppApplication;->adInfoEntry:Lcom/mgs/carparking/netbean/AdInfoEntry;
-
-    .line 30
-    .line 31
-    .line 32
-    invoke-virtual {p1}, Lcom/mgs/carparking/netbean/AdInfoEntry;->getAd_position_21()Ljava/util/List;
-
-    .line 33
-    move-result-object p1
-
-    .line 34
-    .line 35
-    .line 36
-    invoke-static {}, Lcom/mgs/carparking/db/AdNumShowDao;->getInstance()Lcom/mgs/carparking/db/AdNumShowDao;
-
-    .line 37
-    move-result-object v0
-
-    .line 38
-    .line 39
-    const/16 v2, 0x6c
-
-    .line 40
-    .line 41
-    .line 42
-    invoke-virtual {v0, v2}, Lcom/mgs/carparking/db/AdNumShowDao;->getNum(I)I
-
-    .line 43
-    move-result v0
-
-    .line 44
-    .line 45
-    .line 46
-    invoke-interface {p1}, Ljava/util/List;->size()I
-
-    .line 47
-    move-result v2
-
-    .line 48
-    sub-int/2addr v2, v1
-
-    .line 49
-    const/4 v3, 0x0
-
-    .line 50
-    .line 51
-    if-lt v0, v2, :cond_0
-
-    .line 52
-    move v0, v3
-
-    .line 53
-    goto :goto_0
-
-    .line 54
-    :cond_0
-    add-int/2addr v0, v1
-
-    .line 55
-    .line 56
-    .line 57
-    :goto_0
-    invoke-static {}, Lca/l0;->h()I
-
-    .line 58
-    move-result v2
-
-    .line 59
-    .line 60
-    if-ne v2, v1, :cond_1
-
-    .line 61
-    .line 62
-    .line 63
-    invoke-virtual {p0, p1, p0, v0, v3}, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->loadClingAdType(Ljava/util/List;Landroid/app/Activity;IZ)V
-
-    .line 64
-    goto :goto_1
-
-    .line 65
-    .line 66
-    .line 67
-    :cond_1
-    invoke-virtual {p0, p1, p0, v0, v1}, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->loadClingAdType(Ljava/util/List;Landroid/app/Activity;IZ)V
-
-    .line 68
-    goto :goto_1
-
-    .line 69
-    .line 70
-    :cond_2
-    if-ne p1, v1, :cond_3
-
-    .line 71
-    .line 72
-    .line 73
+    .locals 1
+    const/4 v0, 0x1
+    if-ne p1, v0, :vertical
     invoke-virtual {p0}, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->LeLinkHorizalPop()V
-
-    .line 74
-    goto :goto_1
-
-    .line 75
-    .line 76
-    .line 77
-    :cond_3
+    return-void
+    :vertical
     invoke-virtual {p0}, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->LelinkPop()V
-
-    .line 78
-    :goto_1
     return-void
 .end method
 
@@ -7503,105 +6993,11 @@
     const/4 v2, 0x0
     const/4 v3, 0x1
     :goto_0
-    invoke-static {}, Lca/l0;->x()Z
-
-    .line 42
-    move-result v0
-
-    .line 43
-    .line 44
-    if-nez v0, :cond_3
-
-    .line 45
-    .line 46
-    .line 47
-    invoke-static {}, Lca/l0;->E()Ljava/lang/String;
-
-    .line 48
-    move-result-object v0
-
-    .line 49
-    .line 50
-    const-string v1, "none"
-
-    .line 51
-    .line 52
-    .line 53
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 54
-    move-result v0
-
-    .line 55
-    .line 56
-    if-eqz v0, :cond_2
-
-    .line 57
-    goto :goto_1
-
-    .line 58
-    .line 59
-    :cond_2
     iget-object v0, p0, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->Y:Landroid/widget/TextView;
-
-    .line 60
-    .line 61
-    .line 62
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
-
-    .line 63
-    .line 64
-    iget-object v0, p0, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->a0:Landroidx/constraintlayout/widget/ConstraintLayout;
-
-    .line 65
-    .line 66
-    .line 67
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
-
-    .line 68
-    goto :goto_2
-
-    .line 69
-    .line 70
-    :cond_3
-    :goto_1
-    iget-object v0, p0, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->Y:Landroid/widget/TextView;
-
-    .line 71
-    .line 72
     const/16 v1, 0x8
-
-    .line 73
-    .line 74
-    .line 75
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
-
-    .line 76
-    .line 77
     iget-object v0, p0, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->a0:Landroidx/constraintlayout/widget/ConstraintLayout;
-
-    .line 78
-    .line 79
-    .line 80
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
-
-    .line 81
-    .line 82
-    :goto_2
-    iget-object v0, p0, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->f:Lt/a;
-
-    .line 83
-    .line 84
-    .line 85
-    invoke-virtual {p1}, Lcom/mgs/carparking/netbean/RecommandVideosEntity;->getVod_duration_free()I
-
-    .line 86
-    move-result v1
-
-    .line 87
-    .line 88
-    .line 89
-    invoke-virtual {v0, v1}, Lt/a;->l0(I)V
 
     .line 90
     .line 91
@@ -7638,7 +7034,7 @@
     .line 106
     .line 107
     .line 108
-    invoke-virtual {v0, v1, v4, v5}, Lcom/mgs/carparking/model/VIDEOPLAYDETAILVIEWMODEL;->Q0(ILjava/lang/String;Ljava/lang/String;)V
+
 
     .line 109
     .line 110
@@ -8574,7 +7970,7 @@
     .line 575
     .line 576
     .line 577
-    invoke-virtual {v0, v1, v4}, Lcom/mgs/carparking/model/VIDEOPLAYDETAILVIEWMODEL;->K0(II)V
+
 
     .line 578
     .line 579
@@ -8596,7 +7992,7 @@
     .line 586
     .line 587
     .line 588
-    invoke-virtual {v0, v3, v1}, Lcom/mgs/carparking/model/VIDEOPLAYDETAILVIEWMODEL;->M0(ZI)V
+
 
     .line 589
     .line 590
@@ -8715,6 +8111,7 @@
     invoke-virtual {v0, v1}, Lcom/google/android/exoplayer2/ui/PlayerControlView;->y(Ls/a$b;)V
 
     .line 906
+    invoke-static {p0}, Lcom/mgs/carparking/modern/player/PlayerUi;->ready(Landroid/app/Activity;)V
     :cond_1c
     return-void
 .end method
@@ -13373,6 +12770,11 @@
 
 .method public loadVideoNext()V
     .locals 7
+    invoke-static {p0}, Lcom/mgs/carparking/modern/player/PlayerUi;->allowNext(Landroid/app/Activity;)Z
+    move-result v0
+    if-nez v0, :modern_advance
+    return-void
+    :modern_advance
 
     .line 1
     .line 2
@@ -13858,7 +13260,7 @@
     .line 241
     .line 242
     .line 243
-    invoke-virtual {v0, v3, v4}, Lcom/mgs/carparking/model/VIDEOPLAYDETAILVIEWMODEL;->K0(II)V
+
     iget-object v0, p0, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->f:Lt/a;
     invoke-virtual {v0}, Lt/a;->h0()Lt/a;
     :cond_d
@@ -13876,56 +13278,8 @@
 .end method
 
 .method public onBackPressed()V
-    .locals 1
-
-    .line 1
-    .line 2
-    iget-object v0, p0, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->f:Lt/a;
-
-    .line 3
-    .line 4
-    if-eqz v0, :cond_0
-
-    .line 5
-    .line 6
-    .line 7
-    invoke-virtual {v0}, Lt/a;->I()Z
-
-    .line 8
-    move-result v0
-
-    .line 9
-    .line 10
-    if-eqz v0, :cond_0
-
-    .line 11
-    .line 12
-    .line 13
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
-
-    .line 14
-    .line 15
-    :cond_0
-    iget-object v0, p0, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->E0:Lbj/f;
-
-    .line 16
-    .line 17
-    if-eqz v0, :cond_1
-
-    .line 18
-    .line 19
-    .line 20
-    invoke-interface {v0}, Lbj/f;->release()V
-
-    .line 21
-    const/4 v0, 0x0
-
-    .line 22
-    .line 23
-    iput-object v0, p0, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->E0:Lbj/f;
-
-    .line 24
-    :cond_1
+    .locals 0
+    invoke-static {p0}, Lcom/mgs/carparking/modern/player/PlayerUi;->back(Landroid/app/Activity;)V
     return-void
 .end method
 
@@ -14849,7 +14203,7 @@
     .line 461
     .line 462
     .line 463
-    invoke-virtual {v0, v2, v3}, Lcom/mgs/carparking/model/VIDEOPLAYDETAILVIEWMODEL;->K0(II)V
+
 
     .line 464
     .line 465
@@ -15336,6 +14690,13 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
+
+    invoke-static {p0}, Lcom/mgs/carparking/modern/player/PlayerUi;->handlesConfiguration(Landroid/app/Activity;)Z
+    move-result v0
+    if-eqz v0, :legacy_configuration
+    invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+    return-void
+    :legacy_configuration
 
     .line 1
     .line 2
@@ -16322,6 +15683,7 @@
 
 .method public onDestroy()V
     .locals 3
+    invoke-static {p0}, Lcom/mgs/carparking/modern/player/PlayerUi;->destroy(Landroid/app/Activity;)V
 
     .line 1
     .line 2
@@ -16842,6 +16204,7 @@
 
 .method public onPause()V
     .locals 1
+    invoke-static {p0}, Lcom/mgs/carparking/modern/player/PlayerUi;->pause(Landroid/app/Activity;)V
 
     .line 1
     .line 2
@@ -16956,6 +16319,7 @@
 
 .method public onResume()V
     .locals 4
+    invoke-static {p0}, Lcom/mgs/carparking/modern/player/PlayerUi;->resume(Landroid/app/Activity;)V
 
     .line 1
     .line 2

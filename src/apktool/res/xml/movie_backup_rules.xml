@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <include domain="database" path="movie_local.db" />
+    <include domain="file" path="profile_photos/" />
+    <include domain="sharedpref" path="movie_profile_session.xml" />
+</full-backup-content>

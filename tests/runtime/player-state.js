@@ -76,7 +76,7 @@ try {
         const player = field(activity,'f','Lt/a;');
         const exo = obj(player,'D','()Lj3/t0;');
         const event = {event:'player_state', id:int(intent,'getIntExtra','(Ljava/lang/String;I)I',[str('id'),0]),
-            dtoId:int(dto,'getId'), episodes:int(episodes,'size'),
+            dtoId:int(dto,'getId'), episodes:int(episodes,'size'), episodeIndex:checked(fn(100,'int',['pointer','pointer'])(env,activity,checked(fn(94,'pointer',['pointer','pointer','pointer'])(env,clazz(activity),cstr('A'),cstr('I')),'episode field')),'episode index'),
             playbackState:int(exo,'getPlaybackState'), playWhenReady:!!scalar(exo,'getPlayWhenReady','()Z','uchar',39),
             positionMs:Number(scalar(exo,'getCurrentPosition','()J','int64',54)),
             durationMs:Number(scalar(exo,'getDuration','()J','int64',54)), sources:[]};

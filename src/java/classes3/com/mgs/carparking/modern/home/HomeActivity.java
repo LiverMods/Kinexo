@@ -1,0 +1,78 @@
+package com.mgs.carparking.modern.home;
+
+import android.os.*;
+import android.content.*;
+import android.graphics.drawable.GradientDrawable;
+import android.view.*;
+import android.view.inputmethod.*;
+import android.widget.*;
+import android.text.TextUtils;
+import androidx.recyclerview.widget.*;
+import com.mgs.carparking.modern.ui.*;
+import com.mgs.carparking.modern.catalog.*;
+import com.mgs.carparking.modern.core.Routes;
+import com.mgs.carparking.modern.profiles.*;
+import com.mgs.carparking.modern.settings.SettingsActivity;
+import java.util.*;
+
+public final class HomeActivity extends Screen {
+    private FrameLayout content;
+    private List<Catalog.Section> feed;
+    private String mode="home",query="";
+    private int generation,searchPage;
+    private List<Movie> results=new ArrayList<>();
+    private TextView status;
+    @Override protected void onCreate(Bundle state){super.onCreate(state);
+        LinearLayout top=Ui.row(this);Ui.inset(top,20,10,16,8);TextView logo=Ui.heading(this,"MOVIE",24);logo.setTextColor(Ui.ACCENT);logo.setLetterSpacing(.12f);top.addView(logo,new LinearLayout.LayoutParams(0,Ui.dp(this,48),1));
+        top.addView(Ui.icon(this,"search","Pesquisar",()->searchMode("")),Ui.lp(Ui.dp(this,48),Ui.dp(this,48)));
+        ImageButton avatar=Ui.icon(this,"profile","Escolher perfil",()->startActivity(new Intent(this,ProfilesActivity.class)));top.addView(avatar,Ui.lp(Ui.dp(this,48),Ui.dp(this,48)));page.addView(top);
+        content=new FrameLayout(this);page.addView(content,new LinearLayout.LayoutParams(-1,0,1));
+        LinearLayout nav=Ui.row(this);Ui.inset(nav,16,6,16,8);
+        for(String name:new String[]{"Início","Buscar","Minha lista","Ajustes"}){TextView b=Ui.button(this,name,false,()->{if(name.equals("Início")){mode="home";showHome();}else if(name.equals("Buscar"))searchMode("");else if(name.equals("Minha lista")){mode="saved";showCollection("Minha lista",profiles.saved(),false);}else startActivity(new Intent(this,SettingsActivity.class));});b.setBackgroundColor(Ui.BG);b.setTextSize(12);nav.addView(b,new LinearLayout.LayoutParams(0,Ui.dp(this,48),1));}page.addView(nav);
+        try{Catalog.bootstrap(this);}catch(RuntimeException e){Ui.toast(this,"Preparando o motor de reprodução…");}
+        if(state!=null){mode=state.getString("mode","home");query=state.getString("query","");}else if("history".equals(getIntent().getStringExtra("display")))mode="history";
+        if(mode.equals("history"))showCollection("Histórico · "+profiles.active().name,profiles.history(false),true);else loading("Carregando seu catálogo…");loadHome();
+    }
+    private void loading(String message){content.removeAllViews();LinearLayout c=Ui.column(this);c.setGravity(Gravity.CENTER);ProgressBar p=new ProgressBar(this);c.addView(p,Ui.lp(Ui.dp(this,32),Ui.dp(this,32)));status=Ui.text(this,message,14,Ui.MUTED);Ui.inset(status,20,16,20,16);c.addView(status);content.addView(c,new FrameLayout.LayoutParams(-1,-1));}
+    private void loadHome(){Catalog.async(Catalog::home,new Catalog.Callback<List<Catalog.Section>>(){public void ready(List<Catalog.Section> f){if(!alive())return;feed=f;if(mode.equals("search"))searchMode(query);else if(mode.equals("saved"))showCollection("Minha lista",profiles.saved(),false);else if(mode.equals("history"))showCollection("Histórico · "+profiles.active().name,profiles.history(false),true);else showHome();}public void failed(String error){if(!alive()||!mode.equals("home"))return;content.removeAllViews();LinearLayout c=Ui.column(HomeActivity.this);Ui.inset(c,24,48,24,24);c.addView(Ui.heading(HomeActivity.this,"Vamos tentar novamente?",24));TextView e=Ui.text(HomeActivity.this,error,15,Ui.MUTED);Ui.inset(e,0,20,0,20);c.addView(e);c.addView(Ui.button(HomeActivity.this,"Tentar novamente",true,()->{loading("Conectando…");loadHome();}));content.addView(c);}});}
+    private List<Movie> allMovies(){LinkedHashMap<Integer,Movie> all=new LinkedHashMap<>();if(feed!=null)for(Catalog.Section s:feed)for(Movie m:s.movies)all.put(m.id,m);return new ArrayList<>(all.values());}
+    private List<Movie> kind(List<Movie> source,int kind){List<Movie> a=new ArrayList<>();for(Movie m:source)if(m.kind==kind)a.add(m);return limit(a);}
+    private List<Movie> limit(List<Movie> list){return list.size()>24?new ArrayList<>(list.subList(0,24)):list;}
+    private static final class Row {String name;List<Movie> movies;boolean continuing;Movie hero;Row(String n,List<Movie> m,boolean c){name=n;movies=m;continuing=c;}Row(Movie m){hero=m;}}
+    private void showHome(){if(feed==null)return;mode="home";content.removeAllViews();List<Row> rows=new ArrayList<>();List<Movie> all=allMovies();if(!all.isEmpty())rows.add(new Row(all.get(0)));
+        List<Movie> progress=profiles.history(true);if(!progress.isEmpty())rows.add(new Row("Continuar assistindo · "+profiles.active().name,progress,true));
+        List<Movie> saved=profiles.saved();if(!saved.isEmpty())rows.add(new Row("Minha lista",saved,false));
+        List<Movie> films=kind(all,1),series=kind(all,2);if(!films.isEmpty())rows.add(new Row("Filmes",films,false));if(!series.isEmpty())rows.add(new Row("Séries",series,false));
+        List<Movie> recent=new ArrayList<>(all);recent.sort((a,b)->b.year.compareTo(a.year));if(!recent.isEmpty())rows.add(new Row("Novidades",limit(recent),false));
+        for(Catalog.Section s:feed){if(s.movies.isEmpty())continue;String title=s.title.isEmpty()?"Recomendações":s.title;String lower=title.toLowerCase(java.util.Locale.ROOT);if(lower.contains("public")||lower.contains("anúncio"))continue;rows.add(new Row(title,limit(s.movies),false));}
+        RecyclerView list=new RecyclerView(this);list.setLayoutManager(new LinearLayoutManager(this));list.setItemAnimator(null);list.setAdapter(new RecyclerView.Adapter<RecyclerView.ViewHolder>(){
+            public int getItemCount(){return rows.size();}public int getItemViewType(int i){return rows.get(i).hero!=null?0:1;}
+            public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup p,int t){LinearLayout root=Ui.column(HomeActivity.this);root.setLayoutParams(new RecyclerView.LayoutParams(-1,-2));return new RecyclerView.ViewHolder(root){};}
+            public void onBindViewHolder(RecyclerView.ViewHolder h,int i){LinearLayout root=(LinearLayout)h.itemView;Row row=rows.get(i);if(row.hero!=null){root.removeAllViews();hero(root,row.hero);return;}if(root.getChildCount()==0){TextView label=Ui.heading(HomeActivity.this,"",19);Ui.inset(label,20,18,20,14);root.addView(label);root.addView(MovieCards.horizontal(HomeActivity.this,java.util.Collections.emptyList(),false,HomeActivity.this::showHome),Ui.lp(-1,Ui.dp(HomeActivity.this,272)));}((TextView)root.getChildAt(0)).setText(row.name);((RecyclerView)root.getChildAt(1)).setAdapter(new MovieCards(HomeActivity.this,row.movies,row.continuing,HomeActivity.this::showHome));}
+        });content.addView(list,new FrameLayout.LayoutParams(-1,-1));
+    }
+    private void hero(LinearLayout root,Movie m){
+        FrameLayout card=new FrameLayout(this);card.setBackground(Ui.box(Ui.SURFACE,18,this));card.setClipToOutline(true);int height=Math.min(470,Math.max(330,(int)(getResources().getDisplayMetrics().heightPixels/getResources().getDisplayMetrics().density*.57f)));LinearLayout.LayoutParams outer=Ui.lp(-1,Ui.dp(this,height));outer.setMargins(Ui.dp(this,16),Ui.dp(this,8),Ui.dp(this,16),Ui.dp(this,8));root.addView(card,outer);
+        ImageView image=new ImageView(this);image.setScaleType(ImageView.ScaleType.CENTER_CROP);card.addView(image,new FrameLayout.LayoutParams(-1,-1));Images.load(this,m.backdrop.isEmpty()?m.poster:m.backdrop,image,getResources().getDisplayMetrics().widthPixels,Ui.dp(this,height));image.setOnClickListener(v->Routes.details(this,m));image.setContentDescription("Detalhes de "+m.title);
+        View shade=new View(this);shade.setBackground(new GradientDrawable(GradientDrawable.Orientation.TOP_BOTTOM,new int[]{0x000b0d12,0x330b0d12,0xfa0b0d12}));card.addView(shade,new FrameLayout.LayoutParams(-1,-1));shade.setOnClickListener(v->Routes.details(this,m));
+        LinearLayout info=Ui.column(this);Ui.inset(info,18,12,18,18);FrameLayout.LayoutParams ilp=new FrameLayout.LayoutParams(-1,-2,Gravity.BOTTOM);card.addView(info,ilp);
+        TextView tag=Ui.text(this,"DESTAQUE NO MOVIE",10,Ui.ACCENT);tag.setLetterSpacing(.15f);info.addView(tag);TextView title=Ui.heading(this,m.title,30);title.setMaxLines(2);Ui.inset(title,0,8,0,8);info.addView(title);
+        TextView meta=Ui.text(this,(m.kind==2?"Série":"Filme")+(m.year.isEmpty()?"":"  ·  "+m.year)+(m.score.isEmpty()?"":"  ·  ★ "+m.score),12,Ui.MUTED);info.addView(meta);
+        if(!m.summary.isEmpty()){TextView blurb=Ui.text(this,android.text.Html.fromHtml(m.summary,0).toString(),12,Ui.MUTED);blurb.setMaxLines(2);blurb.setEllipsize(TextUtils.TruncateAt.END);Ui.inset(blurb,0,8,0,0);info.addView(blurb);}
+        LinearLayout actions=Ui.row(this);LinearLayout.LayoutParams al=Ui.lp(-1,Ui.dp(this,56));al.topMargin=Ui.dp(this,12);info.addView(actions,al);
+        TextView play=Ui.button(this,"▶  Assistir",true,()->Routes.play(this,m));actions.addView(play,new LinearLayout.LayoutParams(0,Ui.dp(this,48),1));TextView save=Ui.button(this,profiles.isSaved(m.id)?"✓  Minha lista":"＋  Minha lista",false,()->{profiles.toggleSaved(m);showHome();});LinearLayout.LayoutParams sl=new LinearLayout.LayoutParams(0,Ui.dp(this,48),1);sl.leftMargin=Ui.dp(this,8);actions.addView(save,sl);
+    }
+    private void showCollection(String name,List<Movie> movies,boolean progress){content.removeAllViews();LinearLayout root=Ui.column(this);TextView title=Ui.heading(this,name,25);Ui.inset(title,20,20,20,20);root.addView(title);if(movies.isEmpty()){TextView empty=Ui.text(this,"Ainda não há conteúdos aqui. Explore o catálogo e escolha algo para assistir.",15,Ui.MUTED);Ui.inset(empty,20,24,20,24);root.addView(empty);}else{RecyclerView grid=new RecyclerView(this);grid.setLayoutManager(new GridLayoutManager(this,Math.max(2,(int)(getResources().getDisplayMetrics().widthPixels/getResources().getDisplayMetrics().density/155))));grid.setAdapter(new MovieCards(this,movies,progress,()->showCollection(name,progress?profiles.history(false):profiles.saved(),progress)));grid.setItemAnimator(null);Ui.inset(grid,20,0,8,0);root.addView(grid,new LinearLayout.LayoutParams(-1,0,1));}content.addView(root,new FrameLayout.LayoutParams(-1,-1));}
+    private void searchMode(String initial){mode="search";query=initial;generation++;content.removeAllViews();LinearLayout root=Ui.column(this);LinearLayout top=Ui.row(this);Ui.inset(top,20,12,20,12);EditText input=new EditText(this);input.setSingleLine();input.setTextColor(Ui.TEXT);input.setHintTextColor(Ui.MUTED);input.setTextSize(16);input.setHint("Filmes, séries e episódios");input.setText(initial);input.setImeOptions(EditorInfo.IME_ACTION_SEARCH);input.setInputType(android.text.InputType.TYPE_CLASS_TEXT);input.setBackground(Ui.box(Ui.SURFACE,12,this));Ui.inset(input,14,8,14,8);top.addView(input,new LinearLayout.LayoutParams(0,Ui.dp(this,52),1));top.addView(Ui.icon(this,"search","Pesquisar catálogo",()->runSearch(input.getText().toString(),root,input)),Ui.lp(Ui.dp(this,48),Ui.dp(this,48)));root.addView(top);
+        input.setOnEditorActionListener((v,action,event)->{if(action==EditorInfo.IME_ACTION_SEARCH||event!=null&&event.getKeyCode()==KeyEvent.KEYCODE_ENTER){runSearch(input.getText().toString(),root,input);return true;}return false;});
+        LinearLayout history=Ui.column(this);Ui.inset(history,20,12,20,12);history.addView(Ui.heading(this,"Buscas recentes · "+profiles.active().name,18));for(String q:profiles.searches()){TextView v=Ui.button(this,q,false,()->{input.setText(q);runSearch(q,root,input);});LinearLayout.LayoutParams l=Ui.lp(-1,Ui.dp(this,48));l.topMargin=Ui.dp(this,8);history.addView(v,l);}if(!profiles.searches().isEmpty())history.addView(Ui.button(this,"Limpar buscas deste perfil",false,()->{profiles.clearSearches();searchMode("");}));root.addView(history);content.addView(root,new FrameLayout.LayoutParams(-1,-1));
+        if(!initial.trim().isEmpty())runSearch(initial,root,input);
+    }
+    private void runSearch(String value,LinearLayout root,EditText input){String q=value.trim();if(q.isEmpty())return;query=q;profiles.search(q);((InputMethodManager)getSystemService(INPUT_METHOD_SERVICE)).hideSoftInputFromWindow(input.getWindowToken(),0);input.clearFocus();while(root.getChildCount()>1)root.removeViewAt(1);TextView loading=Ui.text(this,"Buscando “"+q+"”…",14,Ui.MUTED);Ui.inset(loading,20,20,20,20);root.addView(loading);int token=++generation;searchPage=1;
+        Catalog.async(()->Catalog.search(q,1),new Catalog.Callback<List<Movie>>(){public void ready(List<Movie> list){if(!alive()||token!=generation)return;results=list;renderResults(root,q);Catalog.async(()->Catalog.enrichSeries(list),new Catalog.Callback<List<Movie>>(){public void ready(List<Movie> grouped){if(alive()&&token==generation){results=grouped;renderResults(root,q);}}public void failed(String ignored){}});}public void failed(String error){if(alive()&&token==generation){loading.setText(error);loading.setOnClickListener(v->runSearch(q,root,input));}}});
+    }
+    private void renderResults(LinearLayout root,String q){while(root.getChildCount()>1)root.removeViewAt(1);TextView label=Ui.text(this,results.isEmpty()?"Nenhum resultado para “"+q+"”.":"Resultados para “"+q+"”",14,Ui.MUTED);Ui.inset(label,20,8,20,16);root.addView(label);RecyclerView list=new RecyclerView(this);list.setLayoutManager(new GridLayoutManager(this,Math.max(2,(int)(getResources().getDisplayMetrics().widthPixels/getResources().getDisplayMetrics().density/155))));list.setAdapter(new MovieCards(this,results,false,()->{}));Ui.inset(list,20,0,8,0);list.setItemAnimator(null);root.addView(list,new LinearLayout.LayoutParams(-1,0,1));TextView more=Ui.button(this,"Carregar mais resultados",false,()->{int token=++generation;Catalog.async(()->Catalog.search(q,searchPage+1),new Catalog.Callback<List<Movie>>(){public void ready(List<Movie> page){if(!alive()||token!=generation)return;searchPage++;LinkedHashMap<Integer,Movie> map=new LinkedHashMap<>();for(Movie m:results)map.put(m.id,m);for(Movie m:page)map.put(m.id,m);results=Movie.groupSeasons(new ArrayList<>(map.values()));renderResults(root,q);}public void failed(String e){if(alive())Ui.toast(HomeActivity.this,e);}});});root.addView(more,Ui.lp(-1,Ui.dp(this,48)));}
+    @Override protected void onResume(){super.onResume();if(feed!=null){if(mode.equals("home"))showHome();else if(mode.equals("saved"))showCollection("Minha lista",profiles.saved(),false);else if(mode.equals("history"))showCollection("Histórico · "+profiles.active().name,profiles.history(false),true);}}
+    @Override public void onBackPressed(){if(!mode.equals("home")){mode="home";generation++;showHome();}else super.onBackPressed();}
+    @Override protected void onSaveInstanceState(Bundle out){out.putString("mode",mode);out.putString("query",query);super.onSaveInstanceState(out);}
+}

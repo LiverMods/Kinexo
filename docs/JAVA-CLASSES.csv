@@ -46,8 +46,8 @@ com.mgs.carparking.model.DOWNLOADVIDEOPLAYVIEWMODEL,reference/java/com/mgs/carpa
 com.mgs.carparking.model.DOWNLOADVIDEOVIEWMODEL,reference/java/com/mgs/carparking/model/DOWNLOADVIDEOVIEWMODEL.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes2/com/mgs/carparking/model/DOWNLOADVIDEOVIEWMODEL.smali
 com.mgs.carparking.model.DOWNLOADVIEWMODEL,reference/java/com/mgs/carparking/model/DOWNLOADVIEWMODEL.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes7/com/mgs/carparking/model/DOWNLOADVIEWMODEL.smali
 com.mgs.carparking.model.EDITMINEVIEWMODEL,reference/java/com/mgs/carparking/model/EDITMINEVIEWMODEL.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes7/com/mgs/carparking/model/EDITMINEVIEWMODEL.smali
-com.mgs.carparking.model.EXTENSIONRECORDVIEWMODEL,reference/java/com/mgs/carparking/model/EXTENSIONRECORDVIEWMODEL.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes7/com/mgs/carparking/model/EXTENSIONRECORDVIEWMODEL.smali
-com.mgs.carparking.model.EXTENSIONSHAREVIEWMODEL,reference/java/com/mgs/carparking/model/EXTENSIONSHAREVIEWMODEL.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes7/com/mgs/carparking/model/EXTENSIONSHAREVIEWMODEL.smali
+com.mgs.carparking.model.EXTENSIONRECORDVIEWMODEL,reference/java/com/mgs/carparking/model/EXTENSIONRECORDVIEWMODEL.java,Java histórico; implementação removida na limpeza/evolução,Removido
+com.mgs.carparking.model.EXTENSIONSHAREVIEWMODEL,reference/java/com/mgs/carparking/model/EXTENSIONSHAREVIEWMODEL.java,Java histórico; implementação removida na limpeza/evolução,Removido
 com.mgs.carparking.model.FEEDBACKRECORDVIEWMODEL,reference/java/com/mgs/carparking/model/FEEDBACKRECORDVIEWMODEL.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes3/com/mgs/carparking/model/FEEDBACKRECORDVIEWMODEL.smali
 com.mgs.carparking.model.FEEDBACKVIEWMODEL,reference/java/com/mgs/carparking/model/FEEDBACKVIEWMODEL.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes7/com/mgs/carparking/model/FEEDBACKVIEWMODEL.smali
 com.mgs.carparking.model.HISTORYVIEWMODEL,reference/java/com/mgs/carparking/model/HISTORYVIEWMODEL.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes8/com/mgs/carparking/model/HISTORYVIEWMODEL.smali
@@ -56,7 +56,7 @@ com.mgs.carparking.model.LOGINVIEWMODEL,reference/java/com/mgs/carparking/model/
 com.mgs.carparking.model.LOOKCHANNELVIEWMODEL,reference/java/com/mgs/carparking/model/LOOKCHANNELVIEWMODEL.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes7/com/mgs/carparking/model/LOOKCHANNELVIEWMODEL.smali
 com.mgs.carparking.model.MAINVIEWMODEL,reference/java/com/mgs/carparking/model/MAINVIEWMODEL.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes4/com/mgs/carparking/model/MAINVIEWMODEL.smali
 com.mgs.carparking.model.MINEVIEWMODEL,reference/java/com/mgs/carparking/model/MINEVIEWMODEL.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes5/com/mgs/carparking/model/MINEVIEWMODEL.smali
-com.mgs.carparking.model.ORDERLISTVIEWMODEL,reference/java/com/mgs/carparking/model/ORDERLISTVIEWMODEL.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes4/com/mgs/carparking/model/ORDERLISTVIEWMODEL.smali
+com.mgs.carparking.model.ORDERLISTVIEWMODEL,reference/java/com/mgs/carparking/model/ORDERLISTVIEWMODEL.java,Java histórico; implementação removida na limpeza/evolução,Removido
 com.mgs.carparking.model.REGISTERVIEWMODEL,reference/java/com/mgs/carparking/model/REGISTERVIEWMODEL.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes7/com/mgs/carparking/model/REGISTERVIEWMODEL.smali
 com.mgs.carparking.model.SEARCHCONTENTVIDEOVIEWMODEL,reference/java/com/mgs/carparking/model/SEARCHCONTENTVIDEOVIEWMODEL.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes5/com/mgs/carparking/model/SEARCHCONTENTVIDEOVIEWMODEL.smali
 com.mgs.carparking.model.SETTINGVIEWMODEL,reference/java/com/mgs/carparking/model/SETTINGVIEWMODEL.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes6/com/mgs/carparking/model/SETTINGVIEWMODEL.smali
@@ -183,7 +183,7 @@ com.mgs.carparking.ui.homecontent.videosearch.SearchMultipleListAdapter,referenc
 com.mgs.carparking.ui.login.LoginActivity,reference/java/com/mgs/carparking/ui/login/LoginActivity.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes6/com/mgs/carparking/ui/login/LoginActivity.smali
 com.mgs.carparking.ui.login.RegisterActivity,reference/java/com/mgs/carparking/ui/login/RegisterActivity.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes8/com/mgs/carparking/ui/login/RegisterActivity.smali
 com.mgs.carparking.ui.login.splash.SplashActivity,reference/java/com/mgs/carparking/ui/login/splash/SplashActivity.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes7/com/mgs/carparking/ui/login/splash/SplashActivity.smali
-com.mgs.carparking.ui.login.splash.SplashWxActivity,reference/java/com/mgs/carparking/ui/login/splash/SplashWxActivity.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes6/com/mgs/carparking/ui/login/splash/SplashWxActivity.smali
+com.mgs.carparking.ui.login.splash.SplashWxActivity,reference/java/com/mgs/carparking/ui/login/splash/SplashWxActivity.java,Java histórico; implementação removida na limpeza/evolução,Removido
 com.mgs.carparking.ui.MainActivity,reference/java/com/mgs/carparking/ui/MainActivity.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes3/com/mgs/carparking/ui/MainActivity.smali
 com.mgs.carparking.ui.mine.collection.CollectionActivity,reference/java/com/mgs/carparking/ui/mine/collection/CollectionActivity.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes8/com/mgs/carparking/ui/mine/collection/CollectionActivity.smali
 com.mgs.carparking.ui.mine.collection.CollectionListAdapter,reference/java/com/mgs/carparking/ui/mine/collection/CollectionListAdapter.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes4/com/mgs/carparking/ui/mine/collection/CollectionListAdapter.smali
@@ -203,10 +203,10 @@ com.mgs.carparking.ui.mine.languageswitching.LanguageSwitchingDialog,reference/j
 com.mgs.carparking.ui.mine.languageswitching.SetLanguageAdapter,reference/java/com/mgs/carparking/ui/mine/languageswitching/SetLanguageAdapter.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes5/com/mgs/carparking/ui/mine/languageswitching/SetLanguageAdapter.smali
 com.mgs.carparking.ui.mine.languageswitching.SetLanguageDialog,reference/java/com/mgs/carparking/ui/mine/languageswitching/SetLanguageDialog.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes7/com/mgs/carparking/ui/mine/languageswitching/SetLanguageDialog.smali
 com.mgs.carparking.ui.mine.MineFragment,reference/java/com/mgs/carparking/ui/mine/MineFragment.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes2/com/mgs/carparking/ui/mine/MineFragment.smali
-com.mgs.carparking.ui.mine.OrderListActivity,reference/java/com/mgs/carparking/ui/mine/OrderListActivity.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes8/com/mgs/carparking/ui/mine/OrderListActivity.smali
+com.mgs.carparking.ui.mine.OrderListActivity,reference/java/com/mgs/carparking/ui/mine/OrderListActivity.java,Java histórico; implementação removida na limpeza/evolução,Removido
 com.mgs.carparking.ui.mine.SettingActivity,reference/java/com/mgs/carparking/ui/mine/SettingActivity.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes8/com/mgs/carparking/ui/mine/SettingActivity.smali
-com.mgs.carparking.ui.mine.share.ExtensionRecordActivity,reference/java/com/mgs/carparking/ui/mine/share/ExtensionRecordActivity.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes8/com/mgs/carparking/ui/mine/share/ExtensionRecordActivity.smali
-com.mgs.carparking.ui.mine.share.ExtensionShareActivity,reference/java/com/mgs/carparking/ui/mine/share/ExtensionShareActivity.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes3/com/mgs/carparking/ui/mine/share/ExtensionShareActivity.smali
+com.mgs.carparking.ui.mine.share.ExtensionRecordActivity,reference/java/com/mgs/carparking/ui/mine/share/ExtensionRecordActivity.java,Java histórico; implementação removida na limpeza/evolução,Removido
+com.mgs.carparking.ui.mine.share.ExtensionShareActivity,reference/java/com/mgs/carparking/ui/mine/share/ExtensionShareActivity.java,Java histórico; implementação removida na limpeza/evolução,Removido
 com.mgs.carparking.ui.ranklist.RankContentListFragment,reference/java/com/mgs/carparking/ui/ranklist/RankContentListFragment.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes6/com/mgs/carparking/ui/ranklist/RankContentListFragment.smali
 com.mgs.carparking.ui.ranklist.RankContentListViewModel,reference/java/com/mgs/carparking/ui/ranklist/RankContentListViewModel.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes5/com/mgs/carparking/ui/ranklist/RankContentListViewModel.smali
 com.mgs.carparking.ui.ranklist.RankMultipleListAdapter,reference/java/com/mgs/carparking/ui/ranklist/RankMultipleListAdapter.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes2/com/mgs/carparking/ui/ranklist/RankMultipleListAdapter.smali
@@ -272,7 +272,7 @@ com.mgs.carparking.widgets.dialog.VarietyDownnloadAdapter,reference/java/com/mgs
 com.mgs.carparking.widgets.dialog.VarietyLandAdapter,reference/java/com/mgs/carparking/widgets/dialog/VarietyLandAdapter.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes7/com/mgs/carparking/widgets/dialog/VarietyLandAdapter.smali
 com.mgs.carparking.widgets.dialog.VideoDownloadAdapter,reference/java/com/mgs/carparking/widgets/dialog/VideoDownloadAdapter.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes7/com/mgs/carparking/widgets/dialog/VideoDownloadAdapter.smali
 com.mgs.carparking.widgets.dialog.VideoSetSpeedAdapter,reference/java/com/mgs/carparking/widgets/dialog/VideoSetSpeedAdapter.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes5/com/mgs/carparking/widgets/dialog/VideoSetSpeedAdapter.smali
-com.mgs.carparking.widgets.dialog.VipTagVertalAdapter,reference/java/com/mgs/carparking/widgets/dialog/VipTagVertalAdapter.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes4/com/mgs/carparking/widgets/dialog/VipTagVertalAdapter.smali
+com.mgs.carparking.widgets.dialog.VipTagVertalAdapter,reference/java/com/mgs/carparking/widgets/dialog/VipTagVertalAdapter.java,Java histórico; implementação removida na limpeza/evolução,Removido
 com.mgs.carparking.widgets.FeedRootRecyclerView,reference/java/com/mgs/carparking/widgets/FeedRootRecyclerView.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes7/com/mgs/carparking/widgets/FeedRootRecyclerView.smali
 com.mgs.carparking.widgets.FlowLayout2,reference/java/com/mgs/carparking/widgets/FlowLayout2.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes5/com/mgs/carparking/widgets/FlowLayout2.smali
 com.mgs.carparking.widgets.MaxLayout,reference/java/com/mgs/carparking/widgets/MaxLayout.java,Java historico anterior a limpeza; editar Smali atual,src/apktool/smali_classes8/com/mgs/carparking/widgets/MaxLayout.smali
@@ -294,8 +294,8 @@ com.mgs.carparking.widgets.WaterDropHeader,reference/java/com/mgs/carparking/wid
 a9.a,reference/supporting-java/a9/a.java,Java de suporte; editar Smali correspondente,src/apktool/smali_classes8/a9/a.smali
 a9.b,reference/supporting-java/a9/b.java,Java de suporte; editar Smali correspondente,src/apktool/smali_classes8/a9/b.smali
 ca.a,reference/supporting-java/ca/a.java,Java de suporte; editar Smali correspondente,src/apktool/smali_classes6/ca/a.smali
-ca.a0,reference/supporting-java/ca/a0.java,Java de suporte; editar Smali correspondente,src/apktool/smali_classes3/ca/a0.smali
-ca.b,reference/supporting-java/ca/b.java,Java de suporte; editar Smali correspondente,src/apktool/smali_classes6/ca/b.smali
+ca.a0,reference/supporting-java/ca/a0.java,Java histórico; implementação removida na limpeza/evolução,Removido
+ca.b,reference/supporting-java/ca/b.java,Java histórico; implementação removida na limpeza/evolução,Removido
 ca.b0,reference/supporting-java/ca/b0.java,Java de suporte; editar Smali correspondente,src/apktool/smali_classes5/ca/b0.smali
 ca.c,reference/supporting-java/ca/c.java,Java de suporte; editar Smali correspondente,src/apktool/smali_classes6/ca/c.smali
 ca.c0,reference/supporting-java/ca/c0.java,Java de suporte; editar Smali correspondente,src/apktool/smali_classes8/ca/c0.smali
@@ -341,14 +341,14 @@ h9.c,reference/supporting-java/h9/c.java,Java de suporte; editar Smali correspon
 h9.c1,reference/supporting-java/h9/c1.java,Java de suporte; editar Smali correspondente,src/apktool/smali_classes8/h9/c1.smali
 h9.c2,reference/supporting-java/h9/c2.java,Java de suporte; editar Smali correspondente,src/apktool/smali_classes8/h9/c2.smali
 h9.c3,reference/supporting-java/h9/c3.java,Java de suporte; editar Smali correspondente,src/apktool/smali_classes8/h9/c3.smali
-h9.d2,reference/supporting-java/h9/d2.java,Java de suporte; editar Smali correspondente,src/apktool/smali_classes8/h9/d2.smali
+h9.d2,reference/supporting-java/h9/d2.java,Java histórico; implementação removida na limpeza/evolução,Removido
 h9.e3,reference/supporting-java/h9/e3.java,Java de suporte; editar Smali correspondente,src/apktool/smali_classes9/h9/e3.smali
 h9.f1,reference/supporting-java/h9/f1.java,Java de suporte; editar Smali correspondente,src/apktool/smali_classes9/h9/f1.smali
 h9.f2,reference/supporting-java/h9/f2.java,Java de suporte; editar Smali correspondente,src/apktool/smali_classes9/h9/f2.smali
 h9.h2,reference/supporting-java/h9/h2.java,Java de suporte; editar Smali correspondente,src/apktool/smali_classes9/h9/h2.smali
 h9.k2,reference/supporting-java/h9/k2.java,Java de suporte; editar Smali correspondente,src/apktool/smali_classes8/h9/k2.smali
 h9.l,reference/supporting-java/h9/l.java,Java de suporte; editar Smali correspondente,src/apktool/smali/h9/l.smali
-h9.l1,reference/supporting-java/h9/l1.java,Java de suporte; editar Smali correspondente,src/apktool/smali_classes8/h9/l1.smali
+h9.l1,reference/supporting-java/h9/l1.java,Java histórico; implementação removida na limpeza/evolução,Removido
 h9.m1,reference/supporting-java/h9/m1.java,Java de suporte; editar Smali correspondente,src/apktool/smali_classes8/h9/m1.smali
 h9.m2,reference/supporting-java/h9/m2.java,Java de suporte; editar Smali correspondente,src/apktool/smali_classes8/h9/m2.smali
 h9.o1,reference/supporting-java/h9/o1.java,Java de suporte; editar Smali correspondente,src/apktool/smali_classes8/h9/o1.smali
@@ -431,6 +431,21 @@ wj.r,reference/supporting-java/wj/r.java,Java de suporte; editar Smali correspon
 wj.s,reference/supporting-java/wj/s.java,Java de suporte; editar Smali correspondente,src/apktool/smali_classes5/wj/s.smali
 z8.a,reference/supporting-java/z8/a.java,Java de suporte; editar Smali correspondente,src/apktool/smali_classes7/z8/a.smali
 z8.b,reference/supporting-java/z8/b.java,Java de suporte; editar Smali correspondente,src/apktool/smali/z8/b.smali
-com.mgs.carparking.recovery.IdentityBinding,src/java/classes2/com/mgs/carparking/recovery/IdentityBinding.java,Java compilado em cada build,
-com.mgs.carparking.recovery.PlaybackErrors,src/java/classes3/com/mgs/carparking/recovery/PlaybackErrors.java,Java compilado em cada build,
-com.mgs.carparking.recovery.PrivacyBootstrap,src/java/classes2/com/mgs/carparking/recovery/PrivacyBootstrap.java,Java compilado na build,gerado por D8
+com.mgs.carparking.recovery.IdentityBinding,src/java/classes2/com/mgs/carparking/recovery/IdentityBinding.java,Java ativo compilado por Build.ps1,Gerado no estágio temporário
+com.mgs.carparking.recovery.PrivacyBootstrap,src/java/classes2/com/mgs/carparking/recovery/PrivacyBootstrap.java,Java ativo compilado por Build.ps1,Gerado no estágio temporário
+com.mgs.carparking.modern.catalog.Catalog,src/java/classes3/com/mgs/carparking/modern/catalog/Catalog.java,Java ativo compilado por Build.ps1,Gerado no estágio temporário
+com.mgs.carparking.modern.catalog.DetailsActivity,src/java/classes3/com/mgs/carparking/modern/catalog/DetailsActivity.java,Java ativo compilado por Build.ps1,Gerado no estágio temporário
+com.mgs.carparking.modern.catalog.Movie,src/java/classes3/com/mgs/carparking/modern/catalog/Movie.java,Java ativo compilado por Build.ps1,Gerado no estágio temporário
+com.mgs.carparking.modern.core.Legacy,src/java/classes3/com/mgs/carparking/modern/core/Legacy.java,Java ativo compilado por Build.ps1,Gerado no estágio temporário
+com.mgs.carparking.modern.core.Routes,src/java/classes3/com/mgs/carparking/modern/core/Routes.java,Java ativo compilado por Build.ps1,Gerado no estágio temporário
+com.mgs.carparking.modern.home.HomeActivity,src/java/classes3/com/mgs/carparking/modern/home/HomeActivity.java,Java ativo compilado por Build.ps1,Gerado no estágio temporário
+com.mgs.carparking.modern.player.PlayerUi,src/java/classes3/com/mgs/carparking/modern/player/PlayerUi.java,Java ativo compilado por Build.ps1,Gerado no estágio temporário
+com.mgs.carparking.modern.profiles.Backup,src/java/classes3/com/mgs/carparking/modern/profiles/Backup.java,Java ativo compilado por Build.ps1,Gerado no estágio temporário
+com.mgs.carparking.modern.profiles.Profiles,src/java/classes3/com/mgs/carparking/modern/profiles/Profiles.java,Java ativo compilado por Build.ps1,Gerado no estágio temporário
+com.mgs.carparking.modern.profiles.ProfilesActivity,src/java/classes3/com/mgs/carparking/modern/profiles/ProfilesActivity.java,Java ativo compilado por Build.ps1,Gerado no estágio temporário
+com.mgs.carparking.modern.settings.SettingsActivity,src/java/classes3/com/mgs/carparking/modern/settings/SettingsActivity.java,Java ativo compilado por Build.ps1,Gerado no estágio temporário
+com.mgs.carparking.modern.ui.Images,src/java/classes3/com/mgs/carparking/modern/ui/Images.java,Java ativo compilado por Build.ps1,Gerado no estágio temporário
+com.mgs.carparking.modern.ui.MovieCards,src/java/classes3/com/mgs/carparking/modern/ui/MovieCards.java,Java ativo compilado por Build.ps1,Gerado no estágio temporário
+com.mgs.carparking.modern.ui.Screen,src/java/classes3/com/mgs/carparking/modern/ui/Screen.java,Java ativo compilado por Build.ps1,Gerado no estágio temporário
+com.mgs.carparking.modern.ui.Ui,src/java/classes3/com/mgs/carparking/modern/ui/Ui.java,Java ativo compilado por Build.ps1,Gerado no estágio temporário
+com.mgs.carparking.recovery.PlaybackErrors,src/java/classes3/com/mgs/carparking/recovery/PlaybackErrors.java,Java ativo compilado por Build.ps1,Gerado no estágio temporário

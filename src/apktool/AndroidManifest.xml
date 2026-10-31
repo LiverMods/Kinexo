@@ -11,11 +11,11 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-feature android:name="android.hardware.camera" />
-    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
     <permission android:name="com.mobrcine.cine_br.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature" />
     <uses-permission android:name="com.mobrcine.cine_br.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.mgs.carparking.app.AppApplication" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:testOnly="false" android:theme="@style/BrowserTheme" android:usesCleartextTraffic="true">
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.mgs.carparking.app.AppApplication" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:testOnly="false" android:theme="@style/BrowserTheme" android:usesCleartextTraffic="true" android:fullBackupContent="@xml/movie_backup_rules" android:dataExtractionRules="@xml/movie_data_extraction_rules">
         <service android:exported="false" android:name="com.mgs.carparking.download.DownloadService" />
         <provider android:authorities="com.mobrcine.cine_br.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.mgs.carparking.util.MyProvider">
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
@@ -29,7 +29,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:exported="true" android:launchMode="singleTask" android:name="com.mgs.carparking.ui.MainActivity" android:screenOrientation="portrait" />
         <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTask" android:name="com.mgs.carparking.jiajia.MJMainActivity" android:screenOrientation="portrait" />
         <activity android:exported="true" android:launchMode="singleTask" android:name="com.mgs.carparking.ui.mine.collection.CollectionActivity" android:theme="@style/AppTheme_Main" />
         <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.mgs.carparking.ui.homecontent.videodetail.VideoPlayDetailActivity" android:screenOrientation="portrait" />
@@ -42,14 +41,11 @@
         <activity android:name="com.mgs.carparking.ui.channelcontent.ChannelFragment" android:screenOrientation="portrait" />
         <activity android:name="com.mgs.carparking.ui.homecontent.more.VideoMoreListActivity" android:screenOrientation="portrait" />
         <activity android:name="com.mgs.carparking.ui.mine.SettingActivity" android:screenOrientation="portrait" />
-        <activity android:name="com.mgs.carparking.ui.mine.OrderListActivity" android:screenOrientation="portrait" />
         <activity android:name="com.mgs.carparking.ui.login.LoginActivity" android:screenOrientation="portrait" />
         <activity android:name="com.mgs.carparking.ui.mine.EditMineActivity" android:screenOrientation="portrait" />
         <activity android:name="com.mgs.carparking.ui.login.RegisterActivity" android:screenOrientation="portrait" />
         <activity android:name="com.mgs.carparking.ui.mine.DownloadActivity" android:screenOrientation="portrait" />
         <activity android:name="com.mgs.carparking.ui.channelcontent.SpecialDetailNewActivity" android:screenOrientation="portrait" />
-        <activity android:name="com.mgs.carparking.ui.mine.share.ExtensionRecordActivity" android:screenOrientation="portrait" />
-        <activity android:name="com.mgs.carparking.ui.mine.share.ExtensionShareActivity" android:screenOrientation="portrait" />
         <activity android:name="com.mgs.carparking.ui.web.WebActivity" android:screenOrientation="portrait" />
         <activity android:name="com.mgs.carparking.ui.web.GameActivity" android:theme="@style/AppTheme_Splash" />
         <service android:name="com.android.cast.dlna.dmc.DLNACastService" />
@@ -143,5 +139,10 @@
         </receiver>
         <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService" />
         <meta-data android:name="MOVIE_CHANNEL" android:value="moviebr_1001" />
+        <activity android:name="com.mgs.carparking.modern.home.HomeActivity" android:exported="false" android:theme="@android:style/Theme.Material.NoActionBar" />
+        <activity android:name="com.mgs.carparking.modern.catalog.DetailsActivity" android:exported="false" android:theme="@android:style/Theme.Material.NoActionBar" />
+        <activity android:name="com.mgs.carparking.modern.profiles.ProfilesActivity" android:exported="false" android:theme="@android:style/Theme.Material.NoActionBar" />
+        <activity android:name="com.mgs.carparking.modern.settings.SettingsActivity" android:exported="false" android:theme="@android:style/Theme.Material.NoActionBar" />
+        <activity-alias android:name="com.mgs.carparking.ui.MainActivity" android:targetActivity="com.mgs.carparking.modern.home.HomeActivity" android:exported="true" />
     </application>
 </manifest>

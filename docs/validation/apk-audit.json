@@ -1,41 +1,41 @@
 {
-  "apk_sha256": "a28c71f8481888c956a3f74cb25233aba9dae6b4539b41e4d49ef76d9214b150",
+  "apk_sha256": "16f103181e4ea55f2e4d7a2e65eebe86e100263357bbc770be33fd8d58b9454c",
   "dex": {
     "classes.dex": {
-      "definitions": 1852,
-      "type_references": 4260
+      "definitions": 1850,
+      "type_references": 4256
     },
     "classes2.dex": {
       "definitions": 2201,
       "type_references": 5300
     },
     "classes3.dex": {
-      "definitions": 2435,
-      "type_references": 6122
+      "definitions": 2557,
+      "type_references": 6256
     },
     "classes4.dex": {
-      "definitions": 2246,
-      "type_references": 5538
+      "definitions": 2239,
+      "type_references": 5526
     },
     "classes5.dex": {
-      "definitions": 2382,
-      "type_references": 5950
+      "definitions": 2378,
+      "type_references": 5936
     },
     "classes6.dex": {
-      "definitions": 2284,
-      "type_references": 5738
+      "definitions": 2282,
+      "type_references": 5733
     },
     "classes7.dex": {
-      "definitions": 2380,
-      "type_references": 5937
+      "definitions": 2374,
+      "type_references": 5922
     },
     "classes8.dex": {
-      "definitions": 2646,
-      "type_references": 6158
+      "definitions": 2638,
+      "type_references": 6145
     },
     "classes9.dex": {
-      "definitions": 629,
-      "type_references": 1982
+      "definitions": 628,
+      "type_references": 1978
     }
   },
   "forbidden_type_references": [],

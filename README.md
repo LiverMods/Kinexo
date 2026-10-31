@@ -1,76 +1,79 @@
-# Movie recuperado — versão com limpeza de privacidade
+# Movie — evolução Android experimental
 
-Cópia independente de `movie-projeto`. A identidade do pacote, telas, catálogo e player originais foram preservados. O backup anterior não foi alterado.
+Continuação da árvore recuperada e limpa `movie-privado`, preservada fora deste projeto. Home, catálogo/detalhes, player, perfis, histórico/lista e configurações evoluem no mesmo aplicativo e pacote `com.mobrcine.cine_br`.
 
-O build compila **3 Java ativos**, monta **9 DEX a partir de 19.049 Smali**, compila os recursos, alinha e assina o APK. Não usa APK pronto nem DEX original. Não há DEX publicitário dinâmico.
+Esta árvore completa reconstrói o APK: compila **18 arquivos Java ativos**, monta **9 DEX a partir de 19.018 arquivos Smali**, compila recursos, alinha e assina. **Não usa um APK pronto nem DEX original como entrada.** As 15 classes Java principais da evolução ficam em `src/java/classes3/com/mgs/carparking/modern/`.
 
-Esta é uma árvore híbrida recompilável. **Não é um projeto Gradle integralmente restaurado em Java.** As 6 bibliotecas nativas restantes (3 por ABI) continuam binárias; o código C/C++ do player e do bootstrap protegido não foi recuperado.
+É um projeto híbrido recompilável, não uma restauração integral em Java/Gradle. Seis bibliotecas nativas e o asset protegido do HLS continuam binários, com hashes verificados. Seus fontes C/C++ não foram recuperados. `reference/` contém Java decompilado **histórico**, anterior à limpeza, que não participa da build.
 
-## Compilar e assinar
+## Compilar em um comando
 
-No Windows, com PowerShell 7.4+, JDK 17+, Android SDK `platforms/android-37.0` e `build-tools/36.0.0`:
+No Windows, PowerShell 7.4+, JDK 17+ e Android SDK com `platforms/android-37.0` e `build-tools/36.0.0`:
 
 ```powershell
 .\Build.ps1
 ```
 
-O script encontra o SDK por `ANDROID_HOME`, `ANDROID_SDK_ROOT` ou `%LOCALAPPDATA%/Android/Sdk`. Para outro caminho, use `-AndroidSdk 'D:/Android/Sdk'`. As ferramentas Java necessárias estão em `tools/`, com hashes e avisos de licença. Nenhuma ferramenta é baixada durante o build. Gradle, JADX, REA, Ghidra e Frida não são requisitos de compilação.
+O script encontra o SDK por `ANDROID_HOME`, `ANDROID_SDK_ROOT` ou `%LOCALAPPDATA%/Android/Sdk`. Para outro local: `-AndroidSdk 'D:/Android/Sdk'`. O resultado vai para `dist/movie-debug-<data-id>.apk`, acompanhado de um JSON de procedência. O destino não pode existir previamente.
 
-O resultado vai para `dist/movie-debug-<data-id>.apk`, com um JSON de procedência. Um arquivo de destino existente é recusado. Cada build usa um estágio novo; `.work/` é apagado após sucesso e preservado em caso de erro. Esses diretórios são ignorados pelo Git.
+As ferramentas e APIs compile-only estão em `tools/`, com hashes e avisos de licença. Nada é baixado durante o build. Gradle, JADX, REA, Ghidra, Frida e emulador não são requisitos de compilação. Cada build usa um estágio novo; `.work/` é limpo após sucesso e preservado se falhar.
 
-O modo Debug reutiliza ou cria `%USERPROFILE%/.android/debug.keystore`, fora do projeto. A chave não acompanha esta distribuição. Para sua versão de manutenção:
+Debug reutiliza ou cria `%USERPROFILE%/.android/debug.keystore`, fora do projeto. A chave privada não é distribuída. Para manutenção/distribuição:
 
 ```powershell
 .\Build.ps1 -Configuration Release -Keystore 'D:/Chaves/movie-release.jks' -KeyAlias movie
 ```
 
-Se a chave de release não existir, o script cria RSA de 3072 bits. Solicita a senha de forma protegida; na automação, use `MOVIE_STORE_PASSWORD` e `MOVIE_KEY_PASSWORD` no ambiente seguro do executor. A assinatura Android v2/v3 e a verificação continuam obrigatórias. O script recusa chaves dentro do projeto. Guarde sua chave fora do Git: outra chave não atualiza diretamente uma instalação anterior.
+Se a chave de release não existir, cria RSA de 3072 bits. Solicita a senha de forma protegida; em CI, forneça `MOVIE_STORE_PASSWORD` e `MOVIE_KEY_PASSWORD` pelo ambiente seguro do executor. Alinhamento de 16 KB, assinatura Android v2/v3 e verificação são obrigatórios. Chaves dentro do projeto são recusadas. Guarde a chave fora do Git: trocar de certificado impede atualização direta da instalação anterior.
 
-`IdentityBinding` usa o certificado REAL instalado. Seus bytes e vetores de teste foram preservados. Não falsifica certificados nem substitui a autorização do serviço de vídeo.
+`IdentityBinding` mantém os mesmos bytes e os vetores de teste da recuperação. Usa o certificado real instalado e a autorização real do serviço. Não há certificado, credencial ou resposta de serviço falsificados.
 
-## Onde editar
+## Onde desenvolver
 
-| Local | Uso |
+| Pasta em `src/java/classes3/com/mgs/carparking/modern/` | Responsabilidade |
 |---|---|
-| `src/java/classes2/.../IdentityBinding.java` | Correção de reprodução, compilada e testada |
-| `src/java/classes2/.../PrivacyBootstrap.java` | Exclusão da preferência antiga de GAID, sem apagar sessão ou histórico |
-| `src/java/classes3/.../PlaybackErrors.java` | Tratamento de estados e erros, compilado |
-| `src/apktool/smali*/` | Activities, ViewModels, rede e demais código executável editável |
-| `src/apktool/res/` | Layouts, strings e imagens com IDs originais preservados |
-| `src/apktool/AndroidManifest.xml` | Componentes e permissões atuais |
-| `src/apktool/lib/` e `assets/pp_hlsProtected.dat` | Dependências binárias preservadas para reprodução |
-| `reference/` | Java decompilado HISTÓRICO, anterior à limpeza; não entra no APK |
-| `docs/PRIVACY-REMOVALS.json` | Classes retiradas e motivo da dependência |
-| `docs/PRIVACY-RESOURCES.json` | Manifesto, permissões, assets, nativos e cabeçalhos retirados |
+| `home/` | Home com destaque e seções; pesquisa, minha lista e histórico |
+| `catalog/` | Metadados, chamadas ao catálogo, agrupamento por IDs reais e detalhes/episódios |
+| `player/` | Controles novos sobre o motor existente, retomada e ciclo de vida |
+| `profiles/` | SQLite por perfil, seleção/CRUD/foto, importação do histórico e backup SAF |
+| `settings/` | Preferências individuais e telas de exportação/restauração |
+| `ui/` | Cores, ícones próprios, carregamento de imagens e cards reutilizados |
+| `core/` | Rotas e ponte restrita para a ABI recuperada |
 
-Para alterar uma funcionalidade cujo Java ainda não compila, edite o Smali correspondente e execute `Build.ps1`. Não edite `reference/` esperando uma alteração no APK. Os quatro nomes Smali encurtados por limitação do Windows estão em `docs/RENAMED-SMALI.json`; o nome da classe interna não mudou.
+Outros pontos:
 
-## Escopo da limpeza
+- `src/java/classes2/.../recovery/`: `IdentityBinding` e limpeza do identificador publicitário antigo.
+- `src/java/classes3/.../recovery/PlaybackErrors.java`: erros do motor recuperado.
+- `src/apktool/smali*/`: código executável recuperado ainda em Smali, incluindo rede, DTOs e engine.
+- `src/apktool/res/` e `AndroidManifest.xml`: recursos, IDs originais e componentes/permissões.
+- `src/apktool/lib/` e `assets/pp_hlsProtected.dat`: dependências nativas necessárias.
+- `docs/INVENTORY.json`: lista exata do Java ativo. `reference/` não é fonte compilável.
 
-Foram retiradas 34.644 classes principais e as 3.235 classes do DEX dinâmico publicitário, incluindo os SDKs nomeados de mediação, anúncios, medição e seus adaptadores dependentes. Foram removidas 18 bibliotecas nativas publicitárias, assets executáveis e inicializadores correspondentes.
+Edite Java nas funcionalidades novas, ou o Smali correspondente nas partes restantes, e execute `Build.ps1`. Não mantenha uma segunda versão da mesma classe em Java e Smali. `Build.ps1` converte as classes Java para o estágio temporário, sem modificar os Smali versionados.
 
-A remoção inclui GAID, leitura automática da área de transferência, coleta de IMEI e nova aquisição de Android ID nos caminhos próprios, sete cabeçalhos de identificação/telemetria e as chamadas próprias de relatório publicitário/log. O `device_id` já salvo é conservado porque participa da assinatura da API. Para uma instalação nova, usa o gerador aleatório que já existia no app. Tokens, assinatura de pedidos, metadados de vídeos, limites remotos de visualização, configuração P2P, porta local e validações dos serviços continuam em seus caminhos originais.
+## Perfis, histórico e backup
 
-Os pontos de entrada próprios de anúncios que ainda são referenciados por callbacks gerados ficam inertes. Seus SDKs foram fisicamente excluídos. Alguns recursos e IDs antigos permanecem para compatibilidade de inflação/DataBinding; não são código de SDK e não executam anúncios. Os espaços publicitários do player foram recolhidos. O carrossel recebe apenas entradas que abrem filmes do catálogo, com DTO válido; links promocionais externos são filtrados antes de carregar suas imagens. A lista usada pelos cliques é a mesma lista filtrada.
+Um perfil entra diretamente na Home; com dois ou mais, a abertura passa pelo seletor. Nome, foto, buscas, lista, progresso, velocidade, brilho e próximo automático ficam locais. O histórico original compatível é importado para o perfil inicial sem destruir seu banco.
 
-A chave local `UMENG_CHANNEL` foi substituída por `MOVIE_CHANNEL`, com o mesmo valor usado pela API. Não há SDK UMeng preservado por isso.
+Em **Ajustes → Exportar perfis e configurações**, escolha Downloads ou outro provedor fora da pasta do aplicativo. Após reinstalar, abra **Ajustes → Restaurar um backup** e selecione esse JSON. Ele inclui fotos, preferências, buscas, lista e progresso, com validação antes da transação. A restauração mescla IDs, atualizando registros coincidentes; não substitui automaticamente todos os dados existentes. Downloads de mídia e a sessão/autorização do serviço não são exportados. Os downloads existentes continuam compartilhados no aparelho.
 
-Há 12 declarações `uses-permission` (antes 34). Câmera e imagens permanecem para QR/fotos; armazenamento amplo antigo só até Android 9; rede, Wi-Fi/multicast, serviço e wake lock sustentam vídeo/download/cast. A permissão própria de receptor continua protegida por assinatura. Foram retirados AD_ID/AdServices, telefone, microfone, mídia de áudio/vídeo, overlay, instalação de APK, boot e privilégios de sistema indevidos, entre outros. A instalação interna automática de atualizações deixa de ter permissão; permissões de armazenamento legadas não cobrem Android 10+.
+O Android também recebe regras explícitas para copiar somente o banco local, fotos e seleção de perfil. A restauração automática depende do sistema, transporte, conta e configurações; não é garantida após desinstalar. O arquivo manual fora da pasta do app é a opção controlada pelo usuário. [Auto Backup](https://developer.android.com/identity/data/autobackup), [Storage Access Framework](https://developer.android.com/training/data-storage/shared/documents-files).
 
-## Verificar o resultado
+## Verificar
 
-O build executa os vetores de `IdentityBinding`, confere hashes nativos, alinhamento e assinatura. Para repetir a auditoria adicional do APK (Python 3 + o mesmo Android SDK):
+A build executa testes de `IdentityBinding` e dos vínculos de temporadas; confere nativos, DEX, alinhamento e assinatura. Auditorias adicionais, com Python 3 e o mesmo SDK:
 
 ```powershell
-python tests/audit_apk.py dist/SEU-APK.apk . audit.json
+python tests/audit_apk.py dist/SEU-APK.apk . audit-privacidade.json
+python tests/audit_evolution.py dist/SEU-APK.apk . audit-evolucao.json
 ```
 
-Ela lê as definições e referências de tipos dos 9 DEX, o manifesto BINÁRIO, assets e bibliotecas nativas, e usa aapt2 para conferir permissões. Rejeita os namespaces/classes da lista de remoção, DEX embutido e os assets publicitários conhecidos. A lista é explícita: passar nessa auditoria não prova ausência de toda coleta possível em código nativo ou nos serviços externos.
+A primeira verifica os 9 DEX, referências a SDKs removidos, manifesto binário, permissões, assets e hashes nativos. A segunda exige a ausência das 31 implementações comerciais retiradas e a preservação da IdentityBinding. Nenhuma delas prova ausência de coleta dentro dos nativos opacos ou nos serviços externos.
 
-Os testes de interface e observação do player estão em `tests/runtime/`. São específicos do AVD `Movie_Observe_API37`, porta `emulator-5556`, tela 1280×2856, com Frida 17.24.3/server correspondente e encaminhamento `127.0.0.1:27052`. Não manipulam telefone físico. Frida só observa DNS/estado do player; não altera respostas, TLS, autorizações ou dados de reprodução. Esses requisitos adicionais são só dos testes, não da build.
+Os testes reais adicionais usam exclusivamente o AVD `Movie_Observe_API37`, serial `emulator-5556`. `tests/runtime/Run-DeviceChecks.ps1` gera/instala um APK de instrumentação separado, com APIs Android já existentes, e **cria/altera dados de teste nesse AVD**. Não execute contra dados pessoais. Frida é opcional para as sondas passivas históricas; não integra o APK nem a build. Veja resultados e limites em [docs/EVOLUCAO.md](docs/EVOLUCAO.md) e `docs/validation/`.
 
-As evidências atuais ficam em `docs/validation/`. `docs/history-recovery/` descreve o backup anterior, com suas contagens e testes antigos. Veja `docs/PRIVACIDADE.md` para resultados e limites desta entrega.
+`docs/PRIVACIDADE.md` e `docs/validation-privado/` registram a limpeza anterior. `docs/history-recovery/` registra a recuperação que a precedeu. As contagens e hashes antigos pertencem às respectivas versões.
 
-## Versionamento
+## Versionar
 
-Inclua `src/`, `reference/`, `tools/`, `tests/`, `docs/`, `Build.ps1`, README e os arquivos de configuração Git. A distribuição não inclui keystore, senhas, conta de usuário, caches, APKs de entrada ou a árvore temporária de compilação. Não foi criado nem publicado repositório remoto.
+Inclua `src/`, `reference/`, `tools/`, `tests/`, `docs/`, `Build.ps1` e arquivos Git. Não inclua `.work/`, `dist/`, APKs, keystores, senhas, contas, bancos do emulador ou caches. A árvore pode ser mantida em Git privado; nenhum repositório remoto é criado ou publicado pela build.

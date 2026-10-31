@@ -1,0 +1,12 @@
+{
+  "apk_sha256": "16f103181e4ea55f2e4d7a2e65eebe86e100263357bbc770be33fd8d58b9454c",
+  "apk_bytes": 24509702,
+  "baseline_apk_bytes": 24476773,
+  "home_pss_kb": 126102,
+  "home_rss_kb": 275640,
+  "baseline_home_pss_kb": 160633,
+  "baseline_home_rss_kb": 304680,
+  "sample": "Single observation of Home about eight seconds after startup in the same API37 AVD; different cache/data state. Not a controlled benchmark.",
+  "image_memory_cache_limit_bytes": 16777216,
+  "new_runtime_dependencies": 0
+}

@@ -1,3 +1,5 @@
+> Registro histórico da etapa movie-privado. Para a evolução atual, consulte EVOLUCAO.md e validation/. As evidências desta etapa estão em validation-privado/.
+
 # Resultado da limpeza de privacidade do Movie
 
 A versão limpa foi modificada, compilada, instalada como atualização e testada no AVD `Movie_Observe_API37` (Android API 37). A abertura normal, o catálogo, a pesquisa, as configurações e a reprodução de um filme real passaram. A cópia anterior `movie-projeto` e seu ZIP/APK continuam intactos.

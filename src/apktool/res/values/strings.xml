@@ -548,7 +548,7 @@ We will share more once you're back online."</string>
     <string name="str_account_input">Digite o número da sua conta para que possamos encontrar</string>
     <string name="str_album">Álbum de foto</string>
     <string name="str_app_lan">Idioma da aplicação</string>
-    <string name="str_audio">Audio</string>
+    <string name="str_audio">Áudio</string>
     <string name="str_audio_subtitles">Audio y subtítulos</string>
     <string name="str_brief_introduction">Introdução</string>
     <string name="str_cling_ad">Você precisa assistir a um anúncio antes de espelhar</string>
@@ -677,8 +677,8 @@ We will share more once you're back online."</string>
     <string name="str_stored_permissions_tip">Por favor, dê permissão para ler e gravar o armazenamento do celular, caso contrário, não poderá ser usado.</string>
     <string name="str_string_loading">Espetáculo está prestes a começar</string>
     <string name="str_subscription">Subscrição</string>
-    <string name="str_subtitles">Subtítulos</string>
-    <string name="str_subtitles_nothing">Sin subtítulos</string>
+    <string name="str_subtitles">Legendas</string>
+    <string name="str_subtitles_nothing">Sem legendas</string>
     <string name="str_success">Sucesso</string>
     <string name="str_tip">Dica</string>
     <string name="str_tip_not_label">Selecione um rótulo</string>

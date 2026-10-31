@@ -1,0 +1,19 @@
+{
+  "manual_export_ui": true,
+  "profiles": 2,
+  "avatar_bytes": 25820,
+  "avatar_sha256": "c25c86115739d131cbd002dc7c3d635375d6d15bffc1525447401ffc4070d123",
+  "progress_rows": 3,
+  "alice_episode": 2,
+  "alice_position": 420006,
+  "external_auth_fields_absent": true,
+  "before_uninstall_private_backup_preserved": true,
+  "clean_uninstall_install": true,
+  "new_service_session_catalog_ok": true,
+  "manual_restore_ui": true,
+  "all_profile_rows_preferences_searches_list_progress_equal": true,
+  "avatar_bytes_identical": true,
+  "auto_cloud_restore_tested": false,
+  "final_apk_clean_install_restore_sha256": "16f103181e4ea55f2e4d7a2e65eebe86e100263357bbc770be33fd8d58b9454c",
+  "final_apk_sql_and_avatar_match": true
+}

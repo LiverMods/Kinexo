@@ -8,6 +8,7 @@
 
 
 # direct methods
+.field private static downloadsInstance:Lcom/mgs/carparking/db/DBHelper;
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 3
 
@@ -18,6 +19,8 @@
     const/16 v2, 0x23
 
     .line 1
+    invoke-static {v0}, Lcom/mgs/carparking/modern/profiles/Profiles;->legacyDatabase(Ljava/lang/String;)Ljava/lang/String;
+    move-result-object v0
     invoke-direct {p0, p1, v0, v1, v2}, Lcom/mgs/carparking/db/DBHelper;-><init>(Landroid/content/Context;Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)V
 
     return-void
@@ -415,4 +418,30 @@
         :pswitch_7
         :pswitch_8
     .end packed-switch
+.end method
+
+.method public static declared-synchronized getDownloadsInstance()Lcom/mgs/carparking/db/DBHelper;
+    .locals 6
+    const-class v5, Lcom/mgs/carparking/db/DBHelper;
+    monitor-enter v5
+    :download_try
+    sget-object v0, Lcom/mgs/carparking/db/DBHelper;->downloadsInstance:Lcom/mgs/carparking/db/DBHelper;
+    if-nez v0, :download_return
+    new-instance v0, Lcom/mgs/carparking/db/DBHelper;
+    invoke-static {}, Lwj/r;->a()Landroid/content/Context;
+    move-result-object v1
+    const-string v2, "social_video_FREE.db"
+    const/4 v3, 0x0
+    const/16 v4, 0x23
+    invoke-direct {v0, v1, v2, v3, v4}, Lcom/mgs/carparking/db/DBHelper;-><init>(Landroid/content/Context;Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)V
+    sput-object v0, Lcom/mgs/carparking/db/DBHelper;->downloadsInstance:Lcom/mgs/carparking/db/DBHelper;
+    :download_return
+    monitor-exit v5
+    return-object v0
+    :download_catch
+    move-exception v0
+    monitor-exit v5
+    throw v0
+    :download_end
+    .catchall {:download_try .. :download_return} :download_catch
 .end method

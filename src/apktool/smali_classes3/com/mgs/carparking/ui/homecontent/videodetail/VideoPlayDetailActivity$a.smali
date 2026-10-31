@@ -91,34 +91,6 @@
 .end method
 
 .method public b()V
-    .locals 3
-
-    .line 1
-    .line 2
-    new-instance v0, Landroid/content/Intent;
-
-    .line 3
-    .line 4
-    iget-object v1, p0, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity$a;->a:Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;
-
-    .line 5
-    .line 6
-    const-class v2, Lcom/mgs/carparking/ui/mine/share/ExtensionShareActivity;
-
-    .line 7
-    .line 8
-    .line 9
-    invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
-
-    .line 10
-    .line 11
-    iget-object v1, p0, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity$a;->a:Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;
-
-    .line 12
-    .line 13
-    .line 14
-    invoke-static {v1, v0}, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity$a;->safedk_Context_startActivity_97cb3195734cf5c9cc3418feeafa6dd6(Landroid/content/Context;Landroid/content/Intent;)V
-
-    .line 15
+    .locals 0
     return-void
 .end method

@@ -1,0 +1,16 @@
+[
+  "src/apktool/smali_classes3/com/mgs/carparking/ui/MainActivity.smali",
+  "src/apktool/smali_classes3/com/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity$a.smali",
+  "src/apktool/smali_classes3/com/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity.smali",
+  "src/apktool/smali_classes3/com/mgs/carparking/widgets/dialog/j$c.smali",
+  "src/apktool/smali_classes4/com/mgs/carparking/db/DBHelper.smali",
+  "src/apktool/smali_classes4/com/mgs/carparking/model/VIDEOPLAYDETAILVIEWMODEL.smali",
+  "src/apktool/smali_classes4/com/mgs/carparking/ui/mine/DownloadVideoPlayActivity.smali",
+  "src/apktool/smali_classes5/com/mgs/carparking/DataBinderMapperImpl.smali",
+  "src/apktool/smali_classes5/com/mgs/carparking/model/MINEVIEWMODEL.smali",
+  "src/apktool/smali_classes5/com/mgs/carparking/widgets/dialog/h$c.smali",
+  "src/apktool/smali_classes5/com/mgs/carparking/widgets/dialog/l$a.smali",
+  "src/apktool/smali_classes5/t/a$c.smali",
+  "src/apktool/smali_classes6/ca/p.smali",
+  "src/apktool/smali_classes7/com/mgs/carparking/db/VideoDownloadDao.smali"
+]

@@ -1757,10 +1757,7 @@
     if-eqz p3, :cond_5
 
     .line 17
-    new-instance p3, Lcom/mgs/carparking/databinding/ItemExtensionRecordBindingImpl;
-
-    invoke-direct {p3, p1, p2}, Lcom/mgs/carparking/databinding/ItemExtensionRecordBindingImpl;-><init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
-
+    const/4 p3, 0x0
     return-object p3
 
     .line 18
@@ -2966,10 +2963,7 @@
     if-eqz p3, :cond_24
 
     .line 110
-    new-instance p3, Lcom/mgs/carparking/databinding/ActivityOrderListBindingImpl;
-
-    invoke-direct {p3, p1, p2}, Lcom/mgs/carparking/databinding/ActivityOrderListBindingImpl;-><init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
-
+    const/4 p3, 0x0
     return-object p3
 
     .line 111
@@ -3200,10 +3194,7 @@
     if-eqz p3, :cond_2a
 
     .line 128
-    new-instance p3, Lcom/mgs/carparking/databinding/ActivityExtensionShareBindingImpl;
-
-    invoke-direct {p3, p1, p2}, Lcom/mgs/carparking/databinding/ActivityExtensionShareBindingImpl;-><init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
-
+    const/4 p3, 0x0
     return-object p3
 
     .line 129
@@ -3239,10 +3230,7 @@
     if-eqz p3, :cond_2b
 
     .line 131
-    new-instance p3, Lcom/mgs/carparking/databinding/ActivityExtensionRecordBindingImpl;
-
-    invoke-direct {p3, p1, p2}, Lcom/mgs/carparking/databinding/ActivityExtensionRecordBindingImpl;-><init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
-
+    const/4 p3, 0x0
     return-object p3
 
     .line 132
@@ -3968,10 +3956,7 @@
     if-eqz p3, :cond_a
 
     .line 32
-    new-instance p3, Lcom/mgs/carparking/databinding/ItemOrderListBindingImpl;
-
-    invoke-direct {p3, p1, p2}, Lcom/mgs/carparking/databinding/ItemOrderListBindingImpl;-><init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
-
+    const/4 p3, 0x0
     return-object p3
 
     .line 33

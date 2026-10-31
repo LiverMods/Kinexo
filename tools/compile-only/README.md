@@ -1,0 +1,1 @@
+AndroidX RecyclerView 1.3.0 e Core 1.7.0, Apache 2.0. classes.jar extraídos dos AARs já presentes no cache local. Apenas símbolos para javac/D8 --classpath; NÃO são incorporados ao APK. As implementações originais já existem no Smali recuperado. Fonte: https://android.googlesource.com/platform/frameworks/support/ .

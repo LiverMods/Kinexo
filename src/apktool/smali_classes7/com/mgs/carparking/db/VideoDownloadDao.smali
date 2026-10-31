@@ -97,7 +97,7 @@
     .line 1
     .line 2
     .line 3
-    invoke-static {}, Lcom/mgs/carparking/db/DBHelper;->getInstance()Lcom/mgs/carparking/db/DBHelper;
+    invoke-static {}, Lcom/mgs/carparking/db/DBHelper;->getDownloadsInstance()Lcom/mgs/carparking/db/DBHelper;
 
     .line 4
     move-result-object v0
@@ -141,7 +141,7 @@
 
     .line 1
     :try_start_0
-    invoke-static {}, Lcom/mgs/carparking/db/DBHelper;->getInstance()Lcom/mgs/carparking/db/DBHelper;
+    invoke-static {}, Lcom/mgs/carparking/db/DBHelper;->getDownloadsInstance()Lcom/mgs/carparking/db/DBHelper;
 
     move-result-object v0
 
@@ -202,7 +202,7 @@
 
     .line 4
     :try_start_0
-    invoke-static {}, Lcom/mgs/carparking/db/DBHelper;->getInstance()Lcom/mgs/carparking/db/DBHelper;
+    invoke-static {}, Lcom/mgs/carparking/db/DBHelper;->getDownloadsInstance()Lcom/mgs/carparking/db/DBHelper;
 
     move-result-object v0
 
@@ -277,7 +277,7 @@
     .line 10
     :cond_0
     :try_start_0
-    invoke-static {}, Lcom/mgs/carparking/db/DBHelper;->getInstance()Lcom/mgs/carparking/db/DBHelper;
+    invoke-static {}, Lcom/mgs/carparking/db/DBHelper;->getDownloadsInstance()Lcom/mgs/carparking/db/DBHelper;
 
     .line 11
     move-result-object v2
@@ -942,7 +942,7 @@
     .line 7
     .line 8
     .line 9
-    invoke-static {}, Lcom/mgs/carparking/db/DBHelper;->getInstance()Lcom/mgs/carparking/db/DBHelper;
+    invoke-static {}, Lcom/mgs/carparking/db/DBHelper;->getDownloadsInstance()Lcom/mgs/carparking/db/DBHelper;
 
     .line 10
     move-result-object v0
@@ -1777,7 +1777,7 @@
     .line 7
     .line 8
     .line 9
-    invoke-static {}, Lcom/mgs/carparking/db/DBHelper;->getInstance()Lcom/mgs/carparking/db/DBHelper;
+    invoke-static {}, Lcom/mgs/carparking/db/DBHelper;->getDownloadsInstance()Lcom/mgs/carparking/db/DBHelper;
 
     .line 10
     move-result-object v0
@@ -2635,7 +2635,7 @@
     .line 3
     .line 4
     :try_start_0
-    invoke-static {}, Lcom/mgs/carparking/db/DBHelper;->getInstance()Lcom/mgs/carparking/db/DBHelper;
+    invoke-static {}, Lcom/mgs/carparking/db/DBHelper;->getDownloadsInstance()Lcom/mgs/carparking/db/DBHelper;
 
     .line 5
     move-result-object v0

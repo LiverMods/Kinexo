@@ -1223,18 +1223,7 @@
 .end method
 
 .method private synthetic C()V
-    .locals 1
-
-    .line 1
-    .line 2
-    const-class v0, Lcom/mgs/carparking/ui/mine/share/ExtensionShareActivity;
-
-    .line 3
-    .line 4
-    .line 5
-    invoke-virtual {p0, v0}, Lme/goldze/mvvmhabit/base/BaseViewModel;->startActivity(Ljava/lang/Class;)V
-
-    .line 6
+    .locals 0
     return-void
 .end method
 
@@ -1502,18 +1491,7 @@
 .end method
 
 .method private synthetic K()V
-    .locals 1
-
-    .line 1
-    .line 2
-    const-class v0, Lcom/mgs/carparking/ui/mine/OrderListActivity;
-
-    .line 3
-    .line 4
-    .line 5
-    invoke-virtual {p0, v0}, Lme/goldze/mvvmhabit/base/BaseViewModel;->startActivity(Ljava/lang/Class;)V
-
-    .line 6
+    .locals 0
     return-void
 .end method
 

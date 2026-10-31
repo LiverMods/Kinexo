@@ -35,6 +35,12 @@ $toolHashes = Get-Content -Raw -LiteralPath "$tools/SHA256SUMS.json" | ConvertFr
 foreach ($entry in $toolHashes.GetEnumerator()) {
     if ((Get-FileHash -Algorithm SHA256 -LiteralPath (Join-Path $tools $entry.Key)).Hash.ToLowerInvariant() -ne $entry.Value) { throw "Ferramenta alterada: $($entry.Key)" }
 }
+$compileOnly = Join-Path $tools 'compile-only'
+$compileHashes = Get-Content -Raw "$compileOnly/SHA256SUMS.json" | ConvertFrom-Json -AsHashtable
+foreach ($entry in $compileHashes.GetEnumerator()) {
+    if ((Get-FileHash -Algorithm SHA256 -LiteralPath "$compileOnly/$($entry.Key)").Hash.ToLowerInvariant() -ne $entry.Value) { throw "API de compilacao alterada: $($entry.Key)" }
+}
+$compileClasspath = (@($compileHashes.Keys | ForEach-Object { Join-Path $compileOnly $_ })) -join ';'
 $nativeHashes = Get-Content -Raw -LiteralPath "$root/docs/NATIVE-SHA256.json" | ConvertFrom-Json -AsHashtable
 foreach ($entry in $nativeHashes.GetEnumerator()) {
     if ((Get-FileHash -Algorithm SHA256 -LiteralPath (Join-Path "$root/src/apktool" $entry.Key)).Hash.ToLowerInvariant() -ne $entry.Value) { throw "Biblioteca nativa alterada: $($entry.Key)" }
@@ -86,15 +92,21 @@ try {
         $sources = @(Get-ChildItem -LiteralPath $group.FullName -Recurse -File -Filter '*.java')
         $sourceList = Join-Path $work "$dexName/sources.rsp"
         [IO.File]::WriteAllLines($sourceList, @($sources | ForEach-Object { '"' + $_.FullName.Replace('\','/') + '"' }), [Text.UTF8Encoding]::new($false))
-        Run $javac @('-encoding','UTF-8','--release','8','-cp',$androidJar,'-d',$javaClasses,"@$sourceList")
+        Run $javac @('-encoding','UTF-8','--release','8','-cp',"$androidJar;$compileClasspath",'-d',$javaClasses,"@$sourceList")
         $classFiles = @(Get-ChildItem -LiteralPath $javaClasses -Recurse -File -Filter '*.class' | ForEach-Object FullName)
-        Run $java (@('-cp',"$buildTools/lib/d8.jar",'com.android.tools.r8.D8','--lib',$androidJar,'--min-api','24','--output',$dexOutput) + $classFiles)
+        Run $java (@('-cp',"$buildTools/lib/d8.jar",'com.android.tools.r8.D8','--lib',$androidJar,'--classpath',"$compileOnly/recyclerview-1.3.0.jar",'--classpath',"$compileOnly/core-1.7.0.jar",'--min-api','24','--output',$dexOutput) + $classFiles)
         Run $java @('-cp',"$classpath;$work",'DisassembleRecovery',"$dexOutput/classes.dex","$stage/smali_$dexName")
         if ($dexName -eq 'classes2') {
             $testClasses = Join-Path $work 'tests'
             New-Item -ItemType Directory -Force -Path $testClasses | Out-Null
             Run $javac @('-encoding','UTF-8','--release','8','-cp',"$javaClasses;$androidJar",'-d',$testClasses,"$root/tests/IdentityBindingCheck.java")
             Run $java @('-ea','-cp',"$testClasses;$javaClasses;$androidJar",'com.mgs.carparking.recovery.IdentityBindingCheck')
+        }
+        if ($dexName -eq 'classes3') {
+            $modelTests = Join-Path $work 'model-tests'
+            New-Item -ItemType Directory -Force -Path $modelTests | Out-Null
+            Run $javac @('-encoding','UTF-8','--release','8','-cp',"$javaClasses;$androidJar",'-d',$modelTests,"$root/tests/MovieModelCheck.java")
+            Run $java @('-ea','-cp',"$modelTests;$javaClasses;$androidJar",'com.mgs.carparking.modern.catalog.MovieModelCheck')
         }
     }
     # Todos os DEX restantes sao montados de Smali, sem SDK de anuncios dinamico.
@@ -119,7 +131,7 @@ try {
         }
     } finally { $archive.Dispose() }
     [IO.File]::Move($signed, $Output, $false)
-    $info = [ordered]@{ sha256=(Get-FileHash -Algorithm SHA256 -LiteralPath $Output).Hash.ToLowerInvariant(); configuration=$Configuration; dex_assembled=9; dynamic_dex_assembled=0; dynamic_dex_classes=0; preserved_dex=0; java_source_files=(@(Get-ChildItem "$root/src/java" -Recurse -File -Filter '*.java')).Count; native_libraries_verified=$nativeHashes.Count; apktool='3.0.3'; build_tools='36.0.0'; android_api='37.0'; identity_binding_tests='passed' }
+    $info = [ordered]@{ sha256=(Get-FileHash -Algorithm SHA256 -LiteralPath $Output).Hash.ToLowerInvariant(); configuration=$Configuration; dex_assembled=9; dynamic_dex_assembled=0; dynamic_dex_classes=0; preserved_dex=0; java_source_files=(@(Get-ChildItem "$root/src/java" -Recurse -File -Filter '*.java')).Count; native_libraries_verified=$nativeHashes.Count; apktool='3.0.3'; build_tools='36.0.0'; android_api='37.0'; identity_binding_tests='passed'; movie_model_tests='passed' }
     $info | ConvertTo-Json | Set-Content -LiteralPath "$Output.build.json" -Encoding utf8
     $succeeded = $true
     Write-Host "APK: $Output"
