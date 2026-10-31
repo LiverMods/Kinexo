@@ -390,7 +390,7 @@
 
     .line 81
     .line 82
-    sget v2, Lcom/luck/picture/lib/R$drawable;->ps_ic_trans_1px:I
+    const v2, 0x7f0801ff
 
     .line 83
     .line 84

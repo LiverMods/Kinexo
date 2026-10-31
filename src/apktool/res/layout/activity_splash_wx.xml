@@ -3,7 +3,8 @@
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <FrameLayout android:id="@id/splash_container" android:background="@color/ic_splash_color" android:layout_width="match_parent" android:layout_height="match_parent" />
     <RelativeLayout android:id="@id/show_ad" android:background="@color/ic_splash_color" android:layout_width="match_parent" android:layout_height="match_parent">
-        <ImageView android:id="@id/iv_top" android:background="@drawable/ic_splash_window_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_top" android:src="@drawable/ic_login_logo" android:contentDescription="Kinexo" android:layout_width="144dp" android:layout_height="144dp" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+        <TextView android:text="Kinexo" android:textColor="#f4f5f7" android:textSize="26sp" android:fontFamily="sans-serif-medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/iv_top" android:layout_centerHorizontal="true" android:layout_marginTop="12dp" />
         <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_60" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
     </RelativeLayout>
 </RelativeLayout>

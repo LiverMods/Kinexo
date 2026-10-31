@@ -1,7 +1,7 @@
 {
   "format": "movie-source-manifest-v1",
   "self_excluded": true,
-  "file_count": 23241,
+  "file_count": 23278,
   "files": [
     {
       "path": ".gitattributes",
@@ -15,13 +15,33 @@
     },
     {
       "path": "Build.ps1",
-      "bytes": 10951,
-      "sha256": "ea53addaad4b83dc691ccb571983340ea378ce59ac96b1e1981194387ae42643"
+      "bytes": 10952,
+      "sha256": "d86d414723f87eba54bef894f21f1e11b62ecc860bcca9e5f7380dabe837efcb"
     },
     {
       "path": "README.md",
-      "bytes": 7718,
-      "sha256": "0331e71ee8ea27e00d694279dcb9000fa15e08cd9cc15bccd51562f05ee44064"
+      "bytes": 7995,
+      "sha256": "3f8bc585b7c08a069dd648626ddf9a0e9937948386d7046a4d7e969a10006fd3"
+    },
+    {
+      "path": "design/kinexo/README.md",
+      "bytes": 1118,
+      "sha256": "9b7015077a0b6961ab015ac49d6c2d307c410d628b630d59d2981013a65ee748"
+    },
+    {
+      "path": "design/kinexo/k-monochrome.svg",
+      "bytes": 329,
+      "sha256": "2d8ec9ff77c93753eb8689c01d309cdce9ddcdee6634046a9ea7015658367586"
+    },
+    {
+      "path": "design/kinexo/logo-color.png",
+      "bytes": 1860873,
+      "sha256": "53f014cbd726dffb6bd80f02d7c4f81bf42806f292a7016312665f47cd3325fd"
+    },
+    {
+      "path": "design/kinexo/monochrome-reference.png",
+      "bytes": 410385,
+      "sha256": "2d92d1f708efd13591b04231fea3cc015321c39ad5c6fac924c7154e9436f931"
     },
     {
       "path": "docs/COMMERCIAL-REMOVALS.json",
@@ -37,6 +57,11 @@
       "path": "docs/EVOLUTION-SMALI.json",
       "bytes": 1103,
       "sha256": "e831c0626edc9b66e646c578e6b82bce57529eb29476d04ed3bbf4c3e78b8697"
+    },
+    {
+      "path": "docs/IDENTIDADE-QUALIDADE.md",
+      "bytes": 8624,
+      "sha256": "881f43bd190a461a8df7d56d33e666fe6e9823013df5632bd2e00f13b3db6433"
     },
     {
       "path": "docs/INVENTORY.json",
@@ -152,6 +177,161 @@
       "path": "docs/tool-notices/guava-32.1.3-jre/LICENSE",
       "bytes": 11358,
       "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "docs/validation-identidade/OBSERVACOES.md",
+      "bytes": 2902,
+      "sha256": "c40784fa1386714d9771ba4006add46435232b38eb15325f89e86a2f05f4766c"
+    },
+    {
+      "path": "docs/validation-identidade/README.md",
+      "bytes": 3419,
+      "sha256": "a965caf1d6806cb61552b3acd7d6f5384227a083f7425bec41a257449a8d131a"
+    },
+    {
+      "path": "docs/validation-identidade/audit-evolution.json",
+      "bytes": 352,
+      "sha256": "96265730786046f69d14fa8ef12118558648b6c8d031f45085028ba7b3b3a2f7"
+    },
+    {
+      "path": "docs/validation-identidade/audit-identity.json",
+      "bytes": 2509,
+      "sha256": "fea9311f86607337afc3cd82c56bd4fb72526ccc30368e9cc163bb6f57c39315"
+    },
+    {
+      "path": "docs/validation-identidade/audit-privacy.json",
+      "bytes": 2023,
+      "sha256": "4561ec806a5bd74b9c512e3ca189dfdae6701045397c9878da58b6b270f0d688"
+    },
+    {
+      "path": "docs/validation-identidade/brand-evidence-final.json",
+      "bytes": 1872,
+      "sha256": "9b79efd96f2b28dae1ff20d03de077d575502d5414c76c4dc117ea99bf8fe861"
+    },
+    {
+      "path": "docs/validation-identidade/branding-final.txt",
+      "bytes": 1543,
+      "sha256": "d8c970a99d4da47c996c7ac38ff04ac29821021c1b7aaae63cc58f1a03da34e2"
+    },
+    {
+      "path": "docs/validation-identidade/build.json",
+      "bytes": 434,
+      "sha256": "e6ecc6e86d79c2c559cd632be2ae3430e776240383b75a706682d70e4f16d83e"
+    },
+    {
+      "path": "docs/validation-identidade/clean-restore.json",
+      "bytes": 446,
+      "sha256": "0ecf76e1de15b6aa25775bf9eb69ce6013669a8541e9eea7d3efb5f675d2eacf"
+    },
+    {
+      "path": "docs/validation-identidade/device-core-final.txt",
+      "bytes": 10749,
+      "sha256": "e64725788c0cf1381b989693e9eb3f91dc2a5ffebb7c98d3f57ecbcb86cd5e15"
+    },
+    {
+      "path": "docs/validation-identidade/hls-fixture-v04.txt",
+      "bytes": 2090,
+      "sha256": "d71a9901fc4a0ef2948c9f97de3d7643c2ee054e55b818a2a521d84ffcde7b93"
+    },
+    {
+      "path": "docs/validation-identidade/layout-final.txt",
+      "bytes": 2728,
+      "sha256": "7dd1da2b2184de49135bd98eec96d593ebf2f55c9dba71a7c64741cb2d0360d7"
+    },
+    {
+      "path": "docs/validation-identidade/notification-permission-v04.txt",
+      "bytes": 1730,
+      "sha256": "f219d99fc7ff6634a00fa8bc176d6ae8b851ad161325b8af7e06de1868714ed6"
+    },
+    {
+      "path": "docs/validation-identidade/screens/android-app-info.png",
+      "bytes": 216373,
+      "sha256": "5a2b9ea69dcf67443f7aadac824adbb8978bf768f6013172c812dc46cee8c938"
+    },
+    {
+      "path": "docs/validation-identidade/screens/home.png",
+      "bytes": 1983500,
+      "sha256": "a218853e6eb6d8b9025715539a419290c8534aac5f8829d6e7498be7d2e4d1aa"
+    },
+    {
+      "path": "docs/validation-identidade/screens/launcher-color.png",
+      "bytes": 1787603,
+      "sha256": "a3fc58c36e04502ad7c6d9bb2c6c938b631f04a769f26dabf64de0ab992e2323"
+    },
+    {
+      "path": "docs/validation-identidade/screens/launcher-themed.png",
+      "bytes": 1750866,
+      "sha256": "127af5e00e7e8fa83993561e97f01571244a6b8e40967e8398fad307da9050f5"
+    },
+    {
+      "path": "docs/validation-identidade/screens/notification-brand.png",
+      "bytes": 244386,
+      "sha256": "baac3ac3ffeea0517e67be024367fe0d9df31004b145eb5ad7e0b66d53a5712d"
+    },
+    {
+      "path": "docs/validation-identidade/screens/notification-permission.png",
+      "bytes": 171418,
+      "sha256": "1a74cf2a9cf2bb3173b81a62dd2be2957c1684502797ad00606e21ade6a423e2"
+    },
+    {
+      "path": "docs/validation-identidade/screens/notification-status.png",
+      "bytes": 187869,
+      "sha256": "f0c0e155d5cbc0004fd35bcd1294b6abd8c14ad6c47078e81dac7ddbf1df211e"
+    },
+    {
+      "path": "docs/validation-identidade/screens/player.png",
+      "bytes": 1666906,
+      "sha256": "17d89481b93c9ba225416b90062fbab1eced69a376467667ad2f5bcb018942fb"
+    },
+    {
+      "path": "docs/validation-identidade/screens/profiles.png",
+      "bytes": 1990405,
+      "sha256": "e941562958764e8c4ece8b74653deb0afb1b542f3068a25c360345abed6c2afb"
+    },
+    {
+      "path": "docs/validation-identidade/screens/quality-compact.png",
+      "bytes": 327912,
+      "sha256": "27a1465faec0739c3e1ae898abd71b2e1837939b05565dc467def193143be0bf"
+    },
+    {
+      "path": "docs/validation-identidade/screens/quality-details.png",
+      "bytes": 344994,
+      "sha256": "29a37c339d1e8b9941a559cd92be0bb2a4feb89530f1da0e8b2099ef03481f39"
+    },
+    {
+      "path": "docs/validation-identidade/screens/quality-picker.png",
+      "bytes": 663747,
+      "sha256": "8265a21f837b4865a143c07f50715b8f808ab83b9dbd6d11ab3a9cb30db6ccc7"
+    },
+    {
+      "path": "docs/validation-identidade/screens/resource-monochrome.png",
+      "bytes": 3932,
+      "sha256": "a58bbc25add46b787fa36711abd8a48dd0dfd512e12d5b994743c6d5ababd6ff"
+    },
+    {
+      "path": "docs/validation-identidade/screens/settings.png",
+      "bytes": 184945,
+      "sha256": "1c17bc5bd69a66efac3cdc9d708acf84e2a165bbdb84d876c3149708350d3cc9"
+    },
+    {
+      "path": "docs/validation-identidade/screens/splash.png",
+      "bytes": 206648,
+      "sha256": "e657f8ecfea0a801f1255069046b99bf9a88800a786fc186fd88bc39373c4d07"
+    },
+    {
+      "path": "docs/validation-identidade/source-audit-final.txt",
+      "bytes": 1430,
+      "sha256": "100c5a6279261be641dddb78a3988916a868d821aab18825e8d53304769c20d7"
+    },
+    {
+      "path": "docs/validation-identidade/source-evidence-final.json",
+      "bytes": 10075,
+      "sha256": "592b11bbd05498933df5d52ae5b9a74652e47709ace614fa125ca74dc0ce9e44"
+    },
+    {
+      "path": "docs/validation-identidade/summary.json",
+      "bytes": 1204,
+      "sha256": "5246fdaa1ac20402dca1f33327ac61e0244cb6377065fc67a1a97398a930785d"
     },
     {
       "path": "docs/validation-kinexo/README.md",
@@ -2640,8 +2820,8 @@
     },
     {
       "path": "src/apktool/AndroidManifest.xml",
-      "bytes": 16186,
-      "sha256": "16c0697976526f5e2001d85292ac9eee1ee4297f9da008849fd17e48032e9ff3"
+      "bytes": 16264,
+      "sha256": "dac585c446b01eb4b6a6c9e2ed07cf4dab50a18ad7c69ba931665acdc82f1b07"
     },
     {
       "path": "src/apktool/apktool.yml",
@@ -4854,11 +5034,6 @@
       "sha256": "86b98d5052ca09473b54a454eb0ed2738e0e431724e20ec6e8883de847518286"
     },
     {
-      "path": "src/apktool/res/drawable-hdpi/exo_notification_small_icon.png",
-      "bytes": 995,
-      "sha256": "b8f72870960706c64e11d70ac8c8eb5481d9a65235c7d7babcc0f0f448b4eaca"
-    },
-    {
       "path": "src/apktool/res/drawable-hdpi/googleg_disabled_color_18.png",
       "bytes": 410,
       "sha256": "f73508090d3e6bbc3e39ba768e71855aad52ecaaaccda676d43a1860010cc557"
@@ -5819,11 +5994,6 @@
       "sha256": "5e657d3c6f66583e6bb01ba33dc7f6d645c2139b405166749469df660f6ba69c"
     },
     {
-      "path": "src/apktool/res/drawable-ldpi/exo_notification_small_icon.png",
-      "bytes": 457,
-      "sha256": "035a0fb2ebb43c10068d61546b44c2b590b8f0924b375c9a7dd3bc9d9ada4927"
-    },
-    {
       "path": "src/apktool/res/drawable-ldpi/im_back.png",
       "bytes": 447,
       "sha256": "b8c0d572e57f1c338e165627630a99fc9b8c1280dfcf722832d37e4703edfc0c"
@@ -6612,11 +6782,6 @@
       "path": "src/apktool/res/drawable-mdpi/exo_icon_vr.png",
       "bytes": 207,
       "sha256": "8ca9277e1962c804d463895a0ccc8b3f7154ac85fc4b8e9fc04658ec9cbd9b9e"
-    },
-    {
-      "path": "src/apktool/res/drawable-mdpi/exo_notification_small_icon.png",
-      "bytes": 672,
-      "sha256": "8f92699de32f5f781ffcb3238911bd93be6ebd45570ddd7abfa7655d3c2fb51f"
     },
     {
       "path": "src/apktool/res/drawable-mdpi/googleg_disabled_color_18.png",
@@ -7522,11 +7687,6 @@
       "path": "src/apktool/res/drawable-xhdpi/exo_icon_vr.png",
       "bytes": 375,
       "sha256": "c3aa9130cf52bd20885f7d20cb080771fd7f454c871886f458f1d02dd3b32ee8"
-    },
-    {
-      "path": "src/apktool/res/drawable-xhdpi/exo_notification_small_icon.png",
-      "bytes": 1322,
-      "sha256": "804c5a64a4bc8e6c3b7693bb29f2dfd20807919b04e65a03f46aa8baa62ced25"
     },
     {
       "path": "src/apktool/res/drawable-xhdpi/googleg_disabled_color_18.png",
@@ -8744,11 +8904,6 @@
       "sha256": "12c3e20d46259bb2808367cdf3b0a45c8117ece54d7e97bb7b29c92220b8379d"
     },
     {
-      "path": "src/apktool/res/drawable-xxhdpi/exo_notification_small_icon.png",
-      "bytes": 2020,
-      "sha256": "eea87a962b45eff12a286371ed7f60b6e8b142d3a6b8cfd484b20683e08462fc"
-    },
-    {
       "path": "src/apktool/res/drawable-xxhdpi/googleg_disabled_color_18.png",
       "bytes": 727,
       "sha256": "5db3ab4d30063b5e8fa63ae2993f83efd0af71d6526b3a1468f9e3bf891af587"
@@ -9010,8 +9165,8 @@
     },
     {
       "path": "src/apktool/res/drawable-xxhdpi/ic_login_logo.png",
-      "bytes": 94453,
-      "sha256": "855d85bc939fe903b56c20195c018997b6d7a21476d29bfee599e4a2355138f8"
+      "bytes": 271362,
+      "sha256": "6c655de2f0702d2abb74528fb836a0ac7d73299bab9032936c87434a66c54caf"
     },
     {
       "path": "src/apktool/res/drawable-xxhdpi/ic_login_password_hint.png",
@@ -9270,8 +9425,8 @@
     },
     {
       "path": "src/apktool/res/drawable-xxhdpi/ic_splash_window_temp.png",
-      "bytes": 236178,
-      "sha256": "b20936ab9fe81e2625f00c24ef6803ed43d408ade1dda1822d69af973e14a5a1"
+      "bytes": 271362,
+      "sha256": "6c655de2f0702d2abb74528fb836a0ac7d73299bab9032936c87434a66c54caf"
     },
     {
       "path": "src/apktool/res/drawable-xxhdpi/ic_tab_channel.png",
@@ -9680,8 +9835,8 @@
     },
     {
       "path": "src/apktool/res/drawable-xxhdpi/ic_video_load_first_icon.png",
-      "bytes": 41889,
-      "sha256": "de0833d4b4c10e9bd0fd121d04aa7f308ab037abccbf6f297d1f02d1ee8599a1"
+      "bytes": 17113,
+      "sha256": "789743b046bdb5856189fbcf0e3619c88a6780a0f5ea110f8feb06d2064e98d9"
     },
     {
       "path": "src/apktool/res/drawable-xxhdpi/ic_video_movie.png",
@@ -10407,11 +10562,6 @@
       "path": "src/apktool/res/drawable-xxxhdpi/exo_icon_stop.png",
       "bytes": 144,
       "sha256": "0165863c792c6802efc354c2e767155b26bde0affdf6902270fad691453da840"
-    },
-    {
-      "path": "src/apktool/res/drawable-xxxhdpi/exo_notification_small_icon.png",
-      "bytes": 2683,
-      "sha256": "38ad79c3744379b41a7cc06b034147cc48ae77b34e323f2e4d5c14ba9fc4bc55"
     },
     {
       "path": "src/apktool/res/drawable-xxxhdpi/ia_close.png",
@@ -12374,6 +12524,11 @@
       "sha256": "457ce1e982def866f224cc84754661e7ba8cbcb52668d8c753838a31787b6936"
     },
     {
+      "path": "src/apktool/res/drawable/exo_notification_small_icon.xml",
+      "bytes": 509,
+      "sha256": "3f4b4296d6a64994d4ef71a09337b6a78b8932ac3f6d05f20bbec823f12bd676"
+    },
+    {
       "path": "src/apktool/res/drawable/exo_rounded_rectangle.xml",
       "bytes": 262,
       "sha256": "e70a7aa19bf0d833f0831291accca699446db45cda324d9f4bb60cf1ec6a29b3"
@@ -12510,8 +12665,8 @@
     },
     {
       "path": "src/apktool/res/drawable/ic_launcher_background.xml",
-      "bytes": 4597,
-      "sha256": "d0cc513482dc6251a199e055816e701f857e59c8b840c7f87b160ba25b2662cd"
+      "bytes": 172,
+      "sha256": "11d712c84ee7b0b467ebbf36874b2b8b6ecdd9d4b4c1cedde0bfdee51ce86640"
     },
     {
       "path": "src/apktool/res/drawable/ic_mtrl_checked_circle.xml",
@@ -12562,6 +12717,11 @@
       "path": "src/apktool/res/drawable/ic_volume_up_white_48px.xml",
       "bytes": 503,
       "sha256": "718500967e1c95ee57bf0e89469caee5421a6112897eeb4fc43fe91c27e80481"
+    },
+    {
+      "path": "src/apktool/res/drawable/kinexo_launcher_monochrome.xml",
+      "bytes": 187,
+      "sha256": "360e0cd4837fd8a54db2d4443320763679764d4a7015358428f1af25d66e1e65"
     },
     {
       "path": "src/apktool/res/drawable/list_view_back.xml",
@@ -13915,8 +14075,8 @@
     },
     {
       "path": "src/apktool/res/layout/acitivity_splash.xml",
-      "bytes": 986,
-      "sha256": "8e6085edc27eea80bb85d6eed89d34ae84019b8d56144e4956feddb56e9bd9c1"
+      "bytes": 1305,
+      "sha256": "571848480c03dd3dbb348a482a8e2671e1e3954c83037a2b5f9fff19fd0d543f"
     },
     {
       "path": "src/apktool/res/layout/action_bar_header.xml",
@@ -14035,8 +14195,8 @@
     },
     {
       "path": "src/apktool/res/layout/activity_splash_wx.xml",
-      "bytes": 1183,
-      "sha256": "a0f4e672793d0bbab124cead1dcb80d7f3ec952330fd93bd7d6fb5584b9d5939"
+      "bytes": 1502,
+      "sha256": "fd68a4cfe7fb7913e12a76725d4cce9ec40386ac56b39c05f4cb3954d61cdfda"
     },
     {
       "path": "src/apktool/res/layout/activity_video_more_list.xml",
@@ -17205,58 +17365,58 @@
     },
     {
       "path": "src/apktool/res/mipmap-anydpi-v26/ic_launcher.xml",
-      "bytes": 276,
-      "sha256": "9c225279616b5299d7013a2887d4d4211fd32218bfe440e96d27f5aca4d1a599"
+      "bytes": 352,
+      "sha256": "d78d7747a2a4c4d9ea61018dee54b643ef31a92fc638b3128fe4ff664a254dfb"
     },
     {
       "path": "src/apktool/res/mipmap-anydpi-v26/ic_launcher_round.xml",
-      "bytes": 276,
-      "sha256": "9c225279616b5299d7013a2887d4d4211fd32218bfe440e96d27f5aca4d1a599"
+      "bytes": 352,
+      "sha256": "d78d7747a2a4c4d9ea61018dee54b643ef31a92fc638b3128fe4ff664a254dfb"
     },
     {
-      "path": "src/apktool/res/mipmap-hdpi/ic_launcher.webp",
-      "bytes": 13616,
-      "sha256": "e8c191a87db7f78df76bf24e0beec8520b3a6777960f88dc8a0b0c989771b6ff"
+      "path": "src/apktool/res/mipmap-hdpi/ic_launcher.png",
+      "bytes": 11056,
+      "sha256": "9f950887b95455bcbf1bdbec082f4ad255858534ea2e246ce1dd8b5c963208ed"
     },
     {
-      "path": "src/apktool/res/mipmap-hdpi/ic_launcher_foreground.webp",
-      "bytes": 14122,
-      "sha256": "aec83f9b00f8cff3a7d5a8cab709fc3f39e6a91f50fb1b4eada2d5e9ef7798e3"
+      "path": "src/apktool/res/mipmap-hdpi/ic_launcher_foreground.png",
+      "bytes": 45735,
+      "sha256": "5a67c1cd838ab32eb22f1db51cbe5171f3f5af4cefa83aa4ee75cb13b8e76f3c"
     },
     {
-      "path": "src/apktool/res/mipmap-hdpi/ic_launcher_round.webp",
-      "bytes": 7546,
-      "sha256": "68127123dafcf1e07e9befd2fdd6e610018199fdea845ad65902f8d36145ecf3"
+      "path": "src/apktool/res/mipmap-hdpi/ic_launcher_round.png",
+      "bytes": 9956,
+      "sha256": "7025152bf2a51bffbef17080500f1859a8278545449451327666371467905c3a"
     },
     {
-      "path": "src/apktool/res/mipmap-mdpi/ic_launcher.webp",
-      "bytes": 6551,
-      "sha256": "ec46afc9d60d0a2c49c13c0e8185b6368e29de981becd80ab3889fa724cb672e"
+      "path": "src/apktool/res/mipmap-mdpi/ic_launcher.png",
+      "bytes": 5465,
+      "sha256": "51280d0243e2bcfb4291213755c7cf5a62c415bb71144ddcf43c6a698197fa88"
     },
     {
-      "path": "src/apktool/res/mipmap-mdpi/ic_launcher_foreground.webp",
-      "bytes": 6870,
-      "sha256": "3ccc7b78eaf34719032d5c9382d586595391d8427a3cd9cfa7fa285fceae28a6"
+      "path": "src/apktool/res/mipmap-mdpi/ic_launcher_foreground.png",
+      "bytes": 22386,
+      "sha256": "0aa368d50efdc063dc3bceb99a7013f30b2c955a1fb48853b10288a116537982"
     },
     {
-      "path": "src/apktool/res/mipmap-mdpi/ic_launcher_round.webp",
-      "bytes": 4096,
-      "sha256": "cc943b5ee281327311d8f379acea10da9240a065de6caee7a1d53fc5bcf6c633"
+      "path": "src/apktool/res/mipmap-mdpi/ic_launcher_round.png",
+      "bytes": 4849,
+      "sha256": "9cbcd6c25ec39554f17fabfa3b630924486e29ee28f59e264a5ed4faaa9c9db3"
     },
     {
-      "path": "src/apktool/res/mipmap-xhdpi/ic_launcher.webp",
-      "bytes": 22678,
-      "sha256": "c8ba97ed541b2dead196ea5ad401c79476d330dff9dd3a5048e1e8fb545ce2b0"
+      "path": "src/apktool/res/mipmap-xhdpi/ic_launcher.png",
+      "bytes": 18169,
+      "sha256": "07d07f83ec808ed187b58b86c4f744bf0daa24424367c332861522fdd094ae67"
     },
     {
-      "path": "src/apktool/res/mipmap-xhdpi/ic_launcher_foreground.webp",
-      "bytes": 23004,
-      "sha256": "04f0a3a3ea5e47a8977b77b5fac92a71a96771c149d0a6f753682385625dc37a"
+      "path": "src/apktool/res/mipmap-xhdpi/ic_launcher_foreground.png",
+      "bytes": 75422,
+      "sha256": "561eda8a5fd8e26d3cceacf8316018c68f8030cb8218e42392bbc85e4243ef44"
     },
     {
-      "path": "src/apktool/res/mipmap-xhdpi/ic_launcher_round.webp",
-      "bytes": 11604,
-      "sha256": "3d7b77bacc44a34cf25f518f9f535701190aa536e1efb8ff03be37694d281f5a"
+      "path": "src/apktool/res/mipmap-xhdpi/ic_launcher_round.png",
+      "bytes": 16431,
+      "sha256": "03c585bcf9d6fe184c834e0976ef3e8aec0f986b1d1b994c877db9f937e32e3b"
     },
     {
       "path": "src/apktool/res/mipmap-xhdpi/input_emoji_delete.png",
@@ -17939,19 +18099,19 @@
       "sha256": "e38a5b3f6e87fdf93f166e5b76b321598a35e0a452d487c25a6977113fd2a4eb"
     },
     {
-      "path": "src/apktool/res/mipmap-xxhdpi/ic_launcher.webp",
-      "bytes": 47124,
-      "sha256": "e1f15f1f702a9c394d8c32f51364e7c55ebb21616192bb0c251efbeabcdaea45"
+      "path": "src/apktool/res/mipmap-xxhdpi/ic_launcher.png",
+      "bytes": 37213,
+      "sha256": "4c626c1cf2cef5ccffd14b0880db81d63a02c57c60b6eda7a737e78b0a37e94c"
     },
     {
-      "path": "src/apktool/res/mipmap-xxhdpi/ic_launcher_foreground.webp",
-      "bytes": 47768,
-      "sha256": "12009b9939264fba80b70e1e3af8dd6a555aa6b25e1ba1410bb15d393d1f5f7b"
+      "path": "src/apktool/res/mipmap-xxhdpi/ic_launcher_foreground.png",
+      "bytes": 157543,
+      "sha256": "376b42c3be2c2315f41baf3a7bb4dc2b637ee01dd498ec1e6d0a80e42cd06ea1"
     },
     {
-      "path": "src/apktool/res/mipmap-xxhdpi/ic_launcher_round.webp",
-      "bytes": 21222,
-      "sha256": "bb78d4e01be8e2c7c6b80825124818b4644ab311c6f883a6e38dba864dcfd0fb"
+      "path": "src/apktool/res/mipmap-xxhdpi/ic_launcher_round.png",
+      "bytes": 33811,
+      "sha256": "b9a6cfbe6160453f3ae20b6e7475bbd209d51e8bccb218a8916fab1185dc1077"
     },
     {
       "path": "src/apktool/res/mipmap-xxhdpi/ic_video_sort.png",
@@ -17964,19 +18124,19 @@
       "sha256": "4fe33f6a8696ac4bb5bb58cbf91514696b5de85aa96799b4979fdc9a999e2da9"
     },
     {
-      "path": "src/apktool/res/mipmap-xxxhdpi/ic_launcher.webp",
-      "bytes": 79184,
-      "sha256": "4f77929d25617e132f8281c96cfc36270dad9ac571f7449e058edf15e237f588"
+      "path": "src/apktool/res/mipmap-xxxhdpi/ic_launcher.png",
+      "bytes": 61823,
+      "sha256": "bc924b93ded9692daa641a0de26f1b1cbcfd45b30438e5f391d92c27fec743f6"
     },
     {
-      "path": "src/apktool/res/mipmap-xxxhdpi/ic_launcher_foreground.webp",
-      "bytes": 79334,
-      "sha256": "34a4dd518a9710b62645b26bd9446a75b28699622fc63d2e207ead35e5aa3828"
+      "path": "src/apktool/res/mipmap-xxxhdpi/ic_launcher_foreground.png",
+      "bytes": 271362,
+      "sha256": "6c655de2f0702d2abb74528fb836a0ac7d73299bab9032936c87434a66c54caf"
     },
     {
-      "path": "src/apktool/res/mipmap-xxxhdpi/ic_launcher_round.webp",
-      "bytes": 33236,
-      "sha256": "8b289191d68c4a31a48bc49e9430f7e0dab9bb7cf7ef23301b5d003e4a230bbe"
+      "path": "src/apktool/res/mipmap-xxxhdpi/ic_launcher_round.png",
+      "bytes": 56649,
+      "sha256": "6203a8cc68763901989c84854f313ef0e2569f3e47b906dadb3b2f3dc6250407"
     },
     {
       "path": "src/apktool/res/raw/applovin_consent_flow_unified_cmp.json",
@@ -19060,8 +19220,8 @@
     },
     {
       "path": "src/apktool/res/values-pt-rPT/strings.xml",
-      "bytes": 40091,
-      "sha256": "23dbe2557f97b1f130e5a5629ba25bd2da6bda492c3691122a150223d836257e"
+      "bytes": 40092,
+      "sha256": "5b302258d317a509390935ad3670a07f3a1c4d3a70c0435b6250d1ee105d5be4"
     },
     {
       "path": "src/apktool/res/values-pt/arrays.xml",
@@ -19420,8 +19580,8 @@
     },
     {
       "path": "src/apktool/res/values-th-rTH/strings.xml",
-      "bytes": 28041,
-      "sha256": "b1a2493d2a5eab2e2aa3a9a932b27a68e00c68abc13fe84cc626a5cef43761cd"
+      "bytes": 28042,
+      "sha256": "01c8f05c2acab79af953d01ea0b692156b23ed78b8c22a5b0ea546aa03815ae5"
     },
     {
       "path": "src/apktool/res/values-th/arrays.xml",
@@ -19547,6 +19707,11 @@
       "path": "src/apktool/res/values-v28/styles.xml",
       "bytes": 1961,
       "sha256": "d7c441dbc906f7cdcf4ad451fb674ea236a86232b03b0bdd4633204914602412"
+    },
+    {
+      "path": "src/apktool/res/values-v31/kinexo_splash.xml",
+      "bytes": 628,
+      "sha256": "449d143c808cee4e003d7d602bd846ae82534b4484e4c68489766c0ea0055d90"
     },
     {
       "path": "src/apktool/res/values-vi-rVN/strings.xml",
@@ -19686,7 +19851,7 @@
     {
       "path": "src/apktool/res/values/colors.xml",
       "bytes": 30284,
-      "sha256": "cb5eb017e8786ed9db02c6befd29c7fa1b3fb37be3866d493b9f030fd0f3ccd6"
+      "sha256": "5c98117bc2000ea3c6200b2c4d4213822f37544b11f817e1bc70a61e369c2707"
     },
     {
       "path": "src/apktool/res/values/dimens.xml",
@@ -19695,8 +19860,8 @@
     },
     {
       "path": "src/apktool/res/values/drawables.xml",
-      "bytes": 4735,
-      "sha256": "930403cd94be8580ba97c2a3c8b3aca46654ab80318f065b62fdc691733107a4"
+      "bytes": 4641,
+      "sha256": "95a8cbb9b2b0537b0191617d0414806562e19de42046920fb3cb77e6835e7051"
     },
     {
       "path": "src/apktool/res/values/ids.xml",
@@ -19720,8 +19885,8 @@
     },
     {
       "path": "src/apktool/res/values/strings.xml",
-      "bytes": 67584,
-      "sha256": "8586c37eabeafdd27b6f96798fc3383a8013b8543fd696f9544e8d9730d18ccf"
+      "bytes": 67586,
+      "sha256": "8dbae181ec04e1bc0ad3bf4a9c39b2b652c56495ef8e6663aea368c79aafd8fd"
     },
     {
       "path": "src/apktool/res/values/styles.xml",
@@ -28695,8 +28860,8 @@
     },
     {
       "path": "src/apktool/smali/r7/i.smali",
-      "bytes": 8555,
-      "sha256": "594489efcee49a3156db558cc933c2f7c0a0ac29e1ba5b8390d59c95639e7666"
+      "bytes": 8556,
+      "sha256": "9e711c74371e2630d316c8c7632068c43290f3695fcd6804870bbb121cb73b6f"
     },
     {
       "path": "src/apktool/smali/r7/j.smali",
@@ -36710,8 +36875,8 @@
     },
     {
       "path": "src/apktool/smali_classes2/com/luck/picture/lib/service/ForegroundService.smali",
-      "bytes": 13245,
-      "sha256": "40e7a9a93a70e49b2f3cbe6e49a3f742542b23134cb4e71a3efae0e6558e5ffb"
+      "bytes": 13204,
+      "sha256": "152629c3f898f0c45c7266602576200566fd92770657d5a9ebb6f79b8e2b7005"
     },
     {
       "path": "src/apktool/smali_classes2/com/luck/picture/lib/style/AlbumWindowStyle$a.smali",
@@ -78475,8 +78640,8 @@
     },
     {
       "path": "src/apktool/smali_classes6/ca/w.smali",
-      "bytes": 5219,
-      "sha256": "fc2e380eb320bb77f2a1f8c85b9ac3c0e9b48f0c85cf2b09dfbb8bc13b7163fe"
+      "bytes": 5201,
+      "sha256": "aebab7daa0a6bc189cf22051238c3459c54e91d1de1a746d424bec38ed61cac4"
     },
     {
       "path": "src/apktool/smali_classes6/ca/x$a.smali",
@@ -116000,18 +116165,18 @@
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/home/HomeActivity.java",
-      "bytes": 17808,
-      "sha256": "301f3b354efbbbe3249284c1bbf9ec3384eb8a85a6aafb0024d3fca6ef57395e"
+      "bytes": 17857,
+      "sha256": "358e89c14016523c659b9fcd2c9959545375dc9e5c3004e6d078217fde8ddcb9"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/player/PlaybackTracks.java",
-      "bytes": 5480,
-      "sha256": "5086dd5f3c9e4ee1fc835e93064d3a1d253253f72014971f9a38f38e9fe6edc7"
+      "bytes": 6315,
+      "sha256": "62eda07339d9bdb66bb0280895e47964ea7facf3befeca0e1825fac37259ffb2"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/player/PlayerUi.java",
-      "bytes": 29359,
-      "sha256": "322dc8c56e779be66eb103a87ff4169daafacc08481d3775990971682504e115"
+      "bytes": 29416,
+      "sha256": "d185acf17ce27327c0a3a95e0da503ffc18beb9f242866b89405d1fa5e35f951"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/profiles/Backup.java",
@@ -116030,8 +116195,8 @@
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/settings/SettingsActivity.java",
-      "bytes": 4965,
-      "sha256": "06120d17d0685265d76f7c2281234994a4e7a49ad72964644061523557950e41"
+      "bytes": 5634,
+      "sha256": "124f8d51474ecd91c7fb0c7bdec636377332b2d99397124db11000ae2c8d1a98"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/ui/Images.java",
@@ -116045,8 +116210,8 @@
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/ui/Panel.java",
-      "bytes": 5269,
-      "sha256": "34048c2eebd59a719b1fac4c77ee301debc068e8bcfe1b31562c2509e7414c82"
+      "bytes": 5672,
+      "sha256": "c47c9cef588522bee04505e73459a3e1baf73b37f615a21550e9934c36c55598"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/ui/ProviderCards.java",
@@ -116094,9 +116259,14 @@
       "sha256": "a621b7955adf4ecb3ccfce1f05ae88a5ad7051f8af722847fe9aacdda9e8be90"
     },
     {
+      "path": "tests/audit_identity.py",
+      "bytes": 3830,
+      "sha256": "a2c2c7852848d56160aac9a72873f648362a138b2382675a794a5af529eaffb6"
+    },
+    {
       "path": "tests/runtime/Run-DeviceChecks.ps1",
-      "bytes": 2856,
-      "sha256": "b9abbcae4a9f5e158a5d0d9047d4f7b103edcfd2157f6f82d8f2202547f73dce"
+      "bytes": 3281,
+      "sha256": "e407d224d4bb928e986f99c285d01a55305612844578bf58d9f5a0902d9d7418"
     },
     {
       "path": "tests/runtime/banner-filter-check.js",
@@ -116110,13 +116280,23 @@
     },
     {
       "path": "tests/runtime/device/AndroidManifest.xml",
-      "bytes": 357,
-      "sha256": "d2cd471d98b5d635267e375e4600d9f62bb7a5b3ec6903794e0afd52267fa827"
+      "bytes": 358,
+      "sha256": "5f2022d8eac78ea4e671f65484cf5398fa48b1bd1be6f30ad3efb7574a669edf"
+    },
+    {
+      "path": "tests/runtime/device/BrandEvidence.java",
+      "bytes": 4176,
+      "sha256": "09c14e3f9c060258665a13547164c2b0c8b2f682c60f7c889c447413d1956a17"
     },
     {
       "path": "tests/runtime/device/Checks.java",
-      "bytes": 33443,
-      "sha256": "fb1be416fc988d35303bef1c4c20e493e605ed7c2f2782200cb668842ead65c7"
+      "bytes": 39093,
+      "sha256": "b2d06d5d7f872868964f68459e89f03115f16d407dbf049af29e7cb99492ce48"
+    },
+    {
+      "path": "tests/runtime/device/SourceEvidence.java",
+      "bytes": 6111,
+      "sha256": "3351f135e7d894b4a0342418954e4f0ccb2f3aa6859e4e32ebe444d0b5bd7705"
     },
     {
       "path": "tests/runtime/dns.js",
@@ -116142,6 +116322,11 @@
       "path": "tools/DisassembleRecovery.java",
       "bytes": 486,
       "sha256": "6d1e5b843adc110b9e65f05e021aed97a875b33ca5905e5cf27f2fb49cda7bdf"
+    },
+    {
+      "path": "tools/Generate-BrandAssets.ps1",
+      "bytes": 2188,
+      "sha256": "d5d75d7341e0254c1dc7c3e1c4053d31bf813f45aa419a4c9b1992e056d1c26b"
     },
     {
       "path": "tools/SHA256SUMS.json",

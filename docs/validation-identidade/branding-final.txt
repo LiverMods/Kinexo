@@ -1,0 +1,24 @@
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Performing Incremental Install
+Performing Streamed Install
+Success
+INSTRUMENTATION_STATUS: check=UI: DESTAQUE NO KINEXO
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Kinexo launcher labels in every resource locale and all activity labels
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Adaptive round and legacy icons plus transparent monochrome K rendered
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: Notificações de downloads
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Notification permission available on Android 13+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Original app notification path uses vector K
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Android notification shade displays Kinexo
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Android app information shows Kinexo
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: checks=["UI: DESTAQUE NO KINEXO","Kinexo launcher labels in every resource locale and all activity labels","Adaptive round and legacy icons plus transparent monochrome K rendered","UI: Notificações de downloads","Notification permission available on Android 13+","Original app notification path uses vector K","Android notification shade displays Kinexo","Android app information shows Kinexo"]
+INSTRUMENTATION_RESULT: result=PASS
+INSTRUMENTATION_CODE: -1

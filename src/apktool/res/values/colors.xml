@@ -265,8 +265,8 @@
     <color name="ia_video_progressbar_background">#ff6e6e6e</color>
     <color name="ia_video_progressbar_green">#00d691</color>
     <color name="ia_video_transparent_overlay">#88000000</color>
-    <color name="ic_launcher_background">#130a3f</color>
-    <color name="ic_splash_color">#ffffff</color>
+    <color name="ic_launcher_background">#071124</color>
+    <color name="ic_splash_color">#0b0d12</color>
     <color name="main_black">#000000</color>
     <color name="main_blue">#5496e4</color>
     <color name="main_gray">#979999</color>

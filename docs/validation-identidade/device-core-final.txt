@@ -1,0 +1,164 @@
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Performing Incremental Install
+Performing Streamed Install
+Success
+INSTRUMENTATION_STATUS: check=UI: DESTAQUE NO KINEXO
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Delete local profile
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Create and edit local profiles
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real catalog search Loki
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Catalog explicit series enrichment
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real authenticated details and episodes
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: catalog=search=8 grouped=7 realId=924616866 seasons=2 episodes=6
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Alice list saved
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Rename preserves progress and list
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Profiles isolate history list searches and settings
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Legacy database namespace per profile
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Alice preferences restored after switching
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Downloads keep shared helper while profiles switch
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Backup contains profiles without service credentials
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Invalid backup rejected without mutation
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Backup round trip preserves profile data
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Backup preserves quality and fit preferences
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: DESTAQUE NO KINEXO
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real streaming collection modules restored
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: Streaming: Netflix
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Streaming card preserves original topic_id route
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Streaming collection loads real catalog results
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: Detalhes
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real player STATE_READY with rendered video frames
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Center pause button
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Center play button
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Seek beyond former free scrub threshold
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Player forward 10 seconds
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Player rewind 10 seconds
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Double tap right seeks forward
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Double tap left seeks backward
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Pinch out fills video without distortion
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Pinch in restores fit
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Player lock hides playback actions
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Lock prevents gesture seeking
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: Velocidade de reprodução
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Player speed stored per profile
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real device-compatible video tracks exposed
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: Qualidade do vídeo
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Auto quality offered
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: única faixa
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Single quality source honestly identified
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: 1280 × 720 · HD
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Quality panel saves actual manual resolution
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: Automático
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Quality panel applies Automatic preference
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Manual quality preserves engine and playback position
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real player STATE_READY with rendered video frames
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Automatic selection resumes without source reload
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: Ajuste de imagem
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Fill aspect stored per profile
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Fit aspect restores original framing
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: Painel: Episódios
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real player STATE_READY with rendered video frames
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Select episode using original engine
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real player STATE_READY with rendered video frames
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Manual next works with autoplay disabled
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Native audio subtitle panel accessible
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Brightness slider accepts explicit adjustment
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Brightness affects playback window
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Controls automatically hide
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Tap restores controls
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Player persists real position
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: Quem vai assistir?
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: DESTAQUE NO KINEXO
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Profile selection UI switches isolated state
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real player STATE_READY with rendered video frames
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Second profile starts without Alice progress
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: DESTAQUE NO KINEXO
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real player STATE_READY with rendered video frames
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Resume correct episode for Alice
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Resume real playback after leaving player
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Original download selector opens
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: download_viewport=[0,0][1260,1280] / 2856x1280
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Download selector stays inside fullscreen viewport
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Back closes download selector
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Original cast discovery dialog opens
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: Exportar perfis
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: checks=["UI: DESTAQUE NO KINEXO","Delete local profile","Create and edit local profiles","Real catalog search Loki","Catalog explicit series enrichment","Real authenticated details and episodes","Alice list saved","Rename preserves progress and list","Profiles isolate history list searches and settings","Legacy database namespace per profile","Alice preferences restored after switching","Downloads keep shared helper while profiles switch","Backup contains profiles without service credentials","Invalid backup rejected without mutation","Backup round trip preserves profile data","Backup preserves quality and fit preferences","UI: DESTAQUE NO KINEXO","Real streaming collection modules restored","UI: Streaming: Netflix","Streaming card preserves original topic_id route","Streaming collection loads real catalog results","UI: Detalhes","Real player STATE_READY with rendered video frames","Center pause button","Center play button","Seek beyond former free scrub threshold","Player forward 10 seconds","Player rewind 10 seconds","Double tap right seeks forward","Double tap left seeks backward","Pinch out fills video without distortion","Pinch in restores fit","Player lock hides playback actions","Lock prevents gesture seeking","UI: Velocidade de reprodução","Player speed stored per profile","Real device-compatible video tracks exposed","UI: Qualidade do vídeo","Auto quality offered","UI: única faixa","Single quality source honestly identified","UI: 1280 × 720 · HD","Quality panel saves actual manual resolution","UI: Automático","Quality panel applies Automatic preference","Manual quality preserves engine and playback position","Real player STATE_READY with rendered video frames","Automatic selection resumes without source reload","UI: Ajuste de imagem","Fill aspect stored per profile","Fit aspect restores original framing","UI: Painel: Episódios","Real player STATE_READY with rendered video frames","Select episode using original engine","Real player STATE_READY with rendered video frames","Manual next works with autoplay disabled","Native audio subtitle panel accessible","Brightness slider accepts explicit adjustment","Brightness affects playback window","Controls automatically hide","Tap restores controls","Player persists real position","UI: Quem vai assistir?","UI: DESTAQUE NO KINEXO","Profile selection UI switches isolated state","Real player STATE_READY with rendered video frames","Second profile starts without Alice progress","UI: DESTAQUE NO KINEXO","Real player STATE_READY with rendered video frames","Resume correct episode for Alice","Resume real playback after leaving player","Original download selector opens","Download selector stays inside fullscreen viewport","Back closes download selector","Original cast discovery dialog opens","UI: Exportar perfis"]
+INSTRUMENTATION_RESULT: result=PASS
+INSTRUMENTATION_CODE: -1

@@ -21,7 +21,6 @@
     <drawable name="exo_notification_play">@drawable/exo_icon_play</drawable>
     <drawable name="exo_notification_previous">@drawable/exo_icon_previous</drawable>
     <drawable name="exo_notification_rewind">@drawable/exo_icon_rewind</drawable>
-    <drawable name="exo_notification_small_icon">@drawable/exo_icon_circular_play</drawable>
     <drawable name="exo_notification_stop">@drawable/exo_icon_stop</drawable>
     <drawable name="exo_styled_controls_audiotrack">@drawable/exo_ic_audiotrack</drawable>
     <drawable name="exo_styled_controls_check">@drawable/exo_ic_check</drawable>

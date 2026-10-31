@@ -1,4 +1,4 @@
-# Movie / Kinexo — Android experimental
+# Kinexo — Android experimental
 
 Continuação da árvore recuperada e limpa `movie-privado`, preservada fora deste projeto. Home, catálogo/detalhes, player, perfis, histórico/lista e configurações evoluem no mesmo aplicativo e pacote `com.mobrcine.cine_br`.
 
@@ -6,7 +6,9 @@ Esta árvore completa reconstrói o APK: compila **21 arquivos Java ativos**, mo
 
 É um projeto híbrido recompilável, não uma restauração integral em Java/Gradle. Seis bibliotecas nativas e o asset protegido do HLS continuam binários, com hashes verificados. Seus fontes C/C++ não foram recuperados. `reference/` contém Java decompilado **histórico**, anterior à limpeza, que não participa da build.
 
-Refinamento nativo atual: [docs/KINEXO-REFINO.md](docs/KINEXO-REFINO.md). Mantém o mesmo motor/pacote, restaura a seção real de Streaming e acrescenta painéis, qualidade real, enquadramento e gestos. Resultado testado e capturas em `docs/validation-kinexo/`; `docs/EVOLUCAO.md` registra a entrega anterior.
+Identidade e qualidade atuais: [docs/IDENTIDADE-QUALIDADE.md](docs/IDENTIDADE-QUALIDADE.md), com capturas e evidências em `docs/validation-identidade/`.
+
+Refinamento nativo anterior: [docs/KINEXO-REFINO.md](docs/KINEXO-REFINO.md). Mantém o mesmo motor/pacote, restaura a seção real de Streaming e acrescenta painéis, qualidade real, enquadramento e gestos. Resultado testado e capturas em `docs/validation-kinexo/`; `docs/EVOLUCAO.md` registra a entrega anterior.
 
 ## Compilar em um comando
 
@@ -16,7 +18,7 @@ No Windows, PowerShell 7.4+, JDK 17+ e Android SDK com `platforms/android-37.0` 
 .\Build.ps1
 ```
 
-O script encontra o SDK por `ANDROID_HOME`, `ANDROID_SDK_ROOT` ou `%LOCALAPPDATA%/Android/Sdk`. Para outro local: `-AndroidSdk 'D:/Android/Sdk'`. O resultado vai para `dist/movie-debug-<data-id>.apk`, acompanhado de um JSON de procedência. O destino não pode existir previamente.
+O script encontra o SDK por `ANDROID_HOME`, `ANDROID_SDK_ROOT` ou `%LOCALAPPDATA%/Android/Sdk`. Para outro local: `-AndroidSdk 'D:/Android/Sdk'`. O resultado vai para `dist/kinexo-debug-<data-id>.apk`, acompanhado de um JSON de procedência. O destino não pode existir previamente.
 
 As ferramentas e APIs compile-only estão em `tools/`, com hashes e avisos de licença. Nada é baixado durante o build. Gradle, JADX, REA, Ghidra, Frida e emulador não são requisitos de compilação. Cada build usa um estágio novo; `.work/` é limpo após sucesso e preservado se falhar.
 
@@ -72,7 +74,7 @@ python tests/audit_evolution.py dist/SEU-APK.apk . audit-evolucao.json
 
 A primeira verifica os 9 DEX, referências a SDKs removidos, manifesto binário, permissões, assets e hashes nativos. A segunda exige a ausência das 31 implementações comerciais retiradas e a preservação da IdentityBinding. Nenhuma delas prova ausência de coleta dentro dos nativos opacos ou nos serviços externos.
 
-Os testes reais adicionais usam exclusivamente o AVD `Movie_Observe_API37`, serial `emulator-5556`. `tests/runtime/Run-DeviceChecks.ps1` gera/instala um APK de instrumentação separado, com APIs Android já existentes, e **cria/altera dados de teste nesse AVD**. Não execute contra dados pessoais. Frida é opcional para as sondas passivas históricas; não integra o APK nem a build. Veja resultados e limites em [docs/EVOLUCAO.md](docs/EVOLUCAO.md) e `docs/validation/`. O refinamento atual possui também `-Fixture` (HLS público multifaixa), `-Benchmark` e `-Layout` no mesmo script; detalhes em `docs/KINEXO-REFINO.md`.
+Os testes reais adicionais usam exclusivamente o AVD `Movie_Observe_API37`, serial `emulator-5556`. `tests/runtime/Run-DeviceChecks.ps1` gera/instala um APK de instrumentação separado, com APIs Android já existentes, e **cria/altera dados de teste nesse AVD**. Não execute contra dados pessoais. Frida é opcional para as sondas passivas históricas; não integra o APK nem a build. Veja resultados e limites em [docs/EVOLUCAO.md](docs/EVOLUCAO.md) e `docs/validation/`. As verificações possuem também `-Branding` (recursos instalados, notificações e nome no Android), `-SourceAudit` (faixas e HLS reais, sem exportar URLs), `-Fixture` (HLS público multifaixa), `-Benchmark` e `-Layout` no mesmo script; detalhes em `docs/KINEXO-REFINO.md`.
 
 `docs/PRIVACIDADE.md` e `docs/validation-privado/` registram a limpeza anterior. `docs/history-recovery/` registra a recuperação que a precedeu. As contagens e hashes antigos pertencem às respectivas versões.
 

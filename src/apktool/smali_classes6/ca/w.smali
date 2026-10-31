@@ -91,7 +91,7 @@
 
     .line 42
     .line 43
-    const-string v4, "\u9ed8\u8ba4\u901a\u77e5"
+    const-string v4, "Kinexo"
 
     .line 44
     .line 45
@@ -106,7 +106,7 @@
     .line 50
     .line 51
     :cond_1
-    const/high16 p4, 0x8000000
+    const/high16 p4, 0xc000000
 
     .line 52
     .line 53
@@ -128,7 +128,7 @@
     .line 61
     .line 62
     .line 63
-    const p0, 0x7f0f0002
+    const p0, 0x7f0801ff
 
     .line 64
     .line 65

@@ -45,7 +45,7 @@ $nativeHashes = Get-Content -Raw -LiteralPath "$root/docs/NATIVE-SHA256.json" | 
 foreach ($entry in $nativeHashes.GetEnumerator()) {
     if ((Get-FileHash -Algorithm SHA256 -LiteralPath (Join-Path "$root/src/apktool" $entry.Key)).Hash.ToLowerInvariant() -ne $entry.Value) { throw "Biblioteca nativa alterada: $($entry.Key)" }
 }
-if (-not $Output) { $Output = Join-Path $root "dist/movie-$($Configuration.ToLowerInvariant())-$buildId.apk" }
+if (-not $Output) { $Output = Join-Path $root "dist/kinexo-$($Configuration.ToLowerInvariant())-$buildId.apk" }
 $Output = [IO.Path]::GetFullPath($Output)
 if (Test-Path -LiteralPath $Output) { throw 'APK de destino ja existe; escolha outro nome.' }
 if (-not $Keystore) {

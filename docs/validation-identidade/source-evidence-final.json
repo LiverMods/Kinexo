@@ -1,0 +1,434 @@
+[
+  {
+    "catalog_id": 924616866,
+    "title": "Loki - Temporada 1",
+    "kind": 2,
+    "dto_field_names": [
+      "actor",
+      "area",
+      "audio_language_tag",
+      "audio_type",
+      "audio_type_option",
+      "collection_new_title",
+      "comicPosition",
+      "coverUrl",
+      "custom_content",
+      "director",
+      "hide_ad",
+      "icon_type",
+      "id",
+      "is_share",
+      "moduleName",
+      "module_id",
+      "name",
+      "play_position",
+      "remarks",
+      "series_info",
+      "simpleDesc",
+      "source_id",
+      "tag",
+      "topType",
+      "type_id",
+      "type_pid",
+      "upload_user_head_img",
+      "upload_user_id",
+      "upload_user_name",
+      "videoDesc",
+      "videoId",
+      "videoType",
+      "vod_actor",
+      "vod_area",
+      "vod_blurb",
+      "vod_collection",
+      "vod_director",
+      "vod_douban_score",
+      "vod_duration_free",
+      "vod_from_id",
+      "vod_is_cam",
+      "vod_is_update",
+      "vod_isend",
+      "vod_name",
+      "vod_pic",
+      "vod_serial",
+      "vod_tag",
+      "vod_total",
+      "vod_year"
+    ],
+    "all_mapped_video_tracks": [
+      {
+        "width": 1280,
+        "height": 720,
+        "bitrate": -1,
+        "codecs": "avc1.64001F",
+        "mime": "video\/avc",
+        "support": 4
+      }
+    ],
+    "decoder_format": {
+      "width": 1280,
+      "height": 720,
+      "bitrate": -1,
+      "codecs": "avc1.64001F",
+      "mime": "video\/avc"
+    },
+    "selector": {
+      "max_width": 2147483647,
+      "max_height": 2147483647,
+      "max_bitrate": 2147483647,
+      "viewport_width": 2856,
+      "viewport_height": 1280,
+      "force_lowest": false,
+      "force_highest": false
+    },
+    "collections": [
+      {
+        "title": "1",
+        "collection": 1,
+        "source_id": 1000,
+        "is_p2p": 1
+      },
+      {
+        "title": "2",
+        "collection": 2,
+        "source_id": 1000,
+        "is_p2p": 1
+      },
+      {
+        "title": "3",
+        "collection": 3,
+        "source_id": 1000,
+        "is_p2p": 1
+      },
+      {
+        "title": "4",
+        "collection": 4,
+        "source_id": 1000,
+        "is_p2p": 1
+      },
+      {
+        "title": "5",
+        "collection": 5,
+        "source_id": 1000,
+        "is_p2p": 1
+      },
+      {
+        "title": "6",
+        "collection": 6,
+        "source_id": 1000,
+        "is_p2p": 1
+      }
+    ],
+    "catalog_play_uri": {
+      "scheme": "http",
+      "loopback": true,
+      "sha256": "3826d007f126f3c688ebfe9fc3fb08b25628331b774ecbdd7d9615ac97ed5cb1"
+    },
+    "catalog_original_uri": {
+      "scheme": "https",
+      "loopback": false,
+      "sha256": "01a027159ae772ccd2b011a9db7ded1759be173b46ec2db50b0984ce3b4ef547"
+    },
+    "catalog_download_uri": {
+      "scheme": "https",
+      "loopback": false,
+      "sha256": "01a027159ae772ccd2b011a9db7ded1759be173b46ec2db50b0984ce3b4ef547"
+    },
+    "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+    "hls_input_uri": {
+      "scheme": "http",
+      "loopback": true,
+      "sha256": "3826d007f126f3c688ebfe9fc3fb08b25628331b774ecbdd7d9615ac97ed5cb1"
+    },
+    "parsed_master_variants": [
+      {
+        "width": -1,
+        "height": -1,
+        "bitrate": -1
+      }
+    ],
+    "parsed_master_tag_count": 0,
+    "authorized_manifest_reads": [
+      {
+        "origin": "catalog_play_uri",
+        "http_status": 200,
+        "is_hls": true,
+        "stream_inf_count": 0,
+        "segment_count": 232,
+        "advertised_resolutions": [],
+        "playlist_sha256": "d5045ab0cbf05927f9741fb19080051c58780d2ccd159a11fbf1a5020ffe9ef7"
+      },
+      {
+        "origin": "catalog_original_uri",
+        "http_status": 403
+      }
+    ]
+  },
+  {
+    "catalog_id": 276623528,
+    "title": "Velocidade e Paixão",
+    "kind": 1,
+    "dto_field_names": [
+      "actor",
+      "area",
+      "audio_language_tag",
+      "audio_type",
+      "audio_type_option",
+      "collection_new_title",
+      "comicPosition",
+      "coverUrl",
+      "custom_content",
+      "director",
+      "hide_ad",
+      "icon_type",
+      "id",
+      "is_share",
+      "moduleName",
+      "module_id",
+      "name",
+      "play_position",
+      "remarks",
+      "series_info",
+      "simpleDesc",
+      "source_id",
+      "tag",
+      "topType",
+      "type_id",
+      "type_pid",
+      "upload_user_head_img",
+      "upload_user_id",
+      "upload_user_name",
+      "videoDesc",
+      "videoId",
+      "videoType",
+      "vod_actor",
+      "vod_area",
+      "vod_blurb",
+      "vod_collection",
+      "vod_director",
+      "vod_douban_score",
+      "vod_duration_free",
+      "vod_from_id",
+      "vod_is_cam",
+      "vod_is_update",
+      "vod_isend",
+      "vod_name",
+      "vod_pic",
+      "vod_serial",
+      "vod_tag",
+      "vod_total",
+      "vod_year"
+    ],
+    "all_mapped_video_tracks": [
+      {
+        "width": 1440,
+        "height": 720,
+        "bitrate": -1,
+        "codecs": "avc1.4D4020",
+        "mime": "video\/avc",
+        "support": 4
+      }
+    ],
+    "decoder_format": {
+      "width": 1440,
+      "height": 720,
+      "bitrate": -1,
+      "codecs": "avc1.4D4020",
+      "mime": "video\/avc"
+    },
+    "selector": {
+      "max_width": 2147483647,
+      "max_height": 2147483647,
+      "max_bitrate": 2147483647,
+      "viewport_width": 2856,
+      "viewport_height": 1280,
+      "force_lowest": false,
+      "force_highest": false
+    },
+    "collections": [
+      {
+        "title": "1",
+        "collection": 1,
+        "source_id": 1000,
+        "is_p2p": 1
+      }
+    ],
+    "catalog_play_uri": {
+      "scheme": "http",
+      "loopback": true,
+      "sha256": "e15271bba886413104aa709a1656fd6a9f3e20d96fccebdfca3bb7658f2d583e"
+    },
+    "catalog_original_uri": {
+      "scheme": "https",
+      "loopback": false,
+      "sha256": "99d59a12f6f72da9e3555970e375645bd10aea1e7179d80abed675863987a4bd"
+    },
+    "catalog_download_uri": {
+      "scheme": "https",
+      "loopback": false,
+      "sha256": "99d59a12f6f72da9e3555970e375645bd10aea1e7179d80abed675863987a4bd"
+    },
+    "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+    "hls_input_uri": {
+      "scheme": "http",
+      "loopback": true,
+      "sha256": "e15271bba886413104aa709a1656fd6a9f3e20d96fccebdfca3bb7658f2d583e"
+    },
+    "parsed_master_variants": [
+      {
+        "width": -1,
+        "height": -1,
+        "bitrate": -1
+      }
+    ],
+    "parsed_master_tag_count": 0,
+    "authorized_manifest_reads": [
+      {
+        "origin": "catalog_play_uri",
+        "http_status": 200,
+        "is_hls": true,
+        "stream_inf_count": 0,
+        "segment_count": 474,
+        "advertised_resolutions": [],
+        "playlist_sha256": "6cec963bd09465832139952f73d713527ad466f5dd0481f4cd2c6883b94e6705"
+      },
+      {
+        "origin": "catalog_original_uri",
+        "http_status": 403
+      }
+    ]
+  },
+  {
+    "catalog_id": 1418208077,
+    "title": "Avatar: Fire and Ash",
+    "kind": 1,
+    "dto_field_names": [
+      "actor",
+      "area",
+      "audio_language_tag",
+      "audio_type",
+      "audio_type_option",
+      "collection_new_title",
+      "comicPosition",
+      "coverUrl",
+      "custom_content",
+      "director",
+      "hide_ad",
+      "icon_type",
+      "id",
+      "is_share",
+      "moduleName",
+      "module_id",
+      "name",
+      "play_position",
+      "remarks",
+      "series_info",
+      "simpleDesc",
+      "source_id",
+      "tag",
+      "topType",
+      "type_id",
+      "type_pid",
+      "upload_user_head_img",
+      "upload_user_id",
+      "upload_user_name",
+      "videoDesc",
+      "videoId",
+      "videoType",
+      "vod_actor",
+      "vod_area",
+      "vod_blurb",
+      "vod_collection",
+      "vod_director",
+      "vod_douban_score",
+      "vod_duration_free",
+      "vod_from_id",
+      "vod_is_cam",
+      "vod_is_update",
+      "vod_isend",
+      "vod_name",
+      "vod_pic",
+      "vod_serial",
+      "vod_tag",
+      "vod_total",
+      "vod_year"
+    ],
+    "all_mapped_video_tracks": [
+      {
+        "width": 1334,
+        "height": 720,
+        "bitrate": -1,
+        "codecs": "avc1.640020",
+        "mime": "video\/avc",
+        "support": 4
+      }
+    ],
+    "decoder_format": {
+      "width": 1334,
+      "height": 720,
+      "bitrate": -1,
+      "codecs": "avc1.640020",
+      "mime": "video\/avc"
+    },
+    "selector": {
+      "max_width": 2147483647,
+      "max_height": 2147483647,
+      "max_bitrate": 2147483647,
+      "viewport_width": 2856,
+      "viewport_height": 1280,
+      "force_lowest": false,
+      "force_highest": false
+    },
+    "collections": [
+      {
+        "title": "1",
+        "collection": 1,
+        "source_id": 1000,
+        "is_p2p": 1
+      }
+    ],
+    "catalog_play_uri": {
+      "scheme": "http",
+      "loopback": true,
+      "sha256": "5b56434ad0b0f1bb6eb784aca5b7d32436f676d9eaf901e0ef3d040650c8384e"
+    },
+    "catalog_original_uri": {
+      "scheme": "https",
+      "loopback": false,
+      "sha256": "fbc9573c128c585a1adf97b6a7351121802752c9e972fdf7e720c45e8313802b"
+    },
+    "catalog_download_uri": {
+      "scheme": "https",
+      "loopback": false,
+      "sha256": "fbc9573c128c585a1adf97b6a7351121802752c9e972fdf7e720c45e8313802b"
+    },
+    "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+    "hls_input_uri": {
+      "scheme": "http",
+      "loopback": true,
+      "sha256": "5b56434ad0b0f1bb6eb784aca5b7d32436f676d9eaf901e0ef3d040650c8384e"
+    },
+    "parsed_master_variants": [
+      {
+        "width": -1,
+        "height": -1,
+        "bitrate": -1
+      }
+    ],
+    "parsed_master_tag_count": 0,
+    "authorized_manifest_reads": [
+      {
+        "origin": "catalog_play_uri",
+        "http_status": 200,
+        "is_hls": true,
+        "stream_inf_count": 0,
+        "segment_count": 910,
+        "advertised_resolutions": [],
+        "playlist_sha256": "69665c505b7b0b8e7c8fe153ede9281a21b966dcbb3421494651e2b6e5da26a9"
+      },
+      {
+        "origin": "catalog_original_uri",
+        "http_status": 403
+      }
+    ]
+  }
+]
