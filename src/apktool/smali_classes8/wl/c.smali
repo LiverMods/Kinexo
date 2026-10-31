@@ -1,0 +1,105 @@
+.class public abstract Lwl/c;
+.super Ldl/a;
+.source "Stop.java"
+
+
+# static fields
+.field public static c:Ljava/util/logging/Logger;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    .line 2
+    const-class v0, Lwl/c;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    .line 6
+    move-result-object v0
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-static {v0}, Ljava/util/logging/Logger;->getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;
+
+    .line 10
+    move-result-object v0
+
+    .line 11
+    .line 12
+    sput-object v0, Lwl/c;->c:Ljava/util/logging/Logger;
+
+    .line 13
+    return-void
+.end method
+
+.method public constructor <init>(Lml/l;)V
+    .locals 3
+
+    .line 1
+    new-instance v0, Lorg/fourthline/cling/model/types/b;
+
+    const-wide/16 v1, 0x0
+
+    invoke-direct {v0, v1, v2}, Lorg/fourthline/cling/model/types/b;-><init>(J)V
+
+    invoke-direct {p0, v0, p1}, Lwl/c;-><init>(Lorg/fourthline/cling/model/types/b;Lml/l;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lorg/fourthline/cling/model/types/b;Lml/l;)V
+    .locals 2
+
+    .line 2
+    new-instance v0, Lfl/d;
+
+    const-string v1, "Stop"
+
+    invoke-virtual {p2, v1}, Lml/l;->a(Ljava/lang/String;)Lorg/fourthline/cling/model/meta/a;
+
+    move-result-object p2
+
+    invoke-direct {v0, p2}, Lfl/d;-><init>(Lorg/fourthline/cling/model/meta/a;)V
+
+    invoke-direct {p0, v0}, Ldl/a;-><init>(Lfl/d;)V
+
+    .line 3
+    invoke-virtual {p0}, Ldl/a;->e()Lfl/d;
+
+    move-result-object p2
+
+    const-string v0, "InstanceID"
+
+    invoke-virtual {p2, v0, p1}, Lfl/d;->k(Ljava/lang/String;Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public h(Lfl/d;)V
+    .locals 1
+
+    .line 1
+    .line 2
+    sget-object p1, Lwl/c;->c:Ljava/util/logging/Logger;
+
+    .line 3
+    .line 4
+    const-string v0, "Execution successful"
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-virtual {p1, v0}, Ljava/util/logging/Logger;->fine(Ljava/lang/String;)V
+
+    .line 8
+    return-void
+.end method

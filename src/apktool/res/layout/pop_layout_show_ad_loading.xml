@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_top" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/ll_loading" android:background="@drawable/progress_custom_bg" android:paddingLeft="30.0dp" android:paddingTop="20.0dp" android:paddingRight="30.0dp" android:paddingBottom="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/loadingImageView" android:background="@drawable/loading_animation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:contentDescription="@null" />
+        <TextView android:textColor="@android:color/white" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:text="@string/text_is_load" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+{
+  "sha256": "f5276860d69c92114ac865b00d09947f79af54584c4247ab8fecc80473222a26",
+  "configuration": "Debug",
+  "dex_assembled": 9,
+  "dynamic_dex_assembled": 1,
+  "preserved_dex": 0,
+  "java_source_files": 2,
+  "native_libraries_verified": 24,
+  "apktool": "3.0.3",
+  "build_tools": "36.0.0",
+  "android_api": "37.0",
+  "identity_binding_tests": "passed"
+}

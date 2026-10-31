@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="str_wait">കാത്തിരിക്കൂ...</string>
+    <string name="text_cannel1">റദ്ദാക്കുക</string>
+    <string name="text_sure1">സ്ഥിരീകരിക്കുക</string>
+</resources>

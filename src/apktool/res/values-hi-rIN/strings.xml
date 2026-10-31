@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="str_wait">कृपया प्रतीक्षा करें...</string>
+    <string name="text_cannel1">रद्द करना</string>
+    <string name="text_sure1">पुष्टि करना</string>
+</resources>

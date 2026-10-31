@@ -1,0 +1,123 @@
+{
+  "apk_sha256": "f5276860d69c92114ac865b00d09947f79af54584c4247ab8fecc80473222a26",
+  "mode": "play-final",
+  "states": {
+    "playing": {
+      "event": "player_state",
+      "id": 1418208077,
+      "dtoId": 1418208077,
+      "episodes": 1,
+      "playbackState": 3,
+      "playWhenReady": true,
+      "positionMs": 5198895,
+      "durationMs": 11829000,
+      "sources": [
+        {
+          "p2p": 1,
+          "uriPresent": true
+        }
+      ]
+    },
+    "paused": {
+      "event": "player_state",
+      "id": 1418208077,
+      "dtoId": 1418208077,
+      "episodes": 1,
+      "playbackState": 3,
+      "playWhenReady": false,
+      "positionMs": 5206056,
+      "durationMs": 11829000,
+      "sources": [
+        {
+          "p2p": 1,
+          "uriPresent": true
+        }
+      ]
+    },
+    "paused-stable": {
+      "event": "player_state",
+      "id": 1418208077,
+      "dtoId": 1418208077,
+      "episodes": 1,
+      "playbackState": 3,
+      "playWhenReady": false,
+      "positionMs": 5206056,
+      "durationMs": 11829000,
+      "sources": [
+        {
+          "p2p": 1,
+          "uriPresent": true
+        }
+      ]
+    },
+    "resumed": {
+      "event": "player_state",
+      "id": 1418208077,
+      "dtoId": 1418208077,
+      "episodes": 1,
+      "playbackState": 3,
+      "playWhenReady": true,
+      "positionMs": 5210602,
+      "durationMs": 11829000,
+      "sources": [
+        {
+          "p2p": 1,
+          "uriPresent": true
+        }
+      ]
+    },
+    "seeked": {
+      "event": "player_state",
+      "id": 1418208077,
+      "dtoId": 1418208077,
+      "episodes": 1,
+      "playbackState": 3,
+      "playWhenReady": true,
+      "positionMs": 8426356,
+      "durationMs": 11829000,
+      "sources": [
+        {
+          "p2p": 1,
+          "uriPresent": true
+        }
+      ]
+    },
+    "fullscreen": {
+      "event": "player_state",
+      "id": 1418208077,
+      "dtoId": 1418208077,
+      "episodes": 1,
+      "playbackState": 3,
+      "playWhenReady": true,
+      "positionMs": 8441731,
+      "durationMs": 11829000,
+      "sources": [
+        {
+          "p2p": 1,
+          "uriPresent": true
+        }
+      ]
+    }
+  },
+  "checks": {
+    "install_update": true,
+    "cold_start_catalog": true,
+    "catalog_playback": true,
+    "pause": true,
+    "resume": true,
+    "seek": true,
+    "fullscreen": true,
+    "return_and_release": true
+  },
+  "dex_in_apk": 9,
+  "dex_byte_identical_to_original": 0,
+  "dynamic_dex": {
+    "classes": 3235,
+    "identical_to_original": false
+  },
+  "title": "Avatar: Fire and Ash",
+  "native_ports": [
+    7000
+  ],
+  "passed": true
+}

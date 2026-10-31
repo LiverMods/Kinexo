@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" package="com.mobrcine.cine_br" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <permission android:name="com.mobrcine.cine_br.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature" />
+    <uses-permission android:name="com.mobrcine.cine_br.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.mgs.carparking.app.AppApplication" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:testOnly="false" android:theme="@style/BrowserTheme" android:usesCleartextTraffic="true">
+        <service android:exported="false" android:name="com.mgs.carparking.download.DownloadService" />
+        <provider android:authorities="com.mobrcine.cine_br.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.mgs.carparking.util.MyProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
+        </provider>
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+        <service android:exported="false" android:name="com.mgs.carparking.androidupnp.service.ClingUpnpService" />
+        <service android:exported="false" android:name="com.mgs.carparking.androidupnp.service.SystemService" />
+        <activity android:alwaysRetainTaskState="true" android:exported="true" android:name="com.mgs.carparking.ui.login.splash.SplashActivity" android:theme="@style/AppTheme_Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.mgs.carparking.ui.MainActivity" android:screenOrientation="portrait" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTask" android:name="com.mgs.carparking.jiajia.MJMainActivity" android:screenOrientation="portrait" />
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.mgs.carparking.ui.mine.collection.CollectionActivity" android:theme="@style/AppTheme_Main" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.mgs.carparking.ui.homecontent.videodetail.VideoPlayDetailActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.mgs.carparking.ui.homecontent.videosearch.SearchContentVideoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing" />
+        <activity android:name="com.mgs.carparking.ui.mine.HistoryActivity" android:screenOrientation="portrait" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.mgs.carparking.ui.mine.DownloadVideoPlayActivity" />
+        <activity android:name="com.mgs.carparking.ui.mine.DownloadCompleteSecondActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.mgs.carparking.ui.mine.feedback.FeedbackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.mgs.carparking.ui.mine.feedback.FeedbackRecordActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.mgs.carparking.ui.channelcontent.ChannelFragment" android:screenOrientation="portrait" />
+        <activity android:name="com.mgs.carparking.ui.homecontent.more.VideoMoreListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.mgs.carparking.ui.mine.SettingActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.mgs.carparking.ui.mine.OrderListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.mgs.carparking.ui.login.LoginActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.mgs.carparking.ui.mine.EditMineActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.mgs.carparking.ui.login.RegisterActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.mgs.carparking.ui.mine.DownloadActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.mgs.carparking.ui.channelcontent.SpecialDetailNewActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.mgs.carparking.ui.mine.share.ExtensionRecordActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.mgs.carparking.ui.mine.share.ExtensionShareActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.mgs.carparking.ui.web.WebActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.mgs.carparking.ui.web.GameActivity" android:theme="@style/AppTheme_Splash" />
+        <service android:name="com.android.cast.dlna.dmc.DLNACastService" />
+        <service android:name="com.android.cast.dlna.dmr.DLNARendererService" />
+        <service android:name="com.android.cast.dlna.dms.DLNAContentService" />
+        <service android:enabled="false" android:exported="false" android:name="androidx.appcompat.app.AppLocalesMetadataHolderService">
+            <meta-data android:name="autoStoreLocales" android:value="true" />
+        </service>
+        <service android:name="com.liulishuo.filedownloader.services.FileDownloadService$SharedMainProcessService" />
+        <service android:name="com.liulishuo.filedownloader.services.FileDownloadService$SeparateProcessService" android:process=":filedownloader" />
+        <activity android:configChanges="keyboardHidden|orientation" android:name="me.goldze.mvvmhabit.base.ContainerActivity" />
+        <activity android:name="me.goldze.mvvmhabit.crash.DefaultErrorActivity" android:process=":error_activity" />
+        <provider android:authorities="com.mobrcine.cine_br.customactivityoncrashinitprovider" android:exported="false" android:initOrder="101" android:name="me.goldze.mvvmhabit.crash.CaocInitProvider" />
+        <provider android:authorities="com.mobrcine.cine_br.luckProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.luck.picture.lib.basic.PictureFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/ps_file_paths" />
+        </provider>
+        <service android:enabled="true" android:foregroundServiceType="location" android:name="com.luck.picture.lib.service.ForegroundService" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.luck.picture.lib.basic.PictureSelectorSupporterActivity" android:theme="@style/Base.Theme.NoActionBar" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.luck.picture.lib.basic.PictureSelectorTransparentActivity" android:theme="@style/Picture.Theme.Translucent" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.yalantis.ucrop.UCropActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.yalantis.ucrop.UCropMultipleActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:configChanges="orientation|screenSize" android:name="com.yzq.zxinglibrary.android.CaptureActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.NoActionBar" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <provider android:authorities="com.mobrcine.cine_br.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider" />
+        <provider android:authorities="com.mobrcine.cine_br.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup" />
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup" />
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup" />
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup" />
+        </provider>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService" />
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService" />
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" />
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY" />
+                <action android:name="android.intent.action.BATTERY_LOW" />
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="androidx.window.extensions" android:required="false" />
+        <uses-library android:name="androidx.window.sidecar" android:required="false" />
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService" />
+        <meta-data android:name="MOVIE_CHANNEL" android:value="moviebr_1001" />
+    </application>
+</manifest>

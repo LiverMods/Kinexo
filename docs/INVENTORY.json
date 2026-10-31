@@ -1,0 +1,13 @@
+{
+  "java_active_files": [
+    "src/java/classes3/com/mgs/carparking/recovery/PlaybackErrors.java",
+    "src/java/classes2/com/mgs/carparking/recovery/IdentityBinding.java",
+    "src/java/classes2/com/mgs/carparking/recovery/PrivacyBootstrap.java"
+  ],
+  "smali_classes": 19049,
+  "native_libraries": 6,
+  "dynamic_ad_dex": false,
+  "removed_main_classes": 34644,
+  "removed_dynamic_classes": 3235,
+  "baseline_IdentityBinding_sha256": "22a3df138b7f7b6f96ff063310f628abe988a172975d843065915a51e6bf06cb"
+}

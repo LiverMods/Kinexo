@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="str_wait">தயவுசெய்து காத்திருங்கள்...</string>
+    <string name="text_cannel1">ரத்து செய்</string>
+    <string name="text_sure1">நிச்சயம்</string>
+</resources>

@@ -1,0 +1,69 @@
+{
+  "apk_sha256": "a28c71f8481888c956a3f74cb25233aba9dae6b4539b41e4d49ef76d9214b150",
+  "dex": {
+    "classes.dex": {
+      "definitions": 1852,
+      "type_references": 4260
+    },
+    "classes2.dex": {
+      "definitions": 2201,
+      "type_references": 5300
+    },
+    "classes3.dex": {
+      "definitions": 2435,
+      "type_references": 6122
+    },
+    "classes4.dex": {
+      "definitions": 2246,
+      "type_references": 5538
+    },
+    "classes5.dex": {
+      "definitions": 2382,
+      "type_references": 5950
+    },
+    "classes6.dex": {
+      "definitions": 2284,
+      "type_references": 5738
+    },
+    "classes7.dex": {
+      "definitions": 2380,
+      "type_references": 5937
+    },
+    "classes8.dex": {
+      "definitions": 2646,
+      "type_references": 6158
+    },
+    "classes9.dex": {
+      "definitions": 629,
+      "type_references": 1982
+    }
+  },
+  "forbidden_type_references": [],
+  "forbidden_class_definitions": [],
+  "manifest_sdk_strings": [],
+  "embedded_dex": [],
+  "native_libraries": [
+    "lib/arm64-v8a/libjiagu_sdk_pp_hlsProtected.so",
+    "lib/arm64-v8a/libpl_droidsonroids_gif.so",
+    "lib/arm64-v8a/libpp_hls.so",
+    "lib/armeabi-v7a/libjiagu_sdk_pp_hlsProtected.so",
+    "lib/armeabi-v7a/libpl_droidsonroids_gif.so",
+    "lib/armeabi-v7a/libpp_hls.so"
+  ],
+  "ad_assets": [],
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.READ_MEDIA_IMAGES",
+    "android.permission.CAMERA",
+    "android.permission.INTERNET",
+    "android.permission.CHANGE_WIFI_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.CHANGE_WIFI_MULTICAST_STATE",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.WAKE_LOCK",
+    "com.mobrcine.cine_br.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "passed": true
+}

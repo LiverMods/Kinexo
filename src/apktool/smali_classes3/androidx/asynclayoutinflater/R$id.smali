@@ -1,0 +1,81 @@
+.class public final Landroidx/asynclayoutinflater/R$id;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/asynclayoutinflater/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "id"
+.end annotation
+
+
+# static fields
+.field public static final action_container:I = 0x7f0a004a
+
+.field public static final action_divider:I = 0x7f0a004c
+
+.field public static final action_image:I = 0x7f0a004d
+
+.field public static final action_text:I = 0x7f0a0054
+
+.field public static final actions:I = 0x7f0a0056
+
+.field public static final async:I = 0x7f0a0091
+
+.field public static final blocking:I = 0x7f0a00dd
+
+.field public static final chronometer:I = 0x7f0a011f
+
+.field public static final forever:I = 0x7f0a0205
+
+.field public static final icon:I = 0x7f0a024f
+
+.field public static final icon_group:I = 0x7f0a0251
+
+.field public static final info:I = 0x7f0a0268
+
+.field public static final italic:I = 0x7f0a033d
+
+.field public static final line1:I = 0x7f0a03a7
+
+.field public static final line3:I = 0x7f0a03a8
+
+.field public static final normal:I = 0x7f0a057e
+
+.field public static final notification_background:I = 0x7f0a0580
+
+.field public static final notification_main_column:I = 0x7f0a0581
+
+.field public static final notification_main_column_container:I = 0x7f0a0582
+
+.field public static final right_icon:I = 0x7f0a05da
+
+.field public static final right_side:I = 0x7f0a05dc
+
+.field public static final tag_transition_group:I = 0x7f0a0682
+
+.field public static final tag_unhandled_key_event_manager:I = 0x7f0a0683
+
+.field public static final tag_unhandled_key_listeners:I = 0x7f0a0684
+
+.field public static final text:I = 0x7f0a068a
+
+.field public static final text2:I = 0x7f0a068b
+
+.field public static final time:I = 0x7f0a06a4
+
+.field public static final title:I = 0x7f0a06a5
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

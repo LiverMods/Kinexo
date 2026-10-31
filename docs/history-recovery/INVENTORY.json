@@ -1,0 +1,36 @@
+{
+  "java_own_reference": 292,
+  "java_support_reference": 140,
+  "java_active": 2,
+  "java_historical_localvideo_excluded": 1,
+  "smali_files_by_dex": {
+    "smali": 4333,
+    "smali_classes2": 5495,
+    "smali_classes3": 6330,
+    "smali_classes4": 6401,
+    "smali_classes5": 6839,
+    "smali_classes6": 7319,
+    "smali_classes7": 7157,
+    "smali_classes8": 7850,
+    "smali_classes9": 1968
+  },
+  "native_libraries": 24,
+  "original_dex_files_in_project": 0,
+  "original_apk_in_project": false,
+  "scope": "Complete recovered build tree; native sources and original Gradle sources are not recovered.",
+  "smali_source_files": 56927,
+  "generated_smali_from_java": 5,
+  "identity_binding_source_sha256": "22a3df138b7f7b6f96ff063310f628abe988a172975d843065915a51e6bf06cb",
+  "java_compile_probe": {
+    "exit_code": 1,
+    "errors_reported": 10507,
+    "error_preview_limit": 20,
+    "missing_examples": [
+      "androidx.fragment.app",
+      "me.goldze.mvvmhabit.base"
+    ],
+    "classpath": "android.jar only; original dependency configuration unavailable"
+  },
+  "main_smali_source_files": 53692,
+  "dynamic_smali_source_files": 3235
+}

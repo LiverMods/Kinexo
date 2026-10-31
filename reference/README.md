@@ -1,0 +1,1 @@
+Estes Java foram decompilados ANTES da limpeza. São referência histórica, não fontes compiladas, e podem mostrar anúncios/coletas que foram retirados do Smali ativo. Editar esta pasta não altera o APK. As fontes autoritativas estão em src/apktool e src/java. Não use estas cópias para reinserir dependências removidas.

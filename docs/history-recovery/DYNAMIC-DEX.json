@@ -1,0 +1,9 @@
+{
+  "asset": "assets/audience_network.dex",
+  "source": "src/dynamic-smali/audience_network",
+  "classes": 3235,
+  "original_sha256": "07fef7ea41d84ccf44ef2e2a6de8d23e3d3dd5920c87979a1d501a9cb6272496",
+  "original_version": "035",
+  "assembled_version": "037",
+  "binary_input_in_project": false
+}

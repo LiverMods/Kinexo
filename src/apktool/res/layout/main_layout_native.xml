@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/main_layout_main" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <pl.droidsonroids.gif.GifImageView android:id="@id/main_img_gif_native" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <TextView android:textSize="10.0sp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_ad" android:layout_alignBottom="@id/main_img_gif_native" android:layout_marginStart="10.0dp" />
+</RelativeLayout>

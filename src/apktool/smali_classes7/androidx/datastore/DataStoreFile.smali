@@ -1,0 +1,67 @@
+.class public final Landroidx/datastore/DataStoreFile;
+.super Ljava/lang/Object;
+.source "DataStoreFile.kt"
+
+
+# direct methods
+.method public static final dataStoreFile(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
+    .locals 2
+
+    .line 1
+    .line 2
+    const-string v0, "<this>"
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-static {p0, v0}, Luh/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    const-string v0, "fileName"
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-static {p1, v0}, Luh/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 11
+    .line 12
+    new-instance v0, Ljava/io/File;
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    .line 16
+    move-result-object p0
+
+    .line 17
+    .line 18
+    .line 19
+    invoke-virtual {p0}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
+
+    .line 20
+    move-result-object p0
+
+    .line 21
+    .line 22
+    const-string v1, "datastore/"
+
+    .line 23
+    .line 24
+    .line 25
+    invoke-static {v1, p1}, Luh/p;->p(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 26
+    move-result-object p1
+
+    .line 27
+    .line 28
+    .line 29
+    invoke-direct {v0, p0, p1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 30
+    return-object v0
+.end method

@@ -1,0 +1,197 @@
+.class public Lcom/ruffian/library/widget/RCheckBox;
+.super Landroidx/appcompat/widget/AppCompatCheckBox;
+.source "RCheckBox.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Landroidx/appcompat/widget/AppCompatCheckBox;"
+    }
+.end annotation
+
+
+# instance fields
+.field public a:Ldb/b;
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0, p1, p2}, Landroidx/appcompat/widget/AppCompatCheckBox;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    .line 4
+    .line 5
+    new-instance v0, Ldb/b;
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-direct {v0, p1, p0, p2}, Ldb/b;-><init>(Landroid/content/Context;Landroid/widget/CompoundButton;Landroid/util/AttributeSet;)V
+
+    .line 9
+    .line 10
+    iput-object v0, p0, Lcom/ruffian/library/widget/RCheckBox;->a:Ldb/b;
+
+    .line 11
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic getHelper()Ldb/a;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/ruffian/library/widget/RCheckBox;->getHelper()Ldb/b;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getHelper()Ldb/b;
+    .locals 1
+
+    .line 2
+    iget-object v0, p0, Lcom/ruffian/library/widget/RCheckBox;->a:Ldb/b;
+
+    return-object v0
+.end method
+
+.method public onDraw(Landroid/graphics/Canvas;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
+
+    .line 4
+    .line 5
+    iget-object p1, p0, Lcom/ruffian/library/widget/RCheckBox;->a:Ldb/b;
+
+    .line 6
+    .line 7
+    if-eqz p1, :cond_0
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-virtual {p1}, Ldb/c;->y()V
+
+    .line 11
+    :cond_0
+    return-void
+.end method
+
+.method public onTouchEvent(Landroid/view/MotionEvent;)Z
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/ruffian/library/widget/RCheckBox;->a:Ldb/b;
+
+    .line 3
+    .line 4
+    if-eqz v0, :cond_0
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-virtual {v0, p1}, Ldb/c;->H(Landroid/view/MotionEvent;)V
+
+    .line 8
+    .line 9
+    .line 10
+    :cond_0
+    invoke-super {p0, p1}, Landroid/view/View;->onTouchEvent(Landroid/view/MotionEvent;)Z
+
+    .line 11
+    move-result p1
+
+    .line 12
+    return p1
+.end method
+
+.method public setChecked(Z)V
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/ruffian/library/widget/RCheckBox;->a:Ldb/b;
+
+    .line 3
+    .line 4
+    if-eqz v0, :cond_0
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-virtual {v0, p1}, Ldb/c;->I(Z)V
+
+    .line 8
+    .line 9
+    .line 10
+    :cond_0
+    invoke-super {p0, p1}, Landroid/widget/CompoundButton;->setChecked(Z)V
+
+    .line 11
+    return-void
+.end method
+
+.method public setEnabled(Z)V
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-super {p0, p1}, Landroid/view/View;->setEnabled(Z)V
+
+    .line 4
+    .line 5
+    iget-object v0, p0, Lcom/ruffian/library/widget/RCheckBox;->a:Ldb/b;
+
+    .line 6
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-virtual {v0, p1}, Ldb/c;->K(Z)V
+
+    .line 11
+    :cond_0
+    return-void
+.end method
+
+.method public setSelected(Z)V
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/ruffian/library/widget/RCheckBox;->a:Ldb/b;
+
+    .line 3
+    .line 4
+    if-eqz v0, :cond_0
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-virtual {v0, p1}, Ldb/c;->S(Z)V
+
+    .line 8
+    .line 9
+    .line 10
+    :cond_0
+    invoke-super {p0, p1}, Landroid/view/View;->setSelected(Z)V
+
+    .line 11
+    return-void
+.end method

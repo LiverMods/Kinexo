@@ -1,0 +1,20 @@
+{
+  "excluded": [
+    "APKs",
+    "original DEX",
+    "compiled .class",
+    ".git",
+    ".work",
+    "dist",
+    "keystores",
+    "signing passwords",
+    "emulator user data",
+    "old analyses and logs"
+  ],
+  "high_confidence_secret_pattern_matches": 0,
+  "scope": "Static pattern check and input allowlist; embedded legacy integration constants are retained.",
+  "source_file_count_before_audit_record": 61070,
+  "largest_file_bytes": 15478013,
+  "source_identity_unchanged": true,
+  "all_source_copy_hashes_match": true
+}

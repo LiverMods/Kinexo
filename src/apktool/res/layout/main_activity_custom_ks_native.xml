@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/main_ks_layout_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/main_ks_imageView" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <TextureView android:id="@id/main_ks_textureView" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:layout_gravity="bottom" android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_marginBottom="5.0dp" android:src="@drawable/main_ks_logo" android:layout_marginStart="5.0dp" />
+    </FrameLayout>
+</LinearLayout>

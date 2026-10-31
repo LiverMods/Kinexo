@@ -1,0 +1,8 @@
+{
+  "lib/arm64-v8a/libjiagu_sdk_pp_hlsProtected.so": "137b70530423379b1a6827b2e602c831ddfb1821e0d80e860281c1488ef77494",
+  "lib/arm64-v8a/libpl_droidsonroids_gif.so": "c0a9f24e081f56a7499f3f1b4b7c642b17dabc01fefd119049b8c49cd105d0a6",
+  "lib/arm64-v8a/libpp_hls.so": "2c3b7daf4a319b23de259a9b18904ebf082f1690ba832ba954ddc0417b19e9b0",
+  "lib/armeabi-v7a/libjiagu_sdk_pp_hlsProtected.so": "01ac2b74c2e180e1d3777bf5f748046932f2f9e7028f299574cae9b41a0202c0",
+  "lib/armeabi-v7a/libpl_droidsonroids_gif.so": "288c8ffd2304106924d36eeda7374f90049446192ac3c8de914cb19eb6d84734",
+  "lib/armeabi-v7a/libpp_hls.so": "3e4c1289844e6d4a5e2621c35196b5d8bf8ce42635dbe801ba850b05f758fb53"
+}

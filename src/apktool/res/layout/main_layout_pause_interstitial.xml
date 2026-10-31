@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_content_material" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <pl.droidsonroids.gif.GifImageView android:id="@id/main_img_gif_material" android:visibility="visible" android:layout_width="match_parent" android:layout_height="120.0dp" android:layout_centerHorizontal="true" />
+    <FrameLayout android:id="@id/main_material_player_view" android:layout_width="match_parent" android:layout_height="120.0dp" app:screenScaleType="type_match_parent"
+      xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <ImageView android:id="@id/main_img_close" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/main_ico_close" android:layout_alignParentRight="true" />
+    <TextView android:textSize="13.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/main_txt_cd" android:background="@drawable/main_bg_video_count" android:visibility="gone" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp" android:layout_alignParentRight="true" />
+    <TextView android:textSize="10.0sp" android:id="@id/main_adtv_material" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_ad" android:layout_alignParentBottom="true" android:layout_marginStart="10.0dp" />
+</RelativeLayout>

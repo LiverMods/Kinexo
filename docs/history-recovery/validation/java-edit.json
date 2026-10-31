@@ -1,0 +1,19 @@
+{
+  "apk_sha256": "73327630b663d0dcd1c683c14b3cea7451a7cf3654dc7ac3bd9f300a46cf28d4",
+  "mode": "edit-final",
+  "states": {},
+  "checks": {
+    "install_update": true,
+    "java_change_visible_in_app": true
+  },
+  "dex_in_apk": 9,
+  "dex_byte_identical_to_original": 0,
+  "dynamic_dex": {
+    "classes": 3235,
+    "identical_to_original": false
+  },
+  "labels": [
+    "JAVA EDITAVEL VALIDADO: fonte invalida.\nDetalhes técnicos"
+  ],
+  "passed": true
+}
