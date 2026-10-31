@@ -1,3 +1,4 @@
+param([switch]$Benchmark,[switch]$Fixture,[switch]$Export,[switch]$Restore,[switch]$Layout,[switch]$Seasons)
 $ErrorActionPreference='Stop'
 $project=(Resolve-Path "$PSScriptRoot/../..").Path
 $taskRoot=Join-Path $project '.work/device-checks'
@@ -23,6 +24,7 @@ $avd=& "$sdk/platform-tools/adb.exe" -s emulator-5556 emu avd name
 if($avd[0] -ne 'Movie_Observe_API37'){throw 'Wrong AVD'}
 & "$sdk/platform-tools/adb.exe" -s emulator-5556 install -r "$taskRoot/movie-checks.apk"
 if($LASTEXITCODE){throw 'checks install failed'}
-$deviceResult=& "$sdk/platform-tools/adb.exe" -s emulator-5556 shell am instrument -w -r movie.evolution.tests/movie.tests.Checks
+$extra=@();if($Benchmark){$extra=@("-e","benchmark","true")};if($Fixture){$extra=@("-e","fixture","true")};if($Export){$extra=@("-e","export","true")};if($Restore){$extra=@("-e","restore","true")};if($Layout){$extra=@("-e","layout","true")};if($Seasons){$extra=@("-e","seasons","true")}
+$deviceResult=& "$sdk/platform-tools/adb.exe" -s emulator-5556 shell am instrument -w -r @extra movie.evolution.tests/movie.tests.Checks
 $deviceResult | ForEach-Object { Write-Output $_ }
 if ($LASTEXITCODE -ne 0 -or -not ($deviceResult -match "INSTRUMENTATION_RESULT: result=PASS")) { throw "Device checks failed; inspect the reported assertions." }

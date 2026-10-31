@@ -1,0 +1,28 @@
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Performing Incremental Install
+Performing Streamed Install
+Success
+INSTRUMENTATION_STATUS: check=UI: DESTAQUE NO KINEXO
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real catalog supplies another related season
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real player STATE_READY with rendered video frames
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: Configurações
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real player STATE_READY with rendered video frames
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Player resumes same engine after another screen
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: Temporada 2
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Season panel preserves real catalog identifier
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real player STATE_READY with rendered video frames
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Different season plays through genuine authorization after clean restore
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: checks=["UI: DESTAQUE NO KINEXO","Real catalog supplies another related season","Real player STATE_READY with rendered video frames","UI: Configurações","Real player STATE_READY with rendered video frames","Player resumes same engine after another screen","UI: Temporada 2","Season panel preserves real catalog identifier","Real player STATE_READY with rendered video frames","Different season plays through genuine authorization after clean restore"]
+INSTRUMENTATION_RESULT: result=PASS
+INSTRUMENTATION_CODE: -1

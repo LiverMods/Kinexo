@@ -1,0 +1,11 @@
+Performing Incremental Install
+Performing Streamed Install
+Success
+INSTRUMENTATION_STATUS: check=Export pre-uninstall local profiles
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: checks=["Export pre-uninstall local profiles"]
+INSTRUMENTATION_RESULT: result=PASS
+INSTRUMENTATION_CODE: -1
+
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.

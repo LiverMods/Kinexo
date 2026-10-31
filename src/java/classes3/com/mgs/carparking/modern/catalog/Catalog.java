@@ -11,7 +11,8 @@ import java.io.*;
 
 public final class Catalog {
     public interface Callback<T>{void ready(T value);void failed(String message);}
-    public static final class Section {public final String title;public final List<Movie> movies;public Section(String t,List<Movie> m){title=t;movies=m;}}
+    public static final class Provider {public final int id;public final String name,logo;Provider(Object block){id=Legacy.integer(block,"getTopic_id");name=Legacy.text(block,"getBlock_name","getContent");logo=Legacy.text(block,"getBanner_pic");}}
+    public static final class Section {public final String title;public final List<Movie> movies;public final List<Provider> providers=new ArrayList<>();public Section(String t,List<Movie> m){title=t;movies=m;}}
     private static final ExecutorService IO=Executors.newFixedThreadPool(2);
     private static final Handler MAIN=new Handler(Looper.getMainLooper());
     private static List<Section> cached;
@@ -43,6 +44,7 @@ public final class Catalog {
         Map<String,Object> map=new HashMap<>();map.put("channel_id",channelId);if(Legacy.integer(Legacy.type("ca.e"),"j")==8)map.put("cgi",Legacy.call(Legacy.type("ca.e"),"l"));map.put("pn",1);map.put("psize",100);
         List<?> modules=(List<?>)request("j",map);List<Section> sections=new ArrayList<>();
         for(Object module:modules){LinkedHashMap<Integer,Movie> movies=new LinkedHashMap<>();
+            if(Legacy.integer(module,"getType")==10){Section streaming=new Section(Legacy.text(module,"getModule_name"),Collections.emptyList());for(Object block:Legacy.list(module,"getBlock_list")){Provider provider=new Provider(block);if(provider.id>0)streaming.providers.add(provider);}if(!streaming.providers.isEmpty())sections.add(streaming);continue;}
             for(Object block:Legacy.list(module,"getBlock_list")) {
                 Object dto=Legacy.optional(block,"getVod_info");if(dto!=null){Movie m=Movie.from(dto);if(m.id>0)movies.put(m.id,m);}
                 for(Object d:Legacy.list(block,"getVod_list")){Movie m=Movie.from(d);if(m.id>0)movies.put(m.id,m);}

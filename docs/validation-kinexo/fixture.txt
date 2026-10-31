@@ -1,0 +1,30 @@
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Performing Incremental Install
+Performing Streamed Install
+Success
+INSTRUMENTATION_STATUS: check=Public Google HLS fixture has multiple supported resolutions
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: fixture_tracks=[768 × 576 · 8.06 Mbps · avc1.4d401f, 640 × 480 · 6.10 Mbps · avc1.4d401f, 480 × 360 · 4.01 Mbps · avc1.4d401f, 320 × 240 · 2.19 Mbps · avc1.4d401f, 192 × 144 · 0.83 Mbps · avc1.42c01e]
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=HLS manual track selection 576p
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=HLS quality change keeps playback timeline
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=HLS manual track selection 144p
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=HLS quality change keeps playback timeline
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Automatic mode restores real AdaptiveTrackSelection
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Unavailable manual resolution falls back to Automatic
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=HLS fixture exposes real audio and subtitle tracks
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Native selectors apply actual audio and subtitles
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Subtitles can be disabled
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: checks=["Public Google HLS fixture has multiple supported resolutions","HLS manual track selection 576p","HLS quality change keeps playback timeline","HLS manual track selection 144p","HLS quality change keeps playback timeline","Automatic mode restores real AdaptiveTrackSelection","Unavailable manual resolution falls back to Automatic","HLS fixture exposes real audio and subtitle tracks","Native selectors apply actual audio and subtitles","Subtitles can be disabled"]
+INSTRUMENTATION_RESULT: result=PASS
+INSTRUMENTATION_CODE: -1

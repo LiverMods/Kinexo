@@ -1,0 +1,24 @@
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Performing Incremental Install
+Performing Streamed Install
+Success
+INSTRUMENTATION_STATUS: check=Benchmark home ready
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: home_pss_kib=129768
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Benchmark first frame rendered
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: buffering_ms_12s=5017
+INSTRUMENTATION_STATUS: dropped_frames=24
+INSTRUMENTATION_STATUS: first_frame_ms=2854
+INSTRUMENTATION_STATUS: player_pss_kib=124837
+INSTRUMENTATION_STATUS: rebuffer_events_12s=2
+INSTRUMENTATION_STATUS: rendered_frames=253
+INSTRUMENTATION_STATUS: startup_ready_ms=not_observed_before_first_frame
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real player STATE_READY with rendered video frames
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: checks=["Benchmark home ready","Benchmark first frame rendered","Real player STATE_READY with rendered video frames"]
+INSTRUMENTATION_RESULT: result=PASS
+INSTRUMENTATION_CODE: -1

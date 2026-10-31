@@ -7996,6 +7996,7 @@
 
     .line 589
     .line 590
+    invoke-static {p0}, Lcom/mgs/carparking/modern/player/PlayerUi;->beforeStart(Landroid/app/Activity;)V
     iget-object v0, p0, Lcom/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity;->f:Lt/a;
 
     .line 591

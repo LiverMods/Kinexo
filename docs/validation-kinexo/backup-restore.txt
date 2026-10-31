@@ -1,0 +1,23 @@
+Performing Incremental Install
+Performing Streamed Install
+Success
+INSTRUMENTATION_STATUS: check=Clean installation has no previous profile data
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Restore every profile after uninstall and reinstall
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Names restored after clean installation
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=History list and searches restored after reinstall
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Player preferences restored after reinstall
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Profile photo restored after reinstall
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Remove local QA backup after transfer
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: checks=["Clean installation has no previous profile data","Restore every profile after uninstall and reinstall","Names restored after clean installation","History list and searches restored after reinstall","Player preferences restored after reinstall","Profile photo restored after reinstall","Remove local QA backup after transfer"]
+INSTRUMENTATION_RESULT: result=PASS
+INSTRUMENTATION_CODE: -1
+
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.

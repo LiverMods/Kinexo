@@ -1,10 +1,12 @@
-# Movie — evolução Android experimental
+# Movie / Kinexo — Android experimental
 
 Continuação da árvore recuperada e limpa `movie-privado`, preservada fora deste projeto. Home, catálogo/detalhes, player, perfis, histórico/lista e configurações evoluem no mesmo aplicativo e pacote `com.mobrcine.cine_br`.
 
-Esta árvore completa reconstrói o APK: compila **18 arquivos Java ativos**, monta **9 DEX a partir de 19.018 arquivos Smali**, compila recursos, alinha e assina. **Não usa um APK pronto nem DEX original como entrada.** As 15 classes Java principais da evolução ficam em `src/java/classes3/com/mgs/carparking/modern/`.
+Esta árvore completa reconstrói o APK: compila **21 arquivos Java ativos**, monta **9 DEX a partir de 19.018 arquivos Smali**, compila recursos, alinha e assina. **Não usa um APK pronto nem DEX original como entrada.** Os 18 arquivos Java principais da evolução ficam em `src/java/classes3/com/mgs/carparking/modern/`.
 
 É um projeto híbrido recompilável, não uma restauração integral em Java/Gradle. Seis bibliotecas nativas e o asset protegido do HLS continuam binários, com hashes verificados. Seus fontes C/C++ não foram recuperados. `reference/` contém Java decompilado **histórico**, anterior à limpeza, que não participa da build.
+
+Refinamento nativo atual: [docs/KINEXO-REFINO.md](docs/KINEXO-REFINO.md). Mantém o mesmo motor/pacote, restaura a seção real de Streaming e acrescenta painéis, qualidade real, enquadramento e gestos. Resultado testado e capturas em `docs/validation-kinexo/`; `docs/EVOLUCAO.md` registra a entrega anterior.
 
 ## Compilar em um comando
 
@@ -53,7 +55,7 @@ Edite Java nas funcionalidades novas, ou o Smali correspondente nas partes resta
 
 ## Perfis, histórico e backup
 
-Um perfil entra diretamente na Home; com dois ou mais, a abertura passa pelo seletor. Nome, foto, buscas, lista, progresso, velocidade, brilho e próximo automático ficam locais. O histórico original compatível é importado para o perfil inicial sem destruir seu banco.
+Um perfil entra diretamente na Home; com dois ou mais, a abertura passa pelo seletor. Nome, foto, buscas, lista, progresso, velocidade, brilho, qualidade, enquadramento e próximo automático ficam locais. O histórico original compatível é importado para o perfil inicial sem destruir seu banco.
 
 Em **Ajustes → Exportar perfis e configurações**, escolha Downloads ou outro provedor fora da pasta do aplicativo. Após reinstalar, abra **Ajustes → Restaurar um backup** e selecione esse JSON. Ele inclui fotos, preferências, buscas, lista e progresso, com validação antes da transação. A restauração mescla IDs, atualizando registros coincidentes; não substitui automaticamente todos os dados existentes. Downloads de mídia e a sessão/autorização do serviço não são exportados. Os downloads existentes continuam compartilhados no aparelho.
 
@@ -70,7 +72,7 @@ python tests/audit_evolution.py dist/SEU-APK.apk . audit-evolucao.json
 
 A primeira verifica os 9 DEX, referências a SDKs removidos, manifesto binário, permissões, assets e hashes nativos. A segunda exige a ausência das 31 implementações comerciais retiradas e a preservação da IdentityBinding. Nenhuma delas prova ausência de coleta dentro dos nativos opacos ou nos serviços externos.
 
-Os testes reais adicionais usam exclusivamente o AVD `Movie_Observe_API37`, serial `emulator-5556`. `tests/runtime/Run-DeviceChecks.ps1` gera/instala um APK de instrumentação separado, com APIs Android já existentes, e **cria/altera dados de teste nesse AVD**. Não execute contra dados pessoais. Frida é opcional para as sondas passivas históricas; não integra o APK nem a build. Veja resultados e limites em [docs/EVOLUCAO.md](docs/EVOLUCAO.md) e `docs/validation/`.
+Os testes reais adicionais usam exclusivamente o AVD `Movie_Observe_API37`, serial `emulator-5556`. `tests/runtime/Run-DeviceChecks.ps1` gera/instala um APK de instrumentação separado, com APIs Android já existentes, e **cria/altera dados de teste nesse AVD**. Não execute contra dados pessoais. Frida é opcional para as sondas passivas históricas; não integra o APK nem a build. Veja resultados e limites em [docs/EVOLUCAO.md](docs/EVOLUCAO.md) e `docs/validation/`. O refinamento atual possui também `-Fixture` (HLS público multifaixa), `-Benchmark` e `-Layout` no mesmo script; detalhes em `docs/KINEXO-REFINO.md`.
 
 `docs/PRIVACIDADE.md` e `docs/validation-privado/` registram a limpeza anterior. `docs/history-recovery/` registra a recuperação que a precedeu. As contagens e hashes antigos pertencem às respectivas versões.
 

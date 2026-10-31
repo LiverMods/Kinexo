@@ -1,7 +1,7 @@
 {
   "format": "movie-source-manifest-v1",
   "self_excluded": true,
-  "file_count": 23201,
+  "file_count": 23241,
   "files": [
     {
       "path": ".gitattributes",
@@ -20,8 +20,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7227,
-      "sha256": "f84d8f58d058e688bd5e01d55562be504059b9f7229bc0135ca0a482d2825dbd"
+      "bytes": 7718,
+      "sha256": "0331e71ee8ea27e00d694279dcb9000fa15e08cd9cc15bccd51562f05ee44064"
     },
     {
       "path": "docs/COMMERCIAL-REMOVALS.json",
@@ -40,13 +40,18 @@
     },
     {
       "path": "docs/INVENTORY.json",
-      "bytes": 1674,
-      "sha256": "391acc513de00365fc19a2cfab6b664d8786fdafd0c62eb0f04c479c2dcd0ff3"
+      "bytes": 1862,
+      "sha256": "16d343deb0619ec149a3ef004127c46d33a03fd4559c74f8cec337d1c7beb9e6"
     },
     {
       "path": "docs/JAVA-CLASSES.csv",
       "bytes": 93659,
       "sha256": "788d130cf81c10cb8e881d2093148588ba46ab363925ad6ef235cdb25af0c2cb"
+    },
+    {
+      "path": "docs/KINEXO-REFINO.md",
+      "bytes": 8221,
+      "sha256": "d83c179057458d013c92dac641e5ff71f357bdf640d993b3d4300a6a7917b5d7"
     },
     {
       "path": "docs/MODIFIED-SMALI.json",
@@ -147,6 +152,181 @@
       "path": "docs/tool-notices/guava-32.1.3-jre/LICENSE",
       "bytes": 11358,
       "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "docs/validation-kinexo/README.md",
+      "bytes": 4304,
+      "sha256": "f604be6d300da492ecf09107d32426e33e3803285db6f9327f88b360ad4906ac"
+    },
+    {
+      "path": "docs/validation-kinexo/apk-audit.json",
+      "bytes": 1979,
+      "sha256": "bf38c6bbfa780ab6811b9728be419bbaf42296a41390cde7f887834bd54d1109"
+    },
+    {
+      "path": "docs/validation-kinexo/backup-export.txt",
+      "bytes": 418,
+      "sha256": "7d2126ee72ef9c60c37ce18869d10d3fef0126ed42dd794c785dec28628bd7c7"
+    },
+    {
+      "path": "docs/validation-kinexo/backup-restore.txt",
+      "bytes": 1360,
+      "sha256": "74bd82ec35ba8e03f7f45cdbf0b134d6a6ca61db935f12c8c8758909336825d9"
+    },
+    {
+      "path": "docs/validation-kinexo/baseline-benchmark-1.txt",
+      "bytes": 895,
+      "sha256": "9c3e464ac05968e5e00d1cf5e5a882cd1b2d247efe97daff036b908533c478cc"
+    },
+    {
+      "path": "docs/validation-kinexo/baseline-benchmark-2.txt",
+      "bytes": 1109,
+      "sha256": "bb966ad7245cb3148a7a7ce08e3e792b135fa3d78f1e73f86ec739d5baa5014c"
+    },
+    {
+      "path": "docs/validation-kinexo/baseline-benchmark.txt",
+      "bytes": 895,
+      "sha256": "9c3e464ac05968e5e00d1cf5e5a882cd1b2d247efe97daff036b908533c478cc"
+    },
+    {
+      "path": "docs/validation-kinexo/baseline-core.txt",
+      "bytes": 7066,
+      "sha256": "7fdf04885b0427fb345985228418cf45f10d11cea35f9740ca52d37ee320ddd9"
+    },
+    {
+      "path": "docs/validation-kinexo/benchmark-1.txt",
+      "bytes": 1137,
+      "sha256": "bdfb8caeab0e90f7447ad03dd02bfa706479ca1124c8f1b2196636a924e1b300"
+    },
+    {
+      "path": "docs/validation-kinexo/benchmark-2.txt",
+      "bytes": 1137,
+      "sha256": "5ab2fcf6073b14810613982149b12b64c79c172affdb96311cd420f9a59e2a92"
+    },
+    {
+      "path": "docs/validation-kinexo/build.json",
+      "bytes": 434,
+      "sha256": "51595205d5a91542c23e15cf2506e5b630f4b574fc1196695b28e48b26791e8d"
+    },
+    {
+      "path": "docs/validation-kinexo/clean-restore.json",
+      "bytes": 446,
+      "sha256": "78731971c38880747dc35899e3e294be8805c7b68f605e273127532ed7c7dc23"
+    },
+    {
+      "path": "docs/validation-kinexo/core.txt",
+      "bytes": 10636,
+      "sha256": "9820de871dad74ad663a85627a568dcb201aed65e5514d1a56e8fb1946d89def"
+    },
+    {
+      "path": "docs/validation-kinexo/evolution-audit.json",
+      "bytes": 354,
+      "sha256": "1d5b79378426f0c7c91b6f63ff009296f105f0832711062fb4d579a382b74de8"
+    },
+    {
+      "path": "docs/validation-kinexo/fixture.txt",
+      "bytes": 2090,
+      "sha256": "d71a9901fc4a0ef2948c9f97de3d7643c2ee054e55b818a2a521d84ffcde7b93"
+    },
+    {
+      "path": "docs/validation-kinexo/layout.txt",
+      "bytes": 2013,
+      "sha256": "c8ca5f1f0ec9779da59b9fb7754569604e40a559a6963ceeaa765a979086f81a"
+    },
+    {
+      "path": "docs/validation-kinexo/performance.json",
+      "bytes": 1822,
+      "sha256": "539e5d8fb75f0161f1b22c24672bd6fe2ffcdffda13108f5aa30cc2f4836c822"
+    },
+    {
+      "path": "docs/validation-kinexo/protected-preserved.json",
+      "bytes": 1189,
+      "sha256": "4bcb86572f0d01d06efa95ec7b200e0ff488310b5897eb8158a832d2a879ffea"
+    },
+    {
+      "path": "docs/validation-kinexo/results.json",
+      "bytes": 2728,
+      "sha256": "d572f9a4dd42f39fe0bbaa02b00fd8dbb348d2a7598db3c18c09e25a1022ee99"
+    },
+    {
+      "path": "docs/validation-kinexo/screens/cast.png",
+      "bytes": 618438,
+      "sha256": "f52f6296115ed2536284ff1ee0472da1f8a5172c39bae713460fdef97c3c6785"
+    },
+    {
+      "path": "docs/validation-kinexo/screens/details.png",
+      "bytes": 1503887,
+      "sha256": "6ba2d1fa7c3bdc98f56e0bca40a85350b3def0f110d29198ac0f6bfdb3dc76e4"
+    },
+    {
+      "path": "docs/validation-kinexo/screens/episodes.png",
+      "bytes": 552217,
+      "sha256": "31d2928ae03e2aee5b88f888220a50b3234c352015a1527ef84d64f0e5907410"
+    },
+    {
+      "path": "docs/validation-kinexo/screens/home-compact.png",
+      "bytes": 565065,
+      "sha256": "54bb3ead656461d05fd9b209edd64872b794372d5ba9c0f7e7543d701d3335f8"
+    },
+    {
+      "path": "docs/validation-kinexo/screens/home.png",
+      "bytes": 1974850,
+      "sha256": "e603d70a8901b18f7dce484b74c1a6e1713c87df6d6ccfba1d9506db3494d87f"
+    },
+    {
+      "path": "docs/validation-kinexo/screens/languages.png",
+      "bytes": 66196,
+      "sha256": "d432af03f5bf432605901e54ec19393b615214b7c8ade99771b96e9c4a79e3b0"
+    },
+    {
+      "path": "docs/validation-kinexo/screens/player-compact.png",
+      "bytes": 1235774,
+      "sha256": "60ebb5696520b2bb465e65ea799158a4b1f7ddc0e55eebd8e7e1fc77f7ffded7"
+    },
+    {
+      "path": "docs/validation-kinexo/screens/player.png",
+      "bytes": 1375835,
+      "sha256": "12a1d29c754cee0c4d598c4388f31a7bdf809849b2b55379b546aa027e0d11a3"
+    },
+    {
+      "path": "docs/validation-kinexo/screens/profiles-compact.png",
+      "bytes": 1455183,
+      "sha256": "4daf8da5d8d1efe99967c614d366900208100df261b91022dbd9ce899a3c2fee"
+    },
+    {
+      "path": "docs/validation-kinexo/screens/profiles.png",
+      "bytes": 1990582,
+      "sha256": "68840f0a29c4559597902450d0abf3e60439d1f7ae4c1d16f3c00692c26ca3ea"
+    },
+    {
+      "path": "docs/validation-kinexo/screens/quality-compact.png",
+      "bytes": 413191,
+      "sha256": "38f69ba02f524e32df63f07b1d7259f226c9782b507418a0b7c49cfc18607fac"
+    },
+    {
+      "path": "docs/validation-kinexo/screens/quality.png",
+      "bytes": 822969,
+      "sha256": "ca6e405edb6982e7887b1dccb6ce8dd62f7cb124dc4cc370e478f420d2959bc3"
+    },
+    {
+      "path": "docs/validation-kinexo/screens/seasons.png",
+      "bytes": 55682,
+      "sha256": "c5cdb014d3f4fd482ebfbda740e4d7a217929aef31cfc4e2f00444673286effc"
+    },
+    {
+      "path": "docs/validation-kinexo/screens/settings.png",
+      "bytes": 186095,
+      "sha256": "6951dfc7cabd734cea09060227340b1cc5ae5d2e6386f4ada9f59cbb4cd47af2"
+    },
+    {
+      "path": "docs/validation-kinexo/screens/streaming.png",
+      "bytes": 31104,
+      "sha256": "1ea9a9ece6a2fbe8cf6765637e1285192b28fe902f698c389998c955887ec4a6"
+    },
+    {
+      "path": "docs/validation-kinexo/seasons.txt",
+      "bytes": 1779,
+      "sha256": "1085edc112439336167a8403063316fa027aafff1df8bd54bf9d7b2da48bbd28"
     },
     {
       "path": "docs/validation-privado/apk-audit.json",
@@ -48090,8 +48270,8 @@
     },
     {
       "path": "src/apktool/smali_classes3/com/mgs/carparking/ui/homecontent/videodetail/VideoPlayDetailActivity.smali",
-      "bytes": 440671,
-      "sha256": "1019d13ec405445bc757390ae29fad795651ebc50f90cd78c891f4e2e094727c"
+      "bytes": 440778,
+      "sha256": "fb38c003fdacf12d6d34fd0abb39f696e83dc01db8bea4b9c14e04a787981153"
     },
     {
       "path": "src/apktool/smali_classes3/com/mgs/carparking/ui/homecontent/videosearch/HomeContentSearchListFragment$a.smali",
@@ -115795,8 +115975,8 @@
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/catalog/Catalog.java",
-      "bytes": 6637,
-      "sha256": "81528a26a766788dc8ceac8057324a113f287c0a960852b796db0fcd3df158c1"
+      "bytes": 7301,
+      "sha256": "39ccdfa27b725935f267d85e74973971247617f328f334ac7cce94cf01bcf748"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/catalog/DetailsActivity.java",
@@ -115820,18 +116000,23 @@
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/home/HomeActivity.java",
-      "bytes": 15117,
-      "sha256": "3ff976d731ce30dbbc5ef22e32ea5c6976a6e5cd17004fc5cb001b6664d3c659"
+      "bytes": 17808,
+      "sha256": "301f3b354efbbbe3249284c1bbf9ec3384eb8a85a6aafb0024d3fca6ef57395e"
+    },
+    {
+      "path": "src/java/classes3/com/mgs/carparking/modern/player/PlaybackTracks.java",
+      "bytes": 5480,
+      "sha256": "5086dd5f3c9e4ee1fc835e93064d3a1d253253f72014971f9a38f38e9fe6edc7"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/player/PlayerUi.java",
-      "bytes": 18863,
-      "sha256": "c2867dff8a7a68bb04e0b418527b848a12746feb523264dfbb79c0a8485c6320"
+      "bytes": 29359,
+      "sha256": "322dc8c56e779be66eb103a87ff4169daafacc08481d3775990971682504e115"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/profiles/Backup.java",
-      "bytes": 8386,
-      "sha256": "826809ab41ed9d87a0745ec90d06fad1eee10a3ddb1e21c32f59054ac4d0ecce"
+      "bytes": 8796,
+      "sha256": "c61e235c1a5ff401242333fea7ecaaa110ce2698256fa0e560d35e9ba5265141"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/profiles/Profiles.java",
@@ -115840,8 +116025,8 @@
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/profiles/ProfilesActivity.java",
-      "bytes": 8163,
-      "sha256": "bae34f71893026d9c8ade6abb9313d1103bbc498736c04213b9e498151e5ff3c"
+      "bytes": 8494,
+      "sha256": "0490371e3e28f48347c166065ac47b638290ee0fed049991e11559d448ab0c6c"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/settings/SettingsActivity.java",
@@ -115855,8 +116040,18 @@
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/ui/MovieCards.java",
-      "bytes": 4625,
-      "sha256": "3999c7271f2402e277c5749bd2a0de0c98ded547e253bed882bfa54a9a3dc060"
+      "bytes": 5199,
+      "sha256": "810ea7d35c7c26b70519d8398a70fb721a1bd670afd2e40b0a7012a070335f78"
+    },
+    {
+      "path": "src/java/classes3/com/mgs/carparking/modern/ui/Panel.java",
+      "bytes": 5269,
+      "sha256": "34048c2eebd59a719b1fac4c77ee301debc068e8bcfe1b31562c2509e7414c82"
+    },
+    {
+      "path": "src/java/classes3/com/mgs/carparking/modern/ui/ProviderCards.java",
+      "bytes": 2394,
+      "sha256": "a41185e5e58cc866638b542d854061eb25b5f029ce8e8aca1728a56861028595"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/ui/Screen.java",
@@ -115865,8 +116060,8 @@
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/ui/Ui.java",
-      "bytes": 6529,
-      "sha256": "5887669b90dac879c14053963b7006bea6b3394b4ba3693253edbd43ff9fbcd1"
+      "bytes": 10637,
+      "sha256": "e87ab57ff7b13db1240813268f83c4681ee68941b7f841c680d5a0f7ed68f13b"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/recovery/PlaybackErrors.java",
@@ -115900,13 +116095,18 @@
     },
     {
       "path": "tests/runtime/Run-DeviceChecks.ps1",
-      "bytes": 2451,
-      "sha256": "232f6e5edd960e97c2197703a21f43a1e3113cbc9ecce0feeb5a43a425ff915b"
+      "bytes": 2856,
+      "sha256": "b9abbcae4a9f5e158a5d0d9047d4f7b103edcfd2157f6f82d8f2202547f73dce"
     },
     {
       "path": "tests/runtime/banner-filter-check.js",
       "bytes": 5788,
       "sha256": "33382318f82828800aa9810aca18d957706e3b8931e72732c5664f73a66f0c4e"
+    },
+    {
+      "path": "tests/runtime/clean_restore.py",
+      "bytes": 1931,
+      "sha256": "37ba31aa0cc313416ee15617954a288cb8473d1315c5786df03e9ad502145200"
     },
     {
       "path": "tests/runtime/device/AndroidManifest.xml",
@@ -115915,8 +116115,8 @@
     },
     {
       "path": "tests/runtime/device/Checks.java",
-      "bytes": 13521,
-      "sha256": "ab0872e5409089b8505057b494f3e44358c72565e54875c9c5e51d1382d19c9b"
+      "bytes": 33443,
+      "sha256": "fb1be416fc988d35303bef1c4c20e493e605ed7c2f2782200cb668842ead65c7"
     },
     {
       "path": "tests/runtime/dns.js",

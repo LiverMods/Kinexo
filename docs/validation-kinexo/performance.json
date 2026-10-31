@@ -1,0 +1,52 @@
+{
+  "apk_sha256": "a5ba39cefaf21464ff359d10a6ce570d0622137f8fb7bc87529f9a2db88ce186",
+  "apk_bytes": 24526086,
+  "baseline_apk_bytes": 24509702,
+  "apk_added_bytes": 16384,
+  "baseline_samples": [
+    {
+      "home_pss_kib": 130158,
+      "dropped_frames": 0,
+      "first_frame_ms": 4459,
+      "player_pss_kib": 124676,
+      "rebuffer_events_12s": 1,
+      "rendered_frames": 231,
+      "startup_ready_ms": 4459
+    },
+    {
+      "home_pss_kib": 129818,
+      "buffering_ms_12s": 8257,
+      "dropped_frames": 2,
+      "first_frame_ms": 8037,
+      "player_pss_kib": 125723,
+      "rebuffer_events_12s": 1,
+      "rendered_frames": 126,
+      "startup_ready_ms": 8037
+    }
+  ],
+  "kinexo_samples": [
+    {
+      "home_pss_kib": 129768,
+      "buffering_ms_12s": 5017,
+      "dropped_frames": 24,
+      "first_frame_ms": 2854,
+      "player_pss_kib": 124837,
+      "rebuffer_events_12s": 2,
+      "rendered_frames": 253,
+      "startup_ready_ms": "not_observed_before_first_frame"
+    },
+    {
+      "home_pss_kib": 130746,
+      "buffering_ms_12s": 6429,
+      "dropped_frames": 16,
+      "first_frame_ms": 2681,
+      "player_pss_kib": 125103,
+      "rebuffer_events_12s": 1,
+      "rendered_frames": 207,
+      "startup_ready_ms": "not_observed_before_first_frame"
+    }
+  ],
+  "new_runtime_dependencies": 0,
+  "image_cache_limit_bytes": 16777216,
+  "method": "Same API37 AVD, Home after eight seconds, real Loki episode 1 at profile speed 1.5; twelve seconds sampled after the first rendered frame. Network, P2P cache and decoder state were not controlled. BUFFERING includes startup after the first frame, not only interruptions during playback. Decoder counters are final snapshots and may reset; not normalized FPS. No proven sustained RAM/stability gain."
+}

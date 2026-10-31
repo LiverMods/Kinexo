@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "avd": "Movie_Observe_API37",
+  "apk_sha256": "a5ba39cefaf21464ff359d10a6ce570d0622137f8fb7bc87529f9a2db88ce186",
+  "backup_sha256": "d9f117df38717472a7984ac1763969ddecaaec97c3e86de11929023a9aaf354a",
+  "profile_count": 2,
+  "fresh_install_verified": true,
+  "history_list_search_photo_player_preferences_restored": true,
+  "private_backup_ignored_by_git": ".work\\clean-restore\\profiles-before-uninstall.json"
+}

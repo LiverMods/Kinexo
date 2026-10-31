@@ -1,0 +1,114 @@
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Performing Incremental Install
+Performing Streamed Install
+Success
+INSTRUMENTATION_STATUS: check=UI: DESTAQUE NO MOVIE
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Delete local profile
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Create and edit local profiles
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real catalog search Loki
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Catalog explicit series enrichment
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real authenticated details and episodes
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: catalog=search=8 grouped=7 realId=924616866 seasons=2 episodes=6
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Alice list saved
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Rename preserves progress and list
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Profiles isolate history list searches and settings
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Legacy database namespace per profile
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Alice preferences restored after switching
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Downloads keep shared helper while profiles switch
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Backup contains profiles without service credentials
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Invalid backup rejected without mutation
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Backup round trip preserves profile data
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: DESTAQUE NO MOVIE
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: Detalhes
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real player STATE_READY
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Center pause button
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Center play button
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Seek beyond former free scrub threshold
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Player forward 10 seconds
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Player rewind 10 seconds
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Player lock hides playback actions
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: Velocidade de reprodução
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Player speed stored per profile
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: Fechar
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real player STATE_READY
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Select episode using original engine
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real player STATE_READY
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Manual next works with autoplay disabled
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Existing audio subtitle picker accessible
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Brightness slider accepts explicit adjustment
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Brightness affects playback window
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Controls automatically hide
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Tap restores controls
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Player persists real position
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: Quem vai assistir?
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: DESTAQUE NO MOVIE
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Profile selection UI switches isolated state
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real player STATE_READY
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Second profile starts without Alice progress
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: DESTAQUE NO MOVIE
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real player STATE_READY
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Resume correct episode for Alice
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Resume real playback after leaving player
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Original download selector opens
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: download_viewport=[0,0][1260,1280] / 2856x1280
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Download selector stays inside fullscreen viewport
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Back closes download selector
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Original cast discovery dialog opens
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: Exportar perfis
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: checks=["UI: DESTAQUE NO MOVIE","Delete local profile","Create and edit local profiles","Real catalog search Loki","Catalog explicit series enrichment","Real authenticated details and episodes","Alice list saved","Rename preserves progress and list","Profiles isolate history list searches and settings","Legacy database namespace per profile","Alice preferences restored after switching","Downloads keep shared helper while profiles switch","Backup contains profiles without service credentials","Invalid backup rejected without mutation","Backup round trip preserves profile data","UI: DESTAQUE NO MOVIE","UI: Detalhes","Real player STATE_READY","Center pause button","Center play button","Seek beyond former free scrub threshold","Player forward 10 seconds","Player rewind 10 seconds","Player lock hides playback actions","UI: Velocidade de reprodução","Player speed stored per profile","UI: Fechar","Real player STATE_READY","Select episode using original engine","Real player STATE_READY","Manual next works with autoplay disabled","Existing audio subtitle picker accessible","Brightness slider accepts explicit adjustment","Brightness affects playback window","Controls automatically hide","Tap restores controls","Player persists real position","UI: Quem vai assistir?","UI: DESTAQUE NO MOVIE","Profile selection UI switches isolated state","Real player STATE_READY","Second profile starts without Alice progress","UI: DESTAQUE NO MOVIE","Real player STATE_READY","Resume correct episode for Alice","Resume real playback after leaving player","Original download selector opens","Download selector stays inside fullscreen viewport","Back closes download selector","Original cast discovery dialog opens","UI: Exportar perfis"]
+INSTRUMENTATION_RESULT: result=PASS
+INSTRUMENTATION_CODE: -1
