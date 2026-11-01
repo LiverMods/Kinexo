@@ -1,0 +1,2211 @@
+{
+  "searches": [
+    {
+      "query": "1080p",
+      "results": []
+    },
+    {
+      "query": "4K",
+      "results": [
+        {
+          "id": 1986296773,
+          "title": "Fireplace 4K: Crackling Birchwood from Fireplace for Your Home"
+        }
+      ]
+    },
+    {
+      "query": "Full HD",
+      "results": []
+    },
+    {
+      "query": "Loki",
+      "results": [
+        {
+          "id": 924616866,
+          "title": "Loki - Temporada 1"
+        },
+        {
+          "id": 689780146,
+          "title": "Loki - Temporada 2"
+        },
+        {
+          "id": 48831127,
+          "title": "Project Loki - Temporada 1"
+        },
+        {
+          "id": 1073788049,
+          "title": "Marvel Studios Assembled: The Making of Loki Season 2"
+        },
+        {
+          "id": 1953157484,
+          "title": "LEGO Marvel Avengers: Loki em Treinamento"
+        },
+        {
+          "id": 1260795518,
+          "title": "Pusher III: O Anjo da Morte"
+        },
+        {
+          "id": 675846639,
+          "title": "O Bom, o Bart e o Loki"
+        },
+        {
+          "id": 1436259380,
+          "title": "Tori et Lokita"
+        }
+      ]
+    },
+    {
+      "query": "Avatar",
+      "results": [
+        {
+          "id": 1235245793,
+          "title": "Avatar: Os Sete Refúgios - Temporada 1"
+        },
+        {
+          "id": 1418208077,
+          "title": "Avatar: Fire and Ash"
+        },
+        {
+          "id": 1739516158,
+          "title": "Avatar Aang: The Last Airbender"
+        },
+        {
+          "id": 1250841601,
+          "title": "Avatar: O Último Mestre do Ar - Temporada 2"
+        },
+        {
+          "id": 121127626,
+          "title": "Avatar - A lenda de Aang - Temporada 1"
+        },
+        {
+          "id": 827365363,
+          "title": "Avatar - A lenda de Aang - Temporada 3"
+        },
+        {
+          "id": 185909106,
+          "title": "Avatar: O Caminho da Água"
+        },
+        {
+          "id": 803489531,
+          "title": "Avatar"
+        },
+        {
+          "id": 1675780751,
+          "title": "Avatar - A lenda de Aang - Temporada 2"
+        },
+        {
+          "id": 649250193,
+          "title": "Avatar: O Último Mestre do Ar - Temporada 1"
+        },
+        {
+          "id": 1526125442,
+          "title": "Quan Zhi Gao Shou - Temporada 1"
+        },
+        {
+          "id": 2106353889,
+          "title": "Aliens vs Avatars"
+        },
+        {
+          "id": 1164268432,
+          "title": "The King's Avatar: Pela Glória"
+        },
+        {
+          "id": 738932234,
+          "title": "Fire and Water: Making the Avatar Films - Temporada 1"
+        },
+        {
+          "id": 1625533287,
+          "title": "O avatar do rei - Temporada 1"
+        }
+      ]
+    }
+  ],
+  "details": [
+    {
+      "id": 1986296773,
+      "title": "Fireplace 4K: Crackling Birchwood from Fireplace for Your Home",
+      "raw_detail_keys": [
+        "vod_total",
+        "pianwei",
+        "vod_serial",
+        "piantou",
+        "vod_year",
+        "vod_behind",
+        "click_count",
+        "vod_isend",
+        "vod_director",
+        "is_best",
+        "vod_name",
+        "vod_tag",
+        "vod_lang",
+        "vod_writer",
+        "vod_weekday",
+        "upload_user_head_img",
+        "id",
+        "vod_nc_show_id",
+        "vod_douban_score",
+        "icon_type",
+        "vod_pic",
+        "is_share",
+        "hide_ad",
+        "is_selected",
+        "type_id",
+        "vod_version",
+        "upload_user_name",
+        "type_pid",
+        "vod_pubdate",
+        "vod_blurb",
+        "production_country",
+        "vod_en",
+        "vod_actor",
+        "audio_type",
+        "audio_type_option",
+        "vod_collection",
+        "vod_duration_free",
+        "series_info",
+        "vod_is_cam",
+        "vod_is_update",
+        "audio_language_tag",
+        "vod_from_id",
+        "vod_area"
+      ],
+      "audio_type": 1,
+      "audio_type_option": [
+        {
+          "type": 1,
+          "type_name": "Legendado"
+        }
+      ],
+      "audio_language_tag": "",
+      "vod_tag": "Família/Documentário/Romance/Reality show",
+      "vod_is_cam": 0,
+      "vod_year": "2015",
+      "type_pid": 1,
+      "collection_count": 1,
+      "sources": [
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "1",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 1,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "86a1124a290b7e074c32932bff5256a7a60f46e8bc6cbb51ede2db488cc45116"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "86a1124a290b7e074c32932bff5256a7a60f46e8bc6cbb51ede2db488cc45116"
+          }
+        }
+      ],
+      "origin_http": {
+        "uri": {
+          "scheme": "https",
+          "host": "79a0f.l1wt.com",
+          "path_suffix": "m3u8",
+          "path_segments": 7,
+          "query_keys": [],
+          "sha256": "86a1124a290b7e074c32932bff5256a7a60f46e8bc6cbb51ede2db488cc45116"
+        },
+        "status": 403,
+        "final_uri": {
+          "scheme": "https",
+          "host": "79a0f.l1wt.com",
+          "path_suffix": "m3u8",
+          "path_segments": 7,
+          "query_keys": [],
+          "sha256": "86a1124a290b7e074c32932bff5256a7a60f46e8bc6cbb51ede2db488cc45116"
+        },
+        "Server": "CloudFront",
+        "Via": "1.1 734eec70c55426b8c783cb546d71aa6a.cloudfront.net (CloudFront)",
+        "X-Cache": "FunctionGeneratedResponse from cloudfront",
+        "Content-Length": "0",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes_read": 0,
+        "error_markers": []
+      },
+      "proxy_http": {
+        "uri": {
+          "scheme": "http",
+          "host": "127.0.0.1",
+          "path_suffix": "m3u8",
+          "path_segments": 1,
+          "query_keys": [
+            "src"
+          ],
+          "sha256": "8cdf30d9317e9b6cc2460ef5edb88fbc66ed147513784613425091f793bd24f5"
+        },
+        "status": 200,
+        "final_uri": {
+          "scheme": "http",
+          "host": "127.0.0.1",
+          "path_suffix": "m3u8",
+          "path_segments": 1,
+          "query_keys": [
+            "src"
+          ],
+          "sha256": "8cdf30d9317e9b6cc2460ef5edb88fbc66ed147513784613425091f793bd24f5"
+        },
+        "Content-Type": "application/vnd.apple.mpegurl",
+        "Server": "bad_sdk",
+        "Content-Length": "27895",
+        "body_sha256": "a9e7e9c8fc8dc3bc6b262d8dbb0b19d5b943ac2d58cc9ce7fcb2c6261193138e",
+        "bytes_read": 27895,
+        "hls": true,
+        "variants": 0,
+        "segments": 278,
+        "resolutions": []
+      }
+    },
+    {
+      "id": 924616866,
+      "title": "Loki - Temporada 1",
+      "raw_detail_keys": [
+        "vod_total",
+        "pianwei",
+        "vod_serial",
+        "piantou",
+        "vod_year",
+        "vod_behind",
+        "click_count",
+        "vod_isend",
+        "vod_director",
+        "is_best",
+        "vod_name",
+        "vod_tag",
+        "vod_lang",
+        "vod_writer",
+        "vod_weekday",
+        "upload_user_head_img",
+        "id",
+        "vod_nc_show_id",
+        "vod_douban_score",
+        "icon_type",
+        "vod_pic",
+        "is_share",
+        "hide_ad",
+        "is_selected",
+        "type_id",
+        "vod_version",
+        "upload_user_name",
+        "type_pid",
+        "vod_pubdate",
+        "vod_blurb",
+        "production_country",
+        "vod_en",
+        "vod_actor",
+        "audio_type",
+        "audio_type_option",
+        "vod_collection",
+        "vod_duration_free",
+        "series_info",
+        "vod_is_cam",
+        "vod_is_update",
+        "audio_language_tag",
+        "vod_from_id",
+        "vod_area"
+      ],
+      "audio_type": 2,
+      "audio_type_option": [
+        {
+          "type": 1,
+          "type_name": "Legendado"
+        },
+        {
+          "type": 2,
+          "type_name": "Dublado"
+        }
+      ],
+      "audio_language_tag": "",
+      "vod_tag": "Ficção científica/Fantasia/Aventura",
+      "vod_is_cam": 0,
+      "vod_year": "2021",
+      "type_pid": 2,
+      "collection_count": 6,
+      "sources": [
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "1",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 1,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "01a027159ae772ccd2b011a9db7ded1759be173b46ec2db50b0984ce3b4ef547"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "01a027159ae772ccd2b011a9db7ded1759be173b46ec2db50b0984ce3b4ef547"
+          }
+        },
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "2",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 2,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "9baf48ac6227276927932b939a79135904efb3ffb104b992656865def1eab12b"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "9baf48ac6227276927932b939a79135904efb3ffb104b992656865def1eab12b"
+          }
+        },
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "3",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 3,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "b7c94792c75cbd3aed6d27a899d0e8c5434a87cf6dfc4a9c470fa68863b00da7"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "b7c94792c75cbd3aed6d27a899d0e8c5434a87cf6dfc4a9c470fa68863b00da7"
+          }
+        }
+      ],
+      "origin_http": {
+        "uri": {
+          "scheme": "https",
+          "host": "79a0f.l1wt.com",
+          "path_suffix": "m3u8",
+          "path_segments": 7,
+          "query_keys": [],
+          "sha256": "01a027159ae772ccd2b011a9db7ded1759be173b46ec2db50b0984ce3b4ef547"
+        },
+        "status": 403,
+        "final_uri": {
+          "scheme": "https",
+          "host": "79a0f.l1wt.com",
+          "path_suffix": "m3u8",
+          "path_segments": 7,
+          "query_keys": [],
+          "sha256": "01a027159ae772ccd2b011a9db7ded1759be173b46ec2db50b0984ce3b4ef547"
+        },
+        "Server": "CloudFront",
+        "Via": "1.1 734eec70c55426b8c783cb546d71aa6a.cloudfront.net (CloudFront)",
+        "X-Cache": "FunctionGeneratedResponse from cloudfront",
+        "Content-Length": "0",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes_read": 0,
+        "error_markers": []
+      },
+      "proxy_http": {
+        "uri": {
+          "scheme": "http",
+          "host": "127.0.0.1",
+          "path_suffix": "m3u8",
+          "path_segments": 1,
+          "query_keys": [
+            "src"
+          ],
+          "sha256": "3826d007f126f3c688ebfe9fc3fb08b25628331b774ecbdd7d9615ac97ed5cb1"
+        },
+        "status": 200,
+        "final_uri": {
+          "scheme": "http",
+          "host": "127.0.0.1",
+          "path_suffix": "m3u8",
+          "path_segments": 1,
+          "query_keys": [
+            "src"
+          ],
+          "sha256": "3826d007f126f3c688ebfe9fc3fb08b25628331b774ecbdd7d9615ac97ed5cb1"
+        },
+        "Content-Type": "application/vnd.apple.mpegurl",
+        "Server": "bad_sdk",
+        "Content-Length": "23261",
+        "body_sha256": "d5045ab0cbf05927f9741fb19080051c58780d2ccd159a11fbf1a5020ffe9ef7",
+        "bytes_read": 23261,
+        "hls": true,
+        "variants": 0,
+        "segments": 232,
+        "resolutions": []
+      }
+    },
+    {
+      "id": 689780146,
+      "title": "Loki - Temporada 2",
+      "raw_detail_keys": [
+        "vod_total",
+        "pianwei",
+        "vod_serial",
+        "piantou",
+        "vod_year",
+        "vod_behind",
+        "click_count",
+        "vod_isend",
+        "vod_director",
+        "is_best",
+        "vod_name",
+        "vod_tag",
+        "vod_lang",
+        "vod_writer",
+        "vod_weekday",
+        "upload_user_head_img",
+        "id",
+        "vod_nc_show_id",
+        "vod_douban_score",
+        "icon_type",
+        "vod_pic",
+        "is_share",
+        "hide_ad",
+        "is_selected",
+        "type_id",
+        "vod_version",
+        "upload_user_name",
+        "type_pid",
+        "vod_pubdate",
+        "vod_blurb",
+        "production_country",
+        "vod_en",
+        "vod_actor",
+        "audio_type",
+        "audio_type_option",
+        "vod_collection",
+        "vod_duration_free",
+        "series_info",
+        "vod_is_cam",
+        "vod_is_update",
+        "audio_language_tag",
+        "vod_from_id",
+        "vod_area"
+      ],
+      "audio_type": 2,
+      "audio_type_option": [
+        {
+          "type": 1,
+          "type_name": "Legendado"
+        },
+        {
+          "type": 2,
+          "type_name": "Dublado"
+        }
+      ],
+      "audio_language_tag": "",
+      "vod_tag": "Fantasia/Ficção científica/Aventura/Drama/novela",
+      "vod_is_cam": 0,
+      "vod_year": "2023",
+      "type_pid": 2,
+      "collection_count": 6,
+      "sources": [
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "1",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 1,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "f13e41dda103e0af058a890f280c9e52bad11888bd4cf93c52917a95eb4f319d"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "f13e41dda103e0af058a890f280c9e52bad11888bd4cf93c52917a95eb4f319d"
+          }
+        },
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "2",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 2,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "e891483d8a1115998a6c88703776a1720ce7bd1650a55ec1016dd3508c330bbb"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "e891483d8a1115998a6c88703776a1720ce7bd1650a55ec1016dd3508c330bbb"
+          }
+        },
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "3",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 3,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "285c812e99eded6660a5deca35e8489c14d6f52c1c4c62826c3344e31732a194"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "285c812e99eded6660a5deca35e8489c14d6f52c1c4c62826c3344e31732a194"
+          }
+        }
+      ],
+      "origin_http": {
+        "uri": {
+          "scheme": "https",
+          "host": "79a0f.l1wt.com",
+          "path_suffix": "m3u8",
+          "path_segments": 7,
+          "query_keys": [],
+          "sha256": "f13e41dda103e0af058a890f280c9e52bad11888bd4cf93c52917a95eb4f319d"
+        },
+        "status": 403,
+        "final_uri": {
+          "scheme": "https",
+          "host": "79a0f.l1wt.com",
+          "path_suffix": "m3u8",
+          "path_segments": 7,
+          "query_keys": [],
+          "sha256": "f13e41dda103e0af058a890f280c9e52bad11888bd4cf93c52917a95eb4f319d"
+        },
+        "Server": "CloudFront",
+        "Via": "1.1 734eec70c55426b8c783cb546d71aa6a.cloudfront.net (CloudFront)",
+        "X-Cache": "FunctionGeneratedResponse from cloudfront",
+        "Content-Length": "0",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes_read": 0,
+        "error_markers": []
+      },
+      "proxy_http": {
+        "uri": {
+          "scheme": "http",
+          "host": "127.0.0.1",
+          "path_suffix": "m3u8",
+          "path_segments": 1,
+          "query_keys": [
+            "src"
+          ],
+          "sha256": "332f53f2220943075f611035619253b56e8486e6ee4dfed77c991d395be36c30"
+        },
+        "status": 200,
+        "final_uri": {
+          "scheme": "http",
+          "host": "127.0.0.1",
+          "path_suffix": "m3u8",
+          "path_segments": 1,
+          "query_keys": [
+            "src"
+          ],
+          "sha256": "332f53f2220943075f611035619253b56e8486e6ee4dfed77c991d395be36c30"
+        },
+        "Content-Type": "application/vnd.apple.mpegurl",
+        "Server": "bad_sdk",
+        "Content-Length": "20950",
+        "body_sha256": "0f29ee675292b3eafcafca2741c8bd41456e7f84625c700f60173e4f9e34fb3e",
+        "bytes_read": 20950,
+        "hls": true,
+        "variants": 0,
+        "segments": 209,
+        "resolutions": []
+      }
+    },
+    {
+      "id": 48831127,
+      "title": "Project Loki - Temporada 1",
+      "raw_detail_keys": [
+        "vod_total",
+        "pianwei",
+        "vod_serial",
+        "piantou",
+        "vod_year",
+        "vod_behind",
+        "click_count",
+        "vod_isend",
+        "vod_director",
+        "is_best",
+        "vod_name",
+        "vod_tag",
+        "vod_lang",
+        "vod_writer",
+        "vod_weekday",
+        "upload_user_head_img",
+        "id",
+        "vod_nc_show_id",
+        "vod_douban_score",
+        "icon_type",
+        "vod_pic",
+        "is_share",
+        "hide_ad",
+        "is_selected",
+        "type_id",
+        "vod_version",
+        "upload_user_name",
+        "type_pid",
+        "vod_pubdate",
+        "vod_blurb",
+        "production_country",
+        "vod_en",
+        "vod_actor",
+        "audio_type",
+        "audio_type_option",
+        "vod_collection",
+        "vod_duration_free",
+        "series_info",
+        "vod_is_cam",
+        "vod_is_update",
+        "audio_language_tag",
+        "vod_from_id",
+        "vod_area"
+      ],
+      "audio_type": 1,
+      "audio_type_option": [
+        {
+          "type": 1,
+          "type_name": "Legendado"
+        }
+      ],
+      "audio_language_tag": "",
+      "vod_tag": "Pânico/Suspense",
+      "vod_is_cam": 0,
+      "vod_year": "2026",
+      "type_pid": 2,
+      "collection_count": 18,
+      "sources": [
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "1",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 1,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "3da13be1e7fdcfa64dc23418689434216446a19a97691879808fef016c69cf53"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "3da13be1e7fdcfa64dc23418689434216446a19a97691879808fef016c69cf53"
+          }
+        },
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "2",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 2,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "a4c584244ef26f6a653a10c5519f39e5e365ecaaa14b5e894e7564df61845f86"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "a4c584244ef26f6a653a10c5519f39e5e365ecaaa14b5e894e7564df61845f86"
+          }
+        },
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "3",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 3,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "eabe69f4dc1a21ea13af9e71ec129f82f08e57221bd5961013d6f5a5b52a1250"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "eabe69f4dc1a21ea13af9e71ec129f82f08e57221bd5961013d6f5a5b52a1250"
+          }
+        }
+      ]
+    },
+    {
+      "id": 1073788049,
+      "title": "Marvel Studios Assembled: The Making of Loki Season 2",
+      "raw_detail_keys": [
+        "vod_total",
+        "pianwei",
+        "vod_serial",
+        "piantou",
+        "vod_year",
+        "vod_behind",
+        "click_count",
+        "vod_isend",
+        "vod_director",
+        "is_best",
+        "vod_name",
+        "vod_tag",
+        "vod_lang",
+        "vod_writer",
+        "vod_weekday",
+        "upload_user_head_img",
+        "id",
+        "vod_nc_show_id",
+        "vod_douban_score",
+        "icon_type",
+        "vod_pic",
+        "is_share",
+        "hide_ad",
+        "is_selected",
+        "type_id",
+        "vod_version",
+        "upload_user_name",
+        "type_pid",
+        "vod_pubdate",
+        "vod_blurb",
+        "production_country",
+        "vod_en",
+        "vod_actor",
+        "audio_type",
+        "audio_type_option",
+        "vod_collection",
+        "vod_duration_free",
+        "series_info",
+        "vod_is_cam",
+        "vod_is_update",
+        "audio_language_tag",
+        "vod_from_id",
+        "vod_area"
+      ],
+      "audio_type": 1,
+      "audio_type_option": [
+        {
+          "type": 1,
+          "type_name": "Legendado"
+        }
+      ],
+      "audio_language_tag": "",
+      "vod_tag": "Documentário",
+      "vod_is_cam": 0,
+      "vod_year": "2023",
+      "type_pid": 1,
+      "collection_count": 1,
+      "sources": [
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "1",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 1,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "0d4ab55ac7d174a0f49ca388e8d21084bdbb8c9a5a771f20e43f02a61fda54e9"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "0d4ab55ac7d174a0f49ca388e8d21084bdbb8c9a5a771f20e43f02a61fda54e9"
+          }
+        }
+      ]
+    },
+    {
+      "id": 1953157484,
+      "title": "LEGO Marvel Avengers: Loki em Treinamento",
+      "raw_detail_keys": [
+        "vod_total",
+        "pianwei",
+        "vod_serial",
+        "piantou",
+        "vod_year",
+        "vod_behind",
+        "click_count",
+        "vod_isend",
+        "vod_director",
+        "is_best",
+        "vod_name",
+        "vod_tag",
+        "vod_lang",
+        "vod_writer",
+        "vod_weekday",
+        "upload_user_head_img",
+        "id",
+        "vod_nc_show_id",
+        "vod_douban_score",
+        "icon_type",
+        "vod_pic",
+        "is_share",
+        "hide_ad",
+        "is_selected",
+        "type_id",
+        "vod_version",
+        "upload_user_name",
+        "type_pid",
+        "vod_pubdate",
+        "vod_blurb",
+        "production_country",
+        "vod_en",
+        "vod_actor",
+        "audio_type",
+        "audio_type_option",
+        "vod_collection",
+        "vod_duration_free",
+        "series_info",
+        "vod_is_cam",
+        "vod_is_update",
+        "audio_language_tag",
+        "vod_from_id",
+        "vod_area"
+      ],
+      "audio_type": 1,
+      "audio_type_option": [
+        {
+          "type": 1,
+          "type_name": "Legendado"
+        }
+      ],
+      "audio_language_tag": "",
+      "vod_tag": "Família/Anime/Ação",
+      "vod_is_cam": 0,
+      "vod_year": "2021",
+      "type_pid": 1,
+      "collection_count": 1,
+      "sources": [
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "1",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 1,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "18f52a225b25cd8474051ca3959539e983adca0bfd95b653ef7cd68dc5ddfc2f"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "18f52a225b25cd8474051ca3959539e983adca0bfd95b653ef7cd68dc5ddfc2f"
+          }
+        }
+      ]
+    },
+    {
+      "id": 1260795518,
+      "title": "Pusher III: O Anjo da Morte",
+      "raw_detail_keys": [
+        "vod_total",
+        "pianwei",
+        "vod_serial",
+        "piantou",
+        "vod_year",
+        "vod_behind",
+        "click_count",
+        "vod_isend",
+        "vod_director",
+        "is_best",
+        "vod_name",
+        "vod_tag",
+        "vod_lang",
+        "vod_writer",
+        "vod_weekday",
+        "upload_user_head_img",
+        "id",
+        "vod_nc_show_id",
+        "vod_douban_score",
+        "icon_type",
+        "vod_pic",
+        "is_share",
+        "hide_ad",
+        "is_selected",
+        "type_id",
+        "vod_version",
+        "upload_user_name",
+        "type_pid",
+        "vod_pubdate",
+        "vod_blurb",
+        "production_country",
+        "vod_en",
+        "vod_actor",
+        "audio_type",
+        "audio_type_option",
+        "vod_collection",
+        "vod_duration_free",
+        "series_info",
+        "vod_is_cam",
+        "vod_is_update",
+        "audio_language_tag",
+        "vod_from_id",
+        "vod_area"
+      ],
+      "audio_type": 1,
+      "audio_type_option": [
+        {
+          "type": 1,
+          "type_name": "Legendado"
+        }
+      ],
+      "audio_language_tag": "",
+      "vod_tag": "Aventura/Pânico/Europa/Crime/Drama",
+      "vod_is_cam": 0,
+      "vod_year": "2005",
+      "type_pid": 1,
+      "collection_count": 1,
+      "sources": [
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "1",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 1,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "0e318de2a428c47fb7bdaee0040ee4ad6b9e655fc6872dd4268d653e79641045"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "0e318de2a428c47fb7bdaee0040ee4ad6b9e655fc6872dd4268d653e79641045"
+          }
+        }
+      ]
+    },
+    {
+      "id": 675846639,
+      "title": "O Bom, o Bart e o Loki",
+      "raw_detail_keys": [
+        "vod_total",
+        "pianwei",
+        "vod_serial",
+        "piantou",
+        "vod_year",
+        "vod_behind",
+        "click_count",
+        "vod_isend",
+        "vod_director",
+        "is_best",
+        "vod_name",
+        "vod_tag",
+        "vod_lang",
+        "vod_writer",
+        "vod_weekday",
+        "upload_user_head_img",
+        "id",
+        "vod_nc_show_id",
+        "vod_douban_score",
+        "icon_type",
+        "vod_pic",
+        "is_share",
+        "hide_ad",
+        "is_selected",
+        "type_id",
+        "vod_version",
+        "upload_user_name",
+        "type_pid",
+        "vod_pubdate",
+        "vod_blurb",
+        "production_country",
+        "vod_en",
+        "vod_actor",
+        "audio_type",
+        "audio_type_option",
+        "vod_collection",
+        "vod_duration_free",
+        "series_info",
+        "vod_is_cam",
+        "vod_is_update",
+        "audio_language_tag",
+        "vod_from_id",
+        "vod_area"
+      ],
+      "audio_type": 2,
+      "audio_type_option": [
+        {
+          "type": 2,
+          "type_name": "Dublado"
+        }
+      ],
+      "audio_language_tag": "",
+      "vod_tag": "Anime/Comédia/Família",
+      "vod_is_cam": 0,
+      "vod_year": "2021",
+      "type_pid": 1,
+      "collection_count": 1,
+      "sources": [
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "1",
+          "source_id": 103,
+          "is_p2p": 1,
+          "collection": 1,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "d7d1e00d2a58158eb5aca6ad1c8ff9f318fbf5126df8e16a449ca3a91dc84e97"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "d7d1e00d2a58158eb5aca6ad1c8ff9f318fbf5126df8e16a449ca3a91dc84e97"
+          }
+        }
+      ]
+    },
+    {
+      "id": 1436259380,
+      "title": "Tori et Lokita",
+      "raw_detail_keys": [
+        "vod_total",
+        "pianwei",
+        "vod_serial",
+        "piantou",
+        "vod_year",
+        "vod_behind",
+        "click_count",
+        "vod_isend",
+        "vod_director",
+        "is_best",
+        "vod_name",
+        "vod_tag",
+        "vod_lang",
+        "vod_writer",
+        "vod_weekday",
+        "upload_user_head_img",
+        "id",
+        "vod_nc_show_id",
+        "vod_douban_score",
+        "icon_type",
+        "vod_pic",
+        "is_share",
+        "hide_ad",
+        "is_selected",
+        "type_id",
+        "vod_version",
+        "upload_user_name",
+        "type_pid",
+        "vod_pubdate",
+        "vod_blurb",
+        "production_country",
+        "vod_en",
+        "vod_actor",
+        "audio_type",
+        "audio_type_option",
+        "vod_collection",
+        "vod_duration_free",
+        "series_info",
+        "vod_is_cam",
+        "vod_is_update",
+        "audio_language_tag",
+        "vod_from_id",
+        "vod_area"
+      ],
+      "audio_type": 1,
+      "audio_type_option": [
+        {
+          "type": 1,
+          "type_name": "Legendado"
+        }
+      ],
+      "audio_language_tag": "",
+      "vod_tag": "Drama",
+      "vod_is_cam": 0,
+      "vod_year": "2022",
+      "type_pid": 1,
+      "collection_count": 1,
+      "sources": [
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "1",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 1,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "e613b3cbfdcd5c830b979be3a07e798a3f90deaf85215954013e6a338cf10b16"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "e613b3cbfdcd5c830b979be3a07e798a3f90deaf85215954013e6a338cf10b16"
+          }
+        }
+      ]
+    },
+    {
+      "id": 1235245793,
+      "title": "Avatar: Os Sete Refúgios - Temporada 1",
+      "raw_detail_keys": [
+        "vod_total",
+        "pianwei",
+        "vod_serial",
+        "piantou",
+        "vod_year",
+        "vod_behind",
+        "click_count",
+        "vod_isend",
+        "vod_director",
+        "is_best",
+        "vod_name",
+        "vod_tag",
+        "vod_lang",
+        "vod_writer",
+        "vod_weekday",
+        "upload_user_head_img",
+        "id",
+        "vod_nc_show_id",
+        "vod_douban_score",
+        "icon_type",
+        "vod_pic",
+        "is_share",
+        "hide_ad",
+        "is_selected",
+        "type_id",
+        "vod_version",
+        "upload_user_name",
+        "type_pid",
+        "vod_pubdate",
+        "vod_blurb",
+        "production_country",
+        "vod_en",
+        "vod_actor",
+        "audio_type",
+        "audio_type_option",
+        "vod_collection",
+        "vod_duration_free",
+        "series_info",
+        "vod_is_cam",
+        "vod_is_update",
+        "audio_language_tag",
+        "vod_from_id",
+        "vod_area"
+      ],
+      "audio_type": 2,
+      "audio_type_option": [
+        {
+          "type": 1,
+          "type_name": "Legendado"
+        },
+        {
+          "type": 2,
+          "type_name": "Dublado"
+        }
+      ],
+      "audio_language_tag": "",
+      "vod_tag": "Aventura/Anime/Fantasia/Família/Ficção científica",
+      "vod_is_cam": 0,
+      "vod_year": "2026",
+      "type_pid": 2,
+      "collection_count": 13,
+      "sources": [
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "1",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 1,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "c899c1cf8b51268fc822242c85c78a3dbc948bcc105ba056487261b7653a2545"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "c899c1cf8b51268fc822242c85c78a3dbc948bcc105ba056487261b7653a2545"
+          }
+        },
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "2",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 2,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "94c326ea013092b94846402a1018a5f55a94ab7ee4d5a0c4486a51713678d14b"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "94c326ea013092b94846402a1018a5f55a94ab7ee4d5a0c4486a51713678d14b"
+          }
+        },
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "3",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 3,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "fd79503bad4dcfac23e948c70f391957a2f9f22b4aa1920bb52cefee50a6adb1"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "fd79503bad4dcfac23e948c70f391957a2f9f22b4aa1920bb52cefee50a6adb1"
+          }
+        }
+      ]
+    },
+    {
+      "id": 1418208077,
+      "title": "Avatar: Fire and Ash",
+      "raw_detail_keys": [
+        "vod_total",
+        "pianwei",
+        "vod_serial",
+        "piantou",
+        "vod_year",
+        "vod_behind",
+        "click_count",
+        "vod_isend",
+        "vod_director",
+        "is_best",
+        "vod_name",
+        "vod_tag",
+        "vod_lang",
+        "vod_writer",
+        "vod_weekday",
+        "upload_user_head_img",
+        "id",
+        "vod_nc_show_id",
+        "vod_douban_score",
+        "icon_type",
+        "vod_pic",
+        "is_share",
+        "hide_ad",
+        "is_selected",
+        "type_id",
+        "vod_version",
+        "upload_user_name",
+        "type_pid",
+        "vod_pubdate",
+        "vod_blurb",
+        "production_country",
+        "vod_en",
+        "vod_actor",
+        "audio_type",
+        "audio_type_option",
+        "vod_collection",
+        "vod_duration_free",
+        "series_info",
+        "vod_is_cam",
+        "vod_is_update",
+        "audio_language_tag",
+        "vod_from_id",
+        "vod_area"
+      ],
+      "audio_type": 2,
+      "audio_type_option": [
+        {
+          "type": 1,
+          "type_name": "Legendado"
+        },
+        {
+          "type": 2,
+          "type_name": "Dublado"
+        }
+      ],
+      "audio_language_tag": "",
+      "vod_tag": "Aventura/Fantasia/Ficção científica",
+      "vod_is_cam": 0,
+      "vod_year": "2025",
+      "type_pid": 1,
+      "collection_count": 1,
+      "sources": [
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "1",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 1,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "fbc9573c128c585a1adf97b6a7351121802752c9e972fdf7e720c45e8313802b"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "fbc9573c128c585a1adf97b6a7351121802752c9e972fdf7e720c45e8313802b"
+          }
+        }
+      ]
+    },
+    {
+      "id": 1739516158,
+      "title": "Avatar Aang: The Last Airbender",
+      "raw_detail_keys": [
+        "vod_total",
+        "pianwei",
+        "vod_serial",
+        "piantou",
+        "vod_year",
+        "vod_behind",
+        "click_count",
+        "vod_isend",
+        "vod_director",
+        "is_best",
+        "vod_name",
+        "vod_tag",
+        "vod_lang",
+        "vod_writer",
+        "vod_weekday",
+        "upload_user_head_img",
+        "id",
+        "vod_nc_show_id",
+        "vod_douban_score",
+        "icon_type",
+        "vod_pic",
+        "is_share",
+        "hide_ad",
+        "is_selected",
+        "type_id",
+        "vod_version",
+        "upload_user_name",
+        "type_pid",
+        "vod_pubdate",
+        "vod_blurb",
+        "production_country",
+        "vod_en",
+        "vod_actor",
+        "audio_type",
+        "audio_type_option",
+        "vod_collection",
+        "vod_duration_free",
+        "series_info",
+        "vod_is_cam",
+        "vod_is_update",
+        "audio_language_tag",
+        "vod_from_id",
+        "vod_area"
+      ],
+      "audio_type": 2,
+      "audio_type_option": [
+        {
+          "type": 1,
+          "type_name": "Legendado"
+        },
+        {
+          "type": 2,
+          "type_name": "Dublado"
+        }
+      ],
+      "audio_language_tag": "",
+      "vod_tag": "Aventura/Anime/Fantasia/Família",
+      "vod_is_cam": 0,
+      "vod_year": "2026",
+      "type_pid": 1,
+      "collection_count": 1,
+      "sources": [
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "1",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 1,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "706560e6cf93b8eba6e8cd1c394ad521bd094503316a59199c5f32118705fdf0"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "706560e6cf93b8eba6e8cd1c394ad521bd094503316a59199c5f32118705fdf0"
+          }
+        }
+      ]
+    },
+    {
+      "id": 1250841601,
+      "title": "Avatar: O Último Mestre do Ar - Temporada 2",
+      "raw_detail_keys": [
+        "vod_total",
+        "pianwei",
+        "vod_serial",
+        "piantou",
+        "vod_year",
+        "vod_behind",
+        "click_count",
+        "vod_isend",
+        "vod_director",
+        "is_best",
+        "vod_name",
+        "vod_tag",
+        "vod_lang",
+        "vod_writer",
+        "vod_weekday",
+        "upload_user_head_img",
+        "id",
+        "vod_nc_show_id",
+        "vod_douban_score",
+        "icon_type",
+        "vod_pic",
+        "is_share",
+        "hide_ad",
+        "is_selected",
+        "type_id",
+        "vod_version",
+        "upload_user_name",
+        "type_pid",
+        "vod_pubdate",
+        "vod_blurb",
+        "production_country",
+        "vod_en",
+        "vod_actor",
+        "audio_type",
+        "audio_type_option",
+        "vod_collection",
+        "vod_duration_free",
+        "series_info",
+        "vod_is_cam",
+        "vod_is_update",
+        "audio_language_tag",
+        "vod_from_id",
+        "vod_area"
+      ],
+      "audio_type": 2,
+      "audio_type_option": [
+        {
+          "type": 1,
+          "type_name": "Legendado"
+        },
+        {
+          "type": 2,
+          "type_name": "Dublado"
+        }
+      ],
+      "audio_language_tag": "",
+      "vod_tag": "Aventura/Comédia/Drama/Fantasia/Família",
+      "vod_is_cam": 0,
+      "vod_year": "2026",
+      "type_pid": 2,
+      "collection_count": 7,
+      "sources": [
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "1",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 1,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "e08a45da64239f732c28b621684ed8d53926ff7b2b6c7a2a3db0e039f560b835"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "e08a45da64239f732c28b621684ed8d53926ff7b2b6c7a2a3db0e039f560b835"
+          }
+        },
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "2",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 2,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "e39b16ff3630de155a2ee1b6bbb40c40085bdaee6cc644b0f121e2a77a85c561"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "e39b16ff3630de155a2ee1b6bbb40c40085bdaee6cc644b0f121e2a77a85c561"
+          }
+        },
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "3",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 3,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "5d165a40f7f615ebe6cfdd498b6375cacdb16543c4573738633d54facce61390"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "5d165a40f7f615ebe6cfdd498b6375cacdb16543c4573738633d54facce61390"
+          }
+        }
+      ]
+    },
+    {
+      "id": 121127626,
+      "title": "Avatar - A lenda de Aang - Temporada 1",
+      "raw_detail_keys": [
+        "vod_total",
+        "pianwei",
+        "vod_serial",
+        "piantou",
+        "vod_year",
+        "vod_behind",
+        "click_count",
+        "vod_isend",
+        "vod_director",
+        "is_best",
+        "vod_name",
+        "vod_tag",
+        "vod_lang",
+        "vod_writer",
+        "vod_weekday",
+        "upload_user_head_img",
+        "id",
+        "vod_nc_show_id",
+        "vod_douban_score",
+        "icon_type",
+        "vod_pic",
+        "is_share",
+        "hide_ad",
+        "is_selected",
+        "type_id",
+        "vod_version",
+        "upload_user_name",
+        "type_pid",
+        "vod_pubdate",
+        "vod_blurb",
+        "production_country",
+        "vod_en",
+        "vod_actor",
+        "audio_type",
+        "audio_type_option",
+        "vod_collection",
+        "vod_duration_free",
+        "series_info",
+        "vod_is_cam",
+        "vod_is_update",
+        "audio_language_tag",
+        "vod_from_id",
+        "vod_area"
+      ],
+      "audio_type": 2,
+      "audio_type_option": [
+        {
+          "type": 1,
+          "type_name": "Legendado"
+        },
+        {
+          "type": 2,
+          "type_name": "Dublado"
+        }
+      ],
+      "audio_language_tag": "",
+      "vod_tag": "Ficção científica/Anime/Aventura/Fantasia/Família",
+      "vod_is_cam": 0,
+      "vod_year": "2005",
+      "type_pid": 2,
+      "collection_count": 20,
+      "sources": [
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "1",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 1,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "81b8602cc1070c42f7dd7566a2a6873527cf2dbdc86615cefe4b92d2fb773655"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "81b8602cc1070c42f7dd7566a2a6873527cf2dbdc86615cefe4b92d2fb773655"
+          }
+        },
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "2",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 2,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "ad02a8996c94e3f8e9dcb08c5c38f9a3205d2558e367ebde31b7e7386f28acc7"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "ad02a8996c94e3f8e9dcb08c5c38f9a3205d2558e367ebde31b7e7386f28acc7"
+          }
+        },
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "3",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 3,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "8b1adb33f1b90cde71119f2e88d50e0cbd1e7a38f65be88190a3d911474bb8e6"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a0f.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "8b1adb33f1b90cde71119f2e88d50e0cbd1e7a38f65be88190a3d911474bb8e6"
+          }
+        }
+      ]
+    }
+  ]
+}

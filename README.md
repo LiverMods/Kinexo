@@ -6,7 +6,9 @@ Esta árvore completa reconstrói o APK: compila **21 arquivos Java ativos**, mo
 
 É um projeto híbrido recompilável, não uma restauração integral em Java/Gradle. Seis bibliotecas nativas e o asset protegido do HLS continuam binários, com hashes verificados. Seus fontes C/C++ não foram recuperados. `reference/` contém Java decompilado **histórico**, anterior à limpeza, que não participa da build.
 
-Identidade e qualidade atuais: [docs/IDENTIDADE-QUALIDADE.md](docs/IDENTIDADE-QUALIDADE.md), com capturas e evidências em `docs/validation-identidade/`.
+Investigação atual das fontes: [docs/FONTES-E-FULLHD.md](docs/FONTES-E-FULLHD.md). Reprodução real 1920 × 1080 confirmada no catálogo, comparação das versões dublada/legendada e escolha dessas versões restaurada no player, preservando retomada. As medições não prometem 1080p para todas as obras. Evidências em `docs/validation-fullhd/`.
+
+Identidade e investigação inicial de qualidade: [docs/IDENTIDADE-QUALIDADE.md](docs/IDENTIDADE-QUALIDADE.md), com capturas e evidências em `docs/validation-identidade/`.
 
 Refinamento nativo anterior: [docs/KINEXO-REFINO.md](docs/KINEXO-REFINO.md). Mantém o mesmo motor/pacote, restaura a seção real de Streaming e acrescenta painéis, qualidade real, enquadramento e gestos. Resultado testado e capturas em `docs/validation-kinexo/`; `docs/EVOLUCAO.md` registra a entrega anterior.
 

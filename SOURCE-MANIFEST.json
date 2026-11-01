@@ -1,7 +1,7 @@
 {
   "format": "movie-source-manifest-v1",
   "self_excluded": true,
-  "file_count": 23278,
+  "file_count": 23321,
   "files": [
     {
       "path": ".gitattributes",
@@ -20,8 +20,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7995,
-      "sha256": "3f8bc585b7c08a069dd648626ddf9a0e9937948386d7046a4d7e969a10006fd3"
+      "bytes": 8369,
+      "sha256": "09ac7e8a387f8763f2bbd31bfca4c67575a1a86388461a5af17759faaea66850"
     },
     {
       "path": "design/kinexo/README.md",
@@ -59,9 +59,14 @@
       "sha256": "e831c0626edc9b66e646c578e6b82bce57529eb29476d04ed3bbf4c3e78b8697"
     },
     {
+      "path": "docs/FONTES-E-FULLHD.md",
+      "bytes": 14616,
+      "sha256": "af3dfc14f249d56c68c9d34ff2f60b26361cc8ab469051d775d3cde3f7872cda"
+    },
+    {
       "path": "docs/IDENTIDADE-QUALIDADE.md",
-      "bytes": 8624,
-      "sha256": "881f43bd190a461a8df7d56d33e666fe6e9823013df5632bd2e00f13b3db6433"
+      "bytes": 8950,
+      "sha256": "4e51bc79e28a191c00f0657e0ff6fe83b37e56701c9fd56c023076a1cea566c3"
     },
     {
       "path": "docs/INVENTORY.json",
@@ -177,6 +182,211 @@
       "path": "docs/tool-notices/guava-32.1.3-jre/LICENSE",
       "bytes": 11358,
       "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "docs/validation-fullhd/README.md",
+      "bytes": 5778,
+      "sha256": "ce25d351724e5b4432404b67d86af45cf41a2d8f2fdb62a352e24f1b89359422"
+    },
+    {
+      "path": "docs/validation-fullhd/audit-evolucao.json",
+      "bytes": 352,
+      "sha256": "8c0c3076d2ac49fb242d5d1b160e7f1306b98807bd7502fd8bd9fb54d0ba4b4a"
+    },
+    {
+      "path": "docs/validation-fullhd/audit-identidade.json",
+      "bytes": 2509,
+      "sha256": "606f97552d74bfc92cd0ce20b4a3d02c537fe2c4ff4946255f6ee7a9bfda6f65"
+    },
+    {
+      "path": "docs/validation-fullhd/audit-privacidade.json",
+      "bytes": 2023,
+      "sha256": "d1af827646b7155ea2690a862c38bb6f8a7114d7cfa8e93b35f3b5a2bf062b61"
+    },
+    {
+      "path": "docs/validation-fullhd/avatar-confirmation.txt",
+      "bytes": 2418,
+      "sha256": "2b231d60fd1e3d2dd90eed647579afddedfea7a39b3b4e742a81d4ddaf55c07f"
+    },
+    {
+      "path": "docs/validation-fullhd/avatar-confirmed.json",
+      "bytes": 5541,
+      "sha256": "f148325a31dadef7109f5e8300fbe76e3d5225e6e1f76e0ca77eed621249da33"
+    },
+    {
+      "path": "docs/validation-fullhd/avatar-metadata.json",
+      "bytes": 2225,
+      "sha256": "08c59ed864ebd8b2d1d004166ba8a4d09018a8d413af5176b683a8edf2347f97"
+    },
+    {
+      "path": "docs/validation-fullhd/avatar-play.json",
+      "bytes": 7126,
+      "sha256": "f69bfc65fec403355f390697a9e723facd859ccdd9ebf87013d76299f946876a"
+    },
+    {
+      "path": "docs/validation-fullhd/avatar-water-metadata.json",
+      "bytes": 2267,
+      "sha256": "ab98d82c598e09baf225f045555d044efc9bb81728a3fec861d78e7c33638169"
+    },
+    {
+      "path": "docs/validation-fullhd/avatar-water-play.json",
+      "bytes": 7201,
+      "sha256": "e4ee5568f5d254306d1ad57b677438599d1307459859137067affbccf4c8a54e"
+    },
+    {
+      "path": "docs/validation-fullhd/build.json",
+      "bytes": 434,
+      "sha256": "4c4430cf0081061a86a226f12d62682152eabc5cb2b224a85a7f7dbe03dbbc0b"
+    },
+    {
+      "path": "docs/validation-fullhd/catalog-extra-fields.json",
+      "bytes": 779,
+      "sha256": "8da9efd69089e0df333f9249edb0d31d0b1080145e4ff800aeea1fc5fb600c52"
+    },
+    {
+      "path": "docs/validation-fullhd/catalog-metadata.json",
+      "bytes": 59223,
+      "sha256": "00b6507032dedaf5c4e1a6955c1d6fbfccb21f934f418e8ca57909a6bcc2a9ab"
+    },
+    {
+      "path": "docs/validation-fullhd/catalog-play-initial.json",
+      "bytes": 80015,
+      "sha256": "d57cfc8e04e98ed52e0f1137f8173f14f55f1a996444da4ff5ca76434faabeaf"
+    },
+    {
+      "path": "docs/validation-fullhd/classics-metadata.json",
+      "bytes": 46381,
+      "sha256": "2e2fa086d28f05021a20a56860930b82b4bae4c32a552fa4bd1475fd87dd00ea"
+    },
+    {
+      "path": "docs/validation-fullhd/classics-play.json",
+      "bytes": 85804,
+      "sha256": "0147fad404470a4d60f9809188f665790f83d45d3a1b6d34ae3c1c39ea5121cd"
+    },
+    {
+      "path": "docs/validation-fullhd/core-final.txt",
+      "bytes": 10864,
+      "sha256": "4ef1ff829130992421307e10b776cbb03a312ac783800213af2db2364ef3f7a4"
+    },
+    {
+      "path": "docs/validation-fullhd/films-metadata.json",
+      "bytes": 30677,
+      "sha256": "43b2134e5e3b4a6090e86134bb61cd1be240edcfb5b18dcaf308b83308d6f636"
+    },
+    {
+      "path": "docs/validation-fullhd/films-play.json",
+      "bytes": 46628,
+      "sha256": "0047649ba4248e3e47c312eb785103011c67d3fa4d3ba05ec185290b50080fec"
+    },
+    {
+      "path": "docs/validation-fullhd/fullhd-confirmed.json",
+      "bytes": 5533,
+      "sha256": "bf505f9f0a0ffb803aa51da6435a854b25f8fd5b35928d36d8a01c1161aae8ea"
+    },
+    {
+      "path": "docs/validation-fullhd/fullhd-final.txt",
+      "bytes": 2384,
+      "sha256": "ba21f7dfa576fcec75950ee55a9b2ed17bc01418bed2182b75011f27201cc18b"
+    },
+    {
+      "path": "docs/validation-fullhd/matrix-summary.json",
+      "bytes": 658,
+      "sha256": "2a646f9d79e5a7426d032fffe07ed501b218fd92aa77adec55f2698b857ab635"
+    },
+    {
+      "path": "docs/validation-fullhd/native-cache-indices.json",
+      "bytes": 1657,
+      "sha256": "bac3a560b966bb02257fbe12b08391d714167cfc939889db7bd5c37a1e71478f"
+    },
+    {
+      "path": "docs/validation-fullhd/native-observation.json",
+      "bytes": 230,
+      "sha256": "5fdb0ad6df135f96be2885c840f8b11f4a8e1e2f835b8d49f82c1e5711905d43"
+    },
+    {
+      "path": "docs/validation-fullhd/native-startup.json",
+      "bytes": 190,
+      "sha256": "f0152dbaf0637ba79904bd4596621627eb13facae54e7fdca1633519effa8b54"
+    },
+    {
+      "path": "docs/validation-fullhd/public-proxy-control.json",
+      "bytes": 2292,
+      "sha256": "329af8ae1e5e166a70e8c0d858d2f8b00c6a672bb05d74458d851993bd0e605e"
+    },
+    {
+      "path": "docs/validation-fullhd/screens/avatar-playback.png",
+      "bytes": 1335605,
+      "sha256": "9e8f00b6d1398619f0e13d7853d2e5d37a8ad7d41c401e374a02ae473c808162"
+    },
+    {
+      "path": "docs/validation-fullhd/screens/avatar-quality.png",
+      "bytes": 874977,
+      "sha256": "86f96c752cdaa23143502c28b8a1cedd03bc38d570eb55453172cf6efc8239e7"
+    },
+    {
+      "path": "docs/validation-fullhd/screens/fullhd-catalog-playback.png",
+      "bytes": 1253224,
+      "sha256": "c7f7d5d11037e58a4dab5eb290d5ca9869cac44f4378a362e2a555f2250928ea"
+    },
+    {
+      "path": "docs/validation-fullhd/screens/fullhd-catalog-quality.png",
+      "bytes": 741834,
+      "sha256": "6874f62dccbff4f31c0fea4c4f42e96e29f50ed8265f26c1779fc7cb904da1a5"
+    },
+    {
+      "path": "docs/validation-fullhd/screens/source-versions-1.png",
+      "bytes": 101465,
+      "sha256": "6ef262bf28559fb466bb0acf112540149437ee3706fb3becff7cf7b0f8cb6757"
+    },
+    {
+      "path": "docs/validation-fullhd/screens/source-versions-2.png",
+      "bytes": 378578,
+      "sha256": "2e5bf1c8afecabb5785575635df3e4e8e504fdf236a9a9ae6bdcdb620ef000a8"
+    },
+    {
+      "path": "docs/validation-fullhd/source-version-1.json",
+      "bytes": 2653,
+      "sha256": "3404d705cacb010fe6049ca2c9809a9956c087fedb21cd88b24e33f7db598b16"
+    },
+    {
+      "path": "docs/validation-fullhd/source-version-2.json",
+      "bytes": 2654,
+      "sha256": "464efd0f60949dd2e5e74519096bc0ff89ec0f58345caac279cee5af5624e976"
+    },
+    {
+      "path": "docs/validation-fullhd/startup-before-stack.txt",
+      "bytes": 1096,
+      "sha256": "17c487070e5dd7c6140b8aa8bcbaff421b4a484c784dbe4ef68704a336587681"
+    },
+    {
+      "path": "docs/validation-fullhd/startup-final.txt",
+      "bytes": 1474,
+      "sha256": "31fa36d8e27d0b3eea2370104aeb2cf5fe47de913a120e8c600525c0ffbae679"
+    },
+    {
+      "path": "docs/validation-fullhd/startup-intermittent.txt",
+      "bytes": 745,
+      "sha256": "3986b14b623c1674bcb00d534bf8525f384adae011180cc56d3464bf8a81185e"
+    },
+    {
+      "path": "docs/validation-fullhd/summary.json",
+      "bytes": 2550,
+      "sha256": "c0bf1712565113e4d3516707a292c35f868f2334ed84a433e6d9d8fbaa21fb53"
+    },
+    {
+      "path": "docs/validation-fullhd/tvfilms-metadata.json",
+      "bytes": 19806,
+      "sha256": "4b621ab8235f827a382ed074284fa781f7604190eee4488b7915be38b5653da3"
+    },
+    {
+      "path": "docs/validation-fullhd/tvfilms-play.json",
+      "bytes": 32623,
+      "sha256": "b905541f0fcf95bb39333e646abbfa8740ea3cf04bf83b6391e7b91132cc8655"
+    },
+    {
+      "path": "docs/validation-fullhd/versions-final.txt",
+      "bytes": 3470,
+      "sha256": "b4a091089966e953e5ba2b36e47c94b2f1d226bc821a4bd60c7062f882367981"
     },
     {
       "path": "docs/validation-identidade/OBSERVACOES.md",
@@ -116140,8 +116350,8 @@
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/catalog/Catalog.java",
-      "bytes": 7301,
-      "sha256": "39ccdfa27b725935f267d85e74973971247617f328f334ac7cce94cf01bcf748"
+      "bytes": 8204,
+      "sha256": "eb7671cf5f712317fbf0ddf7bd0c52431c8dcb1201ac972741813e4774f54322"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/catalog/DetailsActivity.java",
@@ -116150,8 +116360,8 @@
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/catalog/Movie.java",
-      "bytes": 4066,
-      "sha256": "35675e107859287d553b1efdd0f5ae1fdcee6d8316c41c2334e998372252c581"
+      "bytes": 4187,
+      "sha256": "67b4cf81bbf0fd70bf2e7fd0dc8492ba264386f60908e17c83ee5b604a308a22"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/core/Legacy.java",
@@ -116160,8 +116370,8 @@
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/core/Routes.java",
-      "bytes": 1423,
-      "sha256": "a1ff132ccc9d15dca98f466533eaa90a816f3c47cccef2c40757c97e5eed6d7d"
+      "bytes": 1933,
+      "sha256": "9124638a5cdaada4272d58ab07db8c07d14dd95c3523511dc845dd3c0a754318"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/home/HomeActivity.java",
@@ -116175,8 +116385,8 @@
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/player/PlayerUi.java",
-      "bytes": 29416,
-      "sha256": "d185acf17ce27327c0a3a95e0da503ffc18beb9f242866b89405d1fa5e35f951"
+      "bytes": 29906,
+      "sha256": "9e2a9204cd87647f0b7ec8cf102cafc5fd72697fc54424dd0e0051226d15b028"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/profiles/Backup.java",
@@ -116265,8 +116475,8 @@
     },
     {
       "path": "tests/runtime/Run-DeviceChecks.ps1",
-      "bytes": 3281,
-      "sha256": "e407d224d4bb928e986f99c285d01a55305612844578bf58d9f5a0902d9d7418"
+      "bytes": 3577,
+      "sha256": "96951f246b8ffe38b988dbe0301b4b515c8fb561437ed7f8298e8fed8222e4c0"
     },
     {
       "path": "tests/runtime/banner-filter-check.js",
@@ -116290,13 +116500,18 @@
     },
     {
       "path": "tests/runtime/device/Checks.java",
-      "bytes": 39093,
-      "sha256": "b2d06d5d7f872868964f68459e89f03115f16d407dbf049af29e7cb99492ce48"
+      "bytes": 52292,
+      "sha256": "7a133e5cc0046f5dbd6a25d94a7357964928520b7aed35dc692b15417238090e"
+    },
+    {
+      "path": "tests/runtime/device/FullHdProbe.java",
+      "bytes": 13859,
+      "sha256": "aacb510d62c4c0c42d7f373bcf4dfbb62eb0e06bed1c818ff9e361d2e0097279"
     },
     {
       "path": "tests/runtime/device/SourceEvidence.java",
-      "bytes": 6111,
-      "sha256": "3351f135e7d894b4a0342418954e4f0ccb2f3aa6859e4e32ebe444d0b5bd7705"
+      "bytes": 6779,
+      "sha256": "b9fc346756564d4f0488a7cc4bbe3ac3aff5f81b16ee8bbb53e2016012b72f4e"
     },
     {
       "path": "tests/runtime/dns.js",

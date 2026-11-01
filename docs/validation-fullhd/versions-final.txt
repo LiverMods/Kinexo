@@ -1,0 +1,46 @@
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Performing Incremental Install
+Performing Streamed Install
+Success
+INSTRUMENTATION_STATUS: check=UI: DESTAQUE NO KINEXO
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real player STATE_READY with rendered video frames
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Version offered by the genuine catalog: 1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: Versão · Legendado
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real player STATE_READY with rendered video frames
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Version switch obtains fresh authorized source for the same real content
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Version switch restores playback position
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Version switch exposes measured source resolution, without upscale
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Version offered by the genuine catalog: 2
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: Versão · Dublado
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real player STATE_READY with rendered video frames
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Version switch obtains fresh authorized source for the same real content
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Version switch restores playback position
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Version switch exposes measured source resolution, without upscale
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=History and storage retain the actual selected catalog version
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Old profile backups without audio type retain the server default
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real player STATE_READY with rendered video frames
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Continue watching reopens the saved real catalog version
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Continue watching preserves the saved position after source selection
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: checks=["UI: DESTAQUE NO KINEXO","Real player STATE_READY with rendered video frames","Version offered by the genuine catalog: 1","UI: Versão · Legendado","Real player STATE_READY with rendered video frames","Version switch obtains fresh authorized source for the same real content","Version switch restores playback position","Version switch exposes measured source resolution, without upscale","Version offered by the genuine catalog: 2","UI: Versão · Dublado","Real player STATE_READY with rendered video frames","Version switch obtains fresh authorized source for the same real content","Version switch restores playback position","Version switch exposes measured source resolution, without upscale","History and storage retain the actual selected catalog version","Old profile backups without audio type retain the server default","Real player STATE_READY with rendered video frames","Continue watching reopens the saved real catalog version","Continue watching preserves the saved position after source selection"]
+INSTRUMENTATION_RESULT: result=PASS
+INSTRUMENTATION_CODE: -1

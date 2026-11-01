@@ -1,0 +1,3175 @@
+[
+  {
+    "id": 1986296773,
+    "title": "Fireplace 4K: Crackling Birchwood from Fireplace for Your Home",
+    "requested_audio_type": 1,
+    "ready_with_frames": true,
+    "evidence": {
+      "catalog_id": 1986296773,
+      "title": "Fireplace 4K: Crackling Birchwood from Fireplace for Your Home",
+      "kind": 1,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 960,
+          "height": 540,
+          "bitrate": -1,
+          "codecs": "avc1.64001F",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 960,
+        "height": 540,
+        "bitrate": -1,
+        "codecs": "avc1.64001F",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "9fa9029b505367c85eae5994dabeb7f7ab57e7a87f3e58c4388be08b0ae32bb0"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "76254b1375518bce833eeb664ffa513bc8042ee9776cf58e99b4e9714727ddc5"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "76254b1375518bce833eeb664ffa513bc8042ee9776cf58e99b4e9714727ddc5"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "9fa9029b505367c85eae5994dabeb7f7ab57e7a87f3e58c4388be08b0ae32bb0"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 924616866,
+    "title": "Loki - Temporada 1",
+    "requested_audio_type": 2,
+    "ready_with_frames": true,
+    "evidence": {
+      "catalog_id": 924616866,
+      "title": "Loki - Temporada 1",
+      "kind": 2,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 1280,
+          "height": 720,
+          "bitrate": -1,
+          "codecs": "avc1.64001F",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 1280,
+        "height": 720,
+        "bitrate": -1,
+        "codecs": "avc1.64001F",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "2",
+          "collection": 2,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "3",
+          "collection": 3,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "4",
+          "collection": 4,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "5",
+          "collection": 5,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "6",
+          "collection": 6,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "0168bf5e5d8ac4037ba16fb9fcfb311f8a994b3fafd68ca081e2c5a1f9402888"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "1677eb41862e880a5f94881db55df7ede1519c55b3bc795fcffb63606330b3a2"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "1677eb41862e880a5f94881db55df7ede1519c55b3bc795fcffb63606330b3a2"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "0168bf5e5d8ac4037ba16fb9fcfb311f8a994b3fafd68ca081e2c5a1f9402888"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 924616866,
+    "title": "Loki - Temporada 1",
+    "requested_audio_type": 1,
+    "ready_with_frames": true,
+    "evidence": {
+      "catalog_id": 924616866,
+      "title": "Loki - Temporada 1",
+      "kind": 2,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 1280,
+          "height": 720,
+          "bitrate": -1,
+          "codecs": "avc1.64001F",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 1280,
+        "height": 720,
+        "bitrate": -1,
+        "codecs": "avc1.64001F",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "2",
+          "collection": 2,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "3",
+          "collection": 3,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "4",
+          "collection": 4,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "5",
+          "collection": 5,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "6",
+          "collection": 6,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "361499fbd145261f27a6ba35c84eb0472e7e94a40390d72879cdcd4ab2eb85c3"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "b1c5f5fe97754057a8825ea4f61536a6105909d9fb27eb72042853deef9cf31d"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "b1c5f5fe97754057a8825ea4f61536a6105909d9fb27eb72042853deef9cf31d"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "361499fbd145261f27a6ba35c84eb0472e7e94a40390d72879cdcd4ab2eb85c3"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 689780146,
+    "title": "Loki - Temporada 2",
+    "requested_audio_type": 2,
+    "ready_with_frames": true,
+    "evidence": {
+      "catalog_id": 689780146,
+      "title": "Loki - Temporada 2",
+      "kind": 2,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 1280,
+          "height": 720,
+          "bitrate": -1,
+          "codecs": "avc1.64001F",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 1280,
+        "height": 720,
+        "bitrate": -1,
+        "codecs": "avc1.64001F",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "2",
+          "collection": 2,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "3",
+          "collection": 3,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "4",
+          "collection": 4,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "5",
+          "collection": 5,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "6",
+          "collection": 6,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "a2890bfeb7c345b0f349873a627127a0724534773da594f7a27461e4f48937ee"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "c14b8c6ea0467b16a848f53e392ace278d9b02389a91453deb5d5f35cc3f1b21"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "c14b8c6ea0467b16a848f53e392ace278d9b02389a91453deb5d5f35cc3f1b21"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "a2890bfeb7c345b0f349873a627127a0724534773da594f7a27461e4f48937ee"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 689780146,
+    "title": "Loki - Temporada 2",
+    "requested_audio_type": 1,
+    "ready_with_frames": true,
+    "evidence": {
+      "catalog_id": 689780146,
+      "title": "Loki - Temporada 2",
+      "kind": 2,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 1280,
+          "height": 720,
+          "bitrate": -1,
+          "codecs": "avc1.64001F",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 1280,
+        "height": 720,
+        "bitrate": -1,
+        "codecs": "avc1.64001F",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "2",
+          "collection": 2,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "3",
+          "collection": 3,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "4",
+          "collection": 4,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "5",
+          "collection": 5,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "6",
+          "collection": 6,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "dfc1fbfe00011520b0c7e25876a9aa4d05944f0070c1f6210e2d8cb34c3ae922"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "628badc750db0513d749b3437028ba2b7cfdf9824467f0086b4d9de748fd529e"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "628badc750db0513d749b3437028ba2b7cfdf9824467f0086b4d9de748fd529e"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "dfc1fbfe00011520b0c7e25876a9aa4d05944f0070c1f6210e2d8cb34c3ae922"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 48831127,
+    "title": "Project Loki - Temporada 1",
+    "requested_audio_type": 1,
+    "ready_with_frames": true,
+    "evidence": {
+      "catalog_id": 48831127,
+      "title": "Project Loki - Temporada 1",
+      "kind": 2,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 1280,
+          "height": 720,
+          "bitrate": -1,
+          "codecs": "avc1.64001F",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 1280,
+        "height": 720,
+        "bitrate": -1,
+        "codecs": "avc1.64001F",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "2",
+          "collection": 2,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "3",
+          "collection": 3,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "4",
+          "collection": 4,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "5",
+          "collection": 5,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "6",
+          "collection": 6,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "7",
+          "collection": 7,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "8",
+          "collection": 8,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "9",
+          "collection": 9,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "10",
+          "collection": 10,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "11",
+          "collection": 11,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "12",
+          "collection": 12,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "13",
+          "collection": 13,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "14",
+          "collection": 14,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "15",
+          "collection": 15,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "16",
+          "collection": 16,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "17",
+          "collection": 17,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "18",
+          "collection": 18,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "000b06ac02790ab484a07515a2fcb09be25d027f90f8d568d30614c1b500b18f"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "c3abe6d5ff438b667387206ea1a934d41341f4d26c98ad69579f383cf4d307f3"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "c3abe6d5ff438b667387206ea1a934d41341f4d26c98ad69579f383cf4d307f3"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "000b06ac02790ab484a07515a2fcb09be25d027f90f8d568d30614c1b500b18f"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 1073788049,
+    "title": "Marvel Studios Assembled: The Making of Loki Season 2",
+    "requested_audio_type": 1,
+    "ready_with_frames": true,
+    "evidence": {
+      "catalog_id": 1073788049,
+      "title": "Marvel Studios Assembled: The Making of Loki Season 2",
+      "kind": 1,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 1280,
+          "height": 720,
+          "bitrate": -1,
+          "codecs": "avc1.64001F",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 1280,
+        "height": 720,
+        "bitrate": -1,
+        "codecs": "avc1.64001F",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "0a27bf6f7d1ef690f8280968bef6c5f31c72d2a1b549deb9c8d7f0d4e8f1e638"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "0d959ca095cd3da9b420dc3e2298f0a45194ccff5d9b892ce41c28add8a55a97"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "0d959ca095cd3da9b420dc3e2298f0a45194ccff5d9b892ce41c28add8a55a97"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "0a27bf6f7d1ef690f8280968bef6c5f31c72d2a1b549deb9c8d7f0d4e8f1e638"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 1953157484,
+    "title": "LEGO Marvel Avengers: Loki em Treinamento",
+    "requested_audio_type": 1,
+    "ready_with_frames": true,
+    "evidence": {
+      "catalog_id": 1953157484,
+      "title": "LEGO Marvel Avengers: Loki em Treinamento",
+      "kind": 1,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 1280,
+          "height": 720,
+          "bitrate": -1,
+          "codecs": "avc1.64001F",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 1280,
+        "height": 720,
+        "bitrate": -1,
+        "codecs": "avc1.64001F",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "b4f768b0fcb6f4b98486a2b3077fe0a4a9f7ca7e43335ab599ff4106e5559668"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "a6465a8ac1dcb2c48f959269f1685a7021f992b1375a25b42d55df7283673aac"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "a6465a8ac1dcb2c48f959269f1685a7021f992b1375a25b42d55df7283673aac"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "b4f768b0fcb6f4b98486a2b3077fe0a4a9f7ca7e43335ab599ff4106e5559668"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 1260795518,
+    "title": "Pusher III: O Anjo da Morte",
+    "requested_audio_type": 1,
+    "ready_with_frames": true,
+    "evidence": {
+      "catalog_id": 1260795518,
+      "title": "Pusher III: O Anjo da Morte",
+      "kind": 1,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 1280,
+          "height": 720,
+          "bitrate": -1,
+          "codecs": "avc1.64001F",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 1280,
+        "height": 720,
+        "bitrate": -1,
+        "codecs": "avc1.64001F",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "963ee234b1b5605fc5555ee0a9e46dd6a145fa9a7ec352db37672230b90da8f5"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "5fa34ffef44cc7deef66c2fd659beb539988ce224f832c3c3a091941dcea8838"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "5fa34ffef44cc7deef66c2fd659beb539988ce224f832c3c3a091941dcea8838"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "963ee234b1b5605fc5555ee0a9e46dd6a145fa9a7ec352db37672230b90da8f5"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 675846639,
+    "title": "O Bom, o Bart e o Loki",
+    "requested_audio_type": 2,
+    "ready_with_frames": true,
+    "evidence": {
+      "catalog_id": 675846639,
+      "title": "O Bom, o Bart e o Loki",
+      "kind": 1,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 1920,
+          "height": 1080,
+          "bitrate": -1,
+          "codecs": "avc1.640028",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 1920,
+        "height": 1080,
+        "bitrate": -1,
+        "codecs": "avc1.640028",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 103,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "80c85c6e96cc1ccad788fb9b2398b91db0686d7a44a56b0acbbadae0e050f05c"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "392457790f22277a9f92d702d385343b589e2d24c5b742d36471e9d7469b791e"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "392457790f22277a9f92d702d385343b589e2d24c5b742d36471e9d7469b791e"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "80c85c6e96cc1ccad788fb9b2398b91db0686d7a44a56b0acbbadae0e050f05c"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 1436259380,
+    "title": "Tori et Lokita",
+    "requested_audio_type": 1,
+    "ready_with_frames": true,
+    "evidence": {
+      "catalog_id": 1436259380,
+      "title": "Tori et Lokita",
+      "kind": 1,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 1280,
+          "height": 692,
+          "bitrate": -1,
+          "codecs": "avc1.64001F",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 1280,
+        "height": 692,
+        "bitrate": -1,
+        "codecs": "avc1.64001F",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "2698be5f6edcef249c4c746d9e69f8941cd91ee8d65dd513df3979fa2153103d"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "5054b29339df1e06e31fca8ad894ad1bff300fde65a1fd46f0fb7b7150b30ffc"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "5054b29339df1e06e31fca8ad894ad1bff300fde65a1fd46f0fb7b7150b30ffc"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "2698be5f6edcef249c4c746d9e69f8941cd91ee8d65dd513df3979fa2153103d"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 1235245793,
+    "title": "Avatar: Os Sete Refúgios - Temporada 1",
+    "requested_audio_type": 2,
+    "ready_with_frames": true,
+    "evidence": {
+      "catalog_id": 1235245793,
+      "title": "Avatar: Os Sete Refúgios - Temporada 1",
+      "kind": 2,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 1280,
+          "height": 720,
+          "bitrate": -1,
+          "codecs": "avc1.4D401F",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 1280,
+        "height": 720,
+        "bitrate": -1,
+        "codecs": "avc1.4D401F",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "2",
+          "collection": 2,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "3",
+          "collection": 3,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "4",
+          "collection": 4,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "5",
+          "collection": 5,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "6",
+          "collection": 6,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "7",
+          "collection": 7,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "8",
+          "collection": 8,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "9",
+          "collection": 9,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "10",
+          "collection": 10,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "11",
+          "collection": 11,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "12",
+          "collection": 12,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "13",
+          "collection": 13,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "8f0c1fcec38a35708ca6cc9b92abd742c4ddde71c53ffa22ab11874db54de948"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "2dc07625b3c04ad4516677250d20c153346f52804141ff6d07b34c060d81ead6"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "2dc07625b3c04ad4516677250d20c153346f52804141ff6d07b34c060d81ead6"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "8f0c1fcec38a35708ca6cc9b92abd742c4ddde71c53ffa22ab11874db54de948"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 1235245793,
+    "title": "Avatar: Os Sete Refúgios - Temporada 1",
+    "requested_audio_type": 1,
+    "ready_with_frames": true,
+    "evidence": {
+      "catalog_id": 1235245793,
+      "title": "Avatar: Os Sete Refúgios - Temporada 1",
+      "kind": 2,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 1280,
+          "height": 720,
+          "bitrate": -1,
+          "codecs": "avc1.4D401F",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 1280,
+        "height": 720,
+        "bitrate": -1,
+        "codecs": "avc1.4D401F",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "2",
+          "collection": 2,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "3",
+          "collection": 3,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "4",
+          "collection": 4,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "5",
+          "collection": 5,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "6",
+          "collection": 6,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "7",
+          "collection": 7,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "8",
+          "collection": 8,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "9",
+          "collection": 9,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "10",
+          "collection": 10,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "11",
+          "collection": 11,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "12",
+          "collection": 12,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "13",
+          "collection": 13,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "4b01884559d740fbdb4321c99e43b493a0f3df02aff5b3e80608c0f05f6cac7b"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "5673f4c5858ab5570210f9dcf0beae3fc55dad134980bd6074e776e9fd63b312"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "5673f4c5858ab5570210f9dcf0beae3fc55dad134980bd6074e776e9fd63b312"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "4b01884559d740fbdb4321c99e43b493a0f3df02aff5b3e80608c0f05f6cac7b"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 1418208077,
+    "title": "Avatar: Fire and Ash",
+    "requested_audio_type": 2,
+    "ready_with_frames": false,
+    "error_class": "AssertionError"
+  },
+  {
+    "id": 1418208077,
+    "title": "Avatar: Fire and Ash",
+    "requested_audio_type": 1,
+    "ready_with_frames": true,
+    "evidence": {
+      "catalog_id": 1418208077,
+      "title": "Avatar: Fire and Ash",
+      "kind": 1,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 1280,
+          "height": 694,
+          "bitrate": -1,
+          "codecs": "avc1.64001F",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 1280,
+        "height": 694,
+        "bitrate": -1,
+        "codecs": "avc1.64001F",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "9b52644c477b44ca7dfd018a64511b762f1344227f5c853f83fb70ba76403131"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "f11ba5466b7d542af86698dc14e400f93a9987a9593555f3fd7bb7f1865213db"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "f11ba5466b7d542af86698dc14e400f93a9987a9593555f3fd7bb7f1865213db"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "9b52644c477b44ca7dfd018a64511b762f1344227f5c853f83fb70ba76403131"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 1739516158,
+    "title": "Avatar Aang: The Last Airbender",
+    "requested_audio_type": 2,
+    "ready_with_frames": true,
+    "evidence": {
+      "catalog_id": 1739516158,
+      "title": "Avatar Aang: The Last Airbender",
+      "kind": 1,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 1280,
+          "height": 720,
+          "bitrate": -1,
+          "codecs": "avc1.4D401F",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 1280,
+        "height": 720,
+        "bitrate": -1,
+        "codecs": "avc1.4D401F",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "24f4a57540dd916f832c9a291e159f29b1d85f804278629b6dd0a6c0552984fb"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "f58e26f3890eb08aa5b87c672514bbee29a668646fd2c6123f8e689b1e7cd65f"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "f58e26f3890eb08aa5b87c672514bbee29a668646fd2c6123f8e689b1e7cd65f"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "24f4a57540dd916f832c9a291e159f29b1d85f804278629b6dd0a6c0552984fb"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 1739516158,
+    "title": "Avatar Aang: The Last Airbender",
+    "requested_audio_type": 1,
+    "ready_with_frames": true,
+    "evidence": {
+      "catalog_id": 1739516158,
+      "title": "Avatar Aang: The Last Airbender",
+      "kind": 1,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 1720,
+          "height": 720,
+          "bitrate": -1,
+          "codecs": "avc1.4D4020",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 1720,
+        "height": 720,
+        "bitrate": -1,
+        "codecs": "avc1.4D4020",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "7d3e415f0bd620020e16cd95acca77fa600123349c6546ab550c90820f6366d6"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "ca0069f8ecda2114f12b824d43ba0c2cb1390393f0f34c50c2bbb2c9ef5d71f3"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "ca0069f8ecda2114f12b824d43ba0c2cb1390393f0f34c50c2bbb2c9ef5d71f3"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "7d3e415f0bd620020e16cd95acca77fa600123349c6546ab550c90820f6366d6"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 1250841601,
+    "title": "Avatar: O Último Mestre do Ar - Temporada 2",
+    "requested_audio_type": 2,
+    "ready_with_frames": true,
+    "evidence": {
+      "catalog_id": 1250841601,
+      "title": "Avatar: O Último Mestre do Ar - Temporada 2",
+      "kind": 2,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 1280,
+          "height": 720,
+          "bitrate": -1,
+          "codecs": "avc1.4D401F",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 1280,
+        "height": 720,
+        "bitrate": -1,
+        "codecs": "avc1.4D401F",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "2",
+          "collection": 2,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "3",
+          "collection": 3,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "4",
+          "collection": 4,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "5",
+          "collection": 5,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "6",
+          "collection": 6,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "7",
+          "collection": 7,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "b8fbca22d256d1cbf0278a5601e1245c0c82547e74e8cae9245c79c2a2125a12"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "84aa0a4b5fc335f75a2c1fa084cf69b9bb4e8eda5f44abb4a92175c8859b10e8"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "84aa0a4b5fc335f75a2c1fa084cf69b9bb4e8eda5f44abb4a92175c8859b10e8"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "b8fbca22d256d1cbf0278a5601e1245c0c82547e74e8cae9245c79c2a2125a12"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 1250841601,
+    "title": "Avatar: O Último Mestre do Ar - Temporada 2",
+    "requested_audio_type": 1,
+    "ready_with_frames": true,
+    "evidence": {
+      "catalog_id": 1250841601,
+      "title": "Avatar: O Último Mestre do Ar - Temporada 2",
+      "kind": 2,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 1280,
+          "height": 720,
+          "bitrate": -1,
+          "codecs": "avc1.4D401F",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 1280,
+        "height": 720,
+        "bitrate": -1,
+        "codecs": "avc1.4D401F",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "2",
+          "collection": 2,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "3",
+          "collection": 3,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "4",
+          "collection": 4,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "5",
+          "collection": 5,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "6",
+          "collection": 6,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "7",
+          "collection": 7,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "5ef5637ed7516620afbf492ac33b21ad177d09960a8165196673a210c97c896f"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "7539b1eeded281a5d3ff1f42496d9bb30d4011996b6e7a9e536cccbf9300ab07"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "7539b1eeded281a5d3ff1f42496d9bb30d4011996b6e7a9e536cccbf9300ab07"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "5ef5637ed7516620afbf492ac33b21ad177d09960a8165196673a210c97c896f"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 121127626,
+    "title": "Avatar - A lenda de Aang - Temporada 1",
+    "requested_audio_type": 2,
+    "ready_with_frames": true,
+    "evidence": {
+      "catalog_id": 121127626,
+      "title": "Avatar - A lenda de Aang - Temporada 1",
+      "kind": 2,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 960,
+          "height": 720,
+          "bitrate": -1,
+          "codecs": "avc1.64001F",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 960,
+        "height": 720,
+        "bitrate": -1,
+        "codecs": "avc1.64001F",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "2",
+          "collection": 2,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "3",
+          "collection": 3,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "4",
+          "collection": 4,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "5",
+          "collection": 5,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "6",
+          "collection": 6,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "7",
+          "collection": 7,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "8",
+          "collection": 8,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "9",
+          "collection": 9,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "10",
+          "collection": 10,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "11",
+          "collection": 11,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "12",
+          "collection": 12,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "13",
+          "collection": 13,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "14",
+          "collection": 14,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "15",
+          "collection": 15,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "16",
+          "collection": 16,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "17",
+          "collection": 17,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "18",
+          "collection": 18,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "19",
+          "collection": 19,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "20",
+          "collection": 20,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "c316c9d7828121d016cbde68e84d58bf3108d49ba8bee6d95d0e74eff92b6c0b"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "b5f78b6f40822ae17e4c16c9796b3abfb9d9e2a4842a340be3ec667f11c92b87"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "b5f78b6f40822ae17e4c16c9796b3abfb9d9e2a4842a340be3ec667f11c92b87"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "c316c9d7828121d016cbde68e84d58bf3108d49ba8bee6d95d0e74eff92b6c0b"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 121127626,
+    "title": "Avatar - A lenda de Aang - Temporada 1",
+    "requested_audio_type": 1,
+    "ready_with_frames": true,
+    "evidence": {
+      "catalog_id": 121127626,
+      "title": "Avatar - A lenda de Aang - Temporada 1",
+      "kind": 2,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 960,
+          "height": 720,
+          "bitrate": -1,
+          "codecs": "avc1.64001F",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 960,
+        "height": 720,
+        "bitrate": -1,
+        "codecs": "avc1.64001F",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "2",
+          "collection": 2,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "3",
+          "collection": 3,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "4",
+          "collection": 4,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "5",
+          "collection": 5,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "6",
+          "collection": 6,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "7",
+          "collection": 7,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "8",
+          "collection": 8,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "9",
+          "collection": 9,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "10",
+          "collection": 10,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "11",
+          "collection": 11,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "12",
+          "collection": 12,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "13",
+          "collection": 13,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "14",
+          "collection": 14,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "15",
+          "collection": 15,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "16",
+          "collection": 16,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "17",
+          "collection": 17,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "18",
+          "collection": 18,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "19",
+          "collection": 19,
+          "source_id": 1000,
+          "is_p2p": 1
+        },
+        {
+          "title": "20",
+          "collection": 20,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "53a79f00568daa699c327f4a31de36df40c3b9d00b1ed249679d3a623801e9d0"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "60f67a3276455499b0c6f9c16579e29ce98ad08238c119488fe06d2dd8001ca4"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "60f67a3276455499b0c6f9c16579e29ce98ad08238c119488fe06d2dd8001ca4"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "53a79f00568daa699c327f4a31de36df40c3b9d00b1ed249679d3a623801e9d0"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  }
+]

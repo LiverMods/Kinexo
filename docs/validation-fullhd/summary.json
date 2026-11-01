@@ -1,0 +1,58 @@
+{
+  "apk_file": "kinexo-fontes-reais-final-debug.apk",
+  "apk_sha256": "322bf255c71fbf2e576e6d88752221faf30bcc68d2e895d517f193305d5333b7",
+  "installed_apk_sha256_matches": true,
+  "apk_bytes": 24689514,
+  "package": "com.mobrcine.cine_br",
+  "previous_checkpoint": "92562f4296a5fc07cd129b93b2d91aff17392b52",
+  "signer_sha256_unchanged": "04a728d6a7c4c248b36baaed2af61dbdc032597bd5f207fdb929e95155efc1b7",
+  "signature_v2_v3_and_alignment_verified": true,
+  "IdentityBinding_sha256_unchanged": "22a3df138b7f7b6f96ff063310f628abe988a172975d843065915a51e6bf06cb",
+  "final_device_checks": {
+    "core-final.txt": 77,
+    "fullhd-final.txt": 13,
+    "versions-final.txt": 19,
+    "startup-final.txt": 7,
+    "avatar-confirmation.txt": 13
+  },
+  "assertions_in_these_passed_runs": 129,
+  "matrix": {
+    "matrix_attempts": 72,
+    "matrix_ready_with_rendered_frames": 70,
+    "distinct_catalog_ids": 40,
+    "above_720_height_samples": 9,
+    "at_least_1440_height_samples": 0,
+    "failed_samples": [
+      {
+        "id": 1418208077,
+        "title": "Avatar: Fire and Ash",
+        "audio_type": 2,
+        "error": "AssertionError"
+      },
+      {
+        "id": 1863162484,
+        "title": "Phineas e Ferb: O Filme - Através da 2ª Dimensão",
+        "audio_type": 2,
+        "error": "AssertionError"
+      }
+    ],
+    "physical_phone_modified": false,
+    "all_catalog_sources_exhaustively_scanned": false,
+    "remote_master_before_protected_sdk": "unconfirmed"
+  },
+  "physical_phone_modified": false,
+  "tested_installation": "update",
+  "final_round_clean_uninstall_restore": false,
+  "source_sha256": {
+    "src/java/classes3/com/mgs/carparking/modern/catalog/Catalog.java": "eb7671cf5f712317fbf0ddf7bd0c52431c8dcb1201ac972741813e4774f54322",
+    "src/java/classes3/com/mgs/carparking/modern/catalog/Movie.java": "67b4cf81bbf0fd70bf2e7fd0dc8492ba264386f60908e17c83ee5b604a308a22",
+    "src/java/classes3/com/mgs/carparking/modern/core/Routes.java": "9124638a5cdaada4272d58ab07db8c07d14dd95c3523511dc845dd3c0a754318",
+    "src/java/classes3/com/mgs/carparking/modern/player/PlayerUi.java": "9e2a9204cd87647f0b7ec8cf102cafc5fd72697fc54424dd0e0051226d15b028"
+  },
+  "known_limitations": [
+    "Intermittent service or startup availability; an additional repeat stayed in splash, recorded separately.",
+    "Original remote master and exact CloudFront denial condition unconfirmed.",
+    "Native SDK remains opaque.",
+    "No physical ARM phone or TV transmission validation."
+  ]
+}

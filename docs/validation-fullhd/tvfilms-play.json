@@ -1,0 +1,1233 @@
+[
+  {
+    "id": 1486488889,
+    "title": "High School Musical",
+    "requested_audio_type": 2,
+    "ready_with_frames": true,
+    "additional_frames": 65,
+    "evidence": {
+      "catalog_id": 1486488889,
+      "title": "High School Musical",
+      "kind": 1,
+      "actual_audio_type": 2,
+      "intent_id": 1486488889,
+      "intent_audio_type": 2,
+      "episode_index": 0,
+      "activity_identity": 212065745,
+      "exo_identity": 212959109,
+      "playback_state": 3,
+      "position_ms": 4059,
+      "duration_ms": 5875037,
+      "rendered_frames": 98,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 1280,
+          "height": 720,
+          "bitrate": -1,
+          "codecs": "avc1.64001F",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 1280,
+        "height": 720,
+        "bitrate": -1,
+        "codecs": "avc1.64001F",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "cef74c03d062b40772d51665f40a43d655cacf7aa3b935e9372b3c5d3d112039"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "21971e7757dba666ddc57e69153df0008dad7d0d46080c34afe67771f3893ee0"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "21971e7757dba666ddc57e69153df0008dad7d0d46080c34afe67771f3893ee0"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "cef74c03d062b40772d51665f40a43d655cacf7aa3b935e9372b3c5d3d112039"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 1486488889,
+    "title": "High School Musical",
+    "requested_audio_type": 1,
+    "ready_with_frames": true,
+    "additional_frames": 65,
+    "evidence": {
+      "catalog_id": 1486488889,
+      "title": "High School Musical",
+      "kind": 1,
+      "actual_audio_type": 1,
+      "intent_id": 1486488889,
+      "intent_audio_type": 1,
+      "episode_index": 0,
+      "activity_identity": 20302178,
+      "exo_identity": 203075032,
+      "playback_state": 3,
+      "position_ms": 3900,
+      "duration_ms": 5870949,
+      "rendered_frames": 89,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 640,
+          "height": 360,
+          "bitrate": -1,
+          "codecs": "avc1.64001E",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 640,
+        "height": 360,
+        "bitrate": -1,
+        "codecs": "avc1.64001E",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "e8db9ab19d8fc6af05aad2cb1f5571158ddb6224306e65a30220277da923e405"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "a4df309073c3838f71d1877219987ce64c724f43cb1f582aaf2b0178f0e36246"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "a4df309073c3838f71d1877219987ce64c724f43cb1f582aaf2b0178f0e36246"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "e8db9ab19d8fc6af05aad2cb1f5571158ddb6224306e65a30220277da923e405"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 1316695916,
+    "title": "O Exterminador do Futuro 2: O Julgamento Final",
+    "requested_audio_type": 2,
+    "ready_with_frames": true,
+    "additional_frames": 59,
+    "evidence": {
+      "catalog_id": 1316695916,
+      "title": "O Exterminador do Futuro 2: O Julgamento Final",
+      "kind": 1,
+      "actual_audio_type": 2,
+      "intent_id": 1316695916,
+      "intent_audio_type": 2,
+      "episode_index": 0,
+      "activity_identity": 50423847,
+      "exo_identity": 22892235,
+      "playback_state": 3,
+      "position_ms": 4408,
+      "duration_ms": 8195708,
+      "rendered_frames": 99,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 1280,
+          "height": 544,
+          "bitrate": -1,
+          "codecs": "avc1.64001F",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 1280,
+        "height": 544,
+        "bitrate": -1,
+        "codecs": "avc1.64001F",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "14ff076e2ad13ef8253179d3f68b876b7a1da6bfe3f3c0fec9bebdcff8a48be4"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "c0abeb2db4b100dd7690b923d74e597257432a3975c05aa2b1fb78ac707ed66d"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "c0abeb2db4b100dd7690b923d74e597257432a3975c05aa2b1fb78ac707ed66d"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "14ff076e2ad13ef8253179d3f68b876b7a1da6bfe3f3c0fec9bebdcff8a48be4"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 1316695916,
+    "title": "O Exterminador do Futuro 2: O Julgamento Final",
+    "requested_audio_type": 1,
+    "ready_with_frames": true,
+    "additional_frames": 62,
+    "evidence": {
+      "catalog_id": 1316695916,
+      "title": "O Exterminador do Futuro 2: O Julgamento Final",
+      "kind": 1,
+      "actual_audio_type": 1,
+      "intent_id": 1316695916,
+      "intent_audio_type": 1,
+      "episode_index": 0,
+      "activity_identity": 248350585,
+      "exo_identity": 185749763,
+      "playback_state": 3,
+      "position_ms": 3607,
+      "duration_ms": 9205490,
+      "rendered_frames": 80,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 1280,
+          "height": 540,
+          "bitrate": -1,
+          "codecs": "avc1.64001F",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 1280,
+        "height": 540,
+        "bitrate": -1,
+        "codecs": "avc1.64001F",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "26689fafbfd9e563d91fb3d2cc6099e6a1743538c350fd6797e23eaca95681c0"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "e1f9eecb17be20a6274c2e779ba6913fb717983e4e295f70d29292b99b25afff"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "e1f9eecb17be20a6274c2e779ba6913fb717983e4e295f70d29292b99b25afff"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "26689fafbfd9e563d91fb3d2cc6099e6a1743538c350fd6797e23eaca95681c0"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 1494780612,
+    "title": "Descendentes",
+    "requested_audio_type": 2,
+    "ready_with_frames": true,
+    "additional_frames": 45,
+    "evidence": {
+      "catalog_id": 1494780612,
+      "title": "Descendentes",
+      "kind": 1,
+      "actual_audio_type": 2,
+      "intent_id": 1494780612,
+      "intent_audio_type": 2,
+      "episode_index": 0,
+      "activity_identity": 110509706,
+      "exo_identity": 34995110,
+      "playback_state": 3,
+      "position_ms": 3701,
+      "duration_ms": 6709954,
+      "rendered_frames": 63,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 1280,
+          "height": 720,
+          "bitrate": -1,
+          "codecs": "avc1.64001F",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 1280,
+        "height": 720,
+        "bitrate": -1,
+        "codecs": "avc1.64001F",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "4d55ca817d0d499a1e462d84bcb10ddf428a65236d1709fe9084e09f5b898971"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "1370b9786f37c4b8edb799e127e79e2f16e9ba20d9151b317c53b4bffbb6775b"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "1370b9786f37c4b8edb799e127e79e2f16e9ba20d9151b317c53b4bffbb6775b"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "4d55ca817d0d499a1e462d84bcb10ddf428a65236d1709fe9084e09f5b898971"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 1494780612,
+    "title": "Descendentes",
+    "requested_audio_type": 1,
+    "ready_with_frames": true,
+    "additional_frames": 60,
+    "evidence": {
+      "catalog_id": 1494780612,
+      "title": "Descendentes",
+      "kind": 1,
+      "actual_audio_type": 1,
+      "intent_id": 1494780612,
+      "intent_audio_type": 1,
+      "episode_index": 0,
+      "activity_identity": 48577665,
+      "exo_identity": 236124985,
+      "playback_state": 3,
+      "position_ms": 3685,
+      "duration_ms": 6709995,
+      "rendered_frames": 82,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 1280,
+          "height": 720,
+          "bitrate": -1,
+          "codecs": "avc1.4D401F",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 1280,
+        "height": 720,
+        "bitrate": -1,
+        "codecs": "avc1.4D401F",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "abe113c523e66b36a56a2e8342cdb2eb3c8dd970be8fc198d471fa7a8eaa8882"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "82922bd251601fdd903fa432371d471facd38f2bab8cd480b7f9143f9a2fd9bf"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "82922bd251601fdd903fa432371d471facd38f2bab8cd480b7f9143f9a2fd9bf"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "abe113c523e66b36a56a2e8342cdb2eb3c8dd970be8fc198d471fa7a8eaa8882"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 1863162484,
+    "title": "Phineas e Ferb: O Filme - Através da 2ª Dimensão",
+    "requested_audio_type": 2,
+    "ready_with_frames": false,
+    "error_class": "AssertionError"
+  },
+  {
+    "id": 1863162484,
+    "title": "Phineas e Ferb: O Filme - Através da 2ª Dimensão",
+    "requested_audio_type": 1,
+    "ready_with_frames": true,
+    "additional_frames": 65,
+    "evidence": {
+      "catalog_id": 1863162484,
+      "title": "Phineas e Ferb: O Filme - Através da 2ª Dimensão",
+      "kind": 1,
+      "actual_audio_type": 1,
+      "intent_id": 1863162484,
+      "intent_audio_type": 1,
+      "episode_index": 0,
+      "activity_identity": 268084945,
+      "exo_identity": 248113892,
+      "playback_state": 3,
+      "position_ms": 3817,
+      "duration_ms": 4687892,
+      "rendered_frames": 90,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 640,
+          "height": 360,
+          "bitrate": -1,
+          "codecs": "avc1.64001E",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 640,
+        "height": 360,
+        "bitrate": -1,
+        "codecs": "avc1.64001E",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "1ed0339e2f759e39f250f33d351739874ede29d34260bf825b5cc3df1220658c"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "488d807fa8219a2162a42673d1a71fa6ac402832ac43b3290b923208e5b588ca"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "488d807fa8219a2162a42673d1a71fa6ac402832ac43b3290b923208e5b588ca"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "1ed0339e2f759e39f250f33d351739874ede29d34260bf825b5cc3df1220658c"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 1993936503,
+    "title": "Teen Beach Movie",
+    "requested_audio_type": 2,
+    "ready_with_frames": true,
+    "additional_frames": 59,
+    "evidence": {
+      "catalog_id": 1993936503,
+      "title": "Teen Beach Movie",
+      "kind": 1,
+      "actual_audio_type": 2,
+      "intent_id": 1993936503,
+      "intent_audio_type": 2,
+      "episode_index": 0,
+      "activity_identity": 154196025,
+      "exo_identity": 195389673,
+      "playback_state": 3,
+      "position_ms": 4063,
+      "duration_ms": 5704490,
+      "rendered_frames": 87,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 1280,
+          "height": 720,
+          "bitrate": -1,
+          "codecs": "avc1.4D401F",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 1280,
+        "height": 720,
+        "bitrate": -1,
+        "codecs": "avc1.4D401F",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "7660bf95c40bf4b9636cc3e79c972fce64f7923af3249c4a40520a945537d408"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "aabcdd2401caae2adbc883380419f3fa503e2b834ba5585f2ad005bf1e982c06"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "aabcdd2401caae2adbc883380419f3fa503e2b834ba5585f2ad005bf1e982c06"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "7660bf95c40bf4b9636cc3e79c972fce64f7923af3249c4a40520a945537d408"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  },
+  {
+    "id": 1993936503,
+    "title": "Teen Beach Movie",
+    "requested_audio_type": 1,
+    "ready_with_frames": true,
+    "additional_frames": 63,
+    "evidence": {
+      "catalog_id": 1993936503,
+      "title": "Teen Beach Movie",
+      "kind": 1,
+      "actual_audio_type": 1,
+      "intent_id": 1993936503,
+      "intent_audio_type": 1,
+      "episode_index": 0,
+      "activity_identity": 213235115,
+      "exo_identity": 235714014,
+      "playback_state": 3,
+      "position_ms": 4022,
+      "duration_ms": 5700821,
+      "rendered_frames": 90,
+      "dto_field_names": [
+        "actor",
+        "area",
+        "audio_language_tag",
+        "audio_type",
+        "audio_type_option",
+        "collection_new_title",
+        "comicPosition",
+        "coverUrl",
+        "custom_content",
+        "director",
+        "hide_ad",
+        "icon_type",
+        "id",
+        "is_share",
+        "moduleName",
+        "module_id",
+        "name",
+        "play_position",
+        "remarks",
+        "series_info",
+        "simpleDesc",
+        "source_id",
+        "tag",
+        "topType",
+        "type_id",
+        "type_pid",
+        "upload_user_head_img",
+        "upload_user_id",
+        "upload_user_name",
+        "videoDesc",
+        "videoId",
+        "videoType",
+        "vod_actor",
+        "vod_area",
+        "vod_blurb",
+        "vod_collection",
+        "vod_director",
+        "vod_douban_score",
+        "vod_duration_free",
+        "vod_from_id",
+        "vod_is_cam",
+        "vod_is_update",
+        "vod_isend",
+        "vod_name",
+        "vod_pic",
+        "vod_serial",
+        "vod_tag",
+        "vod_total",
+        "vod_year"
+      ],
+      "all_mapped_video_tracks": [
+        {
+          "width": 640,
+          "height": 360,
+          "bitrate": -1,
+          "codecs": "avc1.64001E",
+          "mime": "video/avc",
+          "support": 4
+        }
+      ],
+      "decoder_format": {
+        "width": 640,
+        "height": 360,
+        "bitrate": -1,
+        "codecs": "avc1.64001E",
+        "mime": "video/avc"
+      },
+      "selector": {
+        "max_width": 2147483647,
+        "max_height": 2147483647,
+        "max_bitrate": 2147483647,
+        "viewport_width": 2856,
+        "viewport_height": 1280,
+        "force_lowest": false,
+        "force_highest": false
+      },
+      "collections": [
+        {
+          "title": "1",
+          "collection": 1,
+          "source_id": 1000,
+          "is_p2p": 1
+        }
+      ],
+      "catalog_play_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "0231788d58efa33aa7f84af3e1c125aaec30b809f17b74105ca81110adbd5366"
+      },
+      "catalog_original_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "419af6d31be71626f6d31ba73fa4faf29b14a44b1cdc974a6f0f49f10b017c38"
+      },
+      "catalog_download_uri": {
+        "scheme": "https",
+        "loopback": false,
+        "sha256": "419af6d31be71626f6d31ba73fa4faf29b14a44b1cdc974a6f0f49f10b017c38"
+      },
+      "media_source_class": "com.google.android.exoplayer2.source.hls.HlsMediaSource",
+      "hls_input_uri": {
+        "scheme": "http",
+        "loopback": true,
+        "sha256": "0231788d58efa33aa7f84af3e1c125aaec30b809f17b74105ca81110adbd5366"
+      },
+      "parsed_master_variants": [
+        {
+          "width": -1,
+          "height": -1,
+          "bitrate": -1
+        }
+      ],
+      "parsed_master_tag_count": 0
+    }
+  }
+]

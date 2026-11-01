@@ -1,0 +1,791 @@
+{
+  "searches": [
+    {
+      "query": "High School Musical",
+      "results": [
+        {
+          "id": 1486488889,
+          "title": "High School Musical",
+          "kind": 1
+        },
+        {
+          "id": 1594187547,
+          "title": "High School Musical 2",
+          "kind": 1
+        },
+        {
+          "id": 1070929541,
+          "title": "High School Musical 3: Ano da Formatura",
+          "kind": 1
+        },
+        {
+          "id": 2141675168,
+          "title": "High School Musical: A Série: O Musical - Temporada 1",
+          "kind": 2
+        },
+        {
+          "id": 827672973,
+          "title": "High School Musical: A Série: O Musical - Temporada 2",
+          "kind": 2
+        },
+        {
+          "id": 837496859,
+          "title": "High School Musical: A Série: O Musical - Temporada 4",
+          "kind": 2
+        },
+        {
+          "id": 1666459311,
+          "title": "High School Musical: A Série: O Musical - Temporada 3",
+          "kind": 2
+        },
+        {
+          "id": 787963364,
+          "title": "High School Musical: O Musical: Especial de Festas",
+          "kind": 1
+        },
+        {
+          "id": 542129256,
+          "title": "High School Musical: O Musical: A Série: Karaoke - Temporada 1",
+          "kind": 2
+        },
+        {
+          "id": 548132562,
+          "title": "High School Musical: O Desafio",
+          "kind": 1
+        }
+      ]
+    },
+    {
+      "query": "Hamilton",
+      "results": [
+        {
+          "id": 1316695916,
+          "title": "O Exterminador do Futuro 2: O Julgamento Final",
+          "kind": 1
+        },
+        {
+          "id": 982854565,
+          "title": "O Exterminador do Futuro",
+          "kind": 1
+        },
+        {
+          "id": 1725604567,
+          "title": "Morte Súbita",
+          "kind": 1
+        },
+        {
+          "id": 1189791588,
+          "title": "O Exterminador do Futuro: Destino Sombrio",
+          "kind": 1
+        },
+        {
+          "id": 1029392110,
+          "title": "Atração Fatal",
+          "kind": 1
+        },
+        {
+          "id": 1653746960,
+          "title": "A Fera",
+          "kind": 1
+        },
+        {
+          "id": 1287029316,
+          "title": "Os Escolhidos",
+          "kind": 1
+        },
+        {
+          "id": 792435339,
+          "title": "O inferno de Dante",
+          "kind": 1
+        },
+        {
+          "id": 1892697367,
+          "title": "As Épicas Aventuras do Capitão Cueca - Temporada 1",
+          "kind": 2
+        },
+        {
+          "id": 163424322,
+          "title": "O Caminho do Guerreiro",
+          "kind": 1
+        },
+        {
+          "id": 620890575,
+          "title": "O Romance de Morvern Callar",
+          "kind": 1
+        },
+        {
+          "id": 1574144706,
+          "title": "O Fazendeiro e Deus",
+          "kind": 1
+        },
+        {
+          "id": 1778231992,
+          "title": "Esqueceram de Mim 3",
+          "kind": 1
+        },
+        {
+          "id": 1985177929,
+          "title": "Tubarão",
+          "kind": 1
+        },
+        {
+          "id": 597268774,
+          "title": "O Mágico de Oz",
+          "kind": 1
+        },
+        {
+          "id": 181465459,
+          "title": "Regal Academy - Temporada 1",
+          "kind": 2
+        },
+        {
+          "id": 592764693,
+          "title": "F1: Dirigir para Viver - Temporada 1",
+          "kind": 2
+        },
+        {
+          "id": 163226455,
+          "title": "F1: Dirigir para Viver - Temporada 8",
+          "kind": 2
+        },
+        {
+          "id": 1504997831,
+          "title": "O Mapa das Pequenas Coisas Perfeitas",
+          "kind": 1
+        },
+        {
+          "id": 395512221,
+          "title": "A Perfect Ending",
+          "kind": 1
+        }
+      ]
+    },
+    {
+      "query": "Descendentes",
+      "results": [
+        {
+          "id": 1951025892,
+          "title": "Descendentes do Sol - Temporada 1",
+          "kind": 2
+        },
+        {
+          "id": 1494780612,
+          "title": "Descendentes",
+          "kind": 1
+        },
+        {
+          "id": 327606972,
+          "title": "Descendentes 2",
+          "kind": 1
+        },
+        {
+          "id": 1523503629,
+          "title": "Descendants 3: Fashion Night",
+          "kind": 1
+        },
+        {
+          "id": 1349983646,
+          "title": "Os Descendentes: Viagem ao Mundo Sombrio",
+          "kind": 1
+        },
+        {
+          "id": 1947405219,
+          "title": "Descendentes: A Ascensão de Copas",
+          "kind": 1
+        },
+        {
+          "id": 302204200,
+          "title": "Alerta Fofoca: Os Descendentes - Temporada 1",
+          "kind": 2
+        },
+        {
+          "id": 788297715,
+          "title": "Descendentes/ZOMBIES Universos Cruzados - Concerto Especial",
+          "kind": 1
+        },
+        {
+          "id": 1444762158,
+          "title": "Atividade Paranormal: Ente Próximo",
+          "kind": 1
+        },
+        {
+          "id": 243639160,
+          "title": "Descendentes: Mundo de Vilões - Temporada 2",
+          "kind": 2
+        },
+        {
+          "id": 815515707,
+          "title": "Descendentes: Mundo de Vilões - Temporada 1",
+          "kind": 2
+        },
+        {
+          "id": 1608140648,
+          "title": "Os Descendentes",
+          "kind": 1
+        },
+        {
+          "id": 137260115,
+          "title": "Descendentes: O Casamento Real",
+          "kind": 1
+        }
+      ]
+    },
+    {
+      "query": "Phineas e Ferb: O Filme",
+      "results": [
+        {
+          "id": 1863162484,
+          "title": "Phineas e Ferb: O Filme - Através da 2ª Dimensão",
+          "kind": 1
+        },
+        {
+          "id": 1980844291,
+          "title": "Phineas e Ferb, o Filme: Candace Contra o Universo",
+          "kind": 1
+        }
+      ]
+    },
+    {
+      "query": "Teen Beach Movie",
+      "results": [
+        {
+          "id": 1993936503,
+          "title": "Teen Beach Movie",
+          "kind": 1
+        }
+      ]
+    }
+  ],
+  "details": [
+    {
+      "id": 1486488889,
+      "title": "High School Musical",
+      "raw_detail_keys": [
+        "vod_total",
+        "pianwei",
+        "vod_serial",
+        "piantou",
+        "vod_year",
+        "vod_behind",
+        "click_count",
+        "vod_isend",
+        "vod_director",
+        "is_best",
+        "vod_name",
+        "vod_tag",
+        "vod_lang",
+        "vod_writer",
+        "vod_weekday",
+        "upload_user_head_img",
+        "id",
+        "vod_nc_show_id",
+        "vod_douban_score",
+        "icon_type",
+        "vod_pic",
+        "is_share",
+        "hide_ad",
+        "is_selected",
+        "type_id",
+        "vod_version",
+        "upload_user_name",
+        "type_pid",
+        "vod_pubdate",
+        "vod_blurb",
+        "production_country",
+        "vod_en",
+        "vod_actor",
+        "audio_type",
+        "audio_type_option",
+        "vod_collection",
+        "vod_duration_free",
+        "series_info",
+        "vod_is_cam",
+        "vod_is_update",
+        "audio_language_tag",
+        "vod_from_id",
+        "vod_area"
+      ],
+      "audio_type": 2,
+      "audio_language_tag": "",
+      "vod_tag": "Drama/Comédia/Família/Música/Romance",
+      "vod_is_cam": 0,
+      "vod_year": "2006",
+      "type_pid": 1,
+      "audio_type_option": [
+        {
+          "type": 1,
+          "type_name": "Legendado"
+        },
+        {
+          "type": 2,
+          "type_name": "Dublado"
+        }
+      ],
+      "collection_count": 1,
+      "sources": [
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "1",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 1,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a10.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "21971e7757dba666ddc57e69153df0008dad7d0d46080c34afe67771f3893ee0"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a10.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "21971e7757dba666ddc57e69153df0008dad7d0d46080c34afe67771f3893ee0"
+          }
+        }
+      ]
+    },
+    {
+      "id": 1316695916,
+      "title": "O Exterminador do Futuro 2: O Julgamento Final",
+      "raw_detail_keys": [
+        "vod_total",
+        "pianwei",
+        "vod_serial",
+        "piantou",
+        "vod_year",
+        "vod_behind",
+        "click_count",
+        "vod_isend",
+        "vod_director",
+        "is_best",
+        "vod_name",
+        "vod_tag",
+        "vod_lang",
+        "vod_writer",
+        "vod_weekday",
+        "upload_user_head_img",
+        "id",
+        "vod_nc_show_id",
+        "vod_douban_score",
+        "icon_type",
+        "vod_pic",
+        "is_share",
+        "hide_ad",
+        "is_selected",
+        "type_id",
+        "vod_version",
+        "upload_user_name",
+        "type_pid",
+        "vod_pubdate",
+        "vod_blurb",
+        "production_country",
+        "vod_en",
+        "vod_actor",
+        "audio_type",
+        "audio_type_option",
+        "vod_collection",
+        "vod_duration_free",
+        "series_info",
+        "vod_is_cam",
+        "vod_is_update",
+        "audio_language_tag",
+        "vod_from_id",
+        "vod_area"
+      ],
+      "audio_type": 2,
+      "audio_language_tag": "",
+      "vod_tag": "Aventura/Pânico/Ficção científica",
+      "vod_is_cam": 0,
+      "vod_year": "1991",
+      "type_pid": 1,
+      "audio_type_option": [
+        {
+          "type": 1,
+          "type_name": "Legendado"
+        },
+        {
+          "type": 2,
+          "type_name": "Dublado"
+        }
+      ],
+      "collection_count": 1,
+      "sources": [
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "1",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 1,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a10.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "c0abeb2db4b100dd7690b923d74e597257432a3975c05aa2b1fb78ac707ed66d"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a10.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "c0abeb2db4b100dd7690b923d74e597257432a3975c05aa2b1fb78ac707ed66d"
+          }
+        }
+      ]
+    },
+    {
+      "id": 1494780612,
+      "title": "Descendentes",
+      "raw_detail_keys": [
+        "vod_total",
+        "pianwei",
+        "vod_serial",
+        "piantou",
+        "vod_year",
+        "vod_behind",
+        "click_count",
+        "vod_isend",
+        "vod_director",
+        "is_best",
+        "vod_name",
+        "vod_tag",
+        "vod_lang",
+        "vod_writer",
+        "vod_weekday",
+        "upload_user_head_img",
+        "id",
+        "vod_nc_show_id",
+        "vod_douban_score",
+        "icon_type",
+        "vod_pic",
+        "is_share",
+        "hide_ad",
+        "is_selected",
+        "type_id",
+        "vod_version",
+        "upload_user_name",
+        "type_pid",
+        "vod_pubdate",
+        "vod_blurb",
+        "production_country",
+        "vod_en",
+        "vod_actor",
+        "audio_type",
+        "audio_type_option",
+        "vod_collection",
+        "vod_duration_free",
+        "series_info",
+        "vod_is_cam",
+        "vod_is_update",
+        "audio_language_tag",
+        "vod_from_id",
+        "vod_area"
+      ],
+      "audio_type": 2,
+      "audio_language_tag": "",
+      "vod_tag": "Comédia/Fantasia/Família/Música/Aventura",
+      "vod_is_cam": 0,
+      "vod_year": "2015",
+      "type_pid": 1,
+      "audio_type_option": [
+        {
+          "type": 1,
+          "type_name": "Legendado"
+        },
+        {
+          "type": 2,
+          "type_name": "Dublado"
+        }
+      ],
+      "collection_count": 1,
+      "sources": [
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "1",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 1,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a10.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "1370b9786f37c4b8edb799e127e79e2f16e9ba20d9151b317c53b4bffbb6775b"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a10.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "1370b9786f37c4b8edb799e127e79e2f16e9ba20d9151b317c53b4bffbb6775b"
+          }
+        }
+      ]
+    },
+    {
+      "id": 1863162484,
+      "title": "Phineas e Ferb: O Filme - Através da 2ª Dimensão",
+      "raw_detail_keys": [
+        "vod_total",
+        "pianwei",
+        "vod_serial",
+        "piantou",
+        "vod_year",
+        "vod_behind",
+        "click_count",
+        "vod_isend",
+        "vod_director",
+        "is_best",
+        "vod_name",
+        "vod_tag",
+        "vod_lang",
+        "vod_writer",
+        "vod_weekday",
+        "upload_user_head_img",
+        "id",
+        "vod_nc_show_id",
+        "vod_douban_score",
+        "icon_type",
+        "vod_pic",
+        "is_share",
+        "hide_ad",
+        "is_selected",
+        "type_id",
+        "vod_version",
+        "upload_user_name",
+        "type_pid",
+        "vod_pubdate",
+        "vod_blurb",
+        "production_country",
+        "vod_en",
+        "vod_actor",
+        "audio_type",
+        "audio_type_option",
+        "vod_collection",
+        "vod_duration_free",
+        "series_info",
+        "vod_is_cam",
+        "vod_is_update",
+        "audio_language_tag",
+        "vod_from_id",
+        "vod_area"
+      ],
+      "audio_type": 2,
+      "audio_language_tag": "",
+      "vod_tag": "Ficção científica/Anime/Aventura/Comédia/Família",
+      "vod_is_cam": 0,
+      "vod_year": "2011",
+      "type_pid": 1,
+      "audio_type_option": [
+        {
+          "type": 1,
+          "type_name": "Legendado"
+        },
+        {
+          "type": 2,
+          "type_name": "Dublado"
+        }
+      ],
+      "collection_count": 1,
+      "sources": [
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "1",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 1,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a10.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "65fa6202d09fc3876c7d7da9381b7139eb868d3c214d72c2f83e2e13da2bf859"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a10.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "65fa6202d09fc3876c7d7da9381b7139eb868d3c214d72c2f83e2e13da2bf859"
+          }
+        }
+      ]
+    },
+    {
+      "id": 1993936503,
+      "title": "Teen Beach Movie",
+      "raw_detail_keys": [
+        "vod_total",
+        "pianwei",
+        "vod_serial",
+        "piantou",
+        "vod_year",
+        "vod_behind",
+        "click_count",
+        "vod_isend",
+        "vod_director",
+        "is_best",
+        "vod_name",
+        "vod_tag",
+        "vod_lang",
+        "vod_writer",
+        "vod_weekday",
+        "upload_user_head_img",
+        "id",
+        "vod_nc_show_id",
+        "vod_douban_score",
+        "icon_type",
+        "vod_pic",
+        "is_share",
+        "hide_ad",
+        "is_selected",
+        "type_id",
+        "vod_version",
+        "upload_user_name",
+        "type_pid",
+        "vod_pubdate",
+        "vod_blurb",
+        "production_country",
+        "vod_en",
+        "vod_actor",
+        "audio_type",
+        "audio_type_option",
+        "vod_collection",
+        "vod_duration_free",
+        "series_info",
+        "vod_is_cam",
+        "vod_is_update",
+        "audio_language_tag",
+        "vod_from_id",
+        "vod_area"
+      ],
+      "audio_type": 2,
+      "audio_language_tag": "",
+      "vod_tag": "Família/Fantasia/Comédia",
+      "vod_is_cam": 0,
+      "vod_year": "2013",
+      "type_pid": 1,
+      "audio_type_option": [
+        {
+          "type": 1,
+          "type_name": "Legendado"
+        },
+        {
+          "type": 2,
+          "type_name": "Dublado"
+        }
+      ],
+      "collection_count": 1,
+      "sources": [
+        {
+          "raw_keys": [
+            "id",
+            "title",
+            "source_id",
+            "is_selected",
+            "vod_id",
+            "collection",
+            "vod_url",
+            "type",
+            "time_up",
+            "down_url",
+            "is_ad",
+            "duration",
+            "is_p2p",
+            "vod_duration"
+          ],
+          "title": "1",
+          "source_id": 1000,
+          "is_p2p": 1,
+          "collection": 1,
+          "vod_url": {
+            "scheme": "https",
+            "host": "79a10.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "aabcdd2401caae2adbc883380419f3fa503e2b834ba5585f2ad005bf1e982c06"
+          },
+          "down_url": {
+            "scheme": "https",
+            "host": "79a10.l1wt.com",
+            "path_suffix": "m3u8",
+            "path_segments": 7,
+            "query_keys": [],
+            "sha256": "aabcdd2401caae2adbc883380419f3fa503e2b834ba5585f2ad005bf1e982c06"
+          }
+        }
+      ]
+    }
+  ]
+}

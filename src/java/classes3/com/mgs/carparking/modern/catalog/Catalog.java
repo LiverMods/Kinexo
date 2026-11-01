@@ -14,6 +14,7 @@ public final class Catalog {
     public static final class Provider {public final int id;public final String name,logo;Provider(Object block){id=Legacy.integer(block,"getTopic_id");name=Legacy.text(block,"getBlock_name","getContent");logo=Legacy.text(block,"getBanner_pic");}}
     public static final class Section {public final String title;public final List<Movie> movies;public final List<Provider> providers=new ArrayList<>();public Section(String t,List<Movie> m){title=t;movies=m;}}
     private static final ExecutorService IO=Executors.newFixedThreadPool(2);
+    private static final java.util.concurrent.atomic.AtomicBoolean initializing=new java.util.concurrent.atomic.AtomicBoolean();
     private static final Handler MAIN=new Handler(Looper.getMainLooper());
     private static List<Section> cached;
     private static long cachedAt;
@@ -21,10 +22,20 @@ public final class Catalog {
     public static <T> void async(Callable<T> task,Callback<T> cb){IO.execute(()->{try{T v=task.call();MAIN.post(()->cb.ready(v));}catch(Throwable e){android.util.Log.w("MovieCatalog",e.getClass().getSimpleName());MAIN.post(()->cb.failed(Legacy.message(e)));}});}
     public static void bootstrap(Context c){
         Object app=Legacy.type("com.mgs.carparking.app.AppApplication");
-        if(((Number)Legacy.field(app,"port")).intValue()>0)return;
-        String conf=(String)Legacy.call(Legacy.type("ca.l0"),"G");
-        if(conf!=null&&!conf.isEmpty())Legacy.call(app,"loadP2pSdk");else Legacy.call(Legacy.type("ca.c"),"h",true);
+        if(((Number)Legacy.field(app,"port")).intValue()>0||!initializing.compareAndSet(false,true))return;
+        // Native initialization can block in DNS; never run it on the screen's thread.
+        IO.execute(()->{try{
+            String conf=(String)Legacy.call(Legacy.type("ca.l0"),"G");
+            if(conf==null||conf.isEmpty()){Map<String,Object> map=new HashMap<>();map.put("conf_key","p2p_config");conf=(String)request("g",map);if(conf==null||conf.isEmpty())throw new IllegalStateException("Empty HLS configuration");Legacy.call(Legacy.type("ca.l0"),"L0",conf);}
+            Legacy.call(app,"loadP2pSdk");
+        }catch(RuntimeException e){android.util.Log.w("MovieCatalog",e.getClass().getSimpleName());}finally{initializing.set(false);}});
     }
+    public static int awaitPlayback()throws Exception{
+        long deadline=System.currentTimeMillis()+45000;
+        while(!playbackReady()&&System.currentTimeMillis()<deadline)Thread.sleep(200);
+        if(!playbackReady())throw new IOException("HLS not initialized");return ((Number)Legacy.field(Legacy.type("com.mgs.carparking.app.AppApplication"),"port")).intValue();
+    }
+    public static boolean playbackReady(){return !initializing.get()&&((Number)Legacy.field(Legacy.type("com.mgs.carparking.app.AppApplication"),"port")).intValue()>0;}
     private static Object request(String name,Map<String,Object> map){
         Object api=Legacy.call(Legacy.type("u8.a"),"a");
         Object single=Legacy.call(api,name,map);
@@ -71,9 +82,7 @@ public final class Catalog {
         return Movie.groupSeasons(input);
     }
     public static Movie details(int id) throws Exception {
-        int port=0;long deadline=System.currentTimeMillis()+45000;
-        while(port<=0&&System.currentTimeMillis()<deadline){port=((Number)Legacy.field(Legacy.type("com.mgs.carparking.app.AppApplication"),"port")).intValue();if(port<=0)Thread.sleep(200);}
-        if(port<=0)throw new IOException("HLS not initialized");
+        int port=awaitPlayback();
         String ts=Long.toString(System.currentTimeMillis());
         String device=(String)Legacy.call(Legacy.type("e9.a"),"a",Legacy.call(Legacy.type("wj.r"),"a"));
         HttpURLConnection connection=(HttpURLConnection)new URL("http://127.0.0.1:"+port+"/control?msg=verify&device_id="+URLEncoder.encode(device+id,"UTF-8")+"&ts="+ts).openConnection();

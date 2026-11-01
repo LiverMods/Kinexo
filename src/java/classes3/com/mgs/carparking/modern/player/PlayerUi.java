@@ -148,7 +148,9 @@ public final class PlayerUi {
             p.foot.setText((active==null?"Aguardando as faixas do vídeo…":"Faixa selecionada: "+active.detail()+"\nDecodificando: "+tracks().rendered())+"\n"+tracks().sourceSummary()+(!found?"\nPreferência "+preferred+"p indisponível nesta fonte; usando Automático.":""));
         }catch(RuntimeException e){Ui.toast(activity,"As faixas ainda não estão disponíveis. Tente após o vídeo carregar.");}
     }
-    private void languages(){List<Panel.Choice> rows=new ArrayList<>();try{List<PlaybackTracks.Track> audio=tracks().tracks(1),subtitles=tracks().tracks(3);for(PlaybackTracks.Track t:audio)rows.add(new Panel.Choice("Áudio · "+language(t.language),t.codec,"subtitle",tracks().selected(t),()->tracks().select(t)));
+    private void languages(){List<Panel.Choice> rows=new ArrayList<>();try{
+        for(Object option:Legacy.list(dto(),"getAudio_type_option")){final int type=Legacy.integer(option,"getType");String name=Legacy.text(option,"getType_name");if(name.isEmpty())continue;boolean selected=type==Legacy.integer(dto(),"getAudio_type");rows.add(new Panel.Choice("Versão · "+name,"Fonte do catálogo; a resolução pode variar entre versões","subtitle",selected,()->{if(!selected){save();profiles.flush();Legacy.call(activity,"c2",Integer.valueOf(type));}}));}
+        List<PlaybackTracks.Track> audio=tracks().tracks(1),subtitles=tracks().tracks(3);for(PlaybackTracks.Track t:audio)rows.add(new Panel.Choice("Áudio · "+language(t.language),t.codec,"subtitle",tracks().selected(t),()->tracks().select(t)));
         boolean selected=false;for(PlaybackTracks.Track t:subtitles)if(tracks().selected(t))selected=true;
         rows.add(new Panel.Choice("Legendas desativadas","","subtitle",!selected,()->tracks().subtitlesOff()));for(PlaybackTracks.Track t:subtitles)rows.add(new Panel.Choice("Legendas · "+language(t.language),t.codec,"subtitle",tracks().selected(t),()->tracks().select(t)));
         Panel p=open("Idioma e legendas","Áudio e legendas disponíveis nesta reprodução.",rows);if(subtitles.isEmpty())p.foot.setText("Esta fonte não oferece faixas de legendas ao player.");

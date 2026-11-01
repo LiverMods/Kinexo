@@ -1,0 +1,13 @@
+[
+  {
+    "event": "installed",
+    "hook_count": 6,
+    "tls_hook_count": 2,
+    "modules": [
+      "libnativebridge_lazy.so",
+      "libnativebridge.so",
+      "libndk_translation.so",
+      "libssl.so"
+    ]
+  }
+]

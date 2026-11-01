@@ -1,0 +1,106 @@
+{
+  "id": 803489531,
+  "title": "Avatar",
+  "raw_detail_keys": [
+    "vod_total",
+    "pianwei",
+    "vod_serial",
+    "piantou",
+    "vod_year",
+    "vod_behind",
+    "click_count",
+    "vod_isend",
+    "vod_director",
+    "is_best",
+    "vod_name",
+    "vod_tag",
+    "vod_lang",
+    "vod_writer",
+    "vod_weekday",
+    "upload_user_head_img",
+    "id",
+    "vod_nc_show_id",
+    "vod_douban_score",
+    "icon_type",
+    "vod_pic",
+    "is_share",
+    "hide_ad",
+    "is_selected",
+    "type_id",
+    "vod_version",
+    "upload_user_name",
+    "type_pid",
+    "vod_pubdate",
+    "vod_blurb",
+    "production_country",
+    "vod_en",
+    "vod_actor",
+    "audio_type",
+    "audio_type_option",
+    "vod_collection",
+    "vod_duration_free",
+    "series_info",
+    "vod_is_cam",
+    "vod_is_update",
+    "audio_language_tag",
+    "vod_from_id",
+    "vod_area"
+  ],
+  "audio_type": 2,
+  "audio_language_tag": "",
+  "vod_tag": "Ação/Aventura/Fantasia",
+  "vod_is_cam": 0,
+  "vod_year": "2009",
+  "type_pid": 1,
+  "audio_type_option": [
+    {
+      "type": 1,
+      "type_name": "Legendado"
+    },
+    {
+      "type": 2,
+      "type_name": "Dublado"
+    }
+  ],
+  "collection_count": 1,
+  "sources": [
+    {
+      "raw_keys": [
+        "id",
+        "title",
+        "source_id",
+        "is_selected",
+        "vod_id",
+        "collection",
+        "vod_url",
+        "type",
+        "time_up",
+        "down_url",
+        "is_ad",
+        "duration",
+        "is_p2p",
+        "vod_duration"
+      ],
+      "title": "1",
+      "source_id": 1000,
+      "is_p2p": 1,
+      "collection": 1,
+      "vod_url": {
+        "scheme": "https",
+        "host": "79a10.l1wt.com",
+        "path_suffix": "m3u8",
+        "path_segments": 7,
+        "query_keys": [],
+        "sha256": "2fc30b6ae85d2093259c72125e21a92f817f2482688639c0f910516cd2d6907c"
+      },
+      "down_url": {
+        "scheme": "https",
+        "host": "79a10.l1wt.com",
+        "path_suffix": "m3u8",
+        "path_segments": 7,
+        "query_keys": [],
+        "sha256": "2fc30b6ae85d2093259c72125e21a92f817f2482688639c0f910516cd2d6907c"
+      }
+    }
+  ]
+}

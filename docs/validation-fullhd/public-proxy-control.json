@@ -1,0 +1,86 @@
+{
+  "direct": {
+    "uri": {
+      "scheme": "https",
+      "host": "devstreaming-cdn.apple.com",
+      "path_suffix": "m3u8",
+      "path_segments": 5,
+      "query_keys": [],
+      "sha256": "023f774c1330127b8de99c33f31370dec745951f7abe571eaa5fece00c129eef"
+    },
+    "status": 200,
+    "final_uri": {
+      "scheme": "https",
+      "host": "devstreaming-cdn.apple.com",
+      "path_suffix": "m3u8",
+      "path_segments": 5,
+      "query_keys": [],
+      "sha256": "023f774c1330127b8de99c33f31370dec745951f7abe571eaa5fece00c129eef"
+    },
+    "Content-Type": "application/x-mpegURL",
+    "Server": "AmazonS3",
+    "Via": "http/1.1 brsao4-edge-lx-002.ts.apple.com (acdn/26.17695), https/1.1 brsao4-edge-bx-017.ts.apple.com (acdn/26.17695)",
+    "X-Cache": "hit-fresh, hit-stale",
+    "Content-Length": "6289",
+    "Accept-Ranges": "bytes",
+    "body_sha256": "f2177c1350130e087f9d81af82f092ababfcfb34e5b01e52ff146a08b241e849",
+    "bytes_read": 6289,
+    "hls": true,
+    "variants": 24,
+    "segments": 0,
+    "resolutions": [
+      "960x540",
+      "1920x1080",
+      "1920x1080",
+      "1920x1080",
+      "1280x720",
+      "768x432",
+      "640x360",
+      "480x270",
+      "960x540",
+      "1920x1080",
+      "1920x1080",
+      "1920x1080",
+      "1280x720",
+      "768x432",
+      "640x360",
+      "480x270",
+      "960x540",
+      "1920x1080",
+      "1920x1080",
+      "1920x1080",
+      "1280x720",
+      "768x432",
+      "640x360",
+      "480x270"
+    ]
+  },
+  "proxy": {
+    "uri": {
+      "scheme": "http",
+      "host": "127.0.0.1",
+      "path_suffix": "m3u8",
+      "path_segments": 1,
+      "query_keys": [
+        "src"
+      ],
+      "sha256": "c72a57772fadc93a51de2e29818ed4e5fb30201e9ae4d4edd79b5829a80e955d"
+    },
+    "status": 504,
+    "final_uri": {
+      "scheme": "http",
+      "host": "127.0.0.1",
+      "path_suffix": "m3u8",
+      "path_segments": 1,
+      "query_keys": [
+        "src"
+      ],
+      "sha256": "c72a57772fadc93a51de2e29818ed4e5fb30201e9ae4d4edd79b5829a80e955d"
+    },
+    "Server": "bad_sdk",
+    "Content-Length": "0",
+    "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes_read": 0,
+    "error_markers": []
+  }
+}

@@ -1,0 +1,70 @@
+[
+  {
+    "sample": "index-0",
+    "sha256": "d5045ab0cbf05927f9741fb19080051c58780d2ccd159a11fbf1a5020ffe9ef7",
+    "bytes": 23261,
+    "hls": true,
+    "master_variants": 0,
+    "segments": 232,
+    "tag_names": [
+      "#EXT-X-ALLOW-CACHE",
+      "#EXT-X-ENDLIST",
+      "#EXT-X-MEDIA-SEQUENCE",
+      "#EXT-X-TARGETDURATION",
+      "#EXT-X-VERSION",
+      "#EXTINF",
+      "#EXTM3U"
+    ]
+  },
+  {
+    "sample": "index-1",
+    "sha256": "497ca25114c08151f95ed03f81980aa2b0ae5af8b5fa12b6de27458fd1926858",
+    "bytes": 91019,
+    "hls": true,
+    "master_variants": 0,
+    "segments": 911,
+    "tag_names": [
+      "#EXT-X-ALLOW-CACHE",
+      "#EXT-X-ENDLIST",
+      "#EXT-X-MEDIA-SEQUENCE",
+      "#EXT-X-TARGETDURATION",
+      "#EXT-X-VERSION",
+      "#EXTINF",
+      "#EXTM3U"
+    ]
+  },
+  {
+    "sample": "index-2",
+    "sha256": "6cec963bd09465832139952f73d713527ad466f5dd0481f4cd2c6883b94e6705",
+    "bytes": 47465,
+    "hls": true,
+    "master_variants": 0,
+    "segments": 474,
+    "tag_names": [
+      "#EXT-X-ALLOW-CACHE",
+      "#EXT-X-ENDLIST",
+      "#EXT-X-MEDIA-SEQUENCE",
+      "#EXT-X-TARGETDURATION",
+      "#EXT-X-VERSION",
+      "#EXTINF",
+      "#EXTM3U"
+    ]
+  },
+  {
+    "sample": "index-3",
+    "sha256": "69665c505b7b0b8e7c8fe153ede9281a21b966dcbb3421494651e2b6e5da26a9",
+    "bytes": 90957,
+    "hls": true,
+    "master_variants": 0,
+    "segments": 910,
+    "tag_names": [
+      "#EXT-X-ALLOW-CACHE",
+      "#EXT-X-ENDLIST",
+      "#EXT-X-MEDIA-SEQUENCE",
+      "#EXT-X-TARGETDURATION",
+      "#EXT-X-VERSION",
+      "#EXTINF",
+      "#EXTM3U"
+    ]
+  }
+]

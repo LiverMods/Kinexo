@@ -1,4 +1,4 @@
-param([switch]$Benchmark,[switch]$Fixture,[switch]$Export,[switch]$Restore,[switch]$Layout,[switch]$Seasons,[switch]$SourceAudit,[switch]$Branding)
+param([switch]$Benchmark,[switch]$Fixture,[switch]$Export,[switch]$Restore,[switch]$Layout,[switch]$Seasons,[switch]$SourceAudit,[switch]$Branding,[ValidateSet("metadata","films","classics","tvfilms","catalog","confirm","versions","startup","detail","segment")][string]$FullHd,[int]$FullHdId=675846639,[int]$FullHdAudio=2)
 $ErrorActionPreference='Stop'
 $project=(Resolve-Path "$PSScriptRoot/../..").Path
 $taskRoot=Join-Path $project '.work/device-checks'
@@ -25,7 +25,7 @@ if($avd[0] -ne 'Movie_Observe_API37'){throw 'Wrong AVD'}
 & "$sdk/platform-tools/adb.exe" -s emulator-5556 install -r "$taskRoot/movie-checks.apk"
 if($LASTEXITCODE){throw 'checks install failed'}
 $extra=@();if($Benchmark){$extra=@("-e","benchmark","true")};if($Fixture){$extra=@("-e","fixture","true")};if($Export){$extra=@("-e","export","true")};if($Restore){$extra=@("-e","restore","true")};if($Layout){$extra=@("-e","layout","true")};if($Seasons){$extra=@("-e","seasons","true")};if($SourceAudit){$extra=@("-e","sourceaudit","true")}
-if($Branding){$extra=@("-e","branding","true")}
+if($Branding){$extra=@("-e","branding","true")};if($FullHd){$extra=@("-e","fullhd",$FullHd,"-e","fullhd_id",[string]$FullHdId,"-e","fullhd_audio",[string]$FullHdAudio)}
 # A previous instrumentation process can leave an old launcher task in this disposable AVD.
 & "$sdk/platform-tools/adb.exe" -s emulator-5556 shell am force-stop com.mobrcine.cine_br
 if($LASTEXITCODE){throw 'Target process reset failed'}

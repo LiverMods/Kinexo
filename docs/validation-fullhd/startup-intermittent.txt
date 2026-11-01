@@ -1,0 +1,16 @@
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Performing Incremental Install
+Performing Streamed Install
+Success
+INSTRUMENTATION_RESULT: checks=[]
+INSTRUMENTATION_RESULT: result=FAIL: java.lang.AssertionError: UI: DESTAQUE NO KINEXO
+INSTRUMENTATION_RESULT: stack=java.lang.AssertionError: UI: DESTAQUE NO KINEXO
+	at movie.tests.Checks.check(Checks.java:8)
+	at movie.tests.Checks.await(Checks.java:17)
+	at movie.tests.Checks.confirmSource(Checks.java:113)
+	at movie.tests.Checks.fullHdAudit(Checks.java:143)
+	at movie.tests.Checks.onStart(Checks.java:152)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2637)
+
+INSTRUMENTATION_CODE: 0

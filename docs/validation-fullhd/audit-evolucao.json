@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "apk_sha256": "322bf255c71fbf2e576e6d88752221faf30bcc68d2e895d517f193305d5333b7",
+  "commercial_classes_absent": 31,
+  "executable_local_adfree_gate_calls": 0,
+  "modern_classes_in_apk": 163,
+  "identity_source_unchanged": "22a3df138b7f7b6f96ff063310f628abe988a172975d843065915a51e6bf06cb",
+  "backup_rules_in_apk": true
+}

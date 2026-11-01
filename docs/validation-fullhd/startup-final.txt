@@ -1,0 +1,22 @@
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Performing Incremental Install
+Performing Streamed Install
+Success
+INSTRUMENTATION_STATUS: check=UI: Quem vai assistir?
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Fresh target process has no initialized native port
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Home creation returns without waiting for native DNS
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Observed native initialization never occupies the main UI thread
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Main UI heartbeat remains responsive during bootstrap
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real player STATE_READY with rendered video frames
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Cold configuration fetched through genuine API and real playback starts
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: checks=["UI: Quem vai assistir?","Fresh target process has no initialized native port","Home creation returns without waiting for native DNS","Observed native initialization never occupies the main UI thread","Main UI heartbeat remains responsive during bootstrap","Real player STATE_READY with rendered video frames","Cold configuration fetched through genuine API and real playback starts"]
+INSTRUMENTATION_RESULT: result=PASS
+INSTRUMENTATION_CODE: -1

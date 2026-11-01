@@ -1,0 +1,34 @@
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Performing Incremental Install
+Performing Streamed Install
+Success
+INSTRUMENTATION_STATUS: check=UI: DESTAQUE NO KINEXO
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real player STATE_READY with rendered video frames
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=New player Activity matches requested catalog identity and audio version
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Server DTO confirms the same content and audio version
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Same ExoPlayer renders additional frames during measurement
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real catalog version decodes 1920 by 1080
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=HLS input is exactly the catalog proxy source
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Independent Android MediaExtractor reads encoded 1920 by 1080
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: 1920 × 1080 · Full HD
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Manual Full HD selection preserves the real playback engine and position
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Real player STATE_READY with rendered video frames
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=UI: Automático
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: check=Automatic mode keeps the same real Full HD source
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: checks=["UI: DESTAQUE NO KINEXO","Real player STATE_READY with rendered video frames","New player Activity matches requested catalog identity and audio version","Server DTO confirms the same content and audio version","Same ExoPlayer renders additional frames during measurement","Real catalog version decodes 1920 by 1080","HLS input is exactly the catalog proxy source","Independent Android MediaExtractor reads encoded 1920 by 1080","UI: 1920 × 1080 · Full HD","Manual Full HD selection preserves the real playback engine and position","Real player STATE_READY with rendered video frames","UI: Automático","Automatic mode keeps the same real Full HD source"]
+INSTRUMENTATION_RESULT: result=PASS
+INSTRUMENTATION_CODE: -1

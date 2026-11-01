@@ -3,6 +3,8 @@ package com.mgs.carparking.modern.core;
 import android.app.Activity;
 import android.content.Intent;
 import com.mgs.carparking.modern.catalog.Movie;
+import com.mgs.carparking.modern.catalog.Catalog;
+import com.mgs.carparking.modern.ui.Ui;
 import com.mgs.carparking.modern.profiles.Profiles;
 import com.mgs.carparking.modern.home.HomeActivity;
 import com.mgs.carparking.modern.catalog.DetailsActivity;
@@ -15,7 +17,11 @@ public final class Routes {
     public static void details(Activity a,Movie movie){a.startActivity(new Intent(a,DetailsActivity.class).putExtra("movie",movie.storageJson().toString()));}
     public static void play(Activity a,Movie movie){play(a,movie,-1);}
     public static void play(Activity a,Movie movie,int episode){
-        Intent i=new Intent().setClassName(a,"com.mgs.carparking.ui.homecontent.videodetail.VideoPlayDetailActivity").putExtra("id",movie.id).putExtra("language_type",0);
+        if(!Catalog.playbackReady()){
+            Catalog.bootstrap(a);Ui.toast(a,"Preparando a reprodução…");
+            Catalog.async(Catalog::awaitPlayback,new Catalog.Callback<Integer>(){public void ready(Integer port){if(!a.isFinishing()&&!a.isDestroyed())play(a,movie,episode);}public void failed(String error){if(!a.isFinishing()&&!a.isDestroyed())Ui.toast(a,error);}});return;
+        }
+        Intent i=new Intent().setClassName(a,"com.mgs.carparking.ui.homecontent.videodetail.VideoPlayDetailActivity").putExtra("id",movie.id).putExtra("language_type",movie.audioType);
         if(episode>=0)i.putExtra("modern_episode",episode);a.startActivity(i);
     }
 }

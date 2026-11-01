@@ -1,0 +1,13 @@
+Sanitized selection from debuggerd -j, before the startup fix.
+Raw trace SHA-256: 817f435adb4f2949a8bdcf5ca0736a014ecc261b9c2ab004eda1b05275bfd096
+Native SDK SHA-256: 2c3b7daf4a319b23de259a9b18904ebf082f1690ba832ba954ddc0417b19e9b0
+Thread: main
+
+  native: #05 pc 000907b6  /apex/com.android.runtime/lib64/bionic/libc.so (android_read_hostent +86) (BuildId: aa76614279c09bc4bbbbbec6ba4a811e)
+  native: #06 pc 00090162  /apex/com.android.runtime/lib64/bionic/libc.so (gethostbyname_internal +178) (BuildId: aa76614279c09bc4bbbbbec6ba4a811e)
+  native: #07 pc 0009022a  /apex/com.android.runtime/lib64/bionic/libc.so (gethostbyname_r+90) (BuildId: aa76614279c09bc4bbbbbec6ba4a811e)
+  native: #08 pc 000903b3  /apex/com.android.runtime/lib64/bionic/libc.so (gethostbyname+83) (BuildId: aa76614279c09bc4bbbbbec6ba4a811e)
+  at com.pp.hls.load(Native method)
+  at com.mgs.carparking.app.AppApplication.loadP2pSdk(AppApplication.java:59)
+  at com.mgs.carparking.modern.catalog.Catalog.bootstrap(Catalog.java:26)
+  at com.mgs.carparking.modern.home.HomeActivity.onCreate(HomeActivity.java:33)

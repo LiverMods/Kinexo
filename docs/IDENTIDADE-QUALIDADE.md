@@ -1,5 +1,7 @@
 # Kinexo — identidade e qualidade de reprodução
 
+**Continuação:** a investigação ampliada encontrou 1920 × 1080 real no catálogo e versões com resoluções diferentes. Veja [FONTES-E-FULLHD.md](FONTES-E-FULLHD.md) e `validation-fullhd/`. As três amostras 720p abaixo registram a etapa inicial; não representam um limite global do aplicativo ou de todo o catálogo.
+
 Atualização de 31/10/2026 na mesma árvore recompilável. Ponto de recuperação: branch `checkpoint/kinexo-identidade-qualidade-20261031`, commit `bedc8c19595f5851f6740c01bc21a57f94075933`. APK anterior e árvore preservados pelo Git; nenhum APK original foi alterado.
 
 ## Identidade aplicada

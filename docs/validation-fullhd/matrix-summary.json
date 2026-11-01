@@ -1,0 +1,24 @@
+{
+  "matrix_attempts": 72,
+  "matrix_ready_with_rendered_frames": 70,
+  "distinct_catalog_ids": 40,
+  "above_720_height_samples": 9,
+  "at_least_1440_height_samples": 0,
+  "failed_samples": [
+    {
+      "id": 1418208077,
+      "title": "Avatar: Fire and Ash",
+      "audio_type": 2,
+      "error": "AssertionError"
+    },
+    {
+      "id": 1863162484,
+      "title": "Phineas e Ferb: O Filme - Através da 2ª Dimensão",
+      "audio_type": 2,
+      "error": "AssertionError"
+    }
+  ],
+  "physical_phone_modified": false,
+  "all_catalog_sources_exhaustively_scanned": false,
+  "remote_master_before_protected_sdk": "unconfirmed"
+}
