@@ -1,0 +1,96 @@
+{
+  "offline_fixture_explicit_pt_br_admitted": true,
+  "offline_fixture_manifest_variants_parsed": true,
+  "offline_fixture_generic_portuguese_rejected": true,
+  "offline_fixture_1080_compatible_choice": true,
+  "identity_requires_exact_year": true,
+  "ambiguous_identity_rejected": true,
+  "catalog_playback": {
+    "state": 3,
+    "position_ms": 365924,
+    "width": 1280,
+    "height": 720,
+    "frames": 32,
+    "pss_kib": 132602
+  },
+  "automatic_discovery_completed": true,
+  "real_sources": [
+    {
+      "provider": "PlexStream",
+      "languages": [],
+      "pt_br_confirmed": false,
+      "variants": 4
+    },
+    {
+      "provider": "HuntStream",
+      "languages": [],
+      "pt_br_confirmed": false,
+      "variants": 4
+    },
+    {
+      "provider": "LumaStream",
+      "languages": [
+        "en"
+      ],
+      "pt_br_confirmed": false,
+      "variants": 4
+    },
+    {
+      "provider": "VibeStream",
+      "languages": [],
+      "pt_br_confirmed": false,
+      "variants": 2
+    },
+    {
+      "provider": "NovaStream",
+      "languages": [
+        "eng"
+      ],
+      "pt_br_confirmed": false,
+      "variants": 2
+    },
+    {
+      "provider": "Zetstream",
+      "languages": [],
+      "pt_br_confirmed": false,
+      "variants": 4
+    }
+  ],
+  "real_pt_br_sources": 0,
+  "automatic_status": "Nenhuma fonte extra com PT-BR confirmado. Mantendo a versão do catálogo.",
+  "no_foreign_audio_automatic_switch": true,
+  "movie_episode_controls_hidden": true,
+  "discovery_result_reused_from_cache": true,
+  "maximum_preference_backup_restored": true,
+  "automatic_source_paused_until_audio_verified": true,
+  "play_button_cannot_bypass_audio_admission": true,
+  "mislabelled_fixture_never_started_unverified_audio": true,
+  "mislabelled_fixture_returned_to_catalog": true,
+  "real_source_error_reopened_catalog": true,
+  "failure_recovery_position_preserved": true,
+  "recovered_playback": {
+    "state": 3,
+    "position_ms": 387156,
+    "width": 1280,
+    "height": 720,
+    "frames": 32,
+    "pss_kib": 148369
+  },
+  "failure_recovery_catalog_active": true,
+  "series": {
+    "id": 924616866,
+    "title": "Loki - Temporada 1",
+    "year": "2021",
+    "first_episode": "Glorioso Propósito",
+    "count": 6
+  },
+  "later_season": {
+    "id": 689780146,
+    "year": "2023",
+    "first_episode": "Ouroboros"
+  },
+  "real_later_season_episode_name_enriched": true,
+  "real_series_episode_name_enriched": true,
+  "series_episode_control_visible": true,
+  "passed": true
+}

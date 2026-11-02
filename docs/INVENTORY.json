@@ -14,7 +14,10 @@
     "src/java/classes3/com/mgs/carparking/modern/profiles/Profiles.java",
     "src/java/classes3/com/mgs/carparking/modern/profiles/ProfilesActivity.java",
     "src/java/classes3/com/mgs/carparking/modern/settings/SettingsActivity.java",
+    "src/java/classes3/com/mgs/carparking/modern/sources/AutomaticSources.java",
+    "src/java/classes3/com/mgs/carparking/modern/sources/ContentMetadata.java",
     "src/java/classes3/com/mgs/carparking/modern/sources/SourceDiscovery.java",
+    "src/java/classes3/com/mgs/carparking/modern/ui/EpisodeCards.java",
     "src/java/classes3/com/mgs/carparking/modern/ui/Images.java",
     "src/java/classes3/com/mgs/carparking/modern/ui/MovieCards.java",
     "src/java/classes3/com/mgs/carparking/modern/ui/Panel.java",
@@ -30,5 +33,5 @@
   "removed_dynamic_classes": 3235,
   "baseline_IdentityBinding_sha256": "22a3df138b7f7b6f96ff063310f628abe988a172975d843065915a51e6bf06cb",
   "commercial_classes_removed": 31,
-  "modern_java_files": 19
+  "modern_java_files": 22
 }

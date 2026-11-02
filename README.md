@@ -2,9 +2,11 @@
 
 Continuação da árvore recuperada e limpa `movie-privado`, preservada fora deste projeto. Home, catálogo/detalhes, player, perfis, histórico/lista e configurações evoluem no mesmo aplicativo e pacote `com.mobrcine.cine_br`.
 
-Esta árvore completa reconstrói o APK: compila **22 arquivos Java ativos**, monta **9 DEX a partir de 19.018 arquivos Smali**, compila recursos, alinha e assina. **Não usa um APK pronto nem DEX original como entrada.** Os 19 arquivos Java principais da evolução ficam em `src/java/classes3/com/mgs/carparking/modern/`.
+Esta árvore completa reconstrói o APK: compila **25 arquivos Java ativos**, monta **9 DEX a partir de 19.018 arquivos Smali**, compila recursos, alinha e assina. **Não usa um APK pronto nem DEX original como entrada.** Os 22 arquivos Java principais da evolução ficam em `src/java/classes3/com/mgs/carparking/modern/`.
 
 É um projeto híbrido recompilável, não uma restauração integral em Java/Gradle. Seis bibliotecas nativas e o asset protegido do HLS continuam binários, com hashes verificados. Seus fontes C/C++ não foram recuperados. `reference/` contém Java decompilado **histórico**, anterior à limpeza, que não participa da build.
+
+Reprodução automática PT-BR, novos cards e controles contextuais: [docs/REPRODUCAO-AUTOMATICA.md](docs/REPRODUCAO-AUTOMATICA.md). Ao tocar em Assistir, o catálogo continua disponível enquanto o Kinexo consulta fontes e verifica identidade/idioma. Não foi encontrada uma fonte extra PT-BR real nos testes desta entrega; por isso o catálogo foi mantido. Há modos Automático, Máxima disponível e preferência Full HD, com recuperação de falhas e cache limitado. O modo Máxima participa do backup.
 
 Fontes adicionais nativas: [docs/FONTES-NATIVAS.md](docs/FONTES-NATIVAS.md). A descoberta foi recuperada em Java para seis provedores, usando o ExoPlayer existente e manifestos HLS/DASH reais, sem importar Flutter ou SDKs do HDO. Há confirmação de Full HD e 4K, seleção manual e retorno ao catálogo. Áudio PT-BR não foi confirmado nas fontes adicionais; a versão do catálogo é preservada até escolha manual. Credenciais de cliente ficam fora do Git, em `%USERPROFILE%/.kinexo/source-services.json`; a build as incorpora quando configuradas.
 
@@ -43,7 +45,7 @@ Se a chave de release não existir, cria RSA de 3072 bits. Solicita a senha de f
 | `home/` | Home com destaque e seções; pesquisa, minha lista e histórico |
 | `catalog/` | Metadados, chamadas ao catálogo, agrupamento por IDs reais e detalhes/episódios |
 | `player/` | Controles novos sobre o motor existente, retomada e ciclo de vida |
-| `sources/` | Descoberta Java de fontes HLS/DASH e correspondências explícitas de conteúdo |
+| `sources/` | Identidade conservadora, metadados de episódios, descoberta HLS/DASH e decisão automática PT-BR |
 | `profiles/` | SQLite por perfil, seleção/CRUD/foto, importação do histórico e backup SAF |
 | `settings/` | Preferências individuais e telas de exportação/restauração |
 | `ui/` | Cores, ícones próprios, carregamento de imagens e cards reutilizados |

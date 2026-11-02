@@ -10,6 +10,14 @@ public final class Movie {
     public long position,duration;
     public final List<Season> seasons=new ArrayList<>();
     public final List<String> episodes=new ArrayList<>();
+    public final List<Episode> episodeDetails=new ArrayList<>();
+    public static final class Episode {
+        public final int number;public final String title,description,image;
+        public Episode(int n,String t,String d,String image){number=n;title=t==null?"":t;description=d==null?"":d;this.image=image==null?"":image;}
+        public String label(){return title.isEmpty()||title.matches("(?i)(?:ep(?:is[oó]dio)?\\.?\\s*)?\\d+")?"Episódio "+number:title;}
+    }
+    public boolean series(){return kind==2||kind==4;}
+    public Episode episodeInfo(int index){return index>=0&&index<episodeDetails.size()?episodeDetails.get(index):new Episode(index+1,index>=0&&index<episodes.size()?episodes.get(index):"","","");}
     public static final class Season {
         public final int id; public final String name;
         public Season(int id,String name){this.id=id;this.name=name;}
@@ -21,7 +29,7 @@ public final class Movie {
         m.backdrop=Legacy.text(dto,"getCoverUrl","getVod_pic");m.summary=Legacy.text(dto,"getVod_blurb","getVideoDesc","getSimpleDesc");
         m.year=Legacy.text(dto,"getVod_year");m.score=Legacy.text(dto,"getVod_douban_score");m.tags=Legacy.text(dto,"getVod_tag","getTag");
         for(Object s:Legacy.list(dto,"getSeries_info")){int id=Legacy.integer(s,"getVod_id");if(id>0)m.seasons.add(new Season(id,Legacy.text(s,"getSeries")));}
-        for(Object e:Legacy.list(dto,"getVod_collection"))m.episodes.add(Legacy.text(e,"getTitle"));
+        for(Object e:Legacy.list(dto,"getVod_collection")){String name=Legacy.text(e,"getTitle");int number=Legacy.integer(e,"getCollection");m.episodes.add(name);m.episodeDetails.add(new Episode(number>0?number:m.episodes.size(),name,"",""));}
         return m;
     }
     public JSONObject json() {

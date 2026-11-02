@@ -1,7 +1,7 @@
 {
   "format": "movie-source-manifest-v1",
   "self_excluded": true,
-  "file_count": 23360,
+  "file_count": 23382,
   "files": [
     {
       "path": ".gitattributes",
@@ -20,8 +20,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9023,
-      "sha256": "1e4788183958a91c06352bcc476c749e6d9c1f230bad2fe164025ecb6f34cf5c"
+      "bytes": 9553,
+      "sha256": "e282c16edd4903b8d289e7240ba2bc4302f901a054dd2b6604561627ffaaa560"
     },
     {
       "path": "design/kinexo/README.md",
@@ -65,8 +65,8 @@
     },
     {
       "path": "docs/FONTES-NATIVAS.md",
-      "bytes": 10464,
-      "sha256": "eea12f0f6fd063079206b1943a4d25c43d0ab8fecff9ec4eaab2c6ed4af5e790"
+      "bytes": 10649,
+      "sha256": "2b6aad1f08ece8fe4f98387edfa8fa4fdddbc2303acced8e269c2fe2879892a7"
     },
     {
       "path": "docs/IDENTIDADE-QUALIDADE.md",
@@ -75,8 +75,8 @@
     },
     {
       "path": "docs/INVENTORY.json",
-      "bytes": 1976,
-      "sha256": "e2d3996465332732316b4ec076888842c41aa2df09d50bc79ba9d9f77bd0d82b"
+      "bytes": 2212,
+      "sha256": "1e03ceedea6828ceb85adadd99d6672bc044b61cd250aa137afd92b4d924a4c2"
     },
     {
       "path": "docs/JAVA-CLASSES.csv",
@@ -117,6 +117,11 @@
       "path": "docs/RENAMED-SMALI.json",
       "bytes": 1391,
       "sha256": "a464dfe72642b469a8cc331c3811e6228c325f87998c8236eb0309b891db706e"
+    },
+    {
+      "path": "docs/REPRODUCAO-AUTOMATICA.md",
+      "bytes": 11903,
+      "sha256": "9e99b7169acdcabb2b136a61531815a48d2c416600210c5f3153f51b501deb3c"
     },
     {
       "path": "docs/history-recovery/DYNAMIC-DEX.json",
@@ -187,6 +192,71 @@
       "path": "docs/tool-notices/guava-32.1.3-jre/LICENSE",
       "bytes": 11358,
       "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "docs/validation-automatico/audit-evolution.json",
+      "bytes": 352,
+      "sha256": "8b9cdbcd87711f9a7a9941ab58d178b6c3eaa180579ea4be900069f57e9edd35"
+    },
+    {
+      "path": "docs/validation-automatico/audit-identity.json",
+      "bytes": 2509,
+      "sha256": "7aaadfca11e49db824296fa99e755c7eb3b0fd5fee161a223daff15f6bd8b5cb"
+    },
+    {
+      "path": "docs/validation-automatico/audit-privacy.json",
+      "bytes": 2023,
+      "sha256": "ed2b1013deabd7bddd6ef20b4c063067b0a406fbd24f116a3d4c45478a299bd8"
+    },
+    {
+      "path": "docs/validation-automatico/automatic/cards-episodios.png",
+      "bytes": 999137,
+      "sha256": "f44affe0360eceb2dd83d81c754699ed850a001a6759481f1d98979a236fc9e0"
+    },
+    {
+      "path": "docs/validation-automatico/automatic/painel-episodios.png",
+      "bytes": 638468,
+      "sha256": "ad5c1747d116154f193a3018056eef1ceee14b151e0273bf7923b9bf52be218f"
+    },
+    {
+      "path": "docs/validation-automatico/automatic/qualidade-automatica.png",
+      "bytes": 649061,
+      "sha256": "ea004936a266cf06c7f9080478830e20d2eed341b3a00d5dadcb30ed7e652303"
+    },
+    {
+      "path": "docs/validation-automatico/automatic/result-public.json",
+      "bytes": 2488,
+      "sha256": "950eb0e47ef2b4f50e607a37c2293f8fd299268c5b4bec680697cfb6ec8cf677"
+    },
+    {
+      "path": "docs/validation-automatico/build.json",
+      "bytes": 434,
+      "sha256": "ff795162aaa7162e5ae7daddab483f116a1dd24aca98316dc0401725de57c0de"
+    },
+    {
+      "path": "docs/validation-automatico/core.json",
+      "bytes": 3422,
+      "sha256": "780d68cf9f75e2bbf5fbde0e6b812242a3ce33081f23346903bbd589863098c7"
+    },
+    {
+      "path": "docs/validation-automatico/maximum-hunt.json",
+      "bytes": 5967,
+      "sha256": "fe3ecf0fdb085f9dada5077968ed0c1ed0f6dbfcff26bd76e5a15f0bdf85b0d4"
+    },
+    {
+      "path": "docs/validation-automatico/summary.json",
+      "bytes": 1041,
+      "sha256": "a12b656543300826ece76fc01097070ec924f4f3488a247639acaba79438d735"
+    },
+    {
+      "path": "docs/validation-automatico/ui/player.png",
+      "bytes": 1748138,
+      "sha256": "ccd3e1e9bc832095d890de85e6b35cc5bdb4b4cefdf9c47c8f9663699151d13a"
+    },
+    {
+      "path": "docs/validation-automatico/ui/result-public.json",
+      "bytes": 1055,
+      "sha256": "78003b9999366ea41461890971862181b8ae43e4b01f6fc0e9589666e9b7fe64"
     },
     {
       "path": "docs/validation-fullhd/README.md",
@@ -977,6 +1047,21 @@
       "path": "reference/README.md",
       "bytes": 330,
       "sha256": "2411471bb23d282e4b87a81eccbd31fcf447dffa36798af38464be9b4817b943"
+    },
+    {
+      "path": "reference/figma-card-exemplo/README.md",
+      "bytes": 563,
+      "sha256": "3cf0bf3780b04d1567ed3f82380ffa043e603f37ba33e4b1fd577fc29797cdbe"
+    },
+    {
+      "path": "reference/figma-card-exemplo/kinexo-watermark.png",
+      "bytes": 32320,
+      "sha256": "976dc6983e3d97c38de0f0d7c1055a7bbc553d87647b3de7bf066e1465c751bd"
+    },
+    {
+      "path": "reference/figma-card-exemplo/texture.png",
+      "bytes": 24826,
+      "sha256": "759745e4566b8debddbd70fee10c152d5a5e2fff9cc3e61e81b0425e0c7d1a03"
     },
     {
       "path": "reference/java/com/mgs/carparking/adapter/MyPagerListAdapter.java",
@@ -7342,6 +7427,11 @@
       "path": "src/apktool/res/drawable-nodpi/ia_ib_unright_arrow.png",
       "bytes": 487,
       "sha256": "c3459273b00f189134b49be536b639ca16869583c171d10d6d1b149eb4b2cfed"
+    },
+    {
+      "path": "src/apktool/res/drawable-nodpi/kinexo_episode_watermark.png",
+      "bytes": 32320,
+      "sha256": "976dc6983e3d97c38de0f0d7c1055a7bbc553d87647b3de7bf066e1465c751bd"
     },
     {
       "path": "src/apktool/res/drawable-sw600dp/ia_close.png",
@@ -116520,13 +116610,13 @@
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/catalog/DetailsActivity.java",
-      "bytes": 5141,
-      "sha256": "b197a4d974fc3fa3f4e7e9d134861df435cc9e4930ef8b273e9cf9065ea9276c"
+      "bytes": 4621,
+      "sha256": "454cee1f99e212ad40bd711cdca4ae065f23737113d557173c149318a80a96f4"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/catalog/Movie.java",
-      "bytes": 4187,
-      "sha256": "67b4cf81bbf0fd70bf2e7fd0dc8492ba264386f60908e17c83ee5b604a308a22"
+      "bytes": 5056,
+      "sha256": "5d9a33621f19b4f63800ac86c717aa320741cf37c228fc764e2e05ed3ff9e9e0"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/core/Legacy.java",
@@ -116545,18 +116635,18 @@
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/player/PlaybackTracks.java",
-      "bytes": 6599,
-      "sha256": "65a704bea8192c5d4b006307e413e77205b8d953eb1e475f487265171a549952"
+      "bytes": 6988,
+      "sha256": "9ddfbacd768cab1b7aeede11b3e380d3007a1ff8ee98f8d3f563365985fe8538"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/player/PlayerUi.java",
-      "bytes": 40702,
-      "sha256": "699c8006a9b0226c5707267af3a415c97cb2ae3266a2bdcfc4d72c4a7d2883b2"
+      "bytes": 49773,
+      "sha256": "e598445a5ce65aa39cf18a0ac13a6e5ff5c8d6db9472c85278f70733f3ddd3dc"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/profiles/Backup.java",
-      "bytes": 8988,
-      "sha256": "537990cdf20b7a16a4a892dfc6119d186783208491d4af4f71175af6e1a88337"
+      "bytes": 8990,
+      "sha256": "6bac5f99c6bf8eccec48e277078a9bb5797dc1c070ff321fa9a185b7c767a26d"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/profiles/Profiles.java",
@@ -116574,9 +116664,24 @@
       "sha256": "124f8d51474ecd91c7fb0c7bdec636377332b2d99397124db11000ae2c8d1a98"
     },
     {
+      "path": "src/java/classes3/com/mgs/carparking/modern/sources/AutomaticSources.java",
+      "bytes": 5857,
+      "sha256": "d6361d0443c704117b5fcb86224b139053d1b5d21efe4ea19a1100877ec71d9f"
+    },
+    {
+      "path": "src/java/classes3/com/mgs/carparking/modern/sources/ContentMetadata.java",
+      "bytes": 5563,
+      "sha256": "9f63d99a6c513dee37fd7fc41f403d6adad4527f0a429df8e3ab12a5616e680e"
+    },
+    {
       "path": "src/java/classes3/com/mgs/carparking/modern/sources/SourceDiscovery.java",
-      "bytes": 19663,
-      "sha256": "0f2104d302252114f308f5f786624e6566eb7bbe0cf9387d5b4d13b09bfe67ef"
+      "bytes": 22308,
+      "sha256": "1ce483b33250ab0c694f8b405b5ea42c29ee623ab1cdaaad15fd96d4194f2fa9"
+    },
+    {
+      "path": "src/java/classes3/com/mgs/carparking/modern/ui/EpisodeCards.java",
+      "bytes": 4043,
+      "sha256": "b2350d18540e0231cf031a21e3d679b735f9270aec19f8b54077f1fbca088a60"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/ui/Images.java",
@@ -116590,8 +116695,8 @@
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/ui/Panel.java",
-      "bytes": 5672,
-      "sha256": "c47c9cef588522bee04505e73459a3e1baf73b37f615a21550e9934c36c55598"
+      "bytes": 5782,
+      "sha256": "e84e719dab84904e77ae01a24ad6945aeb03dce5031540d684b0eb80b9ce19bf"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/ui/ProviderCards.java",
@@ -116610,8 +116715,8 @@
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/recovery/PlaybackErrors.java",
-      "bytes": 13487,
-      "sha256": "b893dec3b419996bde18d14a560e041e4180f0a2fedff3643c6136e3c998d4a5"
+      "bytes": 13610,
+      "sha256": "ac53cb88345d39691879ac9864e55640dce04b981ea7079363c2401b02eb6358"
     },
     {
       "path": "tests/CommercialGateCheck.java",
@@ -116630,8 +116735,8 @@
     },
     {
       "path": "tests/SourceContractCheck.java",
-      "bytes": 1160,
-      "sha256": "c18c750ef5f9d83a760161585a7404edf8bdf82ff1b9e15b7e786a78c724d1f3"
+      "bytes": 2729,
+      "sha256": "bdee5afd9d601e7967203d1709bc1f219e2b077a11338202bb5941722317f127"
     },
     {
       "path": "tests/audit_apk.py",
@@ -116675,8 +116780,8 @@
     },
     {
       "path": "tests/runtime/device/Checks.java",
-      "bytes": 52292,
-      "sha256": "7a133e5cc0046f5dbd6a25d94a7357964928520b7aed35dc692b15417238090e"
+      "bytes": 52290,
+      "sha256": "2f88bf887964eba5fa7937e09d68d88840fa6dcea9098bef1c8e6fc5f39630b8"
     },
     {
       "path": "tests/runtime/device/FullHdProbe.java",
@@ -116705,23 +116810,28 @@
     },
     {
       "path": "tests/runtime/sources/AndroidManifest.xml",
-      "bytes": 570,
-      "sha256": "6c254ba6e77bb667550288e4843e79d8312721cadfe61af7c817901d1b8a1d51"
+      "bytes": 709,
+      "sha256": "d2276e55e8e456ad81758be92819124b07aa348f8e2f34b5fbea4034345cff73"
+    },
+    {
+      "path": "tests/runtime/sources/AutomaticUiCheck.java",
+      "bytes": 12198,
+      "sha256": "1daa75ec10d88506000fe78d1bd3ec5edcb83253367373818b3c7787c670bfd9"
     },
     {
       "path": "tests/runtime/sources/CrossPlay.java",
-      "bytes": 13774,
-      "sha256": "53a2d7bf629cf98abdda01850faffef67b7d28d1dfe271f7672313902e62a972"
+      "bytes": 14401,
+      "sha256": "fe1cbde9739a1b0110f0f38e61d6ec47103dab98c0285a4856af4b4efeb45320"
     },
     {
       "path": "tests/runtime/sources/Run-SourceChecks.ps1",
-      "bytes": 4338,
-      "sha256": "9b0b09da090f292d5062c095a8896b46ad7aec5b781bcf44d8baf8a7286e1705"
+      "bytes": 4967,
+      "sha256": "620354ebcb8f59b7d50758a05169022e60be8617cccb543f591a55bda27eab1e"
     },
     {
       "path": "tests/runtime/sources/SourceUiCheck.java",
-      "bytes": 10428,
-      "sha256": "5117a632463c5df1127f6344dc460add519fef9e8c4c5e891723379759f78cb7"
+      "bytes": 10876,
+      "sha256": "4e71797453851872efca8b489e5c5ffd5abb83922a6718a8babcfff1a506eb72"
     },
     {
       "path": "tests/runtime/ui_check.py",

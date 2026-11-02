@@ -1,5 +1,8 @@
 # Fontes nativas no Kinexo
 
+Registro da integração anterior, commit `298be70b`. A evolução atual está em [REPRODUCAO-AUTOMATICA.md](REPRODUCAO-AUTOMATICA.md), com o APK `kinexo-automatico-v3-debug.apk`.
+
+
 A integração mantém o aplicativo, pacote, ExoPlayer, assinatura e IdentityBinding
 do Kinexo. O cliente de descoberta adicional é Java editável. Ele não inicia o
 HDO BOX, não incorpora Flutter/Rust/mpv e não executa os scripts recuperados.

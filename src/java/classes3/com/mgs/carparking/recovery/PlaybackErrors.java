@@ -48,6 +48,7 @@ public final class PlaybackErrors {
     }
 
     public static void activityError(Activity activity, String stage, Throwable error) {
+        if (stage.equals("reproducao") && com.mgs.carparking.modern.player.PlayerUi.playbackError(activity,error)) return;
         if (screen.get() != activity) return;
         report(model.get(), stage, httpCode(error), error, true);
     }

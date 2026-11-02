@@ -1,7 +1,7 @@
 param(
     [Parameter(Mandatory=$true)][string]$Apk,
     [ValidateSet('HuntStream','PlexStream','LumaStream','VibeStream','Zetstream','NovaStream')][string]$Provider='HuntStream',
-    [switch]$AllProviders,[switch]$PlayerUi,[switch]$Series,[switch]$UiOnly
+    [switch]$AllProviders,[switch]$PlayerUi,[switch]$Series,[switch]$UiOnly,[switch]$AutomaticUi,[switch]$Maximum
 )
 $ErrorActionPreference='Stop'
 $project=(Resolve-Path "$PSScriptRoot/../../..").Path
@@ -29,9 +29,10 @@ Run "$bt/aapt2.exe" @('link','-I',$android,'--manifest',"$PSScriptRoot/AndroidMa
 Run 'python' @('-c',"import sys,zipfile;z=zipfile.ZipFile(sys.argv[1],'a');z.write(sys.argv[2],'classes.dex');z.close()","$work/unsigned.apk","$work/dex/classes.dex")
 Run 'java' @('-jar',"$bt/lib/apksigner.jar",'sign','--ks',"$env:USERPROFILE/.android/debug.keystore",'--ks-key-alias','androiddebugkey','--ks-pass','pass:android','--out',"$work/source-checks.apk","$work/unsigned.apk")
 Run $adb @('-s','emulator-5556','install','-r',"$work/source-checks.apk")
-$providers=if($UiOnly){@()}elseif($AllProviders){@('HuntStream','PlexStream','LumaStream','VibeStream','Zetstream','NovaStream')}else{@($Provider)}
+$providers=if($UiOnly -or $AutomaticUi){@()}elseif($AllProviders){@('HuntStream','PlexStream','LumaStream','VibeStream','Zetstream','NovaStream')}else{@($Provider)}
 foreach($name in $providers){
     $extra=if($Series){@('-e','id','84958','-e','title','Loki','-e','type','tv','-e','season','1','-e','episode','1')}elseif($name -eq 'HuntStream'){@('-e','soakSeconds','60')}else{@()}
+    if($Maximum){$extra+=@('-e','maximum','true')}
     $result=& $adb -s emulator-5556 shell am instrument -w -r -e provider $name @extra movie.source.integration.tests/movie.sources.CrossPlay
     $result | Set-Content -LiteralPath "$work/$name-result.txt" -Encoding utf8
     $result | Write-Output
@@ -47,5 +48,12 @@ if($PlayerUi -or $UiOnly){
     foreach($name in @('result-public.json','fontes-catalogo.png','identificar-obra.png','provedores.png','fonte-encontrada.png','qualidade.png','audio-legendas.png','audio-dash.png')){
         Run $adb @('-s','emulator-5556','pull',"/data/user/0/com.mobrcine.cine_br/files/source-ui-proof/$name","$work/ui/$name")
     }
+}
+if($AutomaticUi){
+    $result=& $adb -s emulator-5556 shell am instrument -w -r movie.source.integration.tests/movie.sources.AutomaticUiCheck
+    $result | Set-Content -LiteralPath "$work/automatic-result.txt" -Encoding utf8
+    $result | Write-Output
+    Run $adb @('-s','emulator-5556','pull','/data/user/0/com.mobrcine.cine_br/files/automatic-ui-proof',"$work/automatic")
+    if($LASTEXITCODE -or -not ($result -match 'INSTRUMENTATION_RESULT: result=PASS')){throw "Automatic source checks failed. Diagnostics: $work"}
 }
 Write-Output "Evidence: $work"

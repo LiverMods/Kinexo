@@ -38,6 +38,7 @@ public final class PlaybackTracks {
         }cachedTracks.put(cacheKey,out);return out;
     }
     private Object builder(){Object params=Legacy.call(selector,"v");return Legacy.construct("com.google.android.exoplayer2.trackselection.DefaultTrackSelector$d",new Class<?>[]{params.getClass()},params);}
+    public void muteAudio(boolean muted){Object mapped=Legacy.call(selector,"g");if(mapped==null)return;Object b=builder();for(int r=0;r<((Number)Legacy.call(mapped,"c")).intValue();r++)if(((Number)Legacy.call(mapped,"d",r)).intValue()==1)override(b,r,Legacy.call(mapped,"e",r),null,muted);Legacy.call(selector,"L",b);}
     public void preferBrazilianAudio(){Object b=builder();Legacy.call(b,"b","pt-br");Legacy.call(selector,"L",b);}
     @SuppressWarnings("unchecked") private void override(Object b,int renderer,Object groups,Track track,boolean disabled){
         SparseArray<Object> overrides=(SparseArray<Object>)Legacy.field(b,"z");overrides.remove(renderer);
@@ -57,7 +58,7 @@ public final class PlaybackTracks {
     public String sourceSummary(){int all=allTracks(2).size(),compatible=tracks(2).size();return all==1?"O fluxo recebido contém uma única faixa de vídeo. O modo Automático não cria 1080p, 1440p ou 4K ausentes.":"O player recebeu "+all+" faixas de vídeo; "+compatible+" compatíveis com este aparelho.";}
     public String rendered(){Object f=Legacy.field(exo,"r");return f==null?"Aguardando o decodificador":new Track(0,0,0,2,null,f,4).detail();}
     public void applyPreference(Activity a,Profiles p){List<Track> video=tracks(2);if(video.isEmpty())return;Object groups=video.get(0).groups;if(preferredHeight==Integer.MIN_VALUE)preferredHeight=(int)p.decimal("quality_height",0);int height=preferredHeight;if(configured==groups&&appliedHeight==height)return;
-        Track match=null;for(Track t:video)if(t.height==height&&(match==null||t.bitrate>match.bitrate))match=t;
+        Track match=null;for(Track t:video)if((height<0||t.height==height)&&(match==null||height<0&&t.height>match.height||t.height==match.height&&t.bitrate>match.bitrate))match=t;
         video(a,match);configured=groups;appliedHeight=height;
     }
 }

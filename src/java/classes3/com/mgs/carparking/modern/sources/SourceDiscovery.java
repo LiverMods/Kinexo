@@ -11,6 +11,8 @@ import java.util.regex.*;
 public final class SourceDiscovery {
     private static final String TMDB="https://api.themoviedb.org/3";
     private static final int LIMIT=1048576;
+    private static final ThreadLocal<Long> DEADLINE=new ThreadLocal<>();
+    private static void checkDeadline()throws IOException{Long end=DEADLINE.get();if(Thread.currentThread().isInterrupted()||end!=null&&android.os.SystemClock.elapsedRealtime()>=end)throw new java.net.SocketTimeoutException("Source deadline");}
     private static final String AGENT="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36";
     private SourceDiscovery(){}
     public static final class Target {
@@ -23,10 +25,17 @@ public final class SourceDiscovery {
         public static Target parse(JSONObject j)throws JSONException{int id=j.getInt("id"),season=j.optInt("season"),episode=j.optInt("episode");if(j.getDouble("id")!=id||j.optDouble("season",0)!=season||j.optDouble("episode",0)!=episode)throw new JSONException("Non-integral media identity");return new Target(id,j.getString("type"),j.getString("title"),season,episode);}
     }
     public static final class Session {
-        public final String provider,url,mediaType;public final Map<String,String> headers;public final List<String> audioLanguages;
-        Session(String provider,String url,String mediaType,Map<String,String> headers,List<String> languages)throws IOException{this.provider=provider;this.url=https(url);this.mediaType=mediaType;this.headers=Collections.unmodifiableMap(new LinkedHashMap<>(headers));audioLanguages=Collections.unmodifiableList(new ArrayList<>(languages));}
+        public final String provider,url,mediaType;public final Map<String,String> headers;public final List<String> audioLanguages;public final List<Variant> variants;
+        Session(String provider,String url,String mediaType,Map<String,String> headers,List<String> languages,List<Variant> variants)throws IOException{this.variants=Collections.unmodifiableList(new ArrayList<>(variants));this.provider=provider;this.url=https(url);this.mediaType=mediaType;this.headers=Collections.unmodifiableMap(new LinkedHashMap<>(headers));audioLanguages=Collections.unmodifiableList(new ArrayList<>(languages));}
         public String audioSummary(){if(audioLanguages.isEmpty())return "Idioma do áudio não informado";List<String> names=new ArrayList<>();for(String tag:audioLanguages){if(tag.equalsIgnoreCase("pt-BR"))names.add("Português brasileiro");else if(tag.equalsIgnoreCase("pt")||tag.equalsIgnoreCase("por"))names.add("Português (região não informada)");else names.add(Locale.forLanguageTag(tag).getDisplayName(new Locale("pt","BR")));}return "Áudio informado pela fonte: "+android.text.TextUtils.join(", ",names);}
     }
+    public static final class Variant {
+        public final int width,height,bitrate;public final String codec;
+        public Variant(int w,int h,int b,String codec){width=w;height=h;bitrate=b;this.codec=codec==null?"":codec;}
+    }
+    static void budget(long ms){DEADLINE.set(android.os.SystemClock.elapsedRealtime()+ms);}
+    static void clearBudget(){DEADLINE.remove();}
+    public static Session resolveWithin(Context c,Target t,String provider,long deadline)throws Exception{DEADLINE.set(deadline);try{checkDeadline();return resolve(c,t,provider);}finally{DEADLINE.remove();}}
     public static void validateBindings(JSONObject bindings)throws Exception{
         if(bindings.length()>64)throw new IOException("Too many source bindings");Iterator<String> keys=bindings.keys();
         while(keys.hasNext()){String key=keys.next();if(!key.matches("[1-9][0-9]{0,9}_[0-9]{1,5}")||Long.parseLong(key.split("_")[0])>Integer.MAX_VALUE)throw new IOException("Invalid catalog binding");JSONObject value=bindings.getJSONObject(key);Iterator<String> fields=value.keys();while(fields.hasNext())if(!Arrays.asList("id","type","title","season","episode").contains(fields.next()))throw new IOException("Unknown source identity field");Target target=Target.parse(value);if(target.type.equals("tv")&&target.episode==0)throw new IOException("Missing explicit episode");}
@@ -39,12 +48,12 @@ public final class SourceDiscovery {
     }
     private static byte[] read(InputStream input)throws IOException{
         try(InputStream in=input;ByteArrayOutputStream out=new ByteArrayOutputStream()){
-            byte[] buffer=new byte[8192];int n;while((n=in.read(buffer))!=-1){if(out.size()+n>LIMIT)throw new IOException("Oversized source response");out.write(buffer,0,n);}return out.toByteArray();
+            byte[] buffer=new byte[8192];int n;while((n=in.read(buffer))!=-1){checkDeadline();if(out.size()+n>LIMIT)throw new IOException("Oversized source response");out.write(buffer,0,n);}return out.toByteArray();
         }
     }
     private static String request(String url,Map<String,String> headers,byte[] body)throws IOException{return new String(requestBytes(url,headers,body),"UTF-8");}
     private static byte[] requestBytes(String url,Map<String,String> headers,byte[] body)throws IOException{
-        HttpURLConnection c=(HttpURLConnection)new URL(https(url)).openConnection();c.setInstanceFollowRedirects(false);c.setConnectTimeout(12000);c.setReadTimeout(16000);
+        checkDeadline();HttpURLConnection c=(HttpURLConnection)new URL(https(url)).openConnection();c.setInstanceFollowRedirects(false);Long end=DEADLINE.get();int timeout=end==null?12000:(int)Math.max(1,Math.min(6000,end-android.os.SystemClock.elapsedRealtime()));c.setConnectTimeout(timeout);c.setReadTimeout(end==null?16000:timeout);
         c.setRequestProperty("User-Agent","Kinexo");
         for(Map.Entry<String,String> h:headers.entrySet()){if(h.getValue().indexOf('\r')>=0||h.getValue().indexOf('\n')>=0)throw new IOException("Invalid request header");c.setRequestProperty(h.getKey(),h.getValue());}
         try{if(body!=null){c.setRequestMethod("POST");c.setDoOutput(true);c.setFixedLengthStreamingMode(body.length);try(OutputStream out=c.getOutputStream()){out.write(body);}}
@@ -52,7 +61,7 @@ public final class SourceDiscovery {
         }finally{c.disconnect();}
     }
     private static Map<String,String> mediaHeaders(String origin){Map<String,String> h=new LinkedHashMap<>();h.put("Accept","*/*");h.put("Origin",origin);h.put("Referer",origin+"/");h.put("User-Agent",AGENT);return h;}
-    private static JSONObject metadata(Context context,String path,Object... parameters)throws Exception{
+    static JSONObject metadata(Context context,String path,Object... parameters)throws Exception{
         JSONObject config=configuration(context);
         String token=config.optString("tmdbToken");if(token.isEmpty())throw new IOException("Metadata credential unavailable");
         Map<String,String> headers=new LinkedHashMap<>();headers.put("Accept","application/json");headers.put("Authorization",token.startsWith("Bearer ")?token:"Bearer "+token);
@@ -77,19 +86,25 @@ public final class SourceDiscovery {
         JSONObject response=new JSONObject(request("https://enc-dec.app/api/"+endpoint,headers,payload.toString().getBytes("UTF-8")));
         if(response.optInt("status")!=200)throw new IOException("Source service refused request");return response;
     }
-    private static Session session(String provider,String master,Map<String,String> headers)throws Exception{
-        String manifest=request(master,headers,null);String type;Set<String> languages=new LinkedHashSet<>();
-        if(manifest.startsWith("#EXTM3U")){type="hls";for(String line:manifest.split("\\r?\\n"))if(line.startsWith("#EXT-X-MEDIA:")&&line.contains("TYPE=AUDIO")){Matcher m=Pattern.compile("LANGUAGE=\"([A-Za-z]{2,3}(?:-[A-Za-z0-9]{2,8})*)\"").matcher(line);if(m.find())languages.add(m.group(1));}}
-        else{
+    private static String attribute(String line,String name){Matcher m=Pattern.compile("(?:^|,)"+Pattern.quote(name)+"=(?:\"([^\"]*)\"|([^,]*))").matcher(line.substring(line.indexOf(':')+1));return m.find()?(m.group(1)!=null?m.group(1):m.group(2)):"";}
+    private static int integer(String value){try{return Integer.parseInt(value);}catch(Exception e){return 0;}}
+    static Session parseManifest(String provider,String master,Map<String,String> headers,String manifest)throws Exception{
+        String type;Set<String> languages=new LinkedHashSet<>();List<Variant> variants=new ArrayList<>();
+        if(manifest.startsWith("#EXTM3U")){type="hls";for(String line:manifest.split("\\r?\\n")){
+            if(line.startsWith("#EXT-X-MEDIA:")&&attribute(line,"TYPE").equals("AUDIO")){String lang=attribute(line,"LANGUAGE");if(lang.matches("[A-Za-z]{2,3}(?:-[A-Za-z0-9]{2,8})*"))languages.add(lang);}
+            if(line.startsWith("#EXT-X-STREAM-INF:")){String[] size=attribute(line,"RESOLUTION").split("x");if(size.length==2)variants.add(new Variant(integer(size[0]),integer(size[1]),integer(attribute(line,"BANDWIDTH")),attribute(line,"CODECS")));}
+        }}else{
             if(manifest.contains("<!DOCTYPE")||manifest.contains("<!ENTITY"))throw new IOException("Unsupported manifest declaration");
-            org.xmlpull.v1.XmlPullParser parser=android.util.Xml.newPullParser();parser.setInput(new StringReader(manifest));boolean root=false;
+            org.xmlpull.v1.XmlPullParser parser=android.util.Xml.newPullParser();parser.setInput(new StringReader(manifest));boolean root=false;String mime="",content="",lang="",codec="";int width=0,height=0;
             for(int event=parser.getEventType();event!=org.xmlpull.v1.XmlPullParser.END_DOCUMENT;event=parser.next())if(event==org.xmlpull.v1.XmlPullParser.START_TAG){String tag=parser.getName();if(!root){if(!"MPD".equals(tag))throw new IOException("Unsupported manifest");root=true;}
                 if("ContentProtection".equals(tag))throw new IOException("This source requires a separate DRM authorization");
-                if("AdaptationSet".equals(tag)){String mime=parser.getAttributeValue(null,"mimeType"),content=parser.getAttributeValue(null,"contentType"),lang=parser.getAttributeValue(null,"lang");if(("audio".equals(content)||mime!=null&&mime.startsWith("audio/"))&&lang!=null&&lang.matches("[A-Za-z]{2,3}(?:-[A-Za-z0-9]{2,8})*"))languages.add(lang);}
+                if("AdaptationSet".equals(tag)){mime=parser.getAttributeValue(null,"mimeType");content=parser.getAttributeValue(null,"contentType");lang=parser.getAttributeValue(null,"lang");codec=parser.getAttributeValue(null,"codecs");width=integer(parser.getAttributeValue(null,"width"));height=integer(parser.getAttributeValue(null,"height"));if(("audio".equals(content)||mime!=null&&mime.startsWith("audio/"))&&lang!=null&&lang.matches("[A-Za-z]{2,3}(?:-[A-Za-z0-9]{2,8})*"))languages.add(lang);}
+                if("Representation".equals(tag)&&("video".equals(content)||mime!=null&&mime.startsWith("video/"))){String w=parser.getAttributeValue(null,"width"),h=parser.getAttributeValue(null,"height"),co=parser.getAttributeValue(null,"codecs");variants.add(new Variant(w==null?width:integer(w),h==null?height:integer(h),integer(parser.getAttributeValue(null,"bandwidth")),co==null?codec:co));}
             }if(!root)throw new IOException("Empty manifest");type="dash";
         }
-        return new Session(provider,master,type,headers,new ArrayList<>(languages));
+        return new Session(provider,master,type,headers,new ArrayList<>(languages),variants);
     }
+    private static Session session(String provider,String master,Map<String,String> headers)throws Exception{return parseManifest(provider,master,headers,request(master,headers,null));}
     public static List<String> providers(Context context){List<String> names=new ArrayList<>(Arrays.asList("HuntStream","PlexStream","LumaStream","VibeStream","Zetstream"));try{if(!configuration(context).optString("hdoApiAuthorization").isEmpty())names.add("NovaStream");}catch(Exception ignored){}return names;}
     public static Session resolve(Context context,Target target,String provider)throws Exception{
         if(provider.equals("HuntStream"))return hunt(target);

@@ -36,6 +36,7 @@ public final class Panel extends Dialog {
     }
     private int d(int n){return Ui.dp(owner,n);}
     public void rows(List<Choice> rows){choices.clear();choices.addAll(rows);adapter.notifyDataSetChanged();}
+    public void content(View v){body.removeView(list);body.addView(v,new LinearLayout.LayoutParams(-1,0,1));}
     public void header(View v){body.addView(v,2);}
     @Override public void show(){
         super.show();Window w=getWindow();w.setBackgroundDrawableResource(android.R.color.transparent);WindowManager.LayoutParams a=w.getAttributes();a.dimAmount=.58f;w.addFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);w.setAttributes(a);
