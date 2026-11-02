@@ -1,0 +1,93 @@
+{
+  "uid": 10247,
+  "internet_permission": 0,
+  "dns": {
+    "api.themoviedb.org": 12,
+    "api.wecollege.net": 2,
+    "moon.goldenkite.top": 4
+  },
+  "provider": "NovaStream",
+  "source_media_type": "dash",
+  "source_audio_languages": [
+    "eng"
+  ],
+  "native_resolver": true,
+  "metadata_identity_confirmed": true,
+  "resolve_ms": 2618,
+  "preferred_audio_language": "pt-br",
+  "samples": [
+    {
+      "state": 3,
+      "position_ms": 1990,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "width": 1920,
+      "height": 1080,
+      "mime": "video\/hevc",
+      "rendered_frames": 50
+    },
+    {
+      "state": 3,
+      "position_ms": 4497,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "width": 1920,
+      "height": 1080,
+      "mime": "video\/hevc",
+      "rendered_frames": 110
+    }
+  ],
+  "audio_tracks": [
+    {
+      "mime": "audio\/mp4a-latm",
+      "language": "en",
+      "channels": 2
+    }
+  ],
+  "fullhd_rendered": true,
+  "installed_target_apk_unchanged": true,
+  "resolver_independent": true,
+  "mapped_video_tracks": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "support": 4,
+      "codec": "hev1.1.6.L120.90"
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "support": 4,
+      "codec": "hev1.1.6.L93.90"
+    },
+    {
+      "width": 854,
+      "height": 480,
+      "support": 4,
+      "codec": "hev1.1.6.L90.90"
+    }
+  ],
+  "pss_kib": 81048,
+  "automatic_initial_fullhd": true,
+  "manual_720": {
+    "height": 720,
+    "decoded_width": 1280,
+    "decoded_height": 720,
+    "position_ms": 7812,
+    "frames": 80,
+    "position_before_ms": 4509,
+    "position_preserved": true,
+    "pss_kib": 77593
+  },
+  "manual_1080": {
+    "height": 1080,
+    "decoded_width": 1920,
+    "decoded_height": 1080,
+    "position_ms": 11327,
+    "frames": 86,
+    "position_before_ms": 7812,
+    "position_preserved": true,
+    "pss_kib": 78218
+  },
+  "automatic_restored": true
+}

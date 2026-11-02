@@ -1,0 +1,137 @@
+{
+  "apk_under_test_sha256": "a97692618a25619b8741863624f14e0801b9c0dc112bea5712c963fde642e710",
+  "source_client_unchanged_in_final_build": true,
+  "source_java_sha256": "0f2104d302252114f308f5f786624e6566eb7bbe0cf9387d5b4d13b09bfe67ef",
+  "providers": [
+    {
+      "provider": "HuntStream",
+      "media_type": "hls",
+      "decoded_sizes": [
+        [
+          1280,
+          720
+        ],
+        [
+          1920,
+          1080
+        ],
+        [
+          3840,
+          2160
+        ]
+      ],
+      "fullhd_confirmed": true,
+      "automatic_initial_fullhd": true,
+      "audio_languages": [],
+      "position_preserved_manual_1080": true,
+      "pss_kib": 136126
+    },
+    {
+      "provider": "PlexStream",
+      "media_type": "hls",
+      "decoded_sizes": [
+        [
+          1280,
+          720
+        ],
+        [
+          1920,
+          1080
+        ],
+        [
+          3840,
+          2160
+        ]
+      ],
+      "fullhd_confirmed": true,
+      "automatic_initial_fullhd": true,
+      "audio_languages": [],
+      "position_preserved_manual_1080": true,
+      "pss_kib": 136811
+    },
+    {
+      "provider": "LumaStream",
+      "media_type": "hls",
+      "decoded_sizes": [
+        [
+          1280,
+          720
+        ],
+        [
+          1920,
+          1080
+        ]
+      ],
+      "fullhd_confirmed": true,
+      "automatic_initial_fullhd": true,
+      "audio_languages": [
+        "en"
+      ],
+      "position_preserved_manual_1080": true,
+      "pss_kib": 100834
+    },
+    {
+      "provider": "VibeStream",
+      "media_type": "hls",
+      "decoded_sizes": [
+        [
+          1280,
+          720
+        ],
+        [
+          1920,
+          1080
+        ]
+      ],
+      "fullhd_confirmed": true,
+      "automatic_initial_fullhd": false,
+      "audio_languages": [],
+      "position_preserved_manual_1080": true,
+      "pss_kib": 91697
+    },
+    {
+      "provider": "Zetstream",
+      "media_type": "hls",
+      "decoded_sizes": [
+        [
+          1280,
+          720
+        ],
+        [
+          1920,
+          1080
+        ],
+        [
+          3840,
+          2160
+        ]
+      ],
+      "fullhd_confirmed": true,
+      "automatic_initial_fullhd": true,
+      "audio_languages": [],
+      "position_preserved_manual_1080": true,
+      "pss_kib": 135919
+    },
+    {
+      "provider": "NovaStream",
+      "media_type": "dash",
+      "decoded_sizes": [
+        [
+          1280,
+          720
+        ],
+        [
+          1920,
+          1080
+        ]
+      ],
+      "fullhd_confirmed": true,
+      "automatic_initial_fullhd": true,
+      "audio_languages": [
+        "eng"
+      ],
+      "position_preserved_manual_1080": true,
+      "pss_kib": 81048
+    }
+  ]
+}

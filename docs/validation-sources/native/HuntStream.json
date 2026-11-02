@@ -1,0 +1,257 @@
+{
+  "uid": 10247,
+  "internet_permission": 0,
+  "dns": {
+    "api.themoviedb.org": 12,
+    "api.wecollege.net": 2,
+    "moon.goldenkite.top": 4
+  },
+  "provider": "HuntStream",
+  "source_media_type": "hls",
+  "source_audio_languages": [],
+  "native_resolver": true,
+  "metadata_identity_confirmed": true,
+  "resolve_ms": 3184,
+  "preferred_audio_language": "pt-br",
+  "samples": [
+    {
+      "state": 2,
+      "position_ms": 0,
+      "decoded_width": 0,
+      "decoded_height": 0,
+      "rendered_frames": 0
+    },
+    {
+      "state": 3,
+      "position_ms": 1059,
+      "decoded_width": 1280,
+      "decoded_height": 720,
+      "width": 1280,
+      "height": 720,
+      "mime": "video\/avc",
+      "rendered_frames": 27
+    },
+    {
+      "state": 3,
+      "position_ms": 3563,
+      "decoded_width": 1280,
+      "decoded_height": 720,
+      "width": 1280,
+      "height": 720,
+      "mime": "video\/avc",
+      "rendered_frames": 87
+    },
+    {
+      "state": 3,
+      "position_ms": 6057,
+      "decoded_width": 1280,
+      "decoded_height": 720,
+      "width": 1280,
+      "height": 720,
+      "mime": "video\/avc",
+      "rendered_frames": 147
+    },
+    {
+      "state": 3,
+      "position_ms": 8566,
+      "decoded_width": 1280,
+      "decoded_height": 720,
+      "width": 1280,
+      "height": 720,
+      "mime": "video\/avc",
+      "rendered_frames": 206
+    },
+    {
+      "state": 3,
+      "position_ms": 11065,
+      "decoded_width": 1280,
+      "decoded_height": 720,
+      "width": 1280,
+      "height": 720,
+      "mime": "video\/avc",
+      "rendered_frames": 267
+    },
+    {
+      "state": 3,
+      "position_ms": 13567,
+      "decoded_width": 3840,
+      "decoded_height": 2160,
+      "width": 3840,
+      "height": 2160,
+      "mime": "video\/avc",
+      "rendered_frames": 328
+    },
+    {
+      "state": 3,
+      "position_ms": 16011,
+      "decoded_width": 3840,
+      "decoded_height": 2160,
+      "width": 3840,
+      "height": 2160,
+      "mime": "video\/avc",
+      "rendered_frames": 387
+    }
+  ],
+  "audio_tracks": [
+    {
+      "mime": "audio\/mp4a-latm",
+      "language": "```",
+      "channels": 2
+    }
+  ],
+  "fullhd_rendered": true,
+  "installed_target_apk_unchanged": true,
+  "resolver_independent": true,
+  "mapped_video_tracks": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "support": 4,
+      "codec": "avc1.640028"
+    },
+    {
+      "width": 3840,
+      "height": 2160,
+      "support": 4,
+      "codec": "avc1.640033"
+    },
+    {
+      "width": 852,
+      "height": 480,
+      "support": 4,
+      "codec": "avc1.4d401e"
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "support": 4,
+      "codec": "avc1.4d401f"
+    }
+  ],
+  "pss_kib": 136126,
+  "automatic_initial_fullhd": true,
+  "manual_720": {
+    "height": 720,
+    "decoded_width": 1280,
+    "decoded_height": 720,
+    "position_ms": 19533,
+    "frames": 84,
+    "position_before_ms": 16076,
+    "position_preserved": true,
+    "pss_kib": 118238
+  },
+  "manual_1080": {
+    "height": 1080,
+    "decoded_width": 1920,
+    "decoded_height": 1080,
+    "position_ms": 21703,
+    "frames": 54,
+    "position_before_ms": 19533,
+    "position_preserved": true,
+    "pss_kib": 118876
+  },
+  "automatic_restored": true,
+  "sustained_playback": {
+    "requested_seconds": 60,
+    "sampling_ms": 5000,
+    "position_delta_ms": 50980,
+    "samples": [
+      {
+        "state": 2,
+        "position_ms": 21719,
+        "frames": 0,
+        "width": 3840,
+        "height": 2160,
+        "pss_kib": 119348
+      },
+      {
+        "state": 3,
+        "position_ms": 23677,
+        "frames": 43,
+        "width": 1920,
+        "height": 1080,
+        "pss_kib": 119863
+      },
+      {
+        "state": 3,
+        "position_ms": 28721,
+        "frames": 163,
+        "width": 1920,
+        "height": 1080,
+        "pss_kib": 120353
+      },
+      {
+        "state": 3,
+        "position_ms": 33697,
+        "frames": 283,
+        "width": 1920,
+        "height": 1080,
+        "pss_kib": 127185
+      },
+      {
+        "state": 3,
+        "position_ms": 38721,
+        "frames": 397,
+        "width": 3840,
+        "height": 2160,
+        "pss_kib": 139189
+      },
+      {
+        "state": 3,
+        "position_ms": 43215,
+        "frames": 487,
+        "width": 3840,
+        "height": 2160,
+        "pss_kib": 139469
+      },
+      {
+        "state": 3,
+        "position_ms": 48524,
+        "frames": 526,
+        "width": 3840,
+        "height": 2160,
+        "pss_kib": 139771
+      },
+      {
+        "state": 3,
+        "position_ms": 52764,
+        "frames": 566,
+        "width": 3840,
+        "height": 2160,
+        "pss_kib": 140087
+      },
+      {
+        "state": 3,
+        "position_ms": 57930,
+        "frames": 598,
+        "width": 3840,
+        "height": 2160,
+        "pss_kib": 140347
+      },
+      {
+        "state": 3,
+        "position_ms": 62675,
+        "frames": 671,
+        "width": 1920,
+        "height": 1080,
+        "pss_kib": 136835
+      },
+      {
+        "state": 3,
+        "position_ms": 67680,
+        "frames": 790,
+        "width": 1920,
+        "height": 1080,
+        "pss_kib": 137109
+      },
+      {
+        "state": 3,
+        "position_ms": 72683,
+        "frames": 910,
+        "width": 1920,
+        "height": 1080,
+        "pss_kib": 137467
+      }
+    ]
+  }
+}

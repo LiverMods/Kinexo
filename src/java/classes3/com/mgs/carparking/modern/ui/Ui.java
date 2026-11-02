@@ -38,6 +38,7 @@ public final class Ui {
         public Symbol(Context c,String type,int color){this.type=type;size=dp(c,22);p.setColor(color);p.setStrokeWidth(1.8f);p.setStrokeCap(Paint.Cap.ROUND);p.setStrokeJoin(Paint.Join.ROUND);}
         @Override public void draw(Canvas canvas){canvas.save();android.graphics.Rect b=getBounds();canvas.translate(b.left,b.top);canvas.scale(b.width()/24f,b.height()/24f);p.setStyle(Paint.Style.STROKE);Path path=new Path();
             switch(type){
+                case "sources":canvas.drawRoundRect(3,7,18,21,2,2,p);canvas.drawLine(7,3,22,3,p);canvas.drawLine(22,3,22,17,p);path.moveTo(9,11);path.lineTo(14,14);path.lineTo(9,17);path.close();p.setStyle(Paint.Style.FILL);canvas.drawPath(path,p);break;
                 case "play":p.setStyle(Paint.Style.FILL);path.moveTo(8,5);path.lineTo(20,12);path.lineTo(8,19);path.close();canvas.drawPath(path,p);break;
                 case "pause":p.setStyle(Paint.Style.FILL);canvas.drawRoundRect(6,5,10,19,1,1,p);canvas.drawRoundRect(14,5,18,19,1,1,p);break;
                 case "back":canvas.drawLine(20,12,4,12,p);canvas.drawLine(4,12,10,6,p);canvas.drawLine(4,12,10,18,p);break;
@@ -45,7 +46,7 @@ public final class Ui {
                 case "bookmark":path.moveTo(6,3);path.lineTo(18,3);path.lineTo(18,22);path.lineTo(12,17);path.lineTo(6,22);path.close();canvas.drawPath(path,p);break;
                 case "cast":canvas.drawLine(3,3,21,3,p);canvas.drawLine(21,3,21,18,p);canvas.drawLine(21,18,14,18,p);canvas.drawLine(3,3,3,8,p);canvas.drawArc(-6,10,18,34,270,90,false,p);canvas.drawArc(-2,14,10,26,270,90,false,p);p.setStyle(Paint.Style.FILL);canvas.drawCircle(3,21,1.4f,p);break;
                 case "fit":canvas.drawLine(3,9,3,4,p);canvas.drawLine(3,4,8,4,p);canvas.drawLine(16,4,21,4,p);canvas.drawLine(21,4,21,9,p);canvas.drawLine(3,15,3,20,p);canvas.drawLine(3,20,8,20,p);canvas.drawLine(16,20,21,20,p);canvas.drawLine(21,20,21,15,p);break;
-                case "quality":canvas.drawRoundRect(2,5,22,19,2,2,p);p.setTextAlign(Paint.Align.CENTER);p.setTypeface(Typeface.create("sans-serif-medium",0));p.setTextSize(7);p.setStyle(Paint.Style.FILL);canvas.drawText("HD",12,14.5f,p);break;
+                case "quality":case "uhd":case "fhd":case "sd":case "auto":canvas.drawRoundRect(2,5,22,19,2,2,p);p.setTextAlign(Paint.Align.CENTER);p.setTypeface(Typeface.create("sans-serif-medium",0));p.setTextSize(type.equals("fhd")?6:7);p.setStyle(Paint.Style.FILL);canvas.drawText(type.equals("uhd")?"4K":type.equals("fhd")?"FHD":type.equals("sd")?"SD":type.equals("auto")?"A":"HD",12,14.5f,p);break;
                 case "download":canvas.drawLine(12,3,12,16,p);path.moveTo(7,11);path.lineTo(12,16);path.lineTo(17,11);canvas.drawPath(path,p);canvas.drawLine(4,18,4,22,p);canvas.drawLine(4,22,20,22,p);canvas.drawLine(20,22,20,18,p);break;
                 case "close":canvas.drawLine(6,6,18,18,p);canvas.drawLine(18,6,6,18,p);break;
                 case "chevron":path.moveTo(9,5);path.lineTo(16,12);path.lineTo(9,19);canvas.drawPath(path,p);break;
@@ -65,6 +66,7 @@ public final class Ui {
                 case "profile":canvas.drawCircle(12,8,4,p);canvas.drawArc(4,12,20,25,180,180,false,p);break;
                 case "settings":for(int i=0;i<32;i++){double a=(i-2)*Math.PI/16;float r=(i%4==0||i%4==3)?8:10;float x=(float)(12+r*Math.cos(a)),y=(float)(12+r*Math.sin(a));if(i==0)path.moveTo(x,y);else path.lineTo(x,y);}path.close();canvas.drawPath(path,p);canvas.drawCircle(12,12,3,p);break;
                 case "episodes":canvas.drawRoundRect(3,5,19,17,2,2,p);canvas.drawLine(7,21,23,21,p);canvas.drawLine(23,21,23,9,p);break;
+                case "audio":path.moveTo(3,9);path.lineTo(7,9);path.lineTo(12,5);path.lineTo(12,19);path.lineTo(7,15);path.lineTo(3,15);path.close();canvas.drawPath(path,p);canvas.drawArc(10,7,20,17,-60,120,false,p);canvas.drawArc(5,3,23,21,-55,110,false,p);break;
                 case "subtitle":canvas.drawRoundRect(2,4,22,20,2,2,p);canvas.drawLine(5,11,19,11,p);canvas.drawLine(5,15,12,15,p);canvas.drawLine(15,15,19,15,p);break;
                 default:canvas.drawCircle(12,12,9,p);canvas.drawLine(12,12,12,6,p);canvas.drawLine(12,12,17,15,p);
             }canvas.restore();}

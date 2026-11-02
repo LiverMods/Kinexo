@@ -53,9 +53,10 @@ public final class Backup {
         for(int i=0;i<profiles.length();i++){
             JSONObject p=profiles.getJSONObject(i);String id=p.getString("id"),name=p.getString("name");
             if(!id.matches("[a-zA-Z0-9_-]{1,64}")||!ids.add(id)||name.trim().isEmpty()||name.length()>40)throw new IOException("Perfil inválido");
-            if(p.getJSONObject("preferences").toString().length()>8192)throw new IOException("Preferências inválidas");
+            if(p.getJSONObject("preferences").toString().length()>32768)throw new IOException("Preferências inválidas");
             JSONObject prefs=p.getJSONObject("preferences");
-            Iterator<String> keys=prefs.keys();while(keys.hasNext()){String key=keys.next();if(!key.equals("speed")&&!key.equals("brightness")&&!key.equals("autoplay_next")&&!key.equals("quality_height")&&!key.equals("aspect"))throw new IOException("Preferência desconhecida");}
+            Iterator<String> keys=prefs.keys();while(keys.hasNext()){String key=keys.next();if(!key.equals("speed")&&!key.equals("brightness")&&!key.equals("autoplay_next")&&!key.equals("quality_height")&&!key.equals("aspect")&&!key.equals("source_identities"))throw new IOException("Preferência desconhecida");}
+            if(prefs.has("source_identities"))com.mgs.carparking.modern.sources.SourceDiscovery.validateBindings(prefs.getJSONObject("source_identities"));
             if(prefs.has("speed")){double speed=prefs.getDouble("speed");if(speed!=.75&&speed!=1&&speed!=1.25&&speed!=1.5&&speed!=2)throw new IOException("Velocidade inválida");}
             if(prefs.has("brightness")){double value=prefs.getDouble("brightness");if(!Double.isFinite(value)||value<.03||value>1)throw new IOException("Brilho inválido");}
             if(prefs.has("quality_height")){double v=prefs.getDouble("quality_height");if(!Double.isFinite(v)||v!=Math.rint(v)||v<0||v>16384)throw new IOException("Qualidade inválida");}

@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "apk_sha256": "2cc84f75aabe81f75f9d38c000f61eb219fcfdb3e6e30cf43f77b2e47e02c218",
+  "labels": {
+    "app_name": [
+      "Kinexo"
+    ],
+    "text_App_name": [
+      "Kinexo",
+      "Kinexo",
+      "Kinexo"
+    ]
+  },
+  "visible_movie_resource_references": [],
+  "replaced_old_brand_assets": [
+    "res/drawable-xxhdpi/ic_login_logo.png",
+    "res/drawable-xxhdpi/ic_splash_window_temp.png",
+    "res/drawable-xxhdpi/ic_video_load_first_icon.png",
+    "res/mipmap-anydpi-v26/ic_launcher.xml",
+    "res/mipmap-anydpi-v26/ic_launcher_round.xml",
+    "res/mipmap-hdpi/ic_launcher.webp",
+    "res/mipmap-hdpi/ic_launcher_foreground.webp",
+    "res/mipmap-hdpi/ic_launcher_round.webp",
+    "res/mipmap-mdpi/ic_launcher.webp",
+    "res/mipmap-mdpi/ic_launcher_foreground.webp",
+    "res/mipmap-mdpi/ic_launcher_round.webp",
+    "res/mipmap-xhdpi/ic_launcher.webp",
+    "res/mipmap-xhdpi/ic_launcher_foreground.webp",
+    "res/mipmap-xhdpi/ic_launcher_round.webp",
+    "res/mipmap-xxhdpi/ic_launcher.webp",
+    "res/mipmap-xxhdpi/ic_launcher_foreground.webp",
+    "res/mipmap-xxhdpi/ic_launcher_round.webp",
+    "res/mipmap-xxxhdpi/ic_launcher.webp",
+    "res/mipmap-xxxhdpi/ic_launcher_foreground.webp",
+    "res/mipmap-xxxhdpi/ic_launcher_round.webp"
+  ],
+  "packaged_density_icons": [
+    "res/mipmap-mdpi/ic_launcher.png",
+    "res/mipmap-mdpi/ic_launcher_round.png",
+    "res/mipmap-mdpi/ic_launcher_foreground.png",
+    "res/mipmap-hdpi/ic_launcher.png",
+    "res/mipmap-hdpi/ic_launcher_round.png",
+    "res/mipmap-hdpi/ic_launcher_foreground.png",
+    "res/mipmap-xhdpi/ic_launcher.png",
+    "res/mipmap-xhdpi/ic_launcher_round.png",
+    "res/mipmap-xhdpi/ic_launcher_foreground.png",
+    "res/mipmap-xxhdpi/ic_launcher.png",
+    "res/mipmap-xxhdpi/ic_launcher_round.png",
+    "res/mipmap-xxhdpi/ic_launcher_foreground.png",
+    "res/mipmap-xxxhdpi/ic_launcher.png",
+    "res/mipmap-xxxhdpi/ic_launcher_round.png",
+    "res/mipmap-xxxhdpi/ic_launcher_foreground.png"
+  ],
+  "native_payloads_byte_identical": [
+    "assets/pp_hlsProtected.dat",
+    "lib/arm64-v8a/libjiagu_sdk_pp_hlsProtected.so",
+    "lib/arm64-v8a/libpl_droidsonroids_gif.so",
+    "lib/arm64-v8a/libpp_hls.so",
+    "lib/armeabi-v7a/libjiagu_sdk_pp_hlsProtected.so",
+    "lib/armeabi-v7a/libpl_droidsonroids_gif.so",
+    "lib/armeabi-v7a/libpp_hls.so"
+  ],
+  "IdentityBinding_byte_identical": true,
+  "monochrome_is_vector": true,
+  "themed_icons": true
+}

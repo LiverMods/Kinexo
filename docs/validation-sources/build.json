@@ -1,0 +1,15 @@
+{
+  "sha256": "2cc84f75aabe81f75f9d38c000f61eb219fcfdb3e6e30cf43f77b2e47e02c218",
+  "configuration": "Debug",
+  "dex_assembled": 9,
+  "dynamic_dex_assembled": 0,
+  "dynamic_dex_classes": 0,
+  "preserved_dex": 0,
+  "java_source_files": 22,
+  "native_libraries_verified": 6,
+  "apktool": "3.0.3",
+  "build_tools": "36.0.0",
+  "android_api": "37.0",
+  "identity_binding_tests": "passed",
+  "movie_model_tests": "passed"
+}

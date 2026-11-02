@@ -1,0 +1,80 @@
+{
+  "source_artifact_sha256": "70504018fb90d82e621f47bbb5b0a6b68e19674ce9c89aa24f496cf6c9981c39",
+  "method": "Local cached script envelopes, original AES-GCM verification succeeded for all 9; credentials removed from references",
+  "scripts": [
+    {
+      "provider": "VibeStream",
+      "file": "VibeStream.js",
+      "recovered_sha256": "0d1a3fe299a7fbb25e16cdeb6dffab18f1f5132d71a3ddc9e8101c58d030c9fb",
+      "reference_sha256": "5a9268bf9021a63750ec2dbfbb0a1bce8f5fa2e1e0749b36a0ef8b3681329df3",
+      "static_authorization_removed": false,
+      "native_adapter_implemented": true
+    },
+    {
+      "provider": "NovaStream",
+      "file": "NovaStream.js",
+      "recovered_sha256": "2b61724086af2fcc598f929fdf1822b7950394568a5a959b3b5858f0487e702c",
+      "reference_sha256": "1d457bc9e1a4fcf490acaff903de3ac8d9a61ca786b657f518ad1c0e4c00eaa8",
+      "static_authorization_removed": true,
+      "native_adapter_implemented": true,
+      "authorization_config_field": "hdoApiAuthorization"
+    },
+    {
+      "provider": "NexoStream",
+      "file": "NexoStream.js",
+      "recovered_sha256": "f713467c00ec79a72449ffdd16d5315bf7eb9f39930eeea0f2a3d141c398d08f",
+      "reference_sha256": "7424409a17cad5afbce5ce044951dba2c87af976016dfc84c1fa71a9ed6ceaac",
+      "static_authorization_removed": false,
+      "native_adapter_implemented": false
+    },
+    {
+      "provider": "LumaStream",
+      "file": "LumaStream.js",
+      "recovered_sha256": "16f460aa01ba2612e1fa2a9139db0807f83b99c57c343257f6827cd001e5ca9b",
+      "reference_sha256": "dac450bba2c6719e2f8fb6b5510d4521d981694e9f8fe523af16371ee9d0a525",
+      "static_authorization_removed": false,
+      "native_adapter_implemented": true
+    },
+    {
+      "provider": "HuntStream",
+      "file": "HuntStream.js",
+      "recovered_sha256": "f50488aaf079dec191c18709d47b25b24cf8a5091473e5c3f34cfebc32bf14eb",
+      "reference_sha256": "4d452ea7208678b6563b94de517be80bc8c0a800030886ab4cc09bb756a9391b",
+      "static_authorization_removed": false,
+      "native_adapter_implemented": true
+    },
+    {
+      "provider": "PulseStream",
+      "file": "PulseStream.js",
+      "recovered_sha256": "8240c40c52157398d48edb121cedfb67fc04835a1a2f95bd81b409ff9b3a20ed",
+      "reference_sha256": "4790caf84c0d21ebf2926f1d1e5d1b27fa236471321c89e1631d68d979dc2c45",
+      "static_authorization_removed": true,
+      "native_adapter_implemented": false,
+      "authorization_config_field": "pulseApiAuthorization"
+    },
+    {
+      "provider": "PlexStream",
+      "file": "PlexStream.js",
+      "recovered_sha256": "3c1bf0b9f0680c944e126cdcabb615cb038afe98ee319acff880a7752a901c33",
+      "reference_sha256": "d08f7de52e7d4160da548089b4ec51ea0aef83b1dcb391ab333613846d44ffce",
+      "static_authorization_removed": false,
+      "native_adapter_implemented": true
+    },
+    {
+      "provider": "Zetstream",
+      "file": "Zetstream.js",
+      "recovered_sha256": "04ee04f8d61eb1c4f405b3dc815ef6db4761312cb13b052802db2f5903062783",
+      "reference_sha256": "16f3973d115134de06ba4743aa14b28af1a139075a3ee6dda008cfc52cb0b0b0",
+      "static_authorization_removed": false,
+      "native_adapter_implemented": true
+    },
+    {
+      "provider": "FluxStream",
+      "file": "FluxStream.js",
+      "recovered_sha256": "2d35f7c255941f27dcfb8b030cafdf804e79724e0bb3d452761f48024977c2d0",
+      "reference_sha256": "9ba11f38d547dd0d5dfe81636c8dc7fab76a08c7678b3302572dd5335775d0f5",
+      "static_authorization_removed": false,
+      "native_adapter_implemented": false
+    }
+  ]
+}

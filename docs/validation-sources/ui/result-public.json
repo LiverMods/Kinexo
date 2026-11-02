@@ -1,0 +1,51 @@
+{
+  "catalog_before": {
+    "state": 3,
+    "position_ms": 158170,
+    "width": 1280,
+    "height": 720,
+    "frames": 71,
+    "pss_kib": 136590
+  },
+  "external_playback": {
+    "state": 3,
+    "position_ms": 179519,
+    "width": 1920,
+    "height": 1080,
+    "frames": 52,
+    "pss_kib": 140095
+  },
+  "same_exo": true,
+  "external_audio_does_not_claim_catalog_dubbing": true,
+  "nova_ui_playback": {
+    "state": 3,
+    "position_ms": 196527,
+    "width": 1336,
+    "height": 720,
+    "frames": 79,
+    "pss_kib": 155365
+  },
+  "same_exo_after_dash": true,
+  "catalog_returned": {
+    "state": 3,
+    "position_ms": 201334,
+    "width": 1280,
+    "height": 720,
+    "frames": 64,
+    "pss_kib": 161351
+  },
+  "catalog_reopened_normally": true,
+  "saved_catalog_id": 185909106,
+  "saved_position_ms": 201343,
+  "invalid_source_backup_rejected": true,
+  "source_identity_backup_restored": true,
+  "resumed": {
+    "state": 3,
+    "position_ms": 204113,
+    "width": 1280,
+    "height": 720,
+    "frames": 64,
+    "pss_kib": 180783
+  },
+  "passed": true
+}

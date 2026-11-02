@@ -7,6 +7,8 @@ import android.view.*;
 import android.widget.*;
 import android.graphics.drawable.GradientDrawable;
 import com.mgs.carparking.modern.catalog.Movie;
+import com.mgs.carparking.modern.catalog.Catalog;
+import com.mgs.carparking.modern.sources.SourceDiscovery;
 import com.mgs.carparking.modern.core.Legacy;
 import com.mgs.carparking.modern.profiles.Profiles;
 import com.mgs.carparking.modern.ui.Ui;
@@ -24,6 +26,7 @@ public final class PlayerUi {
     private ImageButton play,lock;private TextView title,time,elapsed,speed,quality,feedback;
     private ProgressBar loading;private View originalLoading;private PlaybackTracks tracks;private Object trackedExo;private Panel panel;private boolean pinching;private int aspect,preferredQuality;
     private SeekBar seek;private boolean visible=true,locked,dragging,closed,manualNext;private long lastSave,pendingSeek=-1;private int lastEpisode=-1;private Movie metadata;private Boolean lastPlaying;private ServiceConnection castConnection;private boolean castBound,castReady;
+    private SourceDiscovery.Session external;private int sourceRequest;private boolean sourceBusy;private String sourceContextKey="",sourceMatchingKey="";
     private final Runnable hide=()->show(false);
     private final Runnable tick=new Runnable(){public void run(){if(closed)return;try{update();}catch(RuntimeException e){android.util.Log.w("MoviePlayerUI",e.getClass().getSimpleName());}handler.postDelayed(this,500);}};
     private PlayerUi(Activity a){activity=a;profiles=Profiles.get(a);profile=profiles.activeId();preferredQuality=(int)profiles.decimal("quality_height",0);engine=Legacy.field(a,"f");video=(ViewGroup)Legacy.call(engine,"F");build();}
@@ -34,7 +37,7 @@ public final class PlayerUi {
     }
     public static void pause(Activity a){PlayerUi p=ACTIVE.get(a);if(p!=null){p.save();p.releaseOwnership();p.handler.removeCallbacks(p.tick);try{p.profiles.flush();}catch(RuntimeException e){Ui.toast(a,"Não foi possível concluir a gravação do progresso.");}}}
     public static void resume(Activity a){PlayerUi p=ACTIVE.get(a);if(p!=null&&!p.closed){Legacy.call(Legacy.call(Legacy.type("t.e"),"a"),"f",p.engine);p.handler.removeCallbacks(p.tick);p.handler.post(p.tick);}}
-    public static void destroy(Activity a){PlayerUi p=ACTIVE.remove(a);if(p!=null){p.save();p.releaseOwnership();p.closed=true;p.handler.removeCallbacksAndMessages(null);if(p.panel!=null)p.panel.dismiss();if(p.castBound){a.unbindService(p.castConnection);p.castBound=false;}if(p.overlay.getParent() instanceof ViewGroup)((ViewGroup)p.overlay.getParent()).removeView(p.overlay);}}
+    public static void destroy(Activity a){PlayerUi p=ACTIVE.remove(a);if(p!=null){p.save();p.releaseOwnership();p.closed=true;p.sourceRequest++;p.handler.removeCallbacksAndMessages(null);if(p.panel!=null)p.panel.dismiss();if(p.castBound){a.unbindService(p.castConnection);p.castBound=false;}if(p.overlay.getParent() instanceof ViewGroup)((ViewGroup)p.overlay.getParent()).removeView(p.overlay);}}
     public static void back(Activity a){PlayerUi p=ACTIVE.get(a);if(p!=null&&p.locked){p.show(true);return;}a.finish();}
     public static boolean handlesConfiguration(Activity a){return ACTIVE.containsKey(a);}
     public static boolean allowNext(Activity a){PlayerUi p=ACTIVE.get(a);return p==null||p.manualNext||p.profiles.flag("autoplay_next",true);}
@@ -72,6 +75,7 @@ public final class PlayerUi {
         seek.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener(){public void onStartTrackingTouch(SeekBar v){pendingSeek=-1;dragging=true;handler.removeCallbacks(hide);}public void onProgressChanged(SeekBar v,int p,boolean user){if(user){long duration=((Number)Legacy.call(exo(),"getDuration")).longValue();if(duration>0)elapsed.setText(format(duration*p/10000));}}public void onStopTrackingTouch(SeekBar v){long duration=((Number)Legacy.call(exo(),"getDuration")).longValue();if(duration>0)Legacy.seek(exo(),duration*v.getProgress()/10000);dragging=false;show(true);save();}});
         LinearLayout actions=Ui.row(activity);actions.setGravity(Gravity.CENTER);
         speed=action(actions,"speed","Velocidade (1×)",this::speed);
+        action(actions,"sources","Fontes",this::sources);
         action(actions,"episodes","Episódios",this::chooseEpisode);
         action(actions,"subtitle","Idioma e legendas",this::languages);
         quality=action(actions,"quality","Qualidade",this::quality);
@@ -111,14 +115,15 @@ public final class PlayerUi {
         float rate=profiles.decimal("speed",1);Legacy.call(engine,"a0",rate,1f);speed.setText("Velocidade ("+rate+"×)");lastEpisode=episode();
     }
     private void update(){if(dto()==null||exo()==null)return;Object exo=exo();if(originalLoading!=null)originalLoading.setVisibility(View.GONE);boolean buffering=((Number)Legacy.call(exo,"getPlaybackState")).intValue()==2&&Boolean.TRUE.equals(Legacy.call(exo,"getPlayWhenReady"));loading.setVisibility(buffering?View.VISIBLE:View.GONE);if(buffering)play.setAlpha(.35f);else play.setAlpha(1f);boolean playing=Boolean.TRUE.equals(Legacy.call(exo,"getPlayWhenReady"));if(lastPlaying==null||lastPlaying!=playing){lastPlaying=playing;play.setImageDrawable(new Ui.Symbol(activity,playing?"pause":"play",Ui.TEXT));play.setContentDescription(playing?"Pausar":"Reproduzir");}long position=((Number)Legacy.call(exo,"getCurrentPosition")).longValue(),duration=((Number)Legacy.call(exo,"getDuration")).longValue();if(!dragging&&duration>0){seek.setProgress((int)Math.max(0,Math.min(10000,position*10000/duration)));elapsed.setText(format(position));time.setText(format(duration));seek.setSecondaryProgress((int)Math.max(0,Math.min(10000,((Number)Legacy.call(exo,"getBufferedPosition")).longValue()*10000/duration)));}
-        tracks().applyPreference(activity,profiles);PlaybackTracks.Track selected=tracks().currentVideo();if(selected!=null){String label=tracks().renderedResolution();if(label.isEmpty())label=selected.width>0&&selected.height>0?selected.width+"×"+selected.height:"Qualidade";if(tracks().automatic())label="Auto · "+label;if(!label.contentEquals(quality.getText()))quality.setText(label);}
+        tracks().applyPreference(activity,profiles);PlaybackTracks.Track selected=tracks().currentVideo();if(selected!=null){String label=tracks().renderedResolution();if(label.isEmpty())label=selected.width>0&&selected.height>0?selected.width+"×"+selected.height:"Qualidade";if(tracks().automatic())label="Auto · "+label;if(!label.contentEquals(quality.getText())){quality.setText(label);quality.setCompoundDrawablesWithIntrinsicBounds(null,new Ui.Symbol(activity,tracks().automatic()?"auto":selected.icon(),Ui.TEXT),null,null);}}
         if(pendingSeek>=0&&duration>0&&((Number)Legacy.call(exo,"getPlaybackState")).intValue()==3){long target=Math.min(pendingSeek,duration-1);if(position<target-1000||position>target+15000)Legacy.seek(exo,target);pendingSeek=-1;}
-        Movie m=metadata;int index=episode();String episode=index>=0&&index<episodes().size()?Legacy.text(episodes().get(index),"getTitle"):"";String label=m.title+(episode.isEmpty()?"":" · "+episode);if(!label.contentEquals(title.getText()))title.setText(label);if(index!=lastEpisode){lastEpisode=index;show(true);}if(System.currentTimeMillis()-lastSave>5000){save();lastSave=System.currentTimeMillis();}
+        Movie m=metadata;int index=episode();String episode=index>=0&&index<episodes().size()?Legacy.text(episodes().get(index),"getTitle"):"";String label=m.title+(episode.isEmpty()?"":" · "+episode);if(!label.contentEquals(title.getText()))title.setText(label);if(index!=lastEpisode){lastEpisode=index;external=null;sourceRequest++;sourceBusy=false;show(true);}if(System.currentTimeMillis()-lastSave>5000){save();lastSave=System.currentTimeMillis();}
     }
     private void save(){try{if(dto()==null||exo()==null||metadata==null||pendingSeek>=0)return;Movie m=metadata;m.episode=episode();m.position=Math.max(0,((Number)Legacy.call(exo(),"getCurrentPosition")).longValue());m.duration=((Number)Legacy.call(exo(),"getDuration")).longValue();profiles.saveProgress(profile,m);}catch(RuntimeException e){android.util.Log.w("MovieProgress","Position could not be saved");}}
     private void seekBy(long delta){pendingSeek=-1;long position=((Number)Legacy.call(exo(),"getCurrentPosition")).longValue(),duration=((Number)Legacy.call(exo(),"getDuration")).longValue();if(duration>0)Legacy.seek(exo(),Math.max(0,Math.min(duration-1,position+delta)));show(true);save();}
     private void showCast(){Legacy.call(activity,"g2",1);Object picker=Legacy.field(activity,"N0");if(picker instanceof PopupWindow){((PopupWindow)picker).setFocusable(true);((PopupWindow)picker).update();show(false);}}
     private void cast(){
+        if(external!=null){Ui.toast(activity,"Esta fonte exige cabeçalhos de rede. A transmissão dela ainda não foi validada.");return;}
         if(castReady){showCast();return;}
         if(castBound)return;
         Legacy.set(Legacy.type("com.mgs.carparking.ui.MainActivity"),"mClingPlayControl",Legacy.create("o8.a"));
@@ -133,29 +138,86 @@ public final class PlayerUi {
         if(!castBound)Ui.toast(activity,"Transmissão indisponível neste aparelho.");
     }
     private void showDownloads(){
+        if(external!=null){Ui.toast(activity,"O gerenciador atual baixa as fontes do catálogo. Volte à fonte do catálogo para baixar.");return;}
         Legacy.call(activity,"z1",(Object)null);
         // The legacy selector was anchored below the portrait video; fullscreen needs an on-screen anchor.
         for(String field:new String[]{"s","t","u"}){Object value=Legacy.field(activity,field);if(value instanceof PopupWindow&&((PopupWindow)value).isShowing()){PopupWindow popup=(PopupWindow)value;popup.dismiss();popup.setWidth(Math.min(dp(420),video.getWidth()*2/3));popup.setHeight(-1);popup.setFocusable(true);popup.showAtLocation(video,Gravity.END|Gravity.TOP,0,0);show(false);break;}}
     }
-    private void more(){List<Panel.Choice> rows=new ArrayList<>();rows.add(new Panel.Choice("Baixar episódios","Usar o gerenciador existente","download",false,this::showDownloads));rows.add(new Panel.Choice("Transmitir para TV","Buscar dispositivos na rede local","cast",false,this::cast));rows.add(new Panel.Choice("Downloads","Abrir seus downloads","download",false,()->activity.startActivity(new Intent().setClassName(activity,"com.mgs.carparking.ui.mine.DownloadActivity"))));open("Opções de reprodução","Kinexo",rows);}
+    private void more(){List<Panel.Choice> rows=new ArrayList<>();rows.add(new Panel.Choice("Fontes de reprodução","Catálogo e descoberta de fontes adicionais","sources",false,this::sources));rows.add(new Panel.Choice("Baixar episódios","Usar o gerenciador existente","download",false,this::showDownloads));rows.add(new Panel.Choice("Transmitir para TV","Buscar dispositivos na rede local","cast",false,this::cast));rows.add(new Panel.Choice("Downloads","Abrir seus downloads","download",false,()->activity.startActivity(new Intent().setClassName(activity,"com.mgs.carparking.ui.mine.DownloadActivity"))));open("Opções de reprodução","Kinexo",rows);}
+    private String sourceKey(){return metadata.id+"_"+episode();}
+    private int beginSourceRequest(){sourceContextKey=sourceKey();return ++sourceRequest;}
+    private boolean sourceAlive(int request){return sourceContextKey.equals(sourceKey())&&!closed&&!activity.isFinishing()&&!activity.isDestroyed()&&request==sourceRequest&&profile.equals(profiles.activeId());}
+    private void cancelSourceOnDismiss(Panel p,int request){p.setOnDismissListener(d->{show(true);if(request==sourceRequest)sourceRequest++;});}
+    private void sources(){
+        List<Panel.Choice> rows=new ArrayList<>();
+        rows.add(new Panel.Choice("Fonte do catálogo","Preserva a versão de áudio escolhida no Kinexo","sources",external==null,this::catalogSource));
+        org.json.JSONObject bindings=profiles.active().preferences.optJSONObject("source_identities");org.json.JSONObject saved=bindings==null?null:bindings.optJSONObject(sourceKey());
+        if(saved!=null)try{SourceDiscovery.Target target=SourceDiscovery.Target.parse(saved);rows.add(new Panel.Choice("Fontes adicionais · "+target.title,"Escolher provedor e descobrir as qualidades disponíveis","sources",external!=null,()->chooseSourceProvider(target)));}catch(Exception ignored){}
+        rows.add(new Panel.Choice(saved==null?"Encontrar fontes adicionais":"Alterar identificação da obra","Confirme a obra e, para séries, o episódio. Os IDs dos dois catálogos são diferentes.","search",false,()->searchSources(metadata.title)));
+        Panel p=open("Fontes de reprodução",external==null?"Fonte atual: catálogo Kinexo":"Fonte atual: "+external.provider,rows);
+        p.foot.setText("A versão do catálogo é mantida até você escolher outra fonte. Fontes sem áudio PT-BR confirmado exigem seleção manual. Uma resolução maior não significa dublagem brasileira.");
+    }
+    private void searchSources(String query){
+        sourceMatchingKey=sourceKey();final int request=beginSourceRequest();Panel p=open("Identificar conteúdo","Buscando no TMDB: "+query,Collections.emptyList());p.foot.setText("Carregando correspondências reais…");
+        cancelSourceOnDismiss(p,request);
+        Catalog.async(()->SourceDiscovery.search(activity,query,metadata.kind==2||metadata.kind==4),new Catalog.Callback<List<SourceDiscovery.Target>>(){
+            public void ready(List<SourceDiscovery.Target> found){if(!sourceAlive(request))return;List<Panel.Choice> rows=new ArrayList<>();for(SourceDiscovery.Target t:found)rows.add(new Panel.Choice(t.title,"TMDB · "+t.id,"info",false,()->{if(t.type.equals("tv"))chooseSourceEpisode(t,false);else confirmSource(t);}));Panel choice=open("Confirme a obra","Catálogo Kinexo: "+metadata.title+" · "+metadata.year,rows);if(found.isEmpty())choice.foot.setText("Nenhuma correspondência encontrada. Ajuste o título da busca.");
+                LinearLayout form=Ui.row(activity);EditText text=new EditText(activity);text.setSingleLine(true);text.setText(query);text.setTextColor(Ui.TEXT);text.setHint("Nome do filme ou série");text.setContentDescription("Buscar obra no TMDB");form.addView(text,new LinearLayout.LayoutParams(0,dp(48),1));form.addView(Ui.icon(activity,"search","Buscar outra obra",()->searchSources(text.getText().toString())),Ui.lp(dp(48),dp(48)));choice.header(form);
+            }
+            public void failed(String e){if(sourceAlive(request))sourceFailure("Não foi possível consultar os metadados. Confira a conexão e a credencial TMDB configurada na build.");}
+        });
+    }
+    private void chooseSourceEpisode(SourceDiscovery.Target target,boolean episodes){
+        int request=beginSourceRequest();Panel p=open(episodes?"Confirme o episódio":"Confirme a temporada",target.title,Collections.emptyList());p.foot.setText("Carregando…");
+        cancelSourceOnDismiss(p,request);
+        Catalog.async(()->episodes?SourceDiscovery.episodes(activity,target):SourceDiscovery.seasons(activity,target),new Catalog.Callback<List<SourceDiscovery.Target>>(){
+            public void ready(List<SourceDiscovery.Target> found){if(!sourceAlive(request))return;List<Panel.Choice> rows=new ArrayList<>();for(SourceDiscovery.Target t:found)rows.add(new Panel.Choice(t.title,"Identificação explícita no catálogo de fontes","episodes",false,()->{if(episodes)confirmSource(t);else chooseSourceEpisode(t,true);}));open(episodes?"Confirme o episódio":"Confirme a temporada",metadata.title,rows);}
+            public void failed(String e){if(sourceAlive(request))sourceFailure(e);}
+        });
+    }
+    private void confirmSource(SourceDiscovery.Target target){if(!sourceMatchingKey.equals(sourceKey())||!profile.equals(profiles.activeId())){Ui.toast(activity,"O conteúdo ou perfil mudou. Identifique a fonte novamente.");return;}org.json.JSONObject bindings=profiles.active().preferences.optJSONObject("source_identities");if(bindings==null)bindings=new org.json.JSONObject();try{bindings.remove(sourceKey());bindings.put(sourceKey(),target.json());while(bindings.length()>64)bindings.remove(bindings.keys().next());profiles.preference("source_identities",bindings);chooseSourceProvider(target);}catch(org.json.JSONException e){sourceFailure("Não foi possível salvar a identificação da obra.");}}
+    private void chooseSourceProvider(SourceDiscovery.Target target){List<Panel.Choice> rows=new ArrayList<>();for(String provider:SourceDiscovery.providers(activity))rows.add(new Panel.Choice(provider,"Consultar disponibilidade real · o áudio será informado quando a fonte permitir","sources",external!=null&&provider.equals(external.provider),()->resolveSource(target,provider)));Panel p=open("Escolha uma fonte",target.title,rows);p.foot.setText("Não há troca automática da dublagem brasileira por uma fonte estrangeira. A resolução e o áudio dependem do provedor e desta obra.");}
+    private void sourceFailure(String message){sourceBusy=false;List<Panel.Choice> rows=new ArrayList<>();rows.add(new Panel.Choice("Voltar às fontes","A reprodução atual foi preservada","back",false,this::sources));Panel p=open("Fonte indisponível",message,rows);p.foot.setText("Tente outro provedor ou continue na fonte do catálogo.");}
+    private void resolveSource(SourceDiscovery.Target target,String provider){
+        if(sourceBusy){Ui.toast(activity,"A consulta anterior ainda está terminando. Tente novamente em instantes.");return;}sourceBusy=true;int request=beginSourceRequest();Panel p=open("Descobrindo fontes",target.title,Collections.emptyList());p.foot.setText("Consultando "+provider+". O vídeo atual continua disponível.");
+        cancelSourceOnDismiss(p,request);
+        Catalog.async(()->SourceDiscovery.resolve(activity,target,provider),new Catalog.Callback<SourceDiscovery.Session>(){
+            public void ready(SourceDiscovery.Session session){if(!sourceAlive(request)){sourceBusy=false;return;}sourceBusy=false;String contextKey=sourceKey();List<Panel.Choice> rows=new ArrayList<>();rows.add(new Panel.Choice("Reproduzir · "+session.provider,session.audioSummary()+". A escolha desta fonte é manual.","play",false,()->{if(!closed&&contextKey.equals(sourceKey())&&profile.equals(profiles.activeId()))switchSource(session);else Ui.toast(activity,"O conteúdo ou perfil mudou. Escolha a fonte novamente.");}));rows.add(new Panel.Choice("Manter fonte atual","Preservar áudio e reprodução atuais","back",true,PlayerUi.this::sources));Panel ready=open("Fonte encontrada",target.title,rows);ready.foot.setText("O modo Automático usa as qualidades disponíveis e compatíveis com seu aparelho. A troca mantém a posição; edições diferentes podem ter cortes distintos.");}
+            public void failed(String e){if(sourceAlive(request))sourceFailure(e);else sourceBusy=false;}
+        });
+    }
+    @SuppressWarnings("unchecked") private void switchSource(SourceDiscovery.Session session){
+        try{long position=Legacy.number(exo(),"getCurrentPosition");boolean playing=Boolean.TRUE.equals(Legacy.call(exo(),"getPlayWhenReady"));
+            Object http=Legacy.construct("com.google.android.exoplayer2.upstream.c",new Class<?>[]{String.class,Legacy.type("c5.q"),int.class,int.class,boolean.class},"Kinexo",null,12000,16000,false);
+            Object properties=Legacy.field(http,"a");((Map<String,String>)Legacy.field(properties,"a")).putAll(session.headers);
+            String factoryName=session.mediaType.equals("dash")?"com.google.android.exoplayer2.source.dash.DashMediaSource$Factory":"com.google.android.exoplayer2.source.hls.HlsMediaSource$Factory";Object factory=Legacy.construct(factoryName,new Class<?>[]{Legacy.type("c5.f$a")},http);
+            Object source=Legacy.call(factory,"a",android.net.Uri.parse(session.url));
+            new PlaybackTracks(exo()).preferBrazilianAudio();
+            save();Legacy.call(exo(),"Q",source,true,true);Legacy.call(exo(),"setPlayWhenReady",playing);external=session;pendingSeek=position;tracks=null;show(true);
+        }catch(RuntimeException e){sourceFailure("Não foi possível preparar esta fonte no player.");}
+    }
+    private void catalogSource(){if(external==null)return;save();profiles.flush();sourceRequest++;sourceBusy=false;
+        // Re-enter the normal authorized flow; reusing the old prepare state failed after DASH.
+        Legacy.call(activity,"c2",Integer.valueOf(Legacy.integer(dto(),"getAudio_type")));
+    }
     private void speed(){String[] names={"0,75×","1×","1,25×","1,5×","2×"};float[] values={.75f,1,1.25f,1.5f,2};List<Panel.Choice> rows=new ArrayList<>();for(int i=0;i<values.length;i++){final float value=values[i];rows.add(new Panel.Choice(names[i],value==1?"Velocidade normal":"","speed",profiles.decimal("speed",1)==value,()->{Legacy.call(engine,"a0",value,1f);profiles.preference("speed",value);speed.setText("Velocidade ("+value+"×)");}));}open("Velocidade de reprodução","Escolha o ritmo mais confortável para você.",rows);}
     private void quality(){
         try{List<PlaybackTracks.Track> available=new ArrayList<>(tracks().tracks(2));int preferred=preferredQuality;List<Panel.Choice> rows=new ArrayList<>();
-            rows.add(new Panel.Choice("Automático",available.size()>1?"Adapta quando a fonte permite, considerando conexão, buffer e tela":"Mantém a única faixa compatível recebida","quality",tracks().automatic(),()->{preferredQuality=0;profiles.preference("quality_height",0);tracks().preferred(0);tracks().applyPreference(activity,profiles);}));
+            rows.add(new Panel.Choice("Automático",available.size()>1?"Adapta quando a fonte permite, considerando conexão, buffer e tela":"Mantém a única faixa compatível recebida","auto",tracks().automatic(),()->{preferredQuality=0;profiles.preference("quality_height",0);tracks().preferred(0);tracks().applyPreference(activity,profiles);}));
             available.sort((a,b)->Integer.compare(b.height,a.height));boolean found=preferred==0;
-            for(PlaybackTracks.Track t:available){boolean chosen=preferred==t.height&&tracks().selected(t);if(preferred==t.height)found=true;rows.add(new Panel.Choice(t.title(),t.detail(),"quality",chosen,()->{preferredQuality=Math.max(0,t.height);profiles.preference("quality_height",Math.max(0,t.height));tracks().preferred(Math.max(0,t.height));tracks().video(activity,t);}));}
+            for(PlaybackTracks.Track t:available){boolean chosen=preferred==t.height&&tracks().selected(t);if(preferred==t.height)found=true;rows.add(new Panel.Choice(t.title(),t.encoding(),t.icon(),chosen,()->{preferredQuality=Math.max(0,t.height);profiles.preference("quality_height",Math.max(0,t.height));tracks().preferred(Math.max(0,t.height));tracks().video(activity,t);}));}
             PlaybackTracks.Track active=tracks().currentVideo();Panel p=open("Qualidade do vídeo","Dimensões reais em pixels. As categorias HD/Full HD/UHD são aproximações pela altura.",rows);
             p.foot.setText((active==null?"Aguardando as faixas do vídeo…":"Faixa selecionada: "+active.detail()+"\nDecodificando: "+tracks().rendered())+"\n"+tracks().sourceSummary()+(!found?"\nPreferência "+preferred+"p indisponível nesta fonte; usando Automático.":""));
         }catch(RuntimeException e){Ui.toast(activity,"As faixas ainda não estão disponíveis. Tente após o vídeo carregar.");}
     }
     private void languages(){List<Panel.Choice> rows=new ArrayList<>();try{
-        for(Object option:Legacy.list(dto(),"getAudio_type_option")){final int type=Legacy.integer(option,"getType");String name=Legacy.text(option,"getType_name");if(name.isEmpty())continue;boolean selected=type==Legacy.integer(dto(),"getAudio_type");rows.add(new Panel.Choice("Versão · "+name,"Fonte do catálogo; a resolução pode variar entre versões","subtitle",selected,()->{if(!selected){save();profiles.flush();Legacy.call(activity,"c2",Integer.valueOf(type));}}));}
-        List<PlaybackTracks.Track> audio=tracks().tracks(1),subtitles=tracks().tracks(3);for(PlaybackTracks.Track t:audio)rows.add(new Panel.Choice("Áudio · "+language(t.language),t.codec,"subtitle",tracks().selected(t),()->tracks().select(t)));
+        for(Object option:Legacy.list(dto(),"getAudio_type_option")){final int type=Legacy.integer(option,"getType");String name=Legacy.text(option,"getType_name");if(name.isEmpty())continue;boolean selected=external==null&&type==Legacy.integer(dto(),"getAudio_type");rows.add(new Panel.Choice("Versão · "+name,external==null?"Fonte do catálogo; a resolução pode variar entre versões":"Voltar a esta versão do catálogo; a resolução pode ser diferente","audio",selected,()->{if(!selected){if(external!=null&&type==Legacy.integer(dto(),"getAudio_type")){catalogSource();return;}save();profiles.flush();external=null;sourceRequest++;sourceBusy=false;Legacy.call(activity,"c2",Integer.valueOf(type));}}));}
+        List<PlaybackTracks.Track> audio=tracks().tracks(1),subtitles=tracks().tracks(3);for(PlaybackTracks.Track t:audio)rows.add(new Panel.Choice("Áudio · "+language(t.language),t.codec,"audio",tracks().selected(t),()->tracks().select(t)));
         boolean selected=false;for(PlaybackTracks.Track t:subtitles)if(tracks().selected(t))selected=true;
         rows.add(new Panel.Choice("Legendas desativadas","","subtitle",!selected,()->tracks().subtitlesOff()));for(PlaybackTracks.Track t:subtitles)rows.add(new Panel.Choice("Legendas · "+language(t.language),t.codec,"subtitle",tracks().selected(t),()->tracks().select(t)));
-        Panel p=open("Idioma e legendas","Áudio e legendas disponíveis nesta reprodução.",rows);if(subtitles.isEmpty())p.foot.setText("Esta fonte não oferece faixas de legendas ao player.");
+        Panel p=open("Idioma e legendas",external==null?"Áudio e legendas disponíveis nesta reprodução.":"Fonte atual: "+external.provider+". As versões do catálogo são alternativas, não o áudio desta fonte.",rows);if(subtitles.isEmpty())p.foot.setText("Nenhuma faixa de legenda foi recebida pelo player nesta fonte.");
         }catch(RuntimeException e){Ui.toast(activity,"Aguarde o carregamento das faixas de áudio e legendas.");}}
-    private String language(String tag){if(tag==null||tag.isEmpty()||tag.equals("und"))return "Idioma não informado";Locale l=Locale.forLanguageTag(tag);String name=l.getDisplayName(new Locale("pt","BR"));return name.isEmpty()?tag:name;}
+    private String language(String tag){if(tag==null||!tag.matches("[A-Za-z]{2,3}([-_][A-Za-z0-9]{2,8})*")||tag.equals("und"))return "Idioma não informado";Locale l=Locale.forLanguageTag(tag.replace('_','-'));String name=l.getDisplayName(new Locale("pt","BR"));return name.isEmpty()?"Idioma não informado":name;}
     private void setAspect(int mode){aspect=mode;Legacy.call(video,"setResizeMode",mode);profiles.preference("aspect",mode);notice(mode==0?"Ajustar à tela":mode==4?"Preencher sem distorcer":"Esticar à tela");}
     private void fit(){List<Panel.Choice> rows=new ArrayList<>();rows.add(new Panel.Choice("Ajustar à tela","Preserva a imagem inteira e a proporção original","fit",aspect==0,()->setAspect(0)));rows.add(new Panel.Choice("Preencher","Preenche a tela com corte nas bordas","fit",aspect==4,()->setAspect(4)));rows.add(new Panel.Choice("Esticar","Ocupa a tela alterando a proporção","fit",aspect==3,()->setAspect(3)));open("Ajuste de imagem","Use também dois dedos sobre o vídeo para ajustar o enquadramento.",rows);}
     private void chooseEpisode(){List<?> list=episodes();List<Panel.Choice> rows=new ArrayList<>();for(int i=0;i<list.size();i++){final int index=i;String label=Legacy.text(list.get(i),"getTitle");rows.add(new Panel.Choice((i+1)+" · "+label,i==episode()?"Reproduzindo agora":"","episodes",i==episode(),()->{save();pendingSeek=-1;Legacy.call(activity,"q1",Integer.valueOf(index));show(true);}));}

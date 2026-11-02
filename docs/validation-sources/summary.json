@@ -1,0 +1,23 @@
+{
+  "final_apk_sha256": "2cc84f75aabe81f75f9d38c000f61eb219fcfdb3e6e30cf43f77b2e47e02c218",
+  "apk_bytes": 24705978,
+  "baseline_apk_bytes": 24689514,
+  "apk_bytes_added": 16464,
+  "checkpoint": "checkpoint/kinexo-before-source-integration-20261101",
+  "native_adapters_verified": 6,
+  "native_proof_apk_sha256": "a97692618a25619b8741863624f14e0801b9c0dc112bea5712c963fde642e710",
+  "native_proof_note": "The final builds only changed catalog return/UI glyphs; SourceDiscovery and PlaybackTracks remained unchanged. Final UI exercised HLS and DASH again.",
+  "ui_proof_apk_sha256": "2cc84f75aabe81f75f9d38c000f61eb219fcfdb3e6e30cf43f77b2e47e02c218",
+  "series_proof_apk_sha256": "ae4f4fc8d50b8386ccd88054e1bb3feddbf09ef29fbda82805d951552e1b071d",
+  "same_source_client_sha256": "0f2104d302252114f308f5f786624e6566eb7bbe0cf9387d5b4d13b09bfe67ef",
+  "same_playback_tracks_sha256": "65a704bea8192c5d4b006307e413e77205b8d953eb1e475f487265171a549952",
+  "identity_binding_sha256": "22a3df138b7f7b6f96ff063310f628abe988a172975d843065915a51e6bf06cb",
+  "original_hdo_apk_sha256": "70504018fb90d82e621f47bbb5b0a6b68e19674ce9c89aa24f496cf6c9981c39",
+  "pt_br_confirmed_in_extra_sources": false,
+  "source_identity_backup_restored": true,
+  "invalid_backup_rejected": true,
+  "catalog_return_and_resume_passed": true,
+  "new_native_libraries": [],
+  "new_permissions": [],
+  "all_privacy_coverage_claimed": false
+}

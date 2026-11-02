@@ -1,0 +1,192 @@
+{
+  "uid": 10247,
+  "internet_permission": 0,
+  "dns": {
+    "api.themoviedb.org": 12,
+    "api.wecollege.net": 2,
+    "moon.goldenkite.top": 4
+  },
+  "tv_episode_metadata_confirmed": true,
+  "provider": "HuntStream",
+  "source_media_type": "hls",
+  "source_audio_languages": [],
+  "native_resolver": true,
+  "metadata_identity_confirmed": true,
+  "resolve_ms": 3946,
+  "preferred_audio_language": "pt-br",
+  "samples": [
+    {
+      "state": 2,
+      "position_ms": 0,
+      "decoded_width": 0,
+      "decoded_height": 0,
+      "rendered_frames": 0
+    },
+    {
+      "state": 2,
+      "position_ms": 0,
+      "decoded_width": 0,
+      "decoded_height": 0,
+      "rendered_frames": 0
+    },
+    {
+      "state": 3,
+      "position_ms": 760,
+      "decoded_width": 1280,
+      "decoded_height": 720,
+      "width": 1280,
+      "height": 720,
+      "mime": "video/avc",
+      "rendered_frames": 20
+    },
+    {
+      "state": 3,
+      "position_ms": 3275,
+      "decoded_width": 1280,
+      "decoded_height": 720,
+      "width": 1280,
+      "height": 720,
+      "mime": "video/avc",
+      "rendered_frames": 81
+    },
+    {
+      "state": 3,
+      "position_ms": 5774,
+      "decoded_width": 1280,
+      "decoded_height": 720,
+      "width": 1280,
+      "height": 720,
+      "mime": "video/avc",
+      "rendered_frames": 141
+    },
+    {
+      "state": 3,
+      "position_ms": 8265,
+      "decoded_width": 1280,
+      "decoded_height": 720,
+      "width": 1280,
+      "height": 720,
+      "mime": "video/avc",
+      "rendered_frames": 200
+    },
+    {
+      "state": 3,
+      "position_ms": 10805,
+      "decoded_width": 1280,
+      "decoded_height": 720,
+      "width": 1280,
+      "height": 720,
+      "mime": "video/avc",
+      "rendered_frames": 261
+    },
+    {
+      "state": 3,
+      "position_ms": 13261,
+      "decoded_width": 1280,
+      "decoded_height": 720,
+      "width": 1280,
+      "height": 720,
+      "mime": "video/avc",
+      "rendered_frames": 320
+    },
+    {
+      "state": 3,
+      "position_ms": 15821,
+      "decoded_width": 1280,
+      "decoded_height": 720,
+      "width": 1280,
+      "height": 720,
+      "mime": "video/avc",
+      "rendered_frames": 381
+    },
+    {
+      "state": 3,
+      "position_ms": 18124,
+      "decoded_width": 3840,
+      "decoded_height": 2160,
+      "width": 3840,
+      "height": 2160,
+      "mime": "video/avc",
+      "rendered_frames": 437
+    },
+    {
+      "state": 3,
+      "position_ms": 20624,
+      "decoded_width": 3840,
+      "decoded_height": 2160,
+      "width": 3840,
+      "height": 2160,
+      "mime": "video/avc",
+      "rendered_frames": 457
+    },
+    {
+      "state": 3,
+      "position_ms": 23104,
+      "decoded_width": 3840,
+      "decoded_height": 2160,
+      "width": 3840,
+      "height": 2160,
+      "mime": "video/avc",
+      "rendered_frames": 469
+    }
+  ],
+  "audio_tracks": [
+    {
+      "mime": "audio/mp4a-latm",
+      "language": "```",
+      "channels": 2
+    }
+  ],
+  "fullhd_rendered": true,
+  "installed_target_apk_unchanged": true,
+  "resolver_independent": true,
+  "mapped_video_tracks": [
+    {
+      "width": 3840,
+      "height": 2160,
+      "support": 4,
+      "codec": "avc1.640033"
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "support": 4,
+      "codec": "avc1.640028"
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "support": 4,
+      "codec": "avc1.4d401f"
+    },
+    {
+      "width": 852,
+      "height": 480,
+      "support": 4,
+      "codec": "avc1.4d401e"
+    }
+  ],
+  "pss_kib": 107789,
+  "automatic_initial_fullhd": true,
+  "manual_720": {
+    "height": 720,
+    "decoded_width": 1280,
+    "decoded_height": 720,
+    "position_ms": 26008,
+    "frames": 69,
+    "position_before_ms": 23104,
+    "position_preserved": true,
+    "pss_kib": 109522
+  },
+  "manual_1080": {
+    "height": 1080,
+    "decoded_width": 1920,
+    "decoded_height": 1080,
+    "position_ms": 28083,
+    "frames": 50,
+    "position_before_ms": 26008,
+    "position_preserved": true,
+    "pss_kib": 111662
+  },
+  "automatic_restored": true
+}

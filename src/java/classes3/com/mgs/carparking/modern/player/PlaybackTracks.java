@@ -14,7 +14,9 @@ public final class PlaybackTracks {
         public final int renderer,group,index,width,height,bitrate,type,support;public final Object groups,format;public final String language,codec;
         Track(int r,int g,int i,int t,Object groups,Object f,int support){this.support=support;renderer=r;group=g;index=i;type=t;this.groups=groups;format=f;width=number(f,"n");height=number(f,"o");bitrate=number(f,"e");language=string(f,"A");codec=string(f,"f");}
         public String resolution(){return width>0&&height>0?width+" × "+height:"Resolução não informada";}
-        public String detail(){return resolution()+(bitrate>0?String.format(Locale.ROOT," · %.2f Mbps",bitrate/1000000f):" · bitrate não informado")+(codec.isEmpty()?"":" · "+codec);}
+        public String encoding(){return (bitrate>0?String.format(Locale.ROOT,"%.2f Mbps",bitrate/1000000f):"Bitrate não informado")+(codec.isEmpty()?"":" · "+codec);}
+        public String detail(){return resolution()+" · "+encoding();}
+        public String icon(){int h=Math.min(width,height);return h>=2160?"uhd":h>=1080?"fhd":h>=720?"quality":"sd";}
         public String title(){return resolution()+" · "+label();}
         public String label(){int h=Math.min(width,height);return h>=2160?"4K UHD":h>=1440?"QHD / 2K":h>=1080?"Full HD":h>=720?"HD":h>0?"SD":"Vídeo";}
     }
@@ -36,6 +38,7 @@ public final class PlaybackTracks {
         }cachedTracks.put(cacheKey,out);return out;
     }
     private Object builder(){Object params=Legacy.call(selector,"v");return Legacy.construct("com.google.android.exoplayer2.trackselection.DefaultTrackSelector$d",new Class<?>[]{params.getClass()},params);}
+    public void preferBrazilianAudio(){Object b=builder();Legacy.call(b,"b","pt-br");Legacy.call(selector,"L",b);}
     @SuppressWarnings("unchecked") private void override(Object b,int renderer,Object groups,Track track,boolean disabled){
         SparseArray<Object> overrides=(SparseArray<Object>)Legacy.field(b,"z");overrides.remove(renderer);
         ((SparseBooleanArray)Legacy.field(b,"A")).put(renderer,disabled);

@@ -1,7 +1,7 @@
 {
   "format": "movie-source-manifest-v1",
   "self_excluded": true,
-  "file_count": 23321,
+  "file_count": 23360,
   "files": [
     {
       "path": ".gitattributes",
@@ -15,13 +15,13 @@
     },
     {
       "path": "Build.ps1",
-      "bytes": 10952,
-      "sha256": "d86d414723f87eba54bef894f21f1e11b62ecc860bcca9e5f7380dabe837efcb"
+      "bytes": 12560,
+      "sha256": "e024e2a60aa2daf668477351cd681f1cecb4cde274ae9d76340291b913cec4f0"
     },
     {
       "path": "README.md",
-      "bytes": 8369,
-      "sha256": "09ac7e8a387f8763f2bbd31bfca4c67575a1a86388461a5af17759faaea66850"
+      "bytes": 9023,
+      "sha256": "1e4788183958a91c06352bcc476c749e6d9c1f230bad2fe164025ecb6f34cf5c"
     },
     {
       "path": "design/kinexo/README.md",
@@ -64,14 +64,19 @@
       "sha256": "af3dfc14f249d56c68c9d34ff2f60b26361cc8ab469051d775d3cde3f7872cda"
     },
     {
+      "path": "docs/FONTES-NATIVAS.md",
+      "bytes": 10464,
+      "sha256": "eea12f0f6fd063079206b1943a4d25c43d0ab8fecff9ec4eaab2c6ed4af5e790"
+    },
+    {
       "path": "docs/IDENTIDADE-QUALIDADE.md",
       "bytes": 8950,
       "sha256": "4e51bc79e28a191c00f0657e0ff6fe83b37e56701c9fd56c023076a1cea566c3"
     },
     {
       "path": "docs/INVENTORY.json",
-      "bytes": 1862,
-      "sha256": "16d343deb0619ec149a3ef004127c46d33a03fd4559c74f8cec337d1c7beb9e6"
+      "bytes": 1976,
+      "sha256": "e2d3996465332732316b4ec076888842c41aa2df09d50bc79ba9d9f77bd0d82b"
     },
     {
       "path": "docs/JAVA-CLASSES.csv",
@@ -762,6 +767,111 @@
       "path": "docs/validation-privado/settings.png",
       "bytes": 62878,
       "sha256": "288c2daa1661caa2d05a58d94146a442fcb1a09f665189cf51b27cc2773d9ee0"
+    },
+    {
+      "path": "docs/validation-sources/audit-evolution.json",
+      "bytes": 352,
+      "sha256": "6b133da19658c8d9441a2d7fabf650a4ef47dd96cfd7ca0a0e85c013ab67fb9e"
+    },
+    {
+      "path": "docs/validation-sources/audit-identity.json",
+      "bytes": 2509,
+      "sha256": "4415733fc1a67e70ab8e3404b1ee04781b359b483b5e5ca26bd30242dbf0034b"
+    },
+    {
+      "path": "docs/validation-sources/audit-privacy.json",
+      "bytes": 2023,
+      "sha256": "fa220b547f8656a9a804c6c5eec94eb8178ca51cb70bef524fa104f4d0d9a96c"
+    },
+    {
+      "path": "docs/validation-sources/build.json",
+      "bytes": 434,
+      "sha256": "ac9e37edab9b05c05943abc1817dd72bf625896989a3fe6df48de5aad53b6689"
+    },
+    {
+      "path": "docs/validation-sources/native-summary.json",
+      "bytes": 2866,
+      "sha256": "50b30f11e15e7f3a99af52c6a20021396cfa26ede0aabfda39af63be6626d5fa"
+    },
+    {
+      "path": "docs/validation-sources/native/HuntStream.json",
+      "bytes": 5331,
+      "sha256": "13b0a5a9b006c65b68d4d536f816a5d51bcd302442f4da6ba023ae787fd9f622"
+    },
+    {
+      "path": "docs/validation-sources/native/LumaStream.json",
+      "bytes": 3122,
+      "sha256": "e737d1c691d6aa7103c15f5fd7bde8c6c98b141bd6090a501a8a962345c22116"
+    },
+    {
+      "path": "docs/validation-sources/native/NovaStream.json",
+      "bytes": 1944,
+      "sha256": "54592b3919668270f841012d2ee79a8bedc5915613edcef866304caeec1868b9"
+    },
+    {
+      "path": "docs/validation-sources/native/PlexStream.json",
+      "bytes": 3241,
+      "sha256": "e09244d47f42351dfbdb64ef57c2e93978be5300fde138c5c65863fba2ad4518"
+    },
+    {
+      "path": "docs/validation-sources/native/VibeStream.json",
+      "bytes": 5483,
+      "sha256": "18f98ca7b461e89bccbbef95fd664706c521ecffd7f6e1bb3140e7274c899794"
+    },
+    {
+      "path": "docs/validation-sources/native/Zetstream.json",
+      "bytes": 3240,
+      "sha256": "938600328410888473e5eff141e7ad5e5cb8dbdd363a41be35a518e177700a7e"
+    },
+    {
+      "path": "docs/validation-sources/series.json",
+      "bytes": 4244,
+      "sha256": "09dac0fb7915710167a97829e999f68e1b88d91352fdc27b0199e1b6387fda92"
+    },
+    {
+      "path": "docs/validation-sources/summary.json",
+      "bytes": 1428,
+      "sha256": "ac2ba1e471a1e3d437e7e4bd6e3cc1255f2409d90c1ec7d9bed7f6f63a5974db"
+    },
+    {
+      "path": "docs/validation-sources/ui/audio-dash.png",
+      "bytes": 1232391,
+      "sha256": "1d2fbd5ab6104a6efacd83c922fa7718b86313f7688b4dde75d76dcc5143aae8"
+    },
+    {
+      "path": "docs/validation-sources/ui/audio-legendas.png",
+      "bytes": 978835,
+      "sha256": "54725161749b0cef3c71c3ad4fc40718a7e809b57d9da0cb29bd9f260602512f"
+    },
+    {
+      "path": "docs/validation-sources/ui/fonte-encontrada.png",
+      "bytes": 1011750,
+      "sha256": "d93eaef983d0c2be2ebe3646da3c5837e1caed45b71eb9209980808e51d445d2"
+    },
+    {
+      "path": "docs/validation-sources/ui/fontes-catalogo.png",
+      "bytes": 807457,
+      "sha256": "7cb4c3a5f243d7747444af95c6f98fb123ea13ed5bcc9908fabb14612b82be1e"
+    },
+    {
+      "path": "docs/validation-sources/ui/identificar-obra.png",
+      "bytes": 1168536,
+      "sha256": "2675587249aceb0416132620c0817df95afc7569e7ceabcbffe96b7655d09553"
+    },
+    {
+      "path": "docs/validation-sources/ui/provedores.png",
+      "bytes": 958664,
+      "sha256": "a9baa5f5c2dc7134ff7fc4e6ccb80bfb4dc21eba04839975c8d234b562eee294"
+    },
+    {
+      "path": "docs/validation-sources/ui/qualidade.png",
+      "bytes": 1083068,
+      "sha256": "ab58a78f8569ea5f8635437e768fcb0535ff0fc8402debb1adf25dc4cd6daa1e"
+    },
+    {
+      "path": "docs/validation-sources/ui/result-public.json",
+      "bytes": 1055,
+      "sha256": "7af6f4b2941e350bca94622672c2fea576e62a319adf49fedb5c4a3a45ec16af"
     },
     {
       "path": "docs/validation/apk-audit.json",
@@ -2327,6 +2437,61 @@
       "path": "reference/java/com/mgs/carparking/widgets/viewpager/SuperViewPager.java",
       "bytes": 1107,
       "sha256": "4216da935558e3ef4d30255ebf56d703f3e712f2f94878c666a469b729bfe800"
+    },
+    {
+      "path": "reference/source-discovery/FluxStream.js",
+      "bytes": 3902,
+      "sha256": "9ba11f38d547dd0d5dfe81636c8dc7fab76a08c7678b3302572dd5335775d0f5"
+    },
+    {
+      "path": "reference/source-discovery/HuntStream.js",
+      "bytes": 4240,
+      "sha256": "4d452ea7208678b6563b94de517be80bc8c0a800030886ab4cc09bb756a9391b"
+    },
+    {
+      "path": "reference/source-discovery/LumaStream.js",
+      "bytes": 2707,
+      "sha256": "dac450bba2c6719e2f8fb6b5510d4521d981694e9f8fe523af16371ee9d0a525"
+    },
+    {
+      "path": "reference/source-discovery/NexoStream.js",
+      "bytes": 5569,
+      "sha256": "7424409a17cad5afbce5ce044951dba2c87af976016dfc84c1fa71a9ed6ceaac"
+    },
+    {
+      "path": "reference/source-discovery/NovaStream.js",
+      "bytes": 392,
+      "sha256": "1d457bc9e1a4fcf490acaff903de3ac8d9a61ca786b657f518ad1c0e4c00eaa8"
+    },
+    {
+      "path": "reference/source-discovery/PROVENANCE.json",
+      "bytes": 3602,
+      "sha256": "e85e41f8546b3fa9f072bdcf197d031e4267804fc32e40068599829862c5166b"
+    },
+    {
+      "path": "reference/source-discovery/PlexStream.js",
+      "bytes": 4240,
+      "sha256": "d08f7de52e7d4160da548089b4ec51ea0aef83b1dcb391ab333613846d44ffce"
+    },
+    {
+      "path": "reference/source-discovery/PulseStream.js",
+      "bytes": 409,
+      "sha256": "4790caf84c0d21ebf2926f1d1e5d1b27fa236471321c89e1631d68d979dc2c45"
+    },
+    {
+      "path": "reference/source-discovery/README.md",
+      "bytes": 1540,
+      "sha256": "7bf4a4d08238291f11abad2f00a2b107042758841c2a1238f385f1e221e21ed1"
+    },
+    {
+      "path": "reference/source-discovery/VibeStream.js",
+      "bytes": 4333,
+      "sha256": "5a9268bf9021a63750ec2dbfbb0a1bce8f5fa2e1e0749b36a0ef8b3681329df3"
+    },
+    {
+      "path": "reference/source-discovery/Zetstream.js",
+      "bytes": 3902,
+      "sha256": "16f3973d115134de06ba4743aa14b28af1a139075a3ee6dda008cfc52cb0b0b0"
     },
     {
       "path": "reference/supporting-java/a9/a.java",
@@ -116380,18 +116545,18 @@
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/player/PlaybackTracks.java",
-      "bytes": 6315,
-      "sha256": "62eda07339d9bdb66bb0280895e47964ea7facf3befeca0e1825fac37259ffb2"
+      "bytes": 6599,
+      "sha256": "65a704bea8192c5d4b006307e413e77205b8d953eb1e475f487265171a549952"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/player/PlayerUi.java",
-      "bytes": 29906,
-      "sha256": "9e2a9204cd87647f0b7ec8cf102cafc5fd72697fc54424dd0e0051226d15b028"
+      "bytes": 40702,
+      "sha256": "699c8006a9b0226c5707267af3a415c97cb2ae3266a2bdcfc4d72c4a7d2883b2"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/profiles/Backup.java",
-      "bytes": 8796,
-      "sha256": "c61e235c1a5ff401242333fea7ecaaa110ce2698256fa0e560d35e9ba5265141"
+      "bytes": 8988,
+      "sha256": "537990cdf20b7a16a4a892dfc6119d186783208491d4af4f71175af6e1a88337"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/profiles/Profiles.java",
@@ -116407,6 +116572,11 @@
       "path": "src/java/classes3/com/mgs/carparking/modern/settings/SettingsActivity.java",
       "bytes": 5634,
       "sha256": "124f8d51474ecd91c7fb0c7bdec636377332b2d99397124db11000ae2c8d1a98"
+    },
+    {
+      "path": "src/java/classes3/com/mgs/carparking/modern/sources/SourceDiscovery.java",
+      "bytes": 19663,
+      "sha256": "0f2104d302252114f308f5f786624e6566eb7bbe0cf9387d5b4d13b09bfe67ef"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/ui/Images.java",
@@ -116435,8 +116605,8 @@
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/ui/Ui.java",
-      "bytes": 10637,
-      "sha256": "e87ab57ff7b13db1240813268f83c4681ee68941b7f841c680d5a0f7ed68f13b"
+      "bytes": 11318,
+      "sha256": "4f05398ddea65a83e1ebe549ba4f4d1c8998219686fa36cbfd1e9bb623837470"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/recovery/PlaybackErrors.java",
@@ -116457,6 +116627,11 @@
       "path": "tests/MovieModelCheck.java",
       "bytes": 1218,
       "sha256": "f83301495a548a30b78ea6d093bb50e83621b37340fef438ecc0bd2fe1232c5d"
+    },
+    {
+      "path": "tests/SourceContractCheck.java",
+      "bytes": 1160,
+      "sha256": "c18c750ef5f9d83a760161585a7404edf8bdf82ff1b9e15b7e786a78c724d1f3"
     },
     {
       "path": "tests/audit_apk.py",
@@ -116527,6 +116702,26 @@
       "path": "tests/runtime/runtime.py",
       "bytes": 8713,
       "sha256": "d37487c0bd917070b15c067481001332be82f6acf3bb7d8eb702ad1193433598"
+    },
+    {
+      "path": "tests/runtime/sources/AndroidManifest.xml",
+      "bytes": 570,
+      "sha256": "6c254ba6e77bb667550288e4843e79d8312721cadfe61af7c817901d1b8a1d51"
+    },
+    {
+      "path": "tests/runtime/sources/CrossPlay.java",
+      "bytes": 13774,
+      "sha256": "53a2d7bf629cf98abdda01850faffef67b7d28d1dfe271f7672313902e62a972"
+    },
+    {
+      "path": "tests/runtime/sources/Run-SourceChecks.ps1",
+      "bytes": 4338,
+      "sha256": "9b0b09da090f292d5062c095a8896b46ad7aec5b781bcf44d8baf8a7286e1705"
+    },
+    {
+      "path": "tests/runtime/sources/SourceUiCheck.java",
+      "bytes": 10428,
+      "sha256": "5117a632463c5df1127f6344dc460add519fef9e8c4c5e891723379759f78cb7"
     },
     {
       "path": "tests/runtime/ui_check.py",

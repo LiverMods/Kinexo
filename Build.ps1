@@ -4,7 +4,8 @@ param(
     [string]$AndroidSdk = '',
     [string]$Keystore = '',
     [string]$KeyAlias = '',
-    [string]$Output = ''
+    [string]$Output = '',
+    [string]$SourceConfig = ''
 )
 $ErrorActionPreference = 'Stop'
 $root = $PSScriptRoot
@@ -81,6 +82,20 @@ try {
     New-Item -ItemType Directory -Path $stage -Force | Out-Null
     & robocopy "$root/src/apktool" $stage /E /MT:16 /R:0 /W:0 /NFL /NDL /NJH /NJS /NP
     if ($LASTEXITCODE -gt 7) { throw 'Copia dos fontes falhou.' }
+    if (-not $SourceConfig) { $SourceConfig = Join-Path $env:USERPROFILE '.kinexo/source-services.json' }
+    if (Test-Path -LiteralPath $SourceConfig -PathType Leaf) {
+        $sourceConfigPath = [IO.Path]::GetFullPath($SourceConfig)
+        if ($sourceConfigPath.StartsWith($root.TrimEnd('\','/') + [IO.Path]::DirectorySeparatorChar,[StringComparison]::OrdinalIgnoreCase)) { throw 'Mantenha as credenciais de metadados fora do projeto.' }
+        $services = Get-Content -Raw -LiteralPath $sourceConfigPath | ConvertFrom-Json
+        if ($services.tmdbToken -isnot [string] -or $services.tmdbToken.Length -lt 20 -or $services.tmdbToken -match '[\r\n]') { throw 'Credencial TMDB invalida.' }
+        $sourceServices = @{tmdbToken=$services.tmdbToken}
+        if ($services.hdoApiAuthorization) {
+            if ($services.hdoApiAuthorization -isnot [string] -or $services.hdoApiAuthorization.Length -gt 4096 -or $services.hdoApiAuthorization -match '[\r\n]') { throw 'Credencial de fontes invalida.' }
+            $sourceServices.hdoApiAuthorization = $services.hdoApiAuthorization
+        }
+        $asset = $sourceServices | ConvertTo-Json -Compress
+        [IO.File]::WriteAllText("$stage/assets/kinexo-source-services.json",$asset,[Text.UTF8Encoding]::new($false))
+    }
     $classpath = (@($toolHashes.Keys | Where-Object { $_ -ne 'apktool_3.0.3.jar' } | Sort-Object | ForEach-Object { Join-Path $tools $_ })) -join ';'
     Run $javac @('-encoding','UTF-8','-cp',$classpath,'-d',$work,"$tools/DisassembleRecovery.java")
     foreach ($group in Get-ChildItem -LiteralPath "$root/src/java" -Directory | Sort-Object Name) {
@@ -107,6 +122,8 @@ try {
             New-Item -ItemType Directory -Force -Path $modelTests | Out-Null
             Run $javac @('-encoding','UTF-8','--release','8','-cp',"$javaClasses;$androidJar",'-d',$modelTests,"$root/tests/MovieModelCheck.java")
             Run $java @('-ea','-cp',"$modelTests;$javaClasses;$androidJar",'com.mgs.carparking.modern.catalog.MovieModelCheck')
+            Run $javac @('-encoding','UTF-8','--release','8','-cp',"$javaClasses;$androidJar",'-d',$modelTests,"$root/tests/SourceContractCheck.java")
+            Run $java @('-ea','-cp',"$modelTests;$javaClasses;$androidJar",'com.mgs.carparking.modern.sources.SourceContractCheck')
         }
     }
     # Todos os DEX restantes sao montados de Smali, sem SDK de anuncios dinamico.
