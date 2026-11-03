@@ -1,0 +1,42 @@
+{
+  "playback_speed": 1,
+  "catalog": {
+    "state": 3,
+    "position_ms": 3624,
+    "width": 1280,
+    "height": 720,
+    "frames": 88,
+    "pss_kib": 140986
+  },
+  "catalog_id": 924616866,
+  "tmdb_id": 84958,
+  "season": 1,
+  "episode": 1,
+  "real_pair_checks": [
+    {
+      "provider": "HuntStream",
+      "source_available": false,
+      "reason_class": "SocketException",
+      "elapsed_ms": 21332
+    },
+    {
+      "provider": "Zetstream",
+      "compatible": false,
+      "reason_class": "IOException",
+      "elapsed_ms": 25260
+    }
+  ],
+  "cancel_preserves_catalog": true,
+  "automatic_offer_not_repeated": true,
+  "keep_preserves_catalog": true,
+  "safe_catalog_fallback": {
+    "state": 3,
+    "position_ms": 92703,
+    "width": 1280,
+    "height": 720,
+    "frames": 1484,
+    "pss_kib": 134315
+  },
+  "real_combined_playback": false,
+  "passed": true
+}

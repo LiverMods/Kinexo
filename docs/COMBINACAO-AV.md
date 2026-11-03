@@ -2,7 +2,7 @@
 
 Continuação da mesma árvore Kinexo. Ponto de recuperação: tag `checkpoint/kinexo-before-audio-video-merge-20261102`, commit `a0663c74`. O APK anterior `kinexo-automatico-v3-debug.apk` foi preservado. Nenhuma alteração no projeto HDO BOX, na IdentityBinding, no pacote Android ou no certificado de assinatura.
 
-> Investigação em andamento: MediaExtractor normaliza timestamps de segmentos TS e fMP4 de formas diferentes. Os testes controlados passam, mas isso impede considerar a compensação de fontes reais certificada. A extração será validada contra o próprio HLS/ExoPlayer antes da entrega final.
+> Recurso experimental: confere amostras visuais usando o próprio parser HLS do player. Isso permite medir deslocamentos constantes, mas não certifica todos os cortes de um filme. Consulte os resultados e as limitações abaixo antes de distribuir.
 
 ## O que mudou
 
@@ -24,7 +24,9 @@ Essas duas implementações não estavam presentes no APK recuperado após o shr
 
 ## Conferência antes da combinação
 
-O verificador usa [MediaExtractor](https://developer.android.com/reference/android/media/MediaExtractor) e [MediaCodec](https://developer.android.com/reference/android/media/MediaCodec#getOutputImage(int)) do Android. Baixa segmentos limitados e compara assinaturas de luminância de quadros em três regiões da obra. A extração por MediaMetadataRetriever foi descartada porque retornava quadros ausentes em posições válidas de segmentos TS.
+O verificador usa o **HlsMediaSource/MediaPeriod original**, lê seus SampleStreams e decodifica pequenas janelas com [MediaCodec](https://developer.android.com/reference/android/media/MediaCodec#getOutputImage(int)). Assim, análise e reprodução usam a mesma interpretação dos timestamps TS/fMP4. Uma DataSource limitada aplica os controles de acesso, tempo e bytes já descritos, sem SDK adicional. Compara assinaturas de luminância em três regiões da obra.
+
+MediaMetadataRetriever foi descartado porque não expunha quadros em posições válidas; MediaExtractor também foi descartado após evidência de normalização diferente entre faixas e contêineres. Esse diagnóstico está em `validation-merge/android-timestamp-normalization.json`. O alinhamento não subtrai arbitrariamente o primeiro PTS de cada segmento.
 
 Compara abertura, meio e parte final; procura uma diferença constante em passos de 20 ms. Exige duração coerente, diferenças entre os deslocamentos de até 65 ms, correspondência visual e pelo menos dois mínimos temporais distintos. Uma cena apenas parecida, sem evidência de tempo, não basta. Erros visuais muito discrepantes entre os pontos também são recusados. Um teste com um trecho repetido inicialmente encontrou falso positivo; essa regressão foi corrigida e mantida nos testes.
 
@@ -32,9 +34,9 @@ Limites deliberados desta implementação:
 
 - HLS VOD de um período, TS ou fMP4 com `EXT-X-MAP`; referência de imagem até 720p quando o master oferece essa faixa. Não há processamento de imagem 4K durante a análise.
 - Não analisa DASH, mídia criptografada, byte ranges ou playlists com descontinuidades nesta versão. Não muda DRM nem autorizações para contornar essa restrição.
-- Compensa somente vídeo adiantado em 0–5 segundos, com finais compatíveis. Não altera velocidade do áudio, não remonta cortes e não reconstrói cenas ausentes.
+- Compensa um deslocamento constante entre −300 ms e +5 segundos, com finais compatíveis. Um início de vídeo ausente de até 300 ms é limitado ao primeiro quadro disponível, mantendo o relógio do áudio; não se inventam quadros. Não altera velocidade do áudio, não remonta cortes e não reconstrói cenas ausentes.
 - Orçamento compartilhado de 30 segundos para até duas alternativas por tentativa; 12 MiB por análise, 3 MiB por segmento, 600 quadros por trecho. Decodifica só o necessário para a janela comparada e libera o codec. Chamadas nativas são verificadas entre operações; não há promessa de interrupção instantânea de um driver travado.
-- Cache de quatro planos, por até cinco minutos, somente na memória e para os URLs exatos; arquivos temporários são removidos. URLs e credenciais não vão ao backup dos perfis.
+- Cache de quatro planos, por até cinco minutos, somente na memória e para os URLs exatos; a análise não grava segmentos em disco. URLs e credenciais não vão ao backup dos perfis.
 
 Durante a combinação, confere novamente após avanços e periodicamente a cada dois minutos. Considera uma janela de ±60 ms para não confundir quantização de quadros com perda de sincronismo. Uma imagem sem informação suficiente, como tela preta, não é tratada como prova de divergência. Falhas de mídia ou divergências confirmadas retornam ao catálogo pelo fluxo original e informam o usuário.
 
@@ -42,13 +44,25 @@ Durante a combinação, confere novamente após avanços e periodicamente a cada
 
 ## Testes e evidências
 
-Resultados finais, fontes reais e capturas estão em `validation-merge/`. `real_combined_playback: false` significa que o teste preservou corretamente o catálogo; não significa que a combinação real funcionou. Uma reprodução iniciada que depois falhou não é contada como estável.
+Resultados finais, fontes reais e capturas estão em `validation-merge/`; o índice é `validation-merge/validation-summary.json`. Os arquivos `loki-s1-preliminary.json` e `loki-s2-preliminary.json` são investigações anteriores, não certificações do APK final. `real_combined_playback: false` significa que o teste preservou corretamente o catálogo; não significa que a combinação real funcionou. Uma reprodução iniciada que depois falhou não é contada como estável.
+
+No APK `kinexo-av-validado-debug.apk` (SHA-256 `4981a8c6482a61decf0cfc200efc78fee9b6f1022bbb547454a99de6f9cb0265`), o par real de Avatar: O Caminho da Água, catálogo `185909106` / TMDB `76600`, passou pela análise em 20,9 segundos. Os três deslocamentos medidos foram −95, −135 e −115 ms; foi aplicado −114.953 µs. O decoder de vídeo confirmou **1920 × 1080**, enquanto o áudio permaneceu na versão dublada do catálogo.
+
+Pausa reconhecida em 389 ms, posição imóvel por um segundo, avanços/retornos, retorno das configurações ao mesmo player, gravação de histórico e retorno ao catálogo após falha **simulada** passaram. Nove amostras ao longo de 45 segundos mantiveram READY/1080p/combinação ativa. Foram medidos 32 instantes de apresentação de vídeo contra o relógio de áudio do renderer, com medianas por fase abaixo de 35 ms e pico absoluto de **126 ms** após seek. Não é uma promessa de sincronismo perceptualmente perfeito: o emulador tem variação de agendamento, e esse teste não mediu lábios/alto-falante em hardware físico nem assistiu ao filme inteiro.
 
 O teste sintético utiliza uma imagem 1080p atrasada exatamente 400 ms, uma referência de menor resolução e duas trilhas de tons diferentes. Somente a trilha de 44,1 kHz do catálogo de teste chega ao decoder; a de 48 kHz da imagem é excluída. Verifica quadros renderizados, áudio decodificado, pausa, avanço, retorno, nova preparação com retomada e troca de mídia. Compara os timestamps do listener de vídeo com o relógio do ExoPlayer, compensando o instante programado para exibição. Isso não é uma medição acústica de latência do alto-falante nem um teste de dublagem humana.
 
-O cenário com cortes diferentes repete um segmento no meio, mantendo a duração total. Deve ser recusado. Os testes do catálogo usam os identificadores reais, com temporada/episódio confirmados, sem copiar respostas fictícias de provedores.
+O cenário com cortes diferentes repete um segmento no meio, mantendo a duração total. Deve ser recusado. Um segundo cenário usa imagem adiantada 200 ms e confere início e seek para zero. Os testes do catálogo usam os identificadores reais, com temporada/episódio confirmados, sem copiar respostas fictícias de provedores.
+
+A retomada em um processo novo também foi validada no catálogo: posição salva de 105.573 ms e reprodução retomada em 107.770 ms após o tempo de inicialização. Isso preserva o progresso, mas não restaura silenciosamente o par externo.
+
+A regressão do APK final passou nos **77 checks** de catálogo, perfis, isolamento, backup/restauração na mesma instalação, séries, retomada e controles. Os testes adicionais confirmaram seleção manual HLS/DASH no mesmo ExoPlayer, retorno ao catálogo, preservação de identidade no backup e política automática que impede iniciar áudio estrangeiro não confirmado. As políticas sintéticas de idioma e falha HTTP são identificadas como testes controlados nos relatórios; não são respostas inventadas de provedores. O backup foi testado por ida e volta nesta rodada; não houve desinstalação limpa nem teste em aparelho físico.
+
+No episódio real Loki S1E1 (`924616866`, TMDB `84958`), foram tentados LumaStream, VibeStream, HuntStream e Zetstream. As leituras/consultas falharam ou atingiram o limite de tempo. O teste confirmou cancelamento, ausência de aviso repetido e permanência no catálogo, **não uma combinação real em séries**. Não se pode concluir dessas falhas que as edições sejam incompatíveis. Combinação real em 4K também não foi certificada nesta rodada.
 
 ## Consumo e restrições que continuam
+
+O APK cresceu **16 KiB** sobre a versão preservada. No teste real, o PSS foi 143.847 KiB no catálogo e 164.914–171.104 KiB nas amostras sustentadas da combinação; são cenas e momentos distintos no emulador, não um benchmark isolado de consumo.
 
 Não foi adicionado SDK, permissão, anúncio ou rastreador. Os oito DEX que não contêm a interface Java moderna permanecem iguais byte a byte ao APK anterior, incluindo a engine ExoPlayer; os seis nativos mantêm seus hashes. A comparação está em `validation-merge/binary-preservation.json`. Isso não permite declarar ausência de telemetria dentro de binários opacos ou dos serviços externos.
 
@@ -58,7 +72,7 @@ A decisão e o plano da combinação são de sessão. Após fechar/reabrir o apl
 
 ## Compilar e reproduzir os testes
 
-O projeto permanece híbrido e recompilável: **28 Java ativos, 19.018 Smali e seis bibliotecas nativas opacas**. Não é uma recuperação de 100% dos fontes originais. A build offline usa JDK/Android SDK existentes e os JARs versionados:
+O projeto permanece híbrido e recompilável: **29 Java ativos, 19.018 Smali e seis bibliotecas nativas opacas**. Não é uma recuperação de 100% dos fontes originais. A build offline usa JDK/Android SDK existentes e os JARs versionados:
 
 ```powershell
 .\Build.ps1
@@ -69,8 +83,8 @@ As credenciais legítimas de cliente continuam fora do Git, em `%USERPROFILE%/.k
 Somente no AVD descartável `Movie_Observe_API37`, serial `emulator-5556`:
 
 ```powershell
-.\tests\runtime\sources\Run-SourceChecks.ps1 -Apk 'dist/kinexo-combinacao-av-debug.apk' -MergeProof
-.\tests\runtime\sources\Run-SourceChecks.ps1 -Apk 'dist/kinexo-combinacao-av-debug.apk' -MergeProof -MergeCatalogId 924616866
+.\tests\runtime\sources\Run-SourceChecks.ps1 -Apk 'dist/kinexo-av-validado-debug.apk' -MergeProof
+.\tests\runtime\sources\Run-SourceChecks.ps1 -Apk 'dist/kinexo-av-validado-debug.apk' -MergeProof -MergeCatalogId 924616866
 ```
 
 Para o teste controlado, `merge_fixtures.py --ffmpeg CAMINHO-FFMPEG --output .work/merge-fixtures` gera apenas mídia sintética. Sirva a pasta com `python -m http.server 18180 --bind 127.0.0.1 --directory .work/merge-fixtures`; em outro terminal execute o runner com `-MergeFixture`. FFmpeg é requisito opcional desses testes, não da compilação nem da execução do APK. Nenhuma mídia de filmes, URL de reprodução, cache, chave privada ou configuração de serviço integra o Git.

@@ -4,9 +4,12 @@ $ErrorActionPreference='Stop'
 $project=(Resolve-Path "$PSScriptRoot/../..").Path
 $work=Join-Path $project ('.work/api-signatures-'+[Guid]::NewGuid().ToString('N'))
 New-Item -ItemType Directory -Force "$work/classes" | Out-Null
+$sdk=if($env:ANDROID_HOME){$env:ANDROID_HOME}elseif($env:ANDROID_SDK_ROOT){$env:ANDROID_SDK_ROOT}else{Join-Path $env:LOCALAPPDATA 'Android/Sdk'}
+$android=Join-Path $sdk 'platforms/android-37.0/android.jar'
+if(-not(Test-Path -LiteralPath $android)){throw 'Android API 37 signatures required'}
 $sources=@(Get-ChildItem "$PSScriptRoot/src" -Recurse -Filter '*.java' | ForEach-Object { '"'+$_.FullName.Replace('\','/')+'"' })
 [IO.File]::WriteAllLines("$work/sources.rsp",$sources,[Text.UTF8Encoding]::new($false))
-& javac -encoding UTF-8 --release 8 -d "$work/classes" "@$work/sources.rsp"
+& javac -encoding UTF-8 --release 8 -cp $android -d "$work/classes" "@$work/sources.rsp"
 if($LASTEXITCODE){throw 'ABI signature compilation failed'}
 & jar --create --file "$work/api.jar" -C "$work/classes" .
 if($LASTEXITCODE){throw 'ABI jar creation failed'}

@@ -1,9 +1,9 @@
 {
   "passed": true,
-  "apk_sha256": "31c31ad8693d41f6a3b77b6e2899e699d38b1dc93e25acbda87523267bcde4f3",
+  "apk_sha256": "4981a8c6482a61decf0cfc200efc78fee9b6f1022bbb547454a99de6f9cb0265",
   "commercial_classes_absent": 31,
   "executable_local_adfree_gate_calls": 0,
-  "modern_classes_in_apk": 227,
+  "modern_classes_in_apk": 235,
   "identity_source_unchanged": "22a3df138b7f7b6f96ff063310f628abe988a172975d843065915a51e6bf06cb",
   "backup_rules_in_apk": true
 }

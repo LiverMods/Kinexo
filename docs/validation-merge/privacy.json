@@ -1,5 +1,5 @@
 {
-  "apk_sha256": "31c31ad8693d41f6a3b77b6e2899e699d38b1dc93e25acbda87523267bcde4f3",
+  "apk_sha256": "4981a8c6482a61decf0cfc200efc78fee9b6f1022bbb547454a99de6f9cb0265",
   "dex": {
     "classes.dex": {
       "definitions": 1850,
@@ -10,8 +10,8 @@
       "type_references": 5300
     },
     "classes3.dex": {
-      "definitions": 2661,
-      "type_references": 6393
+      "definitions": 2669,
+      "type_references": 6402
     },
     "classes4.dex": {
       "definitions": 2239,

@@ -15,12 +15,13 @@ for name, height, offset, frequency, language, fmt in [
     ('low', 360, 0, 1000, 'pt-BR', 'mpegts'),
     ('high', 1080, .4, 880, 'en', 'fmp4'),
     ('reference', 360, .4, 880, 'en', 'fmp4'),
+    ('negative', 1080, -.2, 880, 'en', 'fmp4'),
 ]:
     folder = root / name
     folder.mkdir(exist_ok=True)
     run('-f', 'lavfi', '-i', 'testsrc2=size=1920x1080:rate=25:duration=30',
         '-f', 'lavfi', '-i', f'sine=frequency={frequency}:sample_rate=48000:duration=30',
-        '-vf', rf'drawbox=x=0:y=0:w=iw:h=ih:color=white:t=fill:enable=lt(mod(t+3\,5)\,0.12),scale=-2:{height},tpad=start_duration={offset}',
+        '-vf', rf'drawbox=x=0:y=0:w=iw:h=ih:color=white:t=fill:enable=lt(mod(t+3\,5)\,0.12),scale=-2:{height},{f'tpad=start_duration={offset}' if offset >= 0 else f'trim=start={-offset},setpts=PTS-STARTPTS'}',
         '-af', "volume=enable='gte(mod(t+3,5),0.12)':volume=0" if not offset else 'anull',
         '-c:v', 'libx264', '-preset', 'ultrafast', '-crf', '27', '-pix_fmt', 'yuv420p',
         '-g', '25', '-sc_threshold', '0', '-c:a', 'aac', '-b:a', '96k',

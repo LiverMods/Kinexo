@@ -20,7 +20,7 @@ public final class CombinedMediaSource extends i4.e<Integer> {
     private static final long UNSET=-9223372036854775807L,END=Long.MIN_VALUE;
     private final r[] children;private final j3.u0[] timelines=new j3.u0[2];private final long offsetUs;private IOException error;
     public CombinedMediaSource(Object video,Object audio,long videoOffsetUs){
-        if(videoOffsetUs<0||videoOffsetUs>5000000)throw new IllegalArgumentException("Unsupported alignment");
+        if(videoOffsetUs< -300000||videoOffsetUs>5000000)throw new IllegalArgumentException("Unsupported alignment");
         children=new r[]{(r)video,(r)audio};offsetUs=videoOffsetUs;
     }
     public Object getTag(){return children[1].getTag();}
@@ -32,7 +32,7 @@ public final class CombinedMediaSource extends i4.e<Integer> {
     @Override public r.a y(Integer index,r.a period){return index==1?period:null;}
     @Override public void maybeThrowSourceInfoRefreshError()throws IOException{if(error!=null)throw error;super.maybeThrowSourceInfoRefreshError();}
     @Override public q h(r.a id,c5.b allocator,long positionUs){
-        q high=children[0].h(id.a(timelines[0].m(0)),allocator,positionUs+offsetUs);
+        q high=children[0].h(id.a(timelines[0].m(0)),allocator,Math.max(0,positionUs+offsetUs));
         q low=children[1].h(id.a(timelines[1].m(0)),allocator,positionUs);
         return new Period(high,low,offsetUs);
     }
@@ -71,19 +71,22 @@ public final class CombinedMediaSource extends i4.e<Integer> {
     private static final class Offset implements q,q.a {
         final q child;final long offset; q.a callback;
         Offset(q child,long offset){this.child=child;this.offset=offset;}
+        // A small missing video preroll holds the first picture; audio/history retain catalog time.
+        private long in(long value){return Math.max(0,value+offset);}
+        private long position(long value,long requested){return requested+offset<0&&value==0?requested:out(value);}
         private long out(long value){return value==UNSET||value==END?value:value-offset;}
-        public void f(q.a callback,long p){this.callback=callback;child.f(this,p+offset);}public void e(q p){callback.e(this);}public void c(q p){callback.c(this);}
+        public void f(q.a callback,long p){this.callback=callback;child.f(this,in(p));}public void e(q p){callback.e(this);}public void c(q p){callback.c(this);}
         public TrackGroupArray getTrackGroups(){return child.getTrackGroups();}public void maybeThrowPrepareError()throws IOException{child.maybeThrowPrepareError();}
         public long d(c[] selections,boolean[] retain,i0[] streams,boolean[] reset,long p){
             i0[] original=new i0[streams.length];for(int i=0;i<streams.length;i++)if(streams[i]!=null)original[i]=((ShiftedStream)streams[i]).child;
-            long result=child.d(selections,retain,original,reset,p+offset);for(int i=0;i<streams.length;i++){if(original[i]==null)streams[i]=null;else if(streams[i]==null||((ShiftedStream)streams[i]).child!=original[i])streams[i]=new ShiftedStream(original[i],offset);}return out(result);
+            long result=child.d(selections,retain,original,reset,in(p));for(int i=0;i<streams.length;i++){if(original[i]==null)streams[i]=null;else if(streams[i]==null||((ShiftedStream)streams[i]).child!=original[i])streams[i]=new ShiftedStream(original[i],offset);}return position(result,p);
         }
-        public long a(long p,j3.s0 s){return out(child.a(p+offset,s));}public long seekToUs(long p){return out(child.seekToUs(p+offset));}public long readDiscontinuity(){return out(child.readDiscontinuity());}
-        public boolean continueLoading(long p){return child.continueLoading(p+offset);}public long getBufferedPositionUs(){return out(child.getBufferedPositionUs());}public long getNextLoadPositionUs(){return out(child.getNextLoadPositionUs());}public boolean isLoading(){return child.isLoading();}public void reevaluateBuffer(long p){child.reevaluateBuffer(p+offset);}public void discardBuffer(long p,boolean keyframe){child.discardBuffer(p+offset,keyframe);}
+        public long a(long p,j3.s0 s){return position(child.a(in(p),s),p);}public long seekToUs(long p){return position(child.seekToUs(in(p)),p);}public long readDiscontinuity(){return out(child.readDiscontinuity());}
+        public boolean continueLoading(long p){return child.continueLoading(in(p));}public long getBufferedPositionUs(){return out(child.getBufferedPositionUs());}public long getNextLoadPositionUs(){return out(child.getNextLoadPositionUs());}public boolean isLoading(){return child.isLoading();}public void reevaluateBuffer(long p){child.reevaluateBuffer(in(p));}public void discardBuffer(long p,boolean keyframe){child.discardBuffer(in(p),keyframe);}
     }
     private static final class ShiftedStream implements i0 {
         final i0 child;final long offset;ShiftedStream(i0 child,long offset){this.child=child;this.offset=offset;}
         public int b(j3.e0 holder,m3.e buffer,boolean format){int result=child.b(holder,buffer,format);if(result==-4&&!buffer.isEndOfStream())buffer.d-=offset;return result;}
-        public boolean isReady(){return child.isReady();}public void maybeThrowError()throws IOException{child.maybeThrowError();}public int skipData(long p){return child.skipData(p+offset);}
+        public boolean isReady(){return child.isReady();}public void maybeThrowError()throws IOException{child.maybeThrowError();}public int skipData(long p){return child.skipData(Math.max(0,p+offset));}
     }
 }

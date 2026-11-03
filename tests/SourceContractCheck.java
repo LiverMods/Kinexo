@@ -26,7 +26,8 @@ public final class SourceContractCheck {
         boolean cuts=false;try{MediaAlignment.assess(120,120.2,new double[]{.20,.20,3.20},new double[]{1,1,1});}catch(MediaAlignment.Incompatible expected){cuts=true;}assert cuts;
         boolean ambiguous=false;try{MediaAlignment.distance(new byte[576],new byte[576]);}catch(MediaAlignment.Incompatible expected){ambiguous=true;}assert ambiguous;
         boolean mismatch=false;try{MediaAlignment.assess(30,30.4,new double[]{.4,.36,.38},new double[]{.2,2.2,.13});}catch(MediaAlignment.Incompatible expected){mismatch=true;}assert mismatch : "A similar-looking different cut must be rejected";
-        boolean negative=false;try{MediaAlignment.assess(30,29.9,new double[]{-.1,-.1,-.1},new double[]{1,1,1});}catch(MediaAlignment.Incompatible expected){negative=true;}assert negative : "A negative best offset must not be silently clipped to zero";
+        assert MediaAlignment.assess(30,29.9,new double[]{-.1,-.1,-.1},new double[]{1,1,1})==-100000 : "Preserve a small negative offset";
+        boolean negative=false;try{MediaAlignment.assess(30,29.5,new double[]{-.5,-.5,-.5},new double[]{1,1,1});}catch(MediaAlignment.Incompatible expected){negative=true;}assert negative : "Reject excessive missing video preroll";
         assert MediaAlignment.decisive(new double[]{.1,.2,.3},new double[]{3,.2,3});
         assert !MediaAlignment.decisive(new double[]{.1,.2,.3},new double[]{2.3,2.2,2.3});
         System.out.println("Source contracts: explicit identities and source URI boundaries verified");

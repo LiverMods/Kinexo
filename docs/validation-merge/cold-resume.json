@@ -1,0 +1,13 @@
+{
+  "playback_speed": 1,
+  "cold_process_catalog_resume": {
+    "state": 3,
+    "position_ms": 107770,
+    "width": 1280,
+    "height": 720,
+    "frames": 54,
+    "pss_kib": 141170
+  },
+  "saved_position_ms": 105573,
+  "passed": true
+}

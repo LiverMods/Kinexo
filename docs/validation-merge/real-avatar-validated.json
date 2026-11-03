@@ -2,11 +2,11 @@
   "playback_speed": 1,
   "catalog": {
     "state": 3,
-    "position_ms": 3196,
+    "position_ms": 2969,
     "width": 1280,
     "height": 720,
-    "frames": 77,
-    "pss_kib": 142829
+    "frames": 71,
+    "pss_kib": 143847
   },
   "catalog_id": 185909106,
   "tmdb_id": 76600,
@@ -15,20 +15,19 @@
   "real_pair_checks": [
     {
       "provider": "Zetstream",
-      "reused_issued_session": true,
       "compatible": true,
-      "offset_us": 145047,
+      "offset_us": -114953,
       "offsets": [
-        0.16504699984943727,
-        0.12504699984943726,
-        0.14504699984943728
+        -0.09495300015056274,
+        -0.13495300015056272,
+        -0.11495300015056276
       ],
       "errors": [
-        5.483742042824092,
-        3.799660011574064,
-        1.8662109375000036
+        4.898304880401231,
+        3.368899498456779,
+        1.7353093653549396
       ],
-      "elapsed_ms": 11173
+      "elapsed_ms": 20874
     }
   ],
   "cancel_preserves_catalog": true,
@@ -37,436 +36,572 @@
   "real_combined_playback": true,
   "combined": {
     "state": 3,
-    "position_ms": 19270,
+    "position_ms": 30801,
     "width": 1920,
     "height": 1080,
-    "frames": 44,
-    "pss_kib": 144467
+    "frames": 41,
+    "pss_kib": 156580
   },
-  "offset_us": 145047,
+  "offset_us": -114953,
   "latest_clock_probe": [
     {
-      "audio_output_buffers": 1170,
-      "position_ms": 41166,
-      "frame_pts_us": 41182908,
-      "release_delay_ms": 24,
-      "video_audio_clock_error_ms": -8
+      "state": 3,
+      "sample_age_ms": 44,
+      "audio_output_buffers": 1458,
+      "position_ms": 58194,
+      "frame_pts_us": 58210987,
+      "audio_clock_us": 58150904,
+      "video_audio_clock_error_ms": 12,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 1175,
-      "position_ms": 41291,
-      "frame_pts_us": 41308031,
-      "release_delay_ms": 19,
-      "video_audio_clock_error_ms": -2
+      "state": 3,
+      "sample_age_ms": 0,
+      "audio_output_buffers": 1464,
+      "position_ms": 58321,
+      "frame_pts_us": 58377820,
+      "audio_clock_us": 58321620,
+      "video_audio_clock_error_ms": 13,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 1182,
-      "position_ms": 41397,
-      "frame_pts_us": 41433153,
-      "release_delay_ms": 31,
-      "video_audio_clock_error_ms": 5
+      "state": 3,
+      "sample_age_ms": 18,
+      "audio_output_buffers": 1469,
+      "position_ms": 58462,
+      "frame_pts_us": 58502942,
+      "audio_clock_us": 58462276,
+      "video_audio_clock_error_ms": 4,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 1186,
-      "position_ms": 41521,
-      "frame_pts_us": 41558275,
-      "release_delay_ms": 24,
-      "video_audio_clock_error_ms": 13
+      "state": 3,
+      "sample_age_ms": 97,
+      "audio_output_buffers": 1470,
+      "position_ms": 58462,
+      "frame_pts_us": 58586365,
+      "audio_clock_us": 58462276,
+      "video_audio_clock_error_ms": 76,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 1193,
-      "position_ms": 41658,
-      "frame_pts_us": 41683408,
-      "release_delay_ms": 36,
-      "video_audio_clock_error_ms": -11
+      "state": 3,
+      "sample_age_ms": 77,
+      "audio_output_buffers": 1476,
+      "position_ms": 58779,
+      "frame_pts_us": 58836609,
+      "audio_clock_us": 58779773,
+      "video_audio_clock_error_ms": 33,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 1198,
-      "position_ms": 41777,
-      "frame_pts_us": 41808531,
-      "release_delay_ms": 32,
-      "video_audio_clock_error_ms": -1
+      "state": 3,
+      "sample_age_ms": 1,
+      "audio_output_buffers": 1485,
+      "position_ms": 59105,
+      "frame_pts_us": 59170275,
+      "audio_clock_us": 59105556,
+      "video_audio_clock_error_ms": 38,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 1204,
-      "position_ms": 41909,
-      "frame_pts_us": 41933653,
-      "release_delay_ms": 35,
-      "video_audio_clock_error_ms": -11
+      "state": 3,
+      "sample_age_ms": 30,
+      "audio_output_buffers": 1500,
+      "position_ms": 59235,
+      "frame_pts_us": 59295409,
+      "audio_clock_us": 59235680,
+      "video_audio_clock_error_ms": 15,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 1210,
-      "position_ms": 42021,
-      "frame_pts_us": 42058775,
-      "release_delay_ms": 22,
-      "video_audio_clock_error_ms": 15
+      "state": 3,
+      "sample_age_ms": 25,
+      "audio_output_buffers": 1511,
+      "position_ms": 59386,
+      "frame_pts_us": 59420531,
+      "audio_clock_us": 59367084,
+      "video_audio_clock_error_ms": 5,
+      "speed": 1
     }
   ],
+  "clock_method": "cached_audio_renderer_clock_at_video_release_on_playback_thread",
+  "stale_frame_samples_skipped": 2,
+  "latest_clock_median_ms": 15,
+  "latest_clock_max_ms": 76,
   "combined_clock": [
     {
-      "audio_output_buffers": 112,
-      "position_ms": 19429,
-      "frame_pts_us": 19440198,
-      "release_delay_ms": 6,
-      "video_audio_clock_error_ms": 5
+      "state": 3,
+      "sample_age_ms": 17,
+      "audio_output_buffers": 173,
+      "position_ms": 31475,
+      "frame_pts_us": 31504987,
+      "audio_clock_us": 31462764,
+      "video_audio_clock_error_ms": 9,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 117,
-      "position_ms": 19544,
-      "frame_pts_us": 19565320,
-      "release_delay_ms": 18,
-      "video_audio_clock_error_ms": 3
+      "state": 3,
+      "sample_age_ms": 78,
+      "audio_output_buffers": 178,
+      "position_ms": 31582,
+      "frame_pts_us": 31630108,
+      "audio_clock_us": 31568642,
+      "video_audio_clock_error_ms": 17,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 123,
-      "position_ms": 19669,
-      "frame_pts_us": 19690442,
-      "release_delay_ms": 12,
-      "video_audio_clock_error_ms": 9
+      "state": 3,
+      "sample_age_ms": 6,
+      "audio_output_buffers": 183,
+      "position_ms": 31747,
+      "frame_pts_us": 31796942,
+      "audio_clock_us": 31747235,
+      "video_audio_clock_error_ms": 58,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 128,
-      "position_ms": 19765,
-      "frame_pts_us": 19773865,
-      "release_delay_ms": -26,
-      "video_audio_clock_error_ms": 34
+      "state": 3,
+      "sample_age_ms": 2,
+      "audio_output_buffers": 192,
+      "position_ms": 32041,
+      "frame_pts_us": 32047198,
+      "audio_clock_us": 32041851,
+      "video_audio_clock_error_ms": 28,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 134,
-      "position_ms": 19920,
-      "frame_pts_us": 19940698,
-      "release_delay_ms": 17,
-      "video_audio_clock_error_ms": 3
+      "state": 3,
+      "sample_age_ms": 68,
+      "audio_output_buffers": 213,
+      "position_ms": 32316,
+      "frame_pts_us": 32255742,
+      "audio_clock_us": 32255142,
+      "video_audio_clock_error_ms": 17,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 140,
-      "position_ms": 20033,
-      "frame_pts_us": 20065820,
-      "release_delay_ms": 29,
-      "video_audio_clock_error_ms": 3
+      "state": 3,
+      "sample_age_ms": 42,
+      "audio_output_buffers": 218,
+      "position_ms": 32457,
+      "frame_pts_us": 32422575,
+      "audio_clock_us": 32414936,
+      "video_audio_clock_error_ms": 10,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 146,
-      "position_ms": 20147,
-      "frame_pts_us": 20190942,
-      "release_delay_ms": 25,
-      "video_audio_clock_error_ms": 18
+      "state": 3,
+      "sample_age_ms": 3,
+      "audio_output_buffers": 225,
+      "position_ms": 32582,
+      "frame_pts_us": 32631108,
+      "audio_clock_us": 32582061,
+      "video_audio_clock_error_ms": 18,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 151,
-      "position_ms": 20278,
-      "frame_pts_us": 20316076,
-      "release_delay_ms": 37,
-      "video_audio_clock_error_ms": 1
+      "state": 3,
+      "sample_age_ms": 53,
+      "audio_output_buffers": 230,
+      "position_ms": 32660,
+      "frame_pts_us": 32714531,
+      "audio_clock_us": 32660575,
+      "video_audio_clock_error_ms": 18,
+      "speed": 1
     }
   ],
+  "actual_decoder_width": 1920,
+  "actual_decoder_height": 1080,
   "combined_seek": {
     "state": 3,
-    "position_ms": 33908,
+    "position_ms": 46865,
     "width": 1920,
     "height": 1080,
-    "frames": 158,
-    "pss_kib": 167442
+    "frames": 139,
+    "pss_kib": 171528
   },
   "combination_after_seek": true,
   "sample_after_seek": {
     "state": 3,
-    "position_ms": 37929,
+    "position_ms": 50001,
     "width": 1920,
     "height": 1080,
-    "frames": 254
+    "frames": 191
   },
-  "paused_position_ms": 37934,
-  "paused_after_1s_ms": 37934,
+  "pause_ack_ms": 389,
+  "paused_position_ms": 50406,
+  "paused_after_1s_ms": 50406,
   "combination_after_pause": true,
   "sample_after_pause": {
     "state": 3,
-    "position_ms": 37934,
+    "position_ms": 50406,
     "width": 1920,
     "height": 1080,
-    "frames": 254
+    "frames": 194
   },
   "combined_resumed": {
     "state": 3,
-    "position_ms": 41966,
+    "position_ms": 56231,
     "width": 1920,
     "height": 1080,
-    "frames": 351,
-    "pss_kib": 160811
+    "frames": 288,
+    "pss_kib": 177434
   },
   "resumed_clock": [
     {
-      "audio_output_buffers": 724,
-      "position_ms": 42089,
-      "frame_pts_us": 42129531,
-      "release_delay_ms": 10,
-      "video_audio_clock_error_ms": 30
+      "state": 3,
+      "sample_age_ms": 26,
+      "audio_output_buffers": 904,
+      "position_ms": 56915,
+      "frame_pts_us": 56947075,
+      "audio_clock_us": 56915443,
+      "video_audio_clock_error_ms": 8,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 730,
-      "position_ms": 42211,
-      "frame_pts_us": 42254654,
-      "release_delay_ms": 22,
-      "video_audio_clock_error_ms": 21
+      "state": 3,
+      "sample_age_ms": 9,
+      "audio_output_buffers": 910,
+      "position_ms": 57065,
+      "frame_pts_us": 57113909,
+      "audio_clock_us": 57065914,
+      "video_audio_clock_error_ms": 7,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 736,
-      "position_ms": 42337,
-      "frame_pts_us": 42379775,
-      "release_delay_ms": 18,
-      "video_audio_clock_error_ms": 24
+      "state": 3,
+      "sample_age_ms": 43,
+      "audio_output_buffers": 914,
+      "position_ms": 57199,
+      "frame_pts_us": 57197320,
+      "audio_clock_us": 57157691,
+      "video_audio_clock_error_ms": 7,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 741,
-      "position_ms": 42464,
-      "frame_pts_us": 42504909,
-      "release_delay_ms": 29,
-      "video_audio_clock_error_ms": 11
+      "state": 3,
+      "sample_age_ms": 17,
+      "audio_output_buffers": 922,
+      "position_ms": 57325,
+      "frame_pts_us": 57364153,
+      "audio_clock_us": 57308860,
+      "video_audio_clock_error_ms": 8,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 747,
-      "position_ms": 42580,
-      "frame_pts_us": 42630031,
-      "release_delay_ms": 20,
-      "video_audio_clock_error_ms": 30
+      "state": 3,
+      "sample_age_ms": 41,
+      "audio_output_buffers": 927,
+      "position_ms": 57448,
+      "frame_pts_us": 57489275,
+      "audio_clock_us": 57424297,
+      "video_audio_clock_error_ms": 17,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 753,
-      "position_ms": 42707,
-      "frame_pts_us": 42755154,
-      "release_delay_ms": 31,
-      "video_audio_clock_error_ms": 17
+      "state": 3,
+      "sample_age_ms": 3,
+      "audio_output_buffers": 934,
+      "position_ms": 57596,
+      "frame_pts_us": 57530987,
+      "audio_clock_us": 57596233,
+      "video_audio_clock_error_ms": -65,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 758,
-      "position_ms": 42820,
-      "frame_pts_us": 42880275,
-      "release_delay_ms": 23,
-      "video_audio_clock_error_ms": 37
+      "state": 3,
+      "sample_age_ms": 5,
+      "audio_output_buffers": 943,
+      "position_ms": 57740,
+      "frame_pts_us": 57781242,
+      "audio_clock_us": 57740679,
+      "video_audio_clock_error_ms": 19,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 764,
-      "position_ms": 42956,
-      "frame_pts_us": 43005409,
-      "release_delay_ms": 35,
-      "video_audio_clock_error_ms": 14
+      "state": 3,
+      "sample_age_ms": 19,
+      "audio_output_buffers": 946,
+      "position_ms": 57869,
+      "frame_pts_us": 57906364,
+      "audio_clock_us": 57869851,
+      "video_audio_clock_error_ms": 17,
+      "speed": 1
     }
   ],
   "combined_back": {
     "state": 3,
-    "position_ms": 35879,
+    "position_ms": 51238,
     "width": 1920,
     "height": 1080,
-    "frames": 447,
-    "pss_kib": 169893
+    "frames": 386,
+    "pss_kib": 161650
   },
   "back_clock": [
     {
-      "audio_output_buffers": 928,
-      "position_ms": 36015,
-      "frame_pts_us": 36052775,
-      "release_delay_ms": 23,
-      "video_audio_clock_error_ms": 14
+      "state": 3,
+      "sample_age_ms": 28,
+      "audio_output_buffers": 1159,
+      "position_ms": 51985,
+      "frame_pts_us": 52038154,
+      "audio_clock_us": 51985519,
+      "video_audio_clock_error_ms": 31,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 933,
-      "position_ms": 36141,
-      "frame_pts_us": 36177908,
-      "release_delay_ms": 17,
-      "video_audio_clock_error_ms": 19
+      "state": 3,
+      "sample_age_ms": 51,
+      "audio_output_buffers": 1167,
+      "position_ms": 52348,
+      "frame_pts_us": 52371820,
+      "audio_clock_us": 52348185,
+      "video_audio_clock_error_ms": 34,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 940,
-      "position_ms": 36256,
-      "frame_pts_us": 36303031,
-      "release_delay_ms": 29,
-      "video_audio_clock_error_ms": 18
+      "state": 3,
+      "sample_age_ms": 71,
+      "audio_output_buffers": 1179,
+      "position_ms": 52540,
+      "frame_pts_us": 52413531,
+      "audio_clock_us": 52540185,
+      "video_audio_clock_error_ms": -126,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 945,
-      "position_ms": 36391,
-      "frame_pts_us": 36428153,
-      "release_delay_ms": 18,
-      "video_audio_clock_error_ms": 19
+      "state": 3,
+      "sample_age_ms": 84,
+      "audio_output_buffers": 1188,
+      "position_ms": 52732,
+      "frame_pts_us": 52622076,
+      "audio_clock_us": 52625519,
+      "video_audio_clock_error_ms": 19,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 952,
-      "position_ms": 36503,
-      "frame_pts_us": 36553275,
-      "release_delay_ms": 29,
-      "video_audio_clock_error_ms": 21
+      "state": 3,
+      "sample_age_ms": 0,
+      "audio_output_buffers": 1210,
+      "position_ms": 53288,
+      "frame_pts_us": 53247698,
+      "audio_clock_us": 53288852,
+      "video_audio_clock_error_ms": -41,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 957,
-      "position_ms": 36622,
-      "frame_pts_us": 36678408,
-      "release_delay_ms": 22,
-      "video_audio_clock_error_ms": 34
+      "state": 3,
+      "sample_age_ms": 40,
+      "audio_output_buffers": 1215,
+      "position_ms": 53402,
+      "frame_pts_us": 53372820,
+      "audio_clock_us": 53379519,
+      "video_audio_clock_error_ms": 18,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 963,
-      "position_ms": 36756,
-      "frame_pts_us": 36803531,
-      "release_delay_ms": 33,
-      "video_audio_clock_error_ms": 14
+      "state": 3,
+      "sample_age_ms": 73,
+      "audio_output_buffers": 1218,
+      "position_ms": 53447,
+      "frame_pts_us": 53497942,
+      "audio_clock_us": 53447519,
+      "video_audio_clock_error_ms": 60,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 969,
-      "position_ms": 36879,
-      "frame_pts_us": 36928653,
-      "release_delay_ms": 29,
-      "video_audio_clock_error_ms": 20
+      "state": 3,
+      "sample_age_ms": 70,
+      "audio_output_buffers": 1224,
+      "position_ms": 53585,
+      "frame_pts_us": 53623076,
+      "audio_clock_us": 53585519,
+      "video_audio_clock_error_ms": 25,
+      "speed": 1
     }
   ],
   "background_return": {
     "state": 3,
-    "position_ms": 41039,
+    "position_ms": 57478,
     "width": 1920,
     "height": 1080,
-    "frames": 570,
-    "pss_kib": 175815
+    "frames": 491,
+    "pss_kib": 164014
   },
   "background_clock": [
     {
-      "audio_output_buffers": 1170,
-      "position_ms": 41166,
-      "frame_pts_us": 41182908,
-      "release_delay_ms": 24,
-      "video_audio_clock_error_ms": -8
+      "state": 3,
+      "sample_age_ms": 44,
+      "audio_output_buffers": 1458,
+      "position_ms": 58194,
+      "frame_pts_us": 58210987,
+      "audio_clock_us": 58150904,
+      "video_audio_clock_error_ms": 12,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 1175,
-      "position_ms": 41291,
-      "frame_pts_us": 41308031,
-      "release_delay_ms": 19,
-      "video_audio_clock_error_ms": -2
+      "state": 3,
+      "sample_age_ms": 0,
+      "audio_output_buffers": 1464,
+      "position_ms": 58321,
+      "frame_pts_us": 58377820,
+      "audio_clock_us": 58321620,
+      "video_audio_clock_error_ms": 13,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 1182,
-      "position_ms": 41397,
-      "frame_pts_us": 41433153,
-      "release_delay_ms": 31,
-      "video_audio_clock_error_ms": 5
+      "state": 3,
+      "sample_age_ms": 18,
+      "audio_output_buffers": 1469,
+      "position_ms": 58462,
+      "frame_pts_us": 58502942,
+      "audio_clock_us": 58462276,
+      "video_audio_clock_error_ms": 4,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 1186,
-      "position_ms": 41521,
-      "frame_pts_us": 41558275,
-      "release_delay_ms": 24,
-      "video_audio_clock_error_ms": 13
+      "state": 3,
+      "sample_age_ms": 97,
+      "audio_output_buffers": 1470,
+      "position_ms": 58462,
+      "frame_pts_us": 58586365,
+      "audio_clock_us": 58462276,
+      "video_audio_clock_error_ms": 76,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 1193,
-      "position_ms": 41658,
-      "frame_pts_us": 41683408,
-      "release_delay_ms": 36,
-      "video_audio_clock_error_ms": -11
+      "state": 3,
+      "sample_age_ms": 77,
+      "audio_output_buffers": 1476,
+      "position_ms": 58779,
+      "frame_pts_us": 58836609,
+      "audio_clock_us": 58779773,
+      "video_audio_clock_error_ms": 33,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 1198,
-      "position_ms": 41777,
-      "frame_pts_us": 41808531,
-      "release_delay_ms": 32,
-      "video_audio_clock_error_ms": -1
+      "state": 3,
+      "sample_age_ms": 1,
+      "audio_output_buffers": 1485,
+      "position_ms": 59105,
+      "frame_pts_us": 59170275,
+      "audio_clock_us": 59105556,
+      "video_audio_clock_error_ms": 38,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 1204,
-      "position_ms": 41909,
-      "frame_pts_us": 41933653,
-      "release_delay_ms": 35,
-      "video_audio_clock_error_ms": -11
+      "state": 3,
+      "sample_age_ms": 30,
+      "audio_output_buffers": 1500,
+      "position_ms": 59235,
+      "frame_pts_us": 59295409,
+      "audio_clock_us": 59235680,
+      "video_audio_clock_error_ms": 15,
+      "speed": 1
     },
     {
-      "audio_output_buffers": 1210,
-      "position_ms": 42021,
-      "frame_pts_us": 42058775,
-      "release_delay_ms": 22,
-      "video_audio_clock_error_ms": 15
+      "state": 3,
+      "sample_age_ms": 25,
+      "audio_output_buffers": 1511,
+      "position_ms": 59386,
+      "frame_pts_us": 59420531,
+      "audio_clock_us": 59367084,
+      "video_audio_clock_error_ms": 5,
+      "speed": 1
     }
   ],
   "sustained_samples": [
     {
       "state": 3,
-      "position_ms": 47031,
+      "position_ms": 64339,
       "width": 1920,
       "height": 1080,
-      "frames": 714,
-      "pss_kib": 176165,
+      "frames": 644,
+      "pss_kib": 164914,
       "combined": true
     },
     {
       "state": 3,
-      "position_ms": 52050,
+      "position_ms": 69369,
       "width": 1920,
       "height": 1080,
-      "frames": 834,
-      "pss_kib": 176809,
+      "frames": 760,
+      "pss_kib": 166264,
       "combined": true
     },
     {
       "state": 3,
-      "position_ms": 57059,
+      "position_ms": 74194,
       "width": 1920,
       "height": 1080,
-      "frames": 954,
-      "pss_kib": 177201,
+      "frames": 868,
+      "pss_kib": 167334,
       "combined": true
     },
     {
       "state": 3,
-      "position_ms": 62063,
+      "position_ms": 79232,
       "width": 1920,
       "height": 1080,
-      "frames": 1074,
-      "pss_kib": 177417,
+      "frames": 976,
+      "pss_kib": 167906,
       "combined": true
     },
     {
       "state": 3,
-      "position_ms": 67064,
+      "position_ms": 84083,
       "width": 1920,
       "height": 1080,
-      "frames": 1194,
-      "pss_kib": 178535,
+      "frames": 1083,
+      "pss_kib": 168312,
       "combined": true
     },
     {
       "state": 3,
-      "position_ms": 72075,
+      "position_ms": 89088,
       "width": 1920,
       "height": 1080,
-      "frames": 1314,
-      "pss_kib": 181119,
+      "frames": 1204,
+      "pss_kib": 168916,
       "combined": true
     },
     {
       "state": 3,
-      "position_ms": 77085,
+      "position_ms": 94079,
       "width": 1920,
       "height": 1080,
-      "frames": 1434,
-      "pss_kib": 184837,
+      "frames": 1323,
+      "pss_kib": 169366,
       "combined": true
     },
     {
       "state": 3,
-      "position_ms": 82087,
+      "position_ms": 99094,
       "width": 1920,
       "height": 1080,
-      "frames": 1554,
-      "pss_kib": 183475,
+      "frames": 1425,
+      "pss_kib": 168912,
       "combined": true
     },
     {
       "state": 3,
-      "position_ms": 87105,
+      "position_ms": 103613,
       "width": 1920,
       "height": 1080,
-      "frames": 1675,
-      "pss_kib": 184617,
+      "frames": 1516,
+      "pss_kib": 171104,
       "combined": true
     }
   ],
-  "history_position_ms": 87122,
+  "history_position_ms": 103653,
+  "controlled_failure_catalog_recovery": {
+    "state": 3,
+    "position_ms": 106839,
+    "width": 1280,
+    "height": 720,
+    "frames": 39,
+    "pss_kib": 168199
+  },
+  "position_before_failure_ms": 105153,
   "passed": true
 }

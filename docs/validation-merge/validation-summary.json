@@ -1,0 +1,56 @@
+{
+  "status": "experimental",
+  "apk": "dist/kinexo-av-validado-debug.apk",
+  "apk_sha256": "4981a8c6482a61decf0cfc200efc78fee9b6f1022bbb547454a99de6f9cb0265",
+  "device": "emulator-5556 / Movie_Observe_API37, Android API 37, host audio disabled",
+  "baseline_commit": "a0663c74",
+  "recovery_tag": "checkpoint/kinexo-before-audio-video-merge-20261102",
+  "existing_recovered_apk_certificate_sha256": "04a728d6a7c4c248b36baaed2af61dbdc032597bd5f207fdb929e95155efc1b7",
+  "real_film": {
+    "report": "real-avatar-validated.json",
+    "catalog_id": 185909106,
+    "tmdb_id": 76600,
+    "decoded_dimensions": [
+      1920,
+      1080
+    ],
+    "offset_us": -114953,
+    "clock_samples": 32,
+    "median_absolute_clock_error_ms": 18.0,
+    "max_absolute_clock_error_ms": 126,
+    "bounded_soak_samples": 9,
+    "catalog_audio_preserved": true,
+    "speech_language_recognition_performed": false,
+    "controlled_failure_recovery": true
+  },
+  "controlled_tests": {
+    "report": "controlled-fixture.json",
+    "known_positive_offset_us": 400000,
+    "known_negative_offset_us": -200000,
+    "different_cut_rejected": true,
+    "original_audio_only": true,
+    "seek_zero_negative_offset": true,
+    "pause_seek_reprepare_next_media": true
+  },
+  "regression": {
+    "core_checks": 77,
+    "profiles_backup_roundtrip": true,
+    "cold_process_resume": true,
+    "manual_hls_dash_and_automatic_policy": true,
+    "actual_episode_titles_and_cards": true
+  },
+  "real_series_combination": "Not confirmed: four provider attempts ended in source/probe read errors or timeouts; catalog retained. This is not evidence that the editions are inherently incompatible.",
+  "preservation": "IdentityBinding, EpisodeCards, eight DEX, all six native libraries and signing certificate unchanged. HDO original SHA verified; recovery tree unchanged.",
+  "limitations": [
+    "Three visual windows plus periodic checks do not certify every edit.",
+    "No real combined 4K or series playback certified.",
+    "No full-film or acoustic/lip-sync measurement on physical hardware.",
+    "No DASH/DRM/discontinuous HLS alignment or time-stretch/cut reconstruction.",
+    "After process restart progress resumes on catalog; combining again needs a fresh session/verification.",
+    "Multiplexed catalog audio adds network traffic; old opaque binaries remain."
+  ],
+  "build_command": ".\\Build.ps1",
+  "editable_java_files": 29,
+  "smali_classes": 19018,
+  "opaque_native_libraries": 6
+}

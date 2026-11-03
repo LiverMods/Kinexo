@@ -2,7 +2,7 @@
 
 Continuação da árvore recuperada e limpa `movie-privado`, preservada fora deste projeto. Home, catálogo/detalhes, player, perfis, histórico/lista e configurações evoluem no mesmo aplicativo e pacote `com.mobrcine.cine_br`.
 
-Esta árvore completa reconstrói o APK: compila **28 arquivos Java ativos**, monta **9 DEX a partir de 19.018 arquivos Smali**, compila recursos, alinha e assina. **Não usa um APK pronto nem DEX original como entrada.** Os 25 arquivos Java principais da evolução ficam em `src/java/classes3/com/mgs/carparking/modern/`.
+Esta árvore completa reconstrói o APK: compila **29 arquivos Java ativos**, monta **9 DEX a partir de 19.018 arquivos Smali**, compila recursos, alinha e assina. **Não usa um APK pronto nem DEX original como entrada.** Os 26 arquivos Java principais da evolução ficam em `src/java/classes3/com/mgs/carparking/modern/`.
 
 É um projeto híbrido recompilável, não uma restauração integral em Java/Gradle. Seis bibliotecas nativas e o asset protegido do HLS continuam binários, com hashes verificados. Seus fontes C/C++ não foram recuperados. `reference/` contém Java decompilado **histórico**, anterior à limpeza, que não participa da build.
 

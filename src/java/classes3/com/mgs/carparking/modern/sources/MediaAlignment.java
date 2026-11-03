@@ -2,11 +2,7 @@ package com.mgs.carparking.modern.sources;
 
 import android.content.Context;
 import android.graphics.Rect;
-import android.media.MediaExtractor;
-import android.media.MediaCodec;
-import android.media.MediaCodecInfo;
 import android.media.Image;
-import android.media.MediaFormat;
 import android.os.SystemClock;
 import java.io.*;
 import java.net.*;
@@ -28,7 +24,7 @@ public final class MediaAlignment {
     public static long assess(double lowDuration,double highDuration,double[] offsets,double[] errors)throws Incompatible{
         if(!Double.isFinite(lowDuration)||lowDuration<12||!Double.isFinite(highDuration)||Math.abs(highDuration-lowDuration)>5.3||offsets.length<3||offsets.length!=errors.length)throw new Incompatible("As versões têm durações ou dados incompatíveis.");
         double[] sorted=offsets.clone();Arrays.sort(sorted);double offset=sorted[sorted.length/2];double[] orderedErrors=errors.clone();Arrays.sort(orderedErrors);double noise=orderedErrors[orderedErrors.length/2];
-        if(offset<0||offset>5||Math.abs(highDuration-offset-lowDuration)>.30)throw new Incompatible("As aberturas ou os finais destas versões são diferentes.");
+        if(offset<-.30||offset>5||Math.abs(highDuration-offset-lowDuration)>.30)throw new Incompatible("As aberturas ou os finais destas versões são diferentes.");
         for(int i=0;i<offsets.length;i++){if(!Double.isFinite(offsets[i])||!Double.isFinite(errors[i])||errors[i]<0||errors[i]>8||errors[i]>Math.max(1,noise*3))throw new Incompatible("Não conseguimos confirmar que as imagens pertencem à mesma edição.");if(Math.abs(offsets[i]-offset)>.065)throw new Incompatible("Encontramos diferenças de cortes ou de sincronização entre as versões.");}
         return Math.round(offset*1000000);
     }
@@ -63,16 +59,16 @@ public final class MediaAlignment {
     }
     private static String attribute(String line,String name){Matcher m=Pattern.compile("(?:^|,)"+name+"=(?:\"([^\"]*)\"|([^,]*))").matcher(line.substring(line.indexOf(':')+1));return m.find()?(m.group(1)!=null?m.group(1):m.group(2)):"";}
     private static final class Probe implements AutoCloseable {
-        final Context context;final String catalog;final SourceDiscovery.Session source;final AtomicBoolean canceled;final File directory;final long deadline;long bytes;
-        final Map<String,File> files=new HashMap<>();String decodedKey="";List<Frame> decoded=Collections.emptyList();
+        final Context context;final String catalog;final SourceDiscovery.Session source;final AtomicBoolean canceled;final long deadline;final java.util.concurrent.atomic.AtomicLong bytes=new java.util.concurrent.atomic.AtomicLong();
+        String decodedKey="";List<ExoFrames.Frame> decoded=Collections.emptyList();double decodedFrom,decodedUntil;
         Probe(Context c,String catalog,SourceDiscovery.Session source,AtomicBoolean canceled)throws Exception{this(c,catalog,source,canceled,SystemClock.elapsedRealtime()+30000);}
-        Probe(Context c,String catalog,SourceDiscovery.Session source,AtomicBoolean canceled,long deadline)throws Exception{this.deadline=Math.min(SystemClock.elapsedRealtime()+30000,deadline);context=c;this.catalog=catalog;this.source=source;this.canceled=canceled;directory=new File(c.getCacheDir(),"kinexo-align-"+UUID.randomUUID());if(!directory.mkdir())throw new IOException("Cannot create temporary probe");}
+        Probe(Context c,String catalog,SourceDiscovery.Session source,AtomicBoolean canceled,long deadline)throws Exception{this.deadline=Math.min(SystemClock.elapsedRealtime()+30000,deadline);context=c;this.catalog=catalog;this.source=source;this.canceled=canceled;}
         void check()throws IOException{if(canceled.get()||Thread.currentThread().isInterrupted()||SystemClock.elapsedRealtime()>deadline)throw new InterruptedIOException("Alignment canceled or timed out");}
         byte[] fetch(String value,boolean local,int maximum)throws Exception{
             check();URI u=new URI(value),original=new URI(catalog);if(local){if(!u.getScheme().equals("http")||!"127.0.0.1".equals(u.getHost())||u.getPort()!=original.getPort())throw new IOException("Unexpected catalog source");}else SourceDiscovery.https(value);
             HttpURLConnection connection=(HttpURLConnection)u.toURL().openConnection();connection.setInstanceFollowRedirects(false);int timeout=(int)Math.max(1,Math.min(5000,deadline-SystemClock.elapsedRealtime()));connection.setConnectTimeout(timeout);connection.setReadTimeout(timeout);connection.setRequestProperty("User-Agent",local?context.getPackageName():"Kinexo");
             if(!local)for(Map.Entry<String,String> h:source.headers.entrySet()){if((h.getKey().equalsIgnoreCase("Cookie")||h.getKey().equalsIgnoreCase("Authorization"))&&!u.getHost().equals(new URI(source.url).getHost()))continue;connection.setRequestProperty(h.getKey(),h.getValue());}
-            try{if(connection.getResponseCode()!=200)throw new IOException("Source probe refused");if(connection.getContentLengthLong()>maximum)throw new IOException("Probe segment too large");try(InputStream in=connection.getInputStream();ByteArrayOutputStream out=new ByteArrayOutputStream()){byte[] b=new byte[8192];int n;while((n=in.read(b))!=-1){check();bytes+=n;if(out.size()+n>maximum||bytes>12*1024*1024)throw new IOException("Alignment data limit");out.write(b,0,n);}return out.toByteArray();}}finally{connection.disconnect();}
+            try{if(connection.getResponseCode()!=200)throw new IOException("Source probe refused");if(connection.getContentLengthLong()>maximum)throw new IOException("Probe segment too large");try(InputStream in=connection.getInputStream();ByteArrayOutputStream out=new ByteArrayOutputStream()){byte[] b=new byte[8192];int n;while((n=in.read(b))!=-1){check();long total=bytes.addAndGet(n);if(out.size()+n>maximum||total>12*1024*1024)throw new IOException("Alignment data limit");out.write(b,0,n);}return out.toByteArray();}}finally{connection.disconnect();}
         }
         Playlist videoPlaylist(String root)throws Exception{
             String text=new String(fetch(root,false,1048576),"UTF-8");if(!text.contains("#EXT-X-STREAM-INF:"))return parse(root,false,text);
@@ -90,27 +86,31 @@ public final class MediaAlignment {
                 else if(!line.isEmpty()&&!line.startsWith("#")){if(duration<=0)throw new IOException("Missing segment duration");p.segments.add(new Segment(new URI(url).resolve(line.trim()).toString(),map,p.duration,duration));p.duration+=duration;duration=0;}
             }if(p.segments.isEmpty())throw new IOException("No VOD segments");return p;
         }
-        private static final class Frame {final long time;final byte[] image;Frame(long t,byte[] b){time=t;image=b;}}
         byte[] frame(Playlist p,double time)throws Exception{
-            check();Segment selected=null;for(Segment s:p.segments)if(time>=s.at&&time<s.at+s.duration){selected=s;break;}if(selected==null)throw new Incompatible("O trecho está fora da duração da fonte.");String key=selected.url;long target=Math.round((time-selected.at)*1000000);
-            if(!key.equals(decodedKey)){File file=files.get(key);if(file==null){file=new File(directory,"part-"+files.size()+".media");try(OutputStream out=new FileOutputStream(file)){if(!selected.map.isEmpty())out.write(fetch(selected.map,p.local,1048576));out.write(fetch(selected.url,p.local,3*1024*1024));}files.put(key,file);}decoded=decode(file,target+700000);decodedKey=key;}
-            Frame best=null;long error=Long.MAX_VALUE;for(Frame f:decoded){long d=Math.abs(f.time-target);if(d<error){best=f;error=d;}}
+            check();if(time<0||time>=p.duration)throw new Incompatible("O trecho está fora da duração da fonte.");
+            if(!p.origin.equals(decodedKey)||time<decodedFrom||time>decodedUntil){double from=Math.max(0,time-.7),until=Math.min(p.duration,time+.7);Object factory=dataFactory(p.local);Object hls= com.mgs.carparking.modern.core.Legacy.construct("com.google.android.exoplayer2.source.hls.HlsMediaSource$Factory",new Class[]{com.mgs.carparking.modern.core.Legacy.type("c5.f$a")},factory);Object source=com.mgs.carparking.modern.core.Legacy.call(hls,"a",android.net.Uri.parse(p.origin));decoded=ExoFrames.read(source,Math.round(from*1000000),Math.round(until*1000000),deadline,this::check);decodedKey=p.origin;decodedFrom=from;decodedUntil=until;}
+            long target=Math.round(time*1000000);ExoFrames.Frame best=null;long error=Long.MAX_VALUE;for(ExoFrames.Frame f:decoded){long d=Math.abs(f.time-target);if(d<error){best=f;error=d;}}
             if(best==null||error>65000)throw new Incompatible("Não conseguimos conferir um quadro no tempo solicitado.");return best.image;
         }
-        List<Frame> decode(File file,long untilUs)throws Exception{
-            MediaExtractor extractor=new MediaExtractor();MediaCodec codec=null;List<Frame> frames=new ArrayList<>();
-            try{extractor.setDataSource(file.getPath());MediaFormat format=null;for(int i=0;i<extractor.getTrackCount();i++)if(extractor.getTrackFormat(i).getString(MediaFormat.KEY_MIME).startsWith("video/")){format=extractor.getTrackFormat(i);extractor.selectTrack(i);break;}
-                if(format==null||format.getInteger(MediaFormat.KEY_WIDTH)>1920||format.getInteger(MediaFormat.KEY_HEIGHT)>1080)throw new Incompatible("Esta fonte não permite uma análise leve neste aparelho.");
-                long origin=extractor.getSampleTime();format.setInteger(MediaFormat.KEY_COLOR_FORMAT,MediaCodecInfo.CodecCapabilities.COLOR_FormatYUV420Flexible);codec=MediaCodec.createDecoderByType(format.getString(MediaFormat.KEY_MIME));codec.configure(format,null,null,0);codec.start();boolean inputDone=false,outputDone=false;MediaCodec.BufferInfo info=new MediaCodec.BufferInfo();
-                while(!outputDone){check();if(!inputDone){int index=codec.dequeueInputBuffer(10000);if(index>=0){java.nio.ByteBuffer input=codec.getInputBuffer(index);input.clear();int size=extractor.readSampleData(input,0);if(size<0){codec.queueInputBuffer(index,0,0,0,MediaCodec.BUFFER_FLAG_END_OF_STREAM);inputDone=true;}else{codec.queueInputBuffer(index,0,size,extractor.getSampleTime(),0);extractor.advance();}}}
-                    int index=codec.dequeueOutputBuffer(info,10000);if(index>=0){try{if(info.size>0){Image image=codec.getOutputImage(index);if(image==null)throw new Incompatible("O decodificador não permite conferir estas imagens.");try{frames.add(new Frame(info.presentationTimeUs-origin,fingerprint(image)));}finally{image.close();}if(frames.size()>600)throw new Incompatible("Este trecho exige processamento excessivo para a análise.");}outputDone=(info.flags&MediaCodec.BUFFER_FLAG_END_OF_STREAM)!=0||info.presentationTimeUs-origin>=untilUs;}finally{codec.releaseOutputBuffer(index,false);}}
-                }
-                if(frames.isEmpty())throw new Incompatible("Não conseguimos extrair imagens desta versão.");return frames;
-            }finally{if(codec!=null)try{codec.release();}catch(Exception ignored){}extractor.release();}
+        Object dataFactory(boolean local){
+            Class<?> factory=com.mgs.carparking.modern.core.Legacy.type("c5.f$a"),data=com.mgs.carparking.modern.core.Legacy.type("c5.f");
+            return java.lang.reflect.Proxy.newProxyInstance(factory.getClassLoader(),new Class[]{factory},(proxy,method,args)->{
+                if(method.getName().equals("hashCode"))return System.identityHashCode(proxy);if(method.getName().equals("equals"))return proxy==args[0];if(method.getName().equals("toString"))return "Kinexo bounded input factory";
+                if(!method.getName().equals("a")&&!method.getName().equals("createDataSource"))throw new UnsupportedOperationException("Probe factory method");
+                return java.lang.reflect.Proxy.newProxyInstance(data.getClassLoader(),new Class[]{data},new java.lang.reflect.InvocationHandler(){byte[] body;int position,end;android.net.Uri uri;
+                    public Object invoke(Object proxy,java.lang.reflect.Method method,Object[] args)throws Throwable{
+                        String name=method.getName();if(name.equals("hashCode"))return System.identityHashCode(proxy);if(name.equals("equals"))return proxy==args[0];if(name.equals("toString"))return "Kinexo bounded input";
+                        if(name.equals("a"))return null;
+                        if(name.equals("b")){Object spec=args[0];uri=(android.net.Uri)com.mgs.carparking.modern.core.Legacy.field(spec,"a");long offset=((Number)com.mgs.carparking.modern.core.Legacy.field(spec,"f")).longValue(),length=((Number)com.mgs.carparking.modern.core.Legacy.field(spec,"g")).longValue();try{body=fetch(uri.toString(),local,3*1024*1024);}catch(Exception error){throw new IOException("Probe input unavailable",error);}if(offset<0||offset>body.length)throw new EOFException("Probe input position");position=(int)offset;end=length<0?body.length:(int)Math.min(body.length,offset+length);return (long)(end-position);}
+                        if(name.equals("read")){check();int n=Math.min((Integer)args[2],end-position);if(n==0)return (Integer)args[2]==0?0:-1;System.arraycopy(body,position,(byte[])args[0],(Integer)args[1],n);position+=n;return n;}
+                        if(name.equals("close")){body=null;return null;}if(name.equals("getUri"))return uri;if(name.equals("getResponseHeaders"))return Collections.emptyMap();throw new UnsupportedOperationException("Probe input method");
+                    }
+                });
+            });
         }
-        public void close(){decoded=Collections.emptyList();for(File f:files.values())f.delete();File[] remaining=directory.listFiles();if(remaining!=null)for(File f:remaining)f.delete();directory.delete();}
+        public void close(){decoded=Collections.emptyList();}
     }
-    private static byte[] fingerprint(Image image){
+    static byte[] fingerprint(Image image){
         Rect crop=image.getCropRect();Image.Plane plane=image.getPlanes()[0];java.nio.ByteBuffer buffer=plane.getBuffer();int stride=plane.getRowStride(),pixel=plane.getPixelStride();int[] luma=new int[96*54];
         for(int y=0;y<54;y++)for(int x=0;x<96;x++){int px=crop.left+x*crop.width()/96,py=crop.top+y*crop.height()/54;luma[y*96+x]=buffer.get(py*stride+px*pixel)&255;}
         int top=0,bottom=53;while(top<12&&darkRow(luma,top))top++;while(bottom>41&&darkRow(luma,bottom))bottom--;
