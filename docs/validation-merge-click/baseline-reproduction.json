@@ -1,0 +1,11 @@
+{
+  "catalog": {
+    "state": 3,
+    "position_ms": 5801,
+    "width": 1280,
+    "height": 720,
+    "frames": 42,
+    "pss_kib": 141015
+  },
+  "error": "Old dismiss callback lost the replacement dialog"
+}

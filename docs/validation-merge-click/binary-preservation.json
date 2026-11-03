@@ -1,0 +1,23 @@
+{
+  "baseline_apk_sha256": "4981a8c6482a61decf0cfc200efc78fee9b6f1022bbb547454a99de6f9cb0265",
+  "final_apk_sha256": "b649ed60bbc4310e60d0f587de403423c60e2afffce0188fcefff625f8d033c3",
+  "same_dex": [
+    "classes.dex",
+    "classes2.dex",
+    "classes4.dex",
+    "classes5.dex",
+    "classes6.dex",
+    "classes7.dex",
+    "classes8.dex",
+    "classes9.dex"
+  ],
+  "native_libraries_identical": 6,
+  "unchanged_source_components": [
+    "player/CombinedMediaSource.java",
+    "sources/MediaAlignment.java",
+    "sources/ExoFrames.java",
+    "ui/EpisodeCards.java"
+  ],
+  "additional_apk_bytes": 0,
+  "signing_certificate_sha256": "04a728d6a7c4c248b36baaed2af61dbdc032597bd5f207fdb929e95155efc1b7"
+}

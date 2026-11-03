@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "recovered_api_classes_in_original_dex": 20,
+  "compile_only_not_packaged": true,
+  "apk_sha256": "b649ed60bbc4310e60d0f587de403423c60e2afffce0188fcefff625f8d033c3"
+}

@@ -1,0 +1,26 @@
+{
+  "catalog": {
+    "state": 3,
+    "position_ms": 24836,
+    "width": 1280,
+    "height": 720,
+    "frames": 60,
+    "pss_kib": 125130
+  },
+  "rapid_reopen_keeps_current_dialog": true,
+  "old_back_cancel_does_not_cancel_new_offer": true,
+  "repeated_click_submits_once": true,
+  "catalog_queue_independent": true,
+  "blocked_worker_terminal_after_ms": 29549,
+  "cancel_and_reopen_ignore_stale_job": true,
+  "catalog_after": {
+    "state": 3,
+    "position_ms": 65184,
+    "width": 1280,
+    "height": 720,
+    "frames": 1028,
+    "pss_kib": 131028
+  },
+  "offline_faults_only": true,
+  "passed": true
+}

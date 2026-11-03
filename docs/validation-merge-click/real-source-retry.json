@@ -1,0 +1,24 @@
+{
+  "playback_speed": 1,
+  "catalog": {
+    "state": 3,
+    "position_ms": 2853,
+    "width": 1280,
+    "height": 720,
+    "frames": 68,
+    "pss_kib": 140831
+  },
+  "catalog_id": 185909106,
+  "tmdb_id": 76600,
+  "season": 0,
+  "episode": 0,
+  "real_pair_checks": [
+    {
+      "provider": "Zetstream",
+      "source_available": false,
+      "reason_class": "SocketException",
+      "elapsed_ms": 20302
+    }
+  ],
+  "error_class": "AssertionError"
+}

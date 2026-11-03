@@ -1,7 +1,7 @@
 param(
     [Parameter(Mandatory=$true)][string]$Apk,
     [ValidateSet('HuntStream','PlexStream','LumaStream','VibeStream','Zetstream','NovaStream')][string]$Provider='HuntStream',
-    [switch]$AllProviders,[switch]$PlayerUi,[switch]$Series,[switch]$UiOnly,[switch]$AutomaticUi,[switch]$Maximum,[switch]$MergeProof,[int]$MergeCatalogId=185909106,[switch]$MergeFixture,[switch]$MergeResume,[switch]$InspectTimestamps,[ValidatePattern('^[A-Za-z]+(?:,[A-Za-z]+)*$')][string]$MergeProviders='HuntStream,PlexStream,LumaStream,VibeStream,Zetstream,NovaStream'
+    [switch]$AllProviders,[switch]$PlayerUi,[switch]$Series,[switch]$UiOnly,[switch]$AutomaticUi,[switch]$Maximum,[switch]$MergeProof,[switch]$MergeInteraction,[int]$MergeCatalogId=185909106,[switch]$MergeFixture,[switch]$MergeResume,[switch]$InspectTimestamps,[ValidatePattern('^[A-Za-z]+(?:,[A-Za-z]+)*$')][string]$MergeProviders='HuntStream,PlexStream,LumaStream,VibeStream,Zetstream,NovaStream'
 )
 $ErrorActionPreference='Stop'
 $project=(Resolve-Path "$PSScriptRoot/../../..").Path
@@ -29,7 +29,7 @@ Run "$bt/aapt2.exe" @('link','-I',$android,'--manifest',"$PSScriptRoot/AndroidMa
 Run 'python' @('-c',"import sys,zipfile;z=zipfile.ZipFile(sys.argv[1],'a');z.write(sys.argv[2],'classes.dex');z.close()","$work/unsigned.apk","$work/dex/classes.dex")
 Run 'java' @('-jar',"$bt/lib/apksigner.jar",'sign','--ks',"$env:USERPROFILE/.android/debug.keystore",'--ks-key-alias','androiddebugkey','--ks-pass','pass:android','--out',"$work/source-checks.apk","$work/unsigned.apk")
 Run $adb @('-s','emulator-5556','install','-r',"$work/source-checks.apk")
-$providers=if($UiOnly -or $AutomaticUi -or $MergeProof -or $MergeFixture -or $InspectTimestamps){@()}elseif($AllProviders){@('HuntStream','PlexStream','LumaStream','VibeStream','Zetstream','NovaStream')}else{@($Provider)}
+$providers=if($UiOnly -or $AutomaticUi -or $MergeProof -or $MergeInteraction -or $MergeFixture -or $InspectTimestamps){@()}elseif($AllProviders){@('HuntStream','PlexStream','LumaStream','VibeStream','Zetstream','NovaStream')}else{@($Provider)}
 foreach($name in $providers){
     $extra=if($Series){@('-e','id','84958','-e','title','Loki','-e','type','tv','-e','season','1','-e','episode','1')}elseif($name -eq 'HuntStream'){@('-e','soakSeconds','60')}else{@()}
     if($Maximum){$extra+=@('-e','maximum','true')}
@@ -55,6 +55,12 @@ if($AutomaticUi){
     $result | Write-Output
     Run $adb @('-s','emulator-5556','pull','/data/user/0/com.mobrcine.cine_br/files/automatic-ui-proof',"$work/automatic")
     if($LASTEXITCODE -or -not ($result -match 'INSTRUMENTATION_RESULT: result=PASS')){throw "Automatic source checks failed. Diagnostics: $work"}
+}
+if($MergeInteraction){
+    $result=& $adb -s emulator-5556 shell am instrument -w -r movie.source.integration.tests/movie.sources.MergeInteractionCheck
+    $result | Write-Output
+    Run $adb @('-s','emulator-5556','pull','/data/user/0/com.mobrcine.cine_br/files/merge-interaction-proof',"$work/interaction")
+    if(-not ($result -match 'INSTRUMENTATION_RESULT: result=PASS')){throw 'Merge interaction checks failed'}
 }
 if($MergeProof){
     $result=& $adb -s emulator-5556 shell am instrument -w -r -e resumeOnly ([string]$MergeResume.IsPresent).ToLowerInvariant() -e catalogId ([string]$MergeCatalogId) -e providers $MergeProviders movie.source.integration.tests/movie.sources.MediaMergeCheck

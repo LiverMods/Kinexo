@@ -1,0 +1,30 @@
+{
+  "playback_speed": 1,
+  "catalog": {
+    "state": 3,
+    "position_ms": 2906,
+    "width": 1280,
+    "height": 720,
+    "frames": 69,
+    "pss_kib": 127786
+  },
+  "catalog_id": 185909106,
+  "tmdb_id": 76600,
+  "season": 0,
+  "episode": 0,
+  "real_pair_checks": [
+    {
+      "provider": "Zetstream",
+      "source_available": false,
+      "reason_class": "GaiException",
+      "elapsed_ms": 10037
+    },
+    {
+      "provider": "HuntStream",
+      "source_available": false,
+      "reason_class": "SocketException",
+      "elapsed_ms": 17469
+    }
+  ],
+  "error_class": "AssertionError"
+}

@@ -1,7 +1,7 @@
 {
   "format": "movie-source-manifest-v1",
   "self_excluded": true,
-  "file_count": 23437,
+  "file_count": 23450,
   "files": [
     {
       "path": ".gitattributes",
@@ -20,8 +20,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9933,
-      "sha256": "03bd3c4ea4964d7bcfc6eb1f6092c144fadc40880bc96cee61a5e28f27e79fa6"
+      "bytes": 10213,
+      "sha256": "bc83a494d209cc954bc0611421381959d2ed9a98d09085fcd8ed252e33a56397"
     },
     {
       "path": "design/kinexo/README.md",
@@ -52,6 +52,11 @@
       "path": "docs/COMMERCIAL-REMOVALS.json",
       "bytes": 4757,
       "sha256": "ca4a18e3f35ff832e10c8f6b0c2209253488d7158393eb5c4c80cf3d2f1b7fc3"
+    },
+    {
+      "path": "docs/CORRECAO-DIALOGO-AV.md",
+      "bytes": 3776,
+      "sha256": "3e953743f3776179b7a316ac8656b84ea9b2ccee76794063a851279f5defac92"
     },
     {
       "path": "docs/EVOLUCAO.md",
@@ -807,6 +812,61 @@
       "path": "docs/validation-kinexo/seasons.txt",
       "bytes": 1779,
       "sha256": "1085edc112439336167a8403063316fa027aafff1df8bd54bf9d7b2da48bbd28"
+    },
+    {
+      "path": "docs/validation-merge-click/baseline-reproduction.json",
+      "bytes": 204,
+      "sha256": "93dfdf7aca1ba3bb6b480b274e4563e1f4c2f6c2441278cd986b893f7fb62e59"
+    },
+    {
+      "path": "docs/validation-merge-click/binary-preservation.json",
+      "bytes": 723,
+      "sha256": "ed9e54183150bfd96663383e05cf34d9879fea9ba662c4c34c087399fb297a05"
+    },
+    {
+      "path": "docs/validation-merge-click/build.json",
+      "bytes": 434,
+      "sha256": "445a959a0e56074f65cea3ce63e81dbbc96651d4f823cef4000d3e2df9ece30e"
+    },
+    {
+      "path": "docs/validation-merge-click/conferindo.png",
+      "bytes": 126030,
+      "sha256": "5ed132ff73a77fd58db857db69421f8986eb58f7abca3d8c486b92c0f68e6c78"
+    },
+    {
+      "path": "docs/validation-merge-click/evolution.json",
+      "bytes": 352,
+      "sha256": "7ffe879fc8e6b23b305799ed1dfe3b2d70b89b26a7b212ee5a7e4ef08f2a7a28"
+    },
+    {
+      "path": "docs/validation-merge-click/interaction.json",
+      "bytes": 604,
+      "sha256": "d35500b367e8422902853d6f6b634cd4bca2a537f92687fb13422206d2bdf3f2"
+    },
+    {
+      "path": "docs/validation-merge-click/privacy.json",
+      "bytes": 2023,
+      "sha256": "5f5ebbfec5d953c329e01e0015a8a17e80cc8a9aff12e5edd286d91cb80ecd02"
+    },
+    {
+      "path": "docs/validation-merge-click/real-source-attempt.json",
+      "bytes": 591,
+      "sha256": "10cdeb7131e504e9291d3186c3a26a638e8adf71533c29b3af28332ed36496f7"
+    },
+    {
+      "path": "docs/validation-merge-click/real-source-retry.json",
+      "bytes": 449,
+      "sha256": "82f3b1a1dbd9b975e740482264031a7793b3c36aa43e87c70847969cfb7e9acd"
+    },
+    {
+      "path": "docs/validation-merge-click/recovered-api.json",
+      "bytes": 193,
+      "sha256": "5a8f1faff5463b4f54ea47f7d7ca08ee1c1fe64f88cdba6636e28930c2487597"
+    },
+    {
+      "path": "docs/validation-merge-click/tempo-limite.png",
+      "bytes": 883002,
+      "sha256": "52ee45fc22c2400d99ab23f2efaf3d0bbed1ece1447befb2cf9abca9dba3898c"
     },
     {
       "path": "docs/validation-merge/android-timestamp-normalization.json",
@@ -116760,8 +116820,8 @@
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/player/PlayerUi.java",
-      "bytes": 58230,
-      "sha256": "03217cc02c28375f51090e78f7be8f6265b5ebecf6c8f421ada5ab1aed3806df"
+      "bytes": 59837,
+      "sha256": "e4ec5c10579fe233bf24a583bbb658cff996dc0170ec4bac74ffdaadfd34647a"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/profiles/Backup.java",
@@ -116820,8 +116880,8 @@
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/ui/MergeDialog.java",
-      "bytes": 5310,
-      "sha256": "bac8d01812fff0b7f218aea2d8936e7a10d15f1ed405d184b73a092ba26d25a4"
+      "bytes": 6137,
+      "sha256": "482049f109639a099f8e19071a94366308886cb861fa3970f92e363ac69eaaa8"
     },
     {
       "path": "src/java/classes3/com/mgs/carparking/modern/ui/MovieCards.java",
@@ -116950,8 +117010,8 @@
     },
     {
       "path": "tests/runtime/sources/AndroidManifest.xml",
-      "bytes": 1125,
-      "sha256": "863c7912f37057017704689812a8f97a7b36ce6e601940238d4a4314f719d6ea"
+      "bytes": 1269,
+      "sha256": "d80afc49c3d2172eea0ba397bb986b45af0ddac4d62f854335f7ed153546b0c6"
     },
     {
       "path": "tests/runtime/sources/AutomaticUiCheck.java",
@@ -116979,9 +117039,14 @@
       "sha256": "b1030eed7f250f390a426b8d3a5ea2441c0a0e95f796a648f895cd5cd3b282e1"
     },
     {
+      "path": "tests/runtime/sources/MergeInteractionCheck.java",
+      "bytes": 7226,
+      "sha256": "6e0369bba121d78ef69d6419ca095a4869fa39c08313d49e17cb37c4b2e68cee"
+    },
+    {
       "path": "tests/runtime/sources/Run-SourceChecks.ps1",
-      "bytes": 6853,
-      "sha256": "b30812d1696aaf4cc3f06fce2380ebe3ea3dfb0f0d9438cd1bc96f1a078e7640"
+      "bytes": 7327,
+      "sha256": "0f9e11f0e188058aed158849135e59deb2ad4a869af09165df0c7bafdd4c6aa0"
     },
     {
       "path": "tests/runtime/sources/SourceUiCheck.java",

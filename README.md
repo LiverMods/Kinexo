@@ -8,6 +8,8 @@ Esta árvore completa reconstrói o APK: compila **29 arquivos Java ativos**, mo
 
 Combinação experimental de imagem e áudio: [docs/COMBINACAO-AV.md](docs/COMBINACAO-AV.md). Novo diálogo nativo e adaptação do MergingMediaSource ao motor recuperado, com comparação visual limitada e retorno ao catálogo. Testes sintéticos e fontes reais são separados no relatório; não há garantia geral para edições diferentes. Cards de episódios preservados.
 
+Correção atual do pop-up de combinação: [docs/CORRECAO-DIALOGO-AV.md](docs/CORRECAO-DIALOGO-AV.md). APK `kinexo-av-dialogo-v2-debug.apk`, com proteção contra callbacks de janelas antigas, indicação de atividade e encerramento do aviso por prazo contado desde o clique.
+
 Reprodução automática PT-BR, novos cards e controles contextuais: [docs/REPRODUCAO-AUTOMATICA.md](docs/REPRODUCAO-AUTOMATICA.md). Ao tocar em Assistir, o catálogo continua disponível enquanto o Kinexo consulta fontes e verifica identidade/idioma. Não foi encontrada uma fonte extra PT-BR real nos testes desta entrega; por isso o catálogo foi mantido. Há modos Automático, Máxima disponível e preferência Full HD, com recuperação de falhas e cache limitado. O modo Máxima participa do backup.
 
 Fontes adicionais nativas: [docs/FONTES-NATIVAS.md](docs/FONTES-NATIVAS.md). A descoberta foi recuperada em Java para seis provedores, usando o ExoPlayer existente e manifestos HLS/DASH reais, sem importar Flutter ou SDKs do HDO. Há confirmação de Full HD e 4K, seleção manual e retorno ao catálogo. Áudio PT-BR não foi confirmado nas fontes adicionais; a versão do catálogo é preservada até escolha manual. Credenciais de cliente ficam fora do Git, em `%USERPROFILE%/.kinexo/source-services.json`; a build as incorpora quando configuradas.
