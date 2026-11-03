@@ -1,0 +1,18 @@
+{
+  "same_dex": [
+    "classes.dex",
+    "classes2.dex",
+    "classes4.dex",
+    "classes5.dex",
+    "classes6.dex",
+    "classes7.dex",
+    "classes8.dex",
+    "classes9.dex"
+  ],
+  "changed_dex": [
+    "classes3.dex"
+  ],
+  "baseline_apk_sha256": "854bf7e7a9053e347f3182484e7d8dcb019e8504a0337b8c161d33224a55c157",
+  "new_apk_sha256": "31c31ad8693d41f6a3b77b6e2899e699d38b1dc93e25acbda87523267bcde4f3",
+  "additional_bytes": 16384
+}

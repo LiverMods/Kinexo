@@ -1,0 +1,26 @@
+package com.mgs.carparking.modern.ui;
+
+import android.app.*;
+import android.graphics.drawable.GradientDrawable;
+import android.view.*;
+import android.widget.*;
+
+/** Native, explicit consent. The current dubbed playback continues until a verified plan is ready. */
+public final class MergeDialog extends Dialog {
+    private final Activity owner;private final LinearLayout body;private final TextView heading,subtitle,message,warning,attempt,keep,cancel;private final LinearLayout tiles;
+    public MergeDialog(Activity a,String quality,Runnable tryMerge,Runnable keepDubbed,Runnable cancelMerge){
+        super(a,android.R.style.Theme_Material_NoActionBar);owner=a;requestWindowFeature(Window.FEATURE_NO_TITLE);body=Ui.column(a);GradientDrawable background=Ui.box(0xff10131b,20,a);background.setStroke(d(1),Ui.LINE);body.setBackground(background);Ui.inset(body,16,14,16,10);body.setContentDescription("Combinar imagem e áudio");
+        LinearLayout header=Ui.row(a);ImageView icon=new ImageView(a);icon.setImageDrawable(new Ui.Symbol(a,"sources",Ui.ACCENT));icon.setBackground(Ui.box(0xff30202b,12,a));icon.setPadding(d(8),d(8),d(8),d(8));header.addView(icon,Ui.lp(d(40),d(40)));LinearLayout names=Ui.column(a);Ui.inset(names,10,0,0,0);heading=Ui.heading(a,"Qualidade indisponível",18);subtitle=Ui.text(a,"Existe outra possibilidade",11,Ui.MUTED);Ui.inset(subtitle,0,4,0,0);names.addView(heading);names.addView(subtitle);header.addView(names,new LinearLayout.LayoutParams(0,-2,1));body.addView(header);
+        message=Ui.text(a,"Não encontramos "+quality+" com dublagem brasileira. Podemos tentar combinar uma imagem de maior qualidade com o áudio em português do catálogo.",12,Ui.TEXT);message.setLineSpacing(d(3),1);Ui.inset(message,0,12,0,10);body.addView(message);
+        tiles=Ui.row(a);tiles.addView(tile(quality.equals("4K")?"uhd":quality.equals("Full HD")?"fhd":"quality","Vídeo "+quality),new LinearLayout.LayoutParams(0,d(52),1));TextView plus=Ui.heading(a,"+",18);plus.setTextColor(Ui.MUTED);plus.setGravity(Gravity.CENTER);tiles.addView(plus,Ui.lp(d(30),d(52)));tiles.addView(tile("audio","Áudio PT-BR"),new LinearLayout.LayoutParams(0,d(52),1));body.addView(tiles);
+        warning=Ui.text(a,"A combinação pode ter diferenças de sincronização, cortes ou estabilidade. Vamos conferir as versões antes de trocar.",11,Ui.MUTED);warning.setCompoundDrawablesWithIntrinsicBounds(new Ui.Symbol(a,"info",Ui.MUTED),null,null,null);warning.setCompoundDrawablePadding(d(8));Ui.inset(warning,0,10,0,12);body.addView(warning);
+        attempt=Ui.button(a,"Tentar sincronizar",true,()->{busy();tryMerge.run();});attempt.setTextColor(Ui.BG);attempt.setBackground(Ui.ripple(a,Ui.ACCENT,12));body.addView(attempt,Ui.lp(-1,d(48)));
+        keep=Ui.button(a,"Continuar dublado",false,()->{keepDubbed.run();dismiss();});LinearLayout.LayoutParams kp=Ui.lp(-1,d(48));kp.topMargin=d(8);body.addView(keep,kp);
+        cancel=Ui.button(a,"Cancelar",false,()->{cancelMerge.run();dismiss();});cancel.setTextColor(Ui.MUTED);cancel.setBackground(Ui.ripple(a,0,12));body.addView(cancel,Ui.lp(-1,d(48)));ScrollView scroll=new ScrollView(a);scroll.setFillViewport(false);scroll.addView(body);setContentView(scroll);setCanceledOnTouchOutside(false);setOnCancelListener(d->cancelMerge.run());
+    }
+    private int d(int value){return Ui.dp(owner,value);}
+    private LinearLayout tile(String icon,String label){LinearLayout box=Ui.column(owner);box.setGravity(Gravity.CENTER);box.setBackground(Ui.box(Ui.SURFACE2,12,owner));ImageView i=new ImageView(owner);i.setImageDrawable(new Ui.Symbol(owner,icon,Ui.TEXT));box.addView(i,Ui.lp(d(20),d(20)));TextView text=Ui.heading(owner,label,12);text.setGravity(Gravity.CENTER);Ui.inset(text,0,4,0,0);box.addView(text);return box;}
+    public void busy(){heading.setText("Conferindo as versões");subtitle.setText("Até 30 segundos · a versão dublada continua disponível");message.setText("Estamos comparando imagens de diferentes trechos para verificar se as versões combinam.");warning.setText("Esta verificação é limitada. Se não houver correspondência segura, manteremos a versão dublada normal.");attempt.setVisibility(View.GONE);tiles.setAlpha(.55f);}
+    public void failed(String reason){heading.setText("Combinação não confirmada");subtitle.setText("A reprodução dublada foi preservada");message.setText(reason);warning.setText("Não vamos forçar uma combinação com sincronização duvidosa.");attempt.setVisibility(View.GONE);tiles.setVisibility(View.GONE);keep.setBackground(Ui.ripple(owner,Ui.ACCENT,12));keep.setTextColor(Ui.BG);cancel.setText("Fechar");}
+    @Override public void show(){super.show();Window window=getWindow();window.setBackgroundDrawableResource(android.R.color.transparent);window.addFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);WindowManager.LayoutParams attrs=window.getAttributes();attrs.dimAmount=.62f;window.setAttributes(attrs);window.setGravity(Gravity.CENTER);int width=owner.getResources().getDisplayMetrics().widthPixels,height=owner.getResources().getDisplayMetrics().heightPixels;window.setLayout(Math.min(d(760),width-d(24)),Math.min(height-d(16),d(430)));window.getDecorView().setSystemUiVisibility(owner.getWindow().getDecorView().getSystemUiVisibility());Ui.appear(body);}
+}

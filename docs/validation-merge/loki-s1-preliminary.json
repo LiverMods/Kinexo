@@ -1,0 +1,49 @@
+{
+  "catalog": {
+    "state": 3,
+    "position_ms": 435458,
+    "width": 1280,
+    "height": 720,
+    "frames": 120,
+    "pss_kib": 141984
+  },
+  "catalog_id": 924616866,
+  "tmdb_id": 84958,
+  "season": 1,
+  "episode": 1,
+  "real_pair_checks": [
+    {
+      "provider": "HuntStream",
+      "source_available": false,
+      "reason_class": "SocketTimeoutException",
+      "elapsed_ms": 6131
+    },
+    {
+      "provider": "PlexStream",
+      "source_available": false,
+      "reason_class": "SocketTimeoutException",
+      "elapsed_ms": 12516
+    },
+    {
+      "provider": "LumaStream",
+      "compatible": false,
+      "reason_class": "Incompatible",
+      "reason": "As versões têm durações incompatíveis. Mantivemos o áudio e o vídeo dublados.",
+      "catalog_duration": 0,
+      "high_duration": 0,
+      "offsets": [],
+      "errors": [],
+      "elapsed_ms": 2027
+    }
+  ],
+  "safe_catalog_fallback": {
+    "state": 3,
+    "position_ms": 473362,
+    "width": 1280,
+    "height": 720,
+    "frames": 1021,
+    "pss_kib": 141945
+  },
+  "real_combined_playback": false,
+  "passed": true
+}

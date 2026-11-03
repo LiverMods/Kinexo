@@ -9,7 +9,7 @@ $android=Join-Path $sdk 'platforms/android-37.0/android.jar'
 $sources=@(Get-ChildItem "$project/src/java/classes3" -Recurse -Filter '*.java' | ForEach-Object { '"'+$_.FullName.Replace('\','/')+'"' })
 $sources+=@(Get-ChildItem "$PSScriptRoot/device" -Filter '*.java' | ForEach-Object { '"'+$_.FullName.Replace('\','/')+'"' })
 [IO.File]::WriteAllLines("$taskRoot/sources.rsp",$sources,[Text.UTF8Encoding]::new($false))
-& javac -encoding UTF-8 --release 8 -cp "$android;$project/tools/compile-only/recyclerview-1.3.0.jar;$project/tools/compile-only/core-1.7.0.jar" -d "$taskRoot/classes" "@$taskRoot/sources.rsp"
+& javac -encoding UTF-8 --release 8 -cp "$android;$project/tools/compile-only/recyclerview-1.3.0.jar;$project/tools/compile-only/core-1.7.0.jar;$project/tools/compile-only/recovered-exoplayer-api.jar" -d "$taskRoot/classes" "@$taskRoot/sources.rsp"
 if($LASTEXITCODE){throw 'javac checks failed'}
 New-Item -ItemType Directory -Force "$taskRoot/dex" | Out-Null
 $classes=@(Get-ChildItem "$taskRoot/classes/movie/tests" -Recurse -Filter '*.class' | ForEach-Object FullName)

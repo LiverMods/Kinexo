@@ -1,0 +1,9 @@
+ExoPlayer r2.11.7 MergingMediaSource/MergingMediaPeriod
+Copyright 2016 The Android Open Source Project
+Apache License, Version 2.0 — see LICENSE.
+Source: https://github.com/google/ExoPlayer/tree/r2.11.7/library/core/src/main/java/com/google/android/exoplayer2/source
+
+Modified for the recovered Kinexo ABI: typed stubs for compilation only;
+filter high-source audio and low-source video; one-period VOD restriction;
+constant video presentation offset with bounded preflight and safe fallback.
+The existing ExoPlayer implementation and native engine are preserved.

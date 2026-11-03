@@ -1,0 +1,2 @@
+// Compile-only signatures verified against the recovered Smali. Never package these classes.
+package i4;public interface q extends j0 {long a(long p,j3.s0 s);long d(com.google.android.exoplayer2.trackselection.c[] selections,boolean[] retain,i0[] streams,boolean[] reset,long p);void discardBuffer(long p,boolean keyframe);void f(a callback,long p);com.google.android.exoplayer2.source.TrackGroupArray getTrackGroups();void maybeThrowPrepareError() throws java.io.IOException;long readDiscontinuity();long seekToUs(long p);interface a extends j0.a<q>{void e(q p);}}

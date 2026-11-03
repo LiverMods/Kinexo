@@ -1,0 +1,52 @@
+[
+  {
+    "file": "catalog.media",
+    "tracks": [
+      {
+        "mime": "video\/avc",
+        "first_sample_times_us": [
+          0,
+          166833,
+          83411,
+          41711,
+          125122
+        ]
+      },
+      {
+        "mime": "audio\/mp4a-latm",
+        "first_sample_times_us": [
+          0,
+          250955,
+          570955,
+          890955,
+          1210955
+        ]
+      }
+    ]
+  },
+  {
+    "file": "high.media",
+    "tracks": [
+      {
+        "mime": "video\/avc",
+        "first_sample_times_us": [
+          -83422,
+          83411,
+          0,
+          -41711,
+          41711
+        ]
+      },
+      {
+        "mime": "audio\/mp4a-latm",
+        "first_sample_times_us": [
+          0,
+          21333,
+          42666,
+          64000,
+          85333
+        ]
+      }
+    ]
+  }
+]

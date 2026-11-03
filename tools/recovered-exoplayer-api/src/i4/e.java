@@ -1,0 +1,2 @@
+// Compile-only signatures verified against the recovered Smali. Never package these classes.
+package i4;public abstract class e<T> extends b {public e(){}public void s(c5.q t){}public void u(){}public final void D(T id,r source){}public abstract void C(T id,r source,j3.u0 timeline);public r.a y(T id,r.a period){return period;}public void maybeThrowSourceInfoRefreshError() throws java.io.IOException{}}

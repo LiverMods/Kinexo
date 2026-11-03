@@ -109,7 +109,7 @@ try {
         [IO.File]::WriteAllLines($sourceList, @($sources | ForEach-Object { '"' + $_.FullName.Replace('\','/') + '"' }), [Text.UTF8Encoding]::new($false))
         Run $javac @('-encoding','UTF-8','--release','8','-cp',"$androidJar;$compileClasspath",'-d',$javaClasses,"@$sourceList")
         $classFiles = @(Get-ChildItem -LiteralPath $javaClasses -Recurse -File -Filter '*.class' | ForEach-Object FullName)
-        Run $java (@('-cp',"$buildTools/lib/d8.jar",'com.android.tools.r8.D8','--lib',$androidJar,'--classpath',"$compileOnly/recyclerview-1.3.0.jar",'--classpath',"$compileOnly/core-1.7.0.jar",'--min-api','24','--output',$dexOutput) + $classFiles)
+        Run $java (@('-cp',"$buildTools/lib/d8.jar",'com.android.tools.r8.D8','--lib',$androidJar,'--classpath',"$compileOnly/recyclerview-1.3.0.jar",'--classpath',"$compileOnly/core-1.7.0.jar",'--classpath',"$compileOnly/recovered-exoplayer-api.jar",'--min-api','24','--output',$dexOutput) + $classFiles)
         Run $java @('-cp',"$classpath;$work",'DisassembleRecovery',"$dexOutput/classes.dex","$stage/smali_$dexName")
         if ($dexName -eq 'classes2') {
             $testClasses = Join-Path $work 'tests'
